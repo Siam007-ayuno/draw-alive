@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plesiosaurus comes alive! | How to Draw Cute Dinosaurs for Kids</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:#FFF3D6;color:#2B2118;text-align:center}
+main{max-width:560px;margin:0 auto;padding:20px 16px 32px}
+h1{font-size:clamp(30px,8vw,44px);margin:10px 0 2px;color:#3E7A1E}
+.sub{color:#7A5A2E;font-size:15px;margin:0 0 14px}
+.stage{position:relative;background:#FFFDF6;border:3px solid #F0D9A0;border-radius:24px;padding:8px;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.dino-wrap svg{width:100%;height:auto;display:block}
+.bubble{position:absolute;top:6%;right:4%;background:#fff;border:3px solid #1A1A1A;border-radius:18px;padding:8px 14px;font-weight:800;font-size:22px;color:#C0392B;opacity:0;transform:scale(.6);pointer-events:none;animation:pop 5s ease-in-out infinite}
+.bubble::after{content:"";position:absolute;left:18px;bottom:-12px;border:7px solid transparent;border-top-color:#1A1A1A}
+.bubble.show{opacity:1;transform:scale(1);animation:none}
+.hint{font-size:14px;color:#8A6A3A;margin:12px 0 0}
+.drawline{font-size:19px;font-weight:700;margin:16px 0 4px}
+.tip{font-size:15px;color:#5A4632;margin:4px 0 0;line-height:1.5}
+.hear{display:inline-block;margin-top:16px;padding:12px 26px;font-size:19px;font-weight:800;font-family:inherit;color:#fff;background:#3E7A1E;border:3px solid #1A1A1A;border-radius:999px;cursor:pointer;box-shadow:0 3px 0 #1A1A1A}
+.hear:active{transform:translateY(2px);box-shadow:0 1px 0 #1A1A1A}
+.hear:disabled{opacity:.65;cursor:default}
+footer{margin-top:22px;font-size:13px;color:#8A6A3A}
+footer a{color:#3E7A1E}
+@keyframes pop{0%,82%,100%{opacity:0;transform:scale(.6) translateY(8px)}86%,94%{opacity:1;transform:scale(1) translateY(0)}}
+@keyframes blink{0%,93%,100%{transform:scaleY(1)}95.5%{transform:scaleY(.06)}97%{transform:scaleY(1)}}
+.eye{transform-box:fill-box;transform-origin:center;animation:blink 4.2s infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+.dino-bob{animation:bob 3.2s ease-in-out infinite}
+.tail,.wing,.flipper{transform-box:view-box}
+@keyframes wag{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(4deg)}}
+.tail{animation:wag 1.6s ease-in-out infinite}
+@keyframes flap{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(6deg)}}
+.wing{animation:flap 1.8s ease-in-out infinite}
+@keyframes paddle{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(5deg)}}
+.flipper{animation:paddle 2.2s ease-in-out infinite}
+@keyframes jump{0%{transform:translateY(0)}35%{transform:translateY(-64px) scale(1.03)}60%{transform:translateY(0)}75%{transform:translateY(-18px)}100%{transform:translateY(0)}}
+.dino-wrap.jump{animation:jump .7s ease}
+@media (prefers-reduced-motion:reduce){.eye,.dino-bob,.tail,.wing,.flipper,.bubble{animation:none}.bubble{opacity:1;transform:scale(1)}}
+</style>
+</head>
+<body>
+<main>
+<h1>Plesiosaurus</h1>
+<p class="sub">Tap the dinosaur &mdash; it jumps and says hello!</p>
+<div class="stage" id="stage">
+<div class="bubble" id="bubble">Splash!</div>
+<div class="dino-wrap" id="wrap">
+<svg viewBox="0 0 1000 1000" role="img" aria-label="Plesiosaurus" xmlns="http://www.w3.org/2000/svg">
+  <g class="dino-bob">
+    <ellipse cx="475" cy="555" rx="225" ry="105" fill="#4FA8A0" stroke="none"/><ellipse cx="475" cy="555" rx="218" ry="98" fill="none" stroke="#1A1A1A" stroke-width="14"/>
+    <polygon points="630,520 700,520 800,345 748,320" fill="#4FA8A0" stroke="#1A1A1A" stroke-width="14" stroke-linejoin="round"/>
+    <ellipse cx="785" cy="300" rx="70" ry="70" fill="#4FA8A0" stroke="none"/><ellipse cx="785" cy="300" rx="63" ry="63" fill="none" stroke="#1A1A1A" stroke-width="14"/>
+    <ellipse cx="841.5" cy="307" rx="26.5" ry="19" fill="#4FA8A0" stroke="none"/><ellipse cx="841.5" cy="307" rx="19.5" ry="12" fill="none" stroke="#1A1A1A" stroke-width="14"/>
+    <g class="flipper" style="transform-origin:365.6px 636.6px"><polygon points="439,602 436,623 412,648 374,670 332,685 298,687 280,677 283,656 307,631 345,609 387,594 421,592 439,602" fill="#4FA8A0" stroke="#1A1A1A" stroke-width="14" stroke-linejoin="round"/></g>
+    <g class="flipper" style="transform-origin:605.6px 642.4px"><polygon points="679,677 661,687 627,685 585,670 547,648 523,623 520,602 538,592 572,594 614,609 652,631 676,656 679,677" fill="#4FA8A0" stroke="#1A1A1A" stroke-width="14" stroke-linejoin="round"/></g>
+    <g class="flipper" style="transform-origin:365.6px 482.4px"><polygon points="439,517 421,527 387,525 345,510 307,488 283,463 280,442 298,432 332,434 374,449 412,471 436,496 439,517" fill="#4FA8A0" stroke="#1A1A1A" stroke-width="14" stroke-linejoin="round"/></g>
+    <g class="flipper" style="transform-origin:605.6px 476.6px"><polygon points="679,442 676,463 652,488 614,510 572,525 538,527 520,517 523,496 547,471 585,449 627,434 661,432 679,442" fill="#4FA8A0" stroke="#1A1A1A" stroke-width="14" stroke-linejoin="round"/></g>
+    <g class="tail" style="transform-origin:260px 545px"><polygon points="256.0,510.2 264.0,579.8 128.9,550.1 131.1,569.9" fill="#4FA8A0" stroke="#1A1A1A" stroke-width="14" stroke-linejoin="round"/></g>
+    <g class="eye"><ellipse cx="770" cy="290" rx="18" ry="18" fill="#FFFFFF" stroke="none"/><ellipse cx="770" cy="290" rx="11" ry="11" fill="none" stroke="#1A1A1A" stroke-width="14"/><ellipse cx="770" cy="292" rx="9" ry="9" fill="#1A1A1A" stroke="none"/><ellipse cx="766" cy="285" rx="3" ry="3" fill="#FFFFFF" stroke="none"/></g>
+    <g class="eye"><ellipse cx="805" cy="290" rx="18" ry="18" fill="#FFFFFF" stroke="none"/><ellipse cx="805" cy="290" rx="11" ry="11" fill="none" stroke="#1A1A1A" stroke-width="14"/><ellipse cx="805" cy="292" rx="9" ry="9" fill="#1A1A1A" stroke="none"/><ellipse cx="801" cy="285" rx="3" ry="3" fill="#FFFFFF" stroke="none"/></g>
+    <path d="M 830.1 338.1 A 31 15 0 0 1 771.9 338.1" fill="none" stroke="#1A1A1A" stroke-width="9" stroke-linecap="round"/>
+    <polygon points="270,540 300,490 450,455 600,470 680,530 665,552 600,500 450,488 310,518" fill="#2E7D76" stroke="none"/>
+    <polyline points="320,500 320,600" fill="none" stroke="#1A1A1A" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="430,492 430,610" fill="none" stroke="#1A1A1A" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="540,492 540,610" fill="none" stroke="#1A1A1A" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <ellipse cx="477.5" cy="590" rx="157.5" ry="55" fill="#CFE8E4" stroke="none"/>
+    <circle cx="760" cy="325" r="11" fill="#FFB3C1"/>
+  </g>
+</svg>
+</div>
+</div>
+<p class="hint">&#128070; Tap the dinosaur to make it jump!</p>
+<p class="drawline">Draw it in the book!</p>
+<p class="tip">Start with a long oval body, a long neck and a small head.</p>
+<p><button class="hear" id="hear" type="button">Hear it!</button></p>
+<footer>From &lsquo;How to Draw Cute Dinosaurs for Kids&rsquo; by MD. SAIF SIAM<br><a href="../index.html">&larr; All 50 dinosaurs</a></footer>
+</main>
+<script>
+(function(){
+var stage=document.getElementById('stage'),wrap=document.getElementById('wrap'),bubble=document.getElementById('bubble'),t=null;
+function jump(){
+wrap.classList.remove('jump');void wrap.offsetWidth;wrap.classList.add('jump');
+bubble.classList.add('show');clearTimeout(t);t=setTimeout(function(){bubble.classList.remove('show')},1400);
+}
+stage.addEventListener('click',jump);
+var btn=document.getElementById('hear'),clips=['name.mp3', 'tip.mp3', 'splash.mp3'],playing=false;
+function playNext(i){
+if(i>=clips.length){btn.disabled=false;btn.textContent='Hear it!';playing=false;return;}
+var a=new Audio(clips[i]);
+a.onended=function(){playNext(i+1)};
+a.onerror=function(){playNext(i+1)};
+a.play();
+}
+btn.addEventListener('click',function(){
+if(playing)return;
+playing=true;btn.disabled=true;btn.textContent='Playing...';
+jump();playNext(0);
+});
+})();
+</script>
+</body>
+</html>

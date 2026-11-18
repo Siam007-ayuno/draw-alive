@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Triceratops comes alive! | How to Draw Cute Dinosaurs for Kids</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:#FFF3D6;color:#2B2118;text-align:center}
+main{max-width:560px;margin:0 auto;padding:20px 16px 32px}
+h1{font-size:clamp(30px,8vw,44px);margin:10px 0 2px;color:#3E7A1E}
+.sub{color:#7A5A2E;font-size:15px;margin:0 0 14px}
+.stage{position:relative;background:#FFFDF6;border:3px solid #F0D9A0;border-radius:24px;padding:8px;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.dino-wrap svg{width:100%;height:auto;display:block}
+.bubble{position:absolute;top:6%;right:4%;background:#fff;border:3px solid #1A1A1A;border-radius:18px;padding:8px 14px;font-weight:800;font-size:22px;color:#C0392B;opacity:0;transform:scale(.6);pointer-events:none;animation:pop 5s ease-in-out infinite}
+.bubble::after{content:"";position:absolute;left:18px;bottom:-12px;border:7px solid transparent;border-top-color:#1A1A1A}
+.bubble.show{opacity:1;transform:scale(1);animation:none}
+.hint{font-size:14px;color:#8A6A3A;margin:12px 0 0}
+.drawline{font-size:19px;font-weight:700;margin:16px 0 4px}
+.tip{font-size:15px;color:#5A4632;margin:4px 0 0;line-height:1.5}
+.hear{display:inline-block;margin-top:16px;padding:12px 26px;font-size:19px;font-weight:800;font-family:inherit;color:#fff;background:#3E7A1E;border:3px solid #1A1A1A;border-radius:999px;cursor:pointer;box-shadow:0 3px 0 #1A1A1A}
+.hear:active{transform:translateY(2px);box-shadow:0 1px 0 #1A1A1A}
+.hear:disabled{opacity:.65;cursor:default}
+footer{margin-top:22px;font-size:13px;color:#8A6A3A}
+footer a{color:#3E7A1E}
+@keyframes pop{0%,82%,100%{opacity:0;transform:scale(.6) translateY(8px)}86%,94%{opacity:1;transform:scale(1) translateY(0)}}
+@keyframes blink{0%,93%,100%{transform:scaleY(1)}95.5%{transform:scaleY(.06)}97%{transform:scaleY(1)}}
+.eye{transform-box:fill-box;transform-origin:center;animation:blink 4.2s infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+.dino-bob{animation:bob 3.2s ease-in-out infinite}
+.tail,.wing,.flipper{transform-box:view-box}
+@keyframes wag{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(4deg)}}
+.tail{animation:wag 1.6s ease-in-out infinite}
+@keyframes flap{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(6deg)}}
+.wing{animation:flap 1.8s ease-in-out infinite}
+@keyframes paddle{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(5deg)}}
+.flipper{animation:paddle 2.2s ease-in-out infinite}
+@keyframes jump{0%{transform:translateY(0)}35%{transform:translateY(-64px) scale(1.03)}60%{transform:translateY(0)}75%{transform:translateY(-18px)}100%{transform:translateY(0)}}
+.dino-wrap.jump{animation:jump .7s ease}
+@media (prefers-reduced-motion:reduce){.eye,.dino-bob,.tail,.wing,.flipper,.bubble{animation:none}.bubble{opacity:1;transform:scale(1)}}
+</style>
+</head>
+<body>
+<main>
+<h1>Triceratops</h1>
+<p class="sub">Tap the dinosaur &mdash; it jumps and says hello!</p>
+<div class="stage" id="stage">
+<div class="bubble" id="bubble">Stomp!</div>
+<div class="dino-wrap" id="wrap">
+<svg viewBox="0 0 1000 1000" role="img" aria-label="Triceratops" xmlns="http://www.w3.org/2000/svg">
+  <g class="dino-bob">
+    <polygon points="630,570 685,545 700,480 655,440" fill="#7AC74F" stroke="#1A1A1A" stroke-width="14" stroke-linejoin="round"/>
+    <ellipse cx="745" cy="420" rx="105" ry="105" fill="#7AC74F" stroke="none"/><ellipse cx="745" cy="420" rx="98" ry="98" fill="none" stroke="#1A1A1A" stroke-width="14"/>
+    <ellipse cx="500" cy="625" rx="220" ry="155" fill="#7AC74F" stroke="none"/><ellipse cx="500" cy="625" rx="213" ry="148" fill="none" stroke="#1A1A1A" stroke-width="14"/>
+    <polygon points="334,710 386,710 378,930 342,930" fill="#7AC74F" stroke="#1A1A1A" stroke-width="14" stroke-linejoin="round"/>
+    <rect x="338" y="888" width="44" height="42" rx="10" fill="#4A3520" stroke="none"/>
+    <polygon points="434,710 486,710 478,930 442,930" fill="#7AC74F" stroke="#1A1A1A" stroke-width="14" stroke-linejoin="round"/>
+    <rect x="438" y="888" width="44" height="42" rx="10" fill="#4A3520" stroke="none"/>
+    <polygon points="544,710 596,710 588,930 552,930" fill="#7AC74F" stroke="#1A1A1A" stroke-width="14" stroke-linejoin="round"/>
+    <rect x="548" y="888" width="44" height="42" rx="10" fill="#4A3520" stroke="none"/>
+    <polygon points="634,710 686,710 678,930 642,930" fill="#7AC74F" stroke="#1A1A1A" stroke-width="14" stroke-linejoin="round"/>
+    <rect x="638" y="888" width="44" height="42" rx="10" fill="#4A3520" stroke="none"/>
+    <g class="tail" style="transform-origin:300px 600px"><polygon points="314.2,557.3 285.8,642.7 121.3,536.2 118.7,543.8" fill="#7AC74F" stroke="#1A1A1A" stroke-width="14" stroke-linejoin="round"/></g>
+    <polygon points="727,624 718,624 709,626 700,629 690,632 680,634 670,634 660,632 652,628 645,622 639,614 633,605 629,596 624,588 618,581 611,576 603,572 594,569 585,566 575,563 566,558 558,552 553,544 549,535 548,525 548,515 549,505 550,495 550,486 548,478 544,470 539,462 532,455 526,447 521,438 517,429 516,420 517,410 521,401 526,392 532,384 539,377 544,369 548,361 550,353 550,344 549,334 548,324 548,314 549,304 553,295 558,287 566,281 575,276 585,273 594,270 603,267 611,263 618,258 624,251 629,243 633,234 639,225 645,217 652,211 660,207 670,205 680,205 690,207 700,210 709,213 718,215 727,215 735,309 730,309 726,310 721,311 717,312 712,313 708,315 704,316 700,318 695,320 691,322 687,324 684,327 680,329 676,332 673,335 669,338 666,341 663,345 660,348 657,352 654,355 651,359 649,363 647,367 645,371 643,375 641,379 639,384 638,388 637,392 636,397 635,401 634,406 634,410 634,415 634,420 634,424 634,429 634,433 635,438 636,442 637,447 638,451 639,455 641,460 643,464 645,468 647,472 649,476 651,480 654,484 657,487 660,491 663,494 666,498 669,501 673,504 676,507 680,510 684,512 687,515 691,517 695,519 700,521 704,523 708,524 712,526 717,527 721,528 726,529 730,530 735,530" fill="#B7E39A" stroke="#1A1A1A" stroke-width="14" stroke-linejoin="round"/>
+    <polygon points="750,330 830,330 808,250" fill="#FFF3D6" stroke="#1A1A1A" stroke-width="14" stroke-linejoin="round"/>
+    <polygon points="815,395 875,395 867,335" fill="#FFF3D6" stroke="#1A1A1A" stroke-width="14" stroke-linejoin="round"/>
+    <g class="eye"><ellipse cx="725" cy="400" rx="26" ry="26" fill="#FFFFFF" stroke="none"/><ellipse cx="725" cy="400" rx="19" ry="19" fill="none" stroke="#1A1A1A" stroke-width="14"/><ellipse cx="725" cy="403" rx="14" ry="14" fill="#1A1A1A" stroke="none"/><ellipse cx="719" cy="393" rx="5" ry="5" fill="#FFFFFF" stroke="none"/></g>
+    <polygon points="830,425 885,445 830,465" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="14" stroke-linejoin="round"/>
+    <path d="M 827.9 485.2 A 35 22.5 0 0 1 762.1 485.2" fill="none" stroke="#1A1A1A" stroke-width="10" stroke-linecap="round"/>
+    <polygon points="365,517 430,490 500,482 570,490 635,517 610,580 390,580" fill="#5B9E3A" stroke="none"/>
+    <circle cx="400" cy="560" r="16" fill="#5B9E3A"/>
+    <circle cx="500" cy="540" r="14" fill="#5B9E3A"/>
+    <circle cx="600" cy="560" r="16" fill="#5B9E3A"/>
+    <circle cx="630" cy="310" r="20" fill="#FFF3D6"/>
+    <circle cx="685" cy="250" r="20" fill="#FFF3D6"/>
+    <circle cx="595" cy="420" r="20" fill="#FFF3D6"/>
+    <ellipse cx="500" cy="695" rx="100" ry="75" fill="#D9F2C0" stroke="none"/>
+  </g>
+</svg>
+</div>
+</div>
+<p class="hint">&#128070; Tap the dinosaur to make it jump!</p>
+<p class="drawline">Draw it in the book!</p>
+<p class="tip">Start with a big round head and a big oval body.</p>
+<p><button class="hear" id="hear" type="button">Hear it!</button></p>
+<footer>From &lsquo;How to Draw Cute Dinosaurs for Kids&rsquo; by MD. SAIF SIAM<br><a href="../index.html">&larr; All 50 dinosaurs</a></footer>
+</main>
+<script>
+(function(){
+var stage=document.getElementById('stage'),wrap=document.getElementById('wrap'),bubble=document.getElementById('bubble'),t=null;
+function jump(){
+wrap.classList.remove('jump');void wrap.offsetWidth;wrap.classList.add('jump');
+bubble.classList.add('show');clearTimeout(t);t=setTimeout(function(){bubble.classList.remove('show')},1400);
+}
+stage.addEventListener('click',jump);
+var btn=document.getElementById('hear'),clips=['name.mp3', 'tip.mp3'],playing=false;
+function playNext(i){
+if(i>=clips.length){btn.disabled=false;btn.textContent='Hear it!';playing=false;return;}
+var a=new Audio(clips[i]);
+a.onended=function(){playNext(i+1)};
+a.onerror=function(){playNext(i+1)};
+a.play();
+}
+btn.addEventListener('click',function(){
+if(playing)return;
+playing=true;btn.disabled=true;btn.textContent='Playing...';
+jump();playNext(0);
+});
+})();
+</script>
+</body>
+</html>
