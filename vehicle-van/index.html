@@ -98,7 +98,7 @@ footer a{color:#2F6DB3}
 </div>
 <p class="hint">&#128070; Tap the vehicle to make it run!</p>
 <div class="speeds" role="group" aria-label="Replay speed">
-<button type="button" data-speed="0.6">Slow</button>
+<button type="button" data-speed="0.4">Slow</button>
 <button type="button" data-speed="1" class="on">Normal</button>
 <button type="button" data-speed="1.5">Fast</button>
 </div>
@@ -226,14 +226,15 @@ wrap.addEventListener('animationend',function(e){
 if(e.animationName==='drive'){wrap.classList.remove('drive');}
 });
 stage.addEventListener('click',drive);
-// --- replay speed: one multiplier drives CSS animation timing AND audio ---
+// --- replay speed: the speed buttons change ONLY the drawing speed
+// (CSS --speed drives the stroke drawing, fills, road and run).
+// The voice narration ALWAYS plays at normal speed (playbackRate 1),
+// and so does the vehicle sound — 2026-11-20 ~00:33, SAIF.
 var speedBtns=document.querySelectorAll('.speeds button');
 function setSpeed(s){
 speed=s;
 document.documentElement.style.setProperty('--speed',s);
 speedBtns.forEach(function(b){b.classList.toggle('on',parseFloat(b.dataset.speed)===s)});
-if(sfx){sfx.playbackRate=s;}
-clips.forEach(function(a){a.playbackRate=s;});
 restartDraw();
 }
 speedBtns.forEach(function(b){b.addEventListener('click',function(){setSpeed(parseFloat(b.dataset.speed))});});
@@ -278,16 +279,15 @@ scheduleStepHighlights();
 }
 scheduleStepHighlights();
 // --- narration: name -> info1 -> info2 -> info3 -> info4 -> fact,
-// with the real sound underneath ---
+// voice ONLY — no vehicle sound (2026-11-20, SAIF) ---
 var btn=document.getElementById('hear');
 var clips=['name.mp3', 'info1.mp3', 'info2.mp3', 'info3.mp3', 'info4.mp3', 'fact.mp3'].map(function(f){var a=new Audio(f);a.preload='auto';return a;});
 var sfx=new Audio('sound.mp3');
-if(sfx){sfx.volume=0.3;sfx.loop=true;sfx.preload='auto';}
+if(sfx){sfx.volume=0.3;sfx.loop=false;sfx.preload='auto';}
 var playing=false;
-function stopSfx(){if(sfx){sfx.pause();sfx.currentTime=0;}}
 function playNext(i){
-if(i>=clips.length){stopSfx();btn.disabled=false;btn.textContent='Hear it!';playing=false;return;}
-var a=clips[i];a.playbackRate=speed;
+if(i>=clips.length){btn.disabled=false;btn.textContent='Hear it!';playing=false;return;}
+var a=clips[i];a.playbackRate=1;
 a.onended=function(){playNext(i+1)};
 a.onerror=function(){playNext(i+1)};
 a.play().catch(function(){playNext(i+1)});
@@ -297,25 +297,23 @@ if(playing)return;
 playing=true;btn.disabled=true;btn.textContent='Playing...';
 drive();
 restartDraw();
-if(sfx){sfx.loop=true;sfx.playbackRate=speed;sfx.play().catch(function(){});}
 playNext(0);
 });
 // --- auto-beep: the vehicle sound plays ONCE by itself ---
 // Browsers block sound until the user has tapped something, so the
 // page tries once on load and, if that is blocked, plays once on the
-// FIRST tap anywhere instead. Exactly once, never a loop: loop is
-// switched off for the beep and restored when it ends, so the
-// "Hear it!" narration can still loop the sound underneath.
+// FIRST tap anywhere instead. Exactly once, never a loop. The sound
+// is only ever played as a one-shot (auto-beep and beep button);
+// "Hear it!" plays narration only and never touches it.
 var beepPlayed=false;
 function tryAutoBeep(){
 if(beepPlayed||!sfx)return;
 sfx.loop=false;
-sfx.playbackRate=speed;
+sfx.playbackRate=1;
 var p=sfx.play();
 if(p&&p.then){
 p.then(function(){beepPlayed=true;showBubble();}).catch(function(){});
 }else{beepPlayed=true;showBubble();}
-sfx.addEventListener('ended',function(){sfx.loop=true;},{once:true});
 }
 document.addEventListener('pointerdown',function(){tryAutoBeep();});
 tryAutoBeep();
@@ -326,7 +324,7 @@ beepBtn.addEventListener('click',function(){
 drive();
 sfx.loop=false;
 sfx.currentTime=0;
-sfx.playbackRate=speed;
+sfx.playbackRate=1;
 sfx.play().catch(function(){});
 });
 }
