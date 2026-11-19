@@ -257,7 +257,7 @@ scheduleStepHighlights();
 // with the real sound underneath ---
 var btn=document.getElementById('hear');
 var clips=['name.mp3', 'info1.mp3', 'info2.mp3', 'info3.mp3', 'info4.mp3', 'fact.mp3'].map(function(f){var a=new Audio(f);a.preload='auto';return a;});
-var sfx=null;
+var sfx=new Audio('sound.mp3');
 if(sfx){sfx.volume=0.3;sfx.loop=true;sfx.preload='auto';}
 var playing=false;
 function stopSfx(){if(sfx){sfx.pause();sfx.currentTime=0;}}
