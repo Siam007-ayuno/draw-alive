@@ -22,6 +22,7 @@ h2{font-size:24px;color:#16324F;margin:28px 0 6px}
 .speeds button,.hear,.reset{display:inline-block;padding:12px 22px;font-size:18px;font-weight:800;font-family:inherit;color:#16324F;background:#fff;border:3px solid #16324F;border-radius:999px;cursor:pointer}
 .speeds button.on{background:#16324F;color:#fff}
 .hear{margin-top:14px;color:#fff;background:#2F6DB3;border-color:#1A1A1A;box-shadow:0 3px 0 #1A1A1A}
+.hear.beep{background:#E4572E;margin-left:8px}
 .hear:active{transform:translateY(2px);box-shadow:0 1px 0 #1A1A1A}
 .hear:disabled{opacity:.65;cursor:default}
 .drawline{font-size:19px;font-weight:700;margin:16px 0 4px}
@@ -52,15 +53,18 @@ footer a{color:#2F6DB3}
 .draw-stroke{stroke-dasharray:100;stroke-dashoffset:100;animation:drawStroke calc(var(--ddur,0.35s) / var(--speed)) linear calc(var(--ddelay,0s) / var(--speed)) both}
 .draw-fill{animation:fadeFill calc(var(--fdur,0.3s) / var(--speed)) ease calc(var(--fdelay,0s) / var(--speed)) both}
 .draw-stroke.draw-fill{animation:drawStroke calc(var(--ddur,0.35s) / var(--speed)) linear calc(var(--ddelay,0s) / var(--speed)) both,fadeFill calc(var(--fdur,0.3s) / var(--speed)) ease calc(var(--fdelay,0s) / var(--speed)) both}
-@keyframes jump{0%{transform:translateY(0)}35%{transform:translateY(-64px) scale(1.03)}60%{transform:translateY(0)}75%{transform:translateY(-18px)}100%{transform:translateY(0)}}
-.veh-wrap.jump{animation:jump calc(.7s / var(--speed)) ease}
-@media (prefers-reduced-motion:reduce){.eye,.veh-bob,.bubble{animation:none}.bubble{opacity:1;transform:scale(1)}.draw-stroke,.draw-fill{animation:none!important;stroke-dasharray:none;stroke-dashoffset:0;fill-opacity:1}}
+@keyframes drive{0%{transform:translateX(0) translateY(0)}25%{transform:translateX(12px) translateY(-4px)}50%{transform:translateX(-6px) translateY(0)}75%{transform:translateX(9px) translateY(-3px)}100%{transform:translateX(0) translateY(0)}}
+.veh-wrap.drive{animation:drive calc(.8s / var(--speed)) ease}
+.road{height:8px;margin:2px 8% 0;background:repeating-linear-gradient(90deg,#9DB8CC 0 22px,transparent 22px 44px);background-size:44px 8px;border-radius:4px;opacity:0;transition:opacity .15s}
+.veh-wrap.drive .road{opacity:1;animation:roadmove calc(.3s / var(--speed)) linear infinite}
+@keyframes roadmove{from{background-position-x:0}to{background-position-x:-44px}}
+@media (prefers-reduced-motion:reduce){.eye,.veh-bob,.bubble{animation:none}.bubble{opacity:1;transform:scale(1)}.veh-wrap.drive,.road{animation:none!important}.draw-stroke,.draw-fill{animation:none!important;stroke-dasharray:none;stroke-dashoffset:0;fill-opacity:1}}
 </style>
 </head>
 <body>
 <main>
 <h1>Limousine</h1>
-<p class="sub">Tap the vehicle &mdash; it jumps and says hello!</p>
+<p class="sub">Tap the vehicle &mdash; it runs and says hello!</p>
 <div class="stage" id="stage">
 <div class="bubble" id="bubble">Beep beep!</div>
 <div class="veh-wrap" id="wrap">
@@ -91,15 +95,16 @@ footer a{color:#2F6DB3}
     <circle class="draw-fill" style="--fdelay:8.65s;--fdur:0.30s" data-step="3" data-start="8.65" data-end="8.95" cx="660" cy="610" r="10" fill="#2F3E46"/>
   </g>
 </svg>
+<div class="road"></div>
 </div>
 </div>
-<p class="hint">&#128070; Tap the vehicle to make it jump!</p>
+<p class="hint">&#128070; Tap the vehicle to make it run!</p>
 <div class="speeds" role="group" aria-label="Replay speed">
 <button type="button" data-speed="0.6">Slow</button>
 <button type="button" data-speed="1" class="on">Normal</button>
 <button type="button" data-speed="1.5">Fast</button>
 </div>
-<p><button class="hear" id="hear" type="button">Hear it!</button></p>
+<p><button class="hear" id="hear" type="button">Hear it!</button> <button class="hear beep" id="beep" type="button">Beep beep!</button></p>
 <p class="drawline">Draw it in the book!</p>
 <p class="tip">Start with a very, very long body and a long cabin.</p>
 <p class="fact">Did you know? Its name comes from Limousin in France, where shepherds wore hooded cloaks.</p>
@@ -213,11 +218,20 @@ footer a{color:#2F6DB3}
 (function(){
 var stage=document.getElementById('stage'),wrap=document.getElementById('wrap'),bubble=document.getElementById('bubble'),t=null;
 var speed=1;
-function jump(){
-wrap.classList.remove('jump');void wrap.offsetWidth;wrap.classList.add('jump');
+function showBubble(){
 bubble.classList.add('show');clearTimeout(t);t=setTimeout(function(){bubble.classList.remove('show')},1400/speed);
 }
-stage.addEventListener('click',jump);
+// --- tap the vehicle: it RUNS in place (rocks forward/back with a
+// moving road under it) and says hello. It stays on the ground. The
+// 'drive' class is removed when its animation ends, so the road stops too.
+function drive(){
+wrap.classList.remove('drive');void wrap.offsetWidth;wrap.classList.add('drive');
+showBubble();
+}
+wrap.addEventListener('animationend',function(e){
+if(e.animationName==='drive'){wrap.classList.remove('drive');}
+});
+stage.addEventListener('click',drive);
 // --- replay speed: one multiplier drives CSS animation timing AND audio ---
 var speedBtns=document.querySelectorAll('.speeds button');
 function setSpeed(s){
@@ -233,7 +247,9 @@ speedBtns.forEach(function(b){b.addEventListener('click',function(){setSpeed(par
 // and restart the drawing from the beginning at the current speed ---
 // Each main-stage element carries data-step / data-start / data-end
 // (seconds at 1x, written by the builder in book step order). The CSS
-// animations auto-play on page load (visual only, no audio); restarting
+// animations auto-play on page load (visual only — the sound is
+// handled by the auto-beep below, which tries once on load and falls
+// back to the first tap); restarting
 // toggles the animation off and on so every element replays from its
 // own delay at the new speed. Step highlights are setTimeouts scaled
 // by the same speed, so they stay in sync with the drawing.
@@ -285,11 +301,41 @@ a.play().catch(function(){playNext(i+1)});
 btn.addEventListener('click',function(){
 if(playing)return;
 playing=true;btn.disabled=true;btn.textContent='Playing...';
-jump();
+drive();
 restartDraw();
-if(sfx){sfx.playbackRate=speed;sfx.play().catch(function(){});}
+if(sfx){sfx.loop=true;sfx.playbackRate=speed;sfx.play().catch(function(){});}
 playNext(0);
 });
+// --- auto-beep: the vehicle sound plays ONCE by itself ---
+// Browsers block sound until the user has tapped something, so the
+// page tries once on load and, if that is blocked, plays once on the
+// FIRST tap anywhere instead. Exactly once, never a loop: loop is
+// switched off for the beep and restored when it ends, so the
+// "Hear it!" narration can still loop the sound underneath.
+var beepPlayed=false;
+function tryAutoBeep(){
+if(beepPlayed||!sfx)return;
+sfx.loop=false;
+sfx.playbackRate=speed;
+var p=sfx.play();
+if(p&&p.then){
+p.then(function(){beepPlayed=true;showBubble();}).catch(function(){});
+}else{beepPlayed=true;showBubble();}
+sfx.addEventListener('ended',function(){sfx.loop=true;},{once:true});
+}
+document.addEventListener('pointerdown',function(){tryAutoBeep();});
+tryAutoBeep();
+// --- beep button: plays ONLY the vehicle sound, as often as tapped ---
+var beepBtn=document.getElementById('beep');
+if(beepBtn&&sfx){
+beepBtn.addEventListener('click',function(){
+drive();
+sfx.loop=false;
+sfx.currentTime=0;
+sfx.playbackRate=speed;
+sfx.play().catch(function(){});
+});
+}
 // --- tap-to-colour: palette + tappable regions, client-side only ---
 var current='#E4572E';
 var swatches=document.querySelectorAll('.swatch');
