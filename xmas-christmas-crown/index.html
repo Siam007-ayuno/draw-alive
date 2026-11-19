@@ -21,6 +21,28 @@ h1{font-size:clamp(30px,8vw,44px);margin:10px 0 2px;color:#3E7A1E}
 .hear{display:inline-block;margin-top:16px;padding:12px 26px;font-size:19px;font-weight:800;font-family:inherit;color:#fff;background:#3E7A1E;border:3px solid #1A1A1A;border-radius:999px;cursor:pointer;box-shadow:0 3px 0 #1A1A1A}
 .hear:active{transform:translateY(2px);box-shadow:0 1px 0 #1A1A1A}
 .hear:disabled{opacity:.65;cursor:default}
+.fact{font-size:16px;color:#5A4632;margin:14px 0 0;line-height:1.5;background:#FFF8E1;border:2px dashed #F0D9A0;border-radius:14px;padding:10px 12px}
+.replay{margin-top:18px}
+.replay span{font-weight:800;font-size:15px;color:#7A5A2E;margin-right:6px}
+.replay button,.reset{display:inline-block;margin:4px 3px;padding:9px 18px;font-size:16px;font-weight:800;font-family:inherit;color:#2B2118;background:#FFE9A8;border:3px solid #1A1A1A;border-radius:999px;cursor:pointer;box-shadow:0 2px 0 #1A1A1A}
+.replay button:active,.reset:active{transform:translateY(2px);box-shadow:0 1px 0 #1A1A1A}
+.replay button.on{background:#3E7A1E;color:#fff}
+.steps{margin-top:26px;text-align:left}
+.steps h2,.colour h2{text-align:center;color:#3E7A1E;font-size:24px;margin:0 0 10px}
+.stepcard{display:flex;gap:12px;align-items:center;background:#FFFDF6;border:2px solid #F0D9A0;border-radius:16px;padding:10px;margin:0 0 10px}
+.stepcard.active{border-color:#3E7A1E;box-shadow:0 0 0 2px #3E7A1E}
+.stepcard .thumb{flex:0 0 96px;width:96px;height:96px;background:#fff;border:2px solid #F0D9A0;border-radius:12px;overflow:hidden}
+.stepcard .thumb svg{width:100%;height:100%;display:block}
+.stepcard p{margin:0;font-size:15px;line-height:1.45;color:#5A4632}
+.stepcard p b{color:#C0392B}
+.colour{margin-top:26px}
+.colour p{font-size:15px;color:#5A4632;margin:0 0 10px}
+.palette{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:0 0 12px}
+.swatch{width:40px;height:40px;border-radius:50%;border:3px solid #1A1A1A;cursor:pointer;padding:0}
+.swatch.on{outline:3px solid #3E7A1E;outline-offset:2px}
+.colour-wrap{background:#fff;border:3px solid #F0D9A0;border-radius:24px;padding:8px}
+.colour-wrap svg{width:100%;height:auto;display:block}
+.cregion{cursor:pointer}
 footer{margin-top:22px;font-size:13px;color:#8A6A3A}
 footer a{color:#3E7A1E}
 @keyframes pop{0%,82%,100%{opacity:0;transform:scale(.6) translateY(8px)}86%,94%{opacity:1;transform:scale(1) translateY(0)}}
@@ -49,7 +71,40 @@ footer a{color:#3E7A1E}
 <div class="dino-wrap" id="wrap">
 <svg viewBox="0 0 1000 1000" role="img" aria-label="Christmas Crown" xmlns="http://www.w3.org/2000/svg">
   <g class="dino-bob">
-    <polygon points="300,700 300,420 400,560 500,320 600,560 700,420 700,700" fill="#FFD34D" stroke="#1A1A1A" stroke-width="14" stroke-linejoin="round"/>
+    <g class="astep" data-step="1"><polygon points="300,700 300,420 400,560 500,320 600,560 700,420 700,700" fill="#FFD34D" stroke="#1A1A1A" stroke-width="14" stroke-linejoin="round"/></g>
+    <g class="astep" data-step="2"><rect x="300" y="640" width="400" height="100" rx="18" fill="#E4572E" stroke="none"/><rect x="307" y="647" width="386" height="86" rx="11" fill="none" stroke="#1A1A1A" stroke-width="14"/><ellipse cx="300" cy="420" rx="28" ry="28" fill="#E4572E" stroke="none"/><ellipse cx="300" cy="420" rx="21" ry="21" fill="none" stroke="#1A1A1A" stroke-width="14"/><ellipse cx="500" cy="320" rx="28" ry="28" fill="#E4572E" stroke="none"/><ellipse cx="500" cy="320" rx="21" ry="21" fill="none" stroke="#1A1A1A" stroke-width="14"/><ellipse cx="700" cy="420" rx="28" ry="28" fill="#E4572E" stroke="none"/><ellipse cx="700" cy="420" rx="21" ry="21" fill="none" stroke="#1A1A1A" stroke-width="14"/></g>
+    <g class="astep" data-step="3"><circle cx="400" cy="600" r="20" fill="#7AC74F"/><circle cx="500" cy="560" r="22" fill="#E4572E"/><circle cx="600" cy="600" r="20" fill="#7AC74F"/><circle cx="350" cy="690" r="14" fill="#FFFFFF"/><circle cx="450" cy="690" r="14" fill="#FFFFFF"/><circle cx="550" cy="690" r="14" fill="#FFFFFF"/><circle cx="650" cy="690" r="14" fill="#FFFFFF"/></g>
+    <g class="astep" data-step="4"><polygon points="500,190 513,221 547,224 521,246 529,280 500,262 470,280 478,246 452,224 486,221" fill="#E4572E" stroke="#1A1A1A" stroke-width="14" stroke-linejoin="round"/><polyline points="320,620 680,620" fill="none" stroke="#1A1A1A" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="400" cy="500" r="10" fill="#FFFFFF"/><circle cx="600" cy="500" r="10" fill="#FFFFFF"/></g>
+  </g>
+</svg>
+</div>
+</div>
+<p class="hint">&#128070; Tap the drawing to make it jump!</p>
+<p class="drawline">Draw it in the book!</p>
+<p class="tip">Start with a crown shape — three tall points on top.</p>
+<p class="fact"><b>Did you know?</b> A crown is a fancy hat worn by a king or queen, made of gold and bright jewels.</p>
+<p><button class="hear" id="hear" type="button">Hear it!</button></p>
+<div class="replay"><span>Watch it draw:</span><button type="button" data-speed="slow">Slow</button><button type="button" data-speed="normal">Normal</button><button type="button" data-speed="fast">Fast</button></div>
+<section class="steps"><h2>Follow the 4 steps</h2>
+<div class="stepcard"><div class="thumb"><svg viewBox="0 0 1000 1000" role="img" aria-label="Christmas Crown step 1" xmlns="http://www.w3.org/2000/svg"><polygon points="300,700 300,420 400,560 500,320 600,560 700,420 700,700" fill="#FFD34D" stroke="#1A1A1A" stroke-width="14" stroke-linejoin="round"/></svg></div><p><b>Step 1.</b> Start with a crown shape — three tall points on top.</p></div>
+<div class="stepcard"><div class="thumb"><svg viewBox="0 0 1000 1000" role="img" aria-label="Christmas Crown step 2" xmlns="http://www.w3.org/2000/svg"><polygon points="300,700 300,420 400,560 500,320 600,560 700,420 700,700" fill="#FFD34D" stroke="#1A1A1A" stroke-width="14" stroke-linejoin="round"/>
+    <rect x="300" y="640" width="400" height="100" rx="18" fill="#E4572E" stroke="none"/><rect x="307" y="647" width="386" height="86" rx="11" fill="none" stroke="#1A1A1A" stroke-width="14"/>
+    <ellipse cx="300" cy="420" rx="28" ry="28" fill="#E4572E" stroke="none"/><ellipse cx="300" cy="420" rx="21" ry="21" fill="none" stroke="#1A1A1A" stroke-width="14"/>
+    <ellipse cx="500" cy="320" rx="28" ry="28" fill="#E4572E" stroke="none"/><ellipse cx="500" cy="320" rx="21" ry="21" fill="none" stroke="#1A1A1A" stroke-width="14"/>
+    <ellipse cx="700" cy="420" rx="28" ry="28" fill="#E4572E" stroke="none"/><ellipse cx="700" cy="420" rx="21" ry="21" fill="none" stroke="#1A1A1A" stroke-width="14"/></svg></div><p><b>Step 2.</b> Add a red band at the bottom and red balls on the points.</p></div>
+<div class="stepcard"><div class="thumb"><svg viewBox="0 0 1000 1000" role="img" aria-label="Christmas Crown step 3" xmlns="http://www.w3.org/2000/svg"><polygon points="300,700 300,420 400,560 500,320 600,560 700,420 700,700" fill="#FFD34D" stroke="#1A1A1A" stroke-width="14" stroke-linejoin="round"/>
+    <rect x="300" y="640" width="400" height="100" rx="18" fill="#E4572E" stroke="none"/><rect x="307" y="647" width="386" height="86" rx="11" fill="none" stroke="#1A1A1A" stroke-width="14"/>
+    <ellipse cx="300" cy="420" rx="28" ry="28" fill="#E4572E" stroke="none"/><ellipse cx="300" cy="420" rx="21" ry="21" fill="none" stroke="#1A1A1A" stroke-width="14"/>
+    <ellipse cx="500" cy="320" rx="28" ry="28" fill="#E4572E" stroke="none"/><ellipse cx="500" cy="320" rx="21" ry="21" fill="none" stroke="#1A1A1A" stroke-width="14"/>
+    <ellipse cx="700" cy="420" rx="28" ry="28" fill="#E4572E" stroke="none"/><ellipse cx="700" cy="420" rx="21" ry="21" fill="none" stroke="#1A1A1A" stroke-width="14"/>
+    <circle cx="400" cy="600" r="20" fill="#7AC74F"/>
+    <circle cx="500" cy="560" r="22" fill="#E4572E"/>
+    <circle cx="600" cy="600" r="20" fill="#7AC74F"/>
+    <circle cx="350" cy="690" r="14" fill="#FFFFFF"/>
+    <circle cx="450" cy="690" r="14" fill="#FFFFFF"/>
+    <circle cx="550" cy="690" r="14" fill="#FFFFFF"/>
+    <circle cx="650" cy="690" r="14" fill="#FFFFFF"/></svg></div><p><b>Step 3.</b> Draw shiny green and red jewels on the crown.</p></div>
+<div class="stepcard"><div class="thumb"><svg viewBox="0 0 1000 1000" role="img" aria-label="Christmas Crown step 4" xmlns="http://www.w3.org/2000/svg"><polygon points="300,700 300,420 400,560 500,320 600,560 700,420 700,700" fill="#FFD34D" stroke="#1A1A1A" stroke-width="14" stroke-linejoin="round"/>
     <rect x="300" y="640" width="400" height="100" rx="18" fill="#E4572E" stroke="none"/><rect x="307" y="647" width="386" height="86" rx="11" fill="none" stroke="#1A1A1A" stroke-width="14"/>
     <ellipse cx="300" cy="420" rx="28" ry="28" fill="#E4572E" stroke="none"/><ellipse cx="300" cy="420" rx="21" ry="21" fill="none" stroke="#1A1A1A" stroke-width="14"/>
     <ellipse cx="500" cy="320" rx="28" ry="28" fill="#E4572E" stroke="none"/><ellipse cx="500" cy="320" rx="21" ry="21" fill="none" stroke="#1A1A1A" stroke-width="14"/>
@@ -64,15 +119,31 @@ footer a{color:#3E7A1E}
     <polygon points="500,190 513,221 547,224 521,246 529,280 500,262 470,280 478,246 452,224 486,221" fill="#E4572E" stroke="#1A1A1A" stroke-width="14" stroke-linejoin="round"/>
     <polyline points="320,620 680,620" fill="none" stroke="#1A1A1A" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
     <circle cx="400" cy="500" r="10" fill="#FFFFFF"/>
-    <circle cx="600" cy="500" r="10" fill="#FFFFFF"/>
-  </g>
-</svg>
+    <circle cx="600" cy="500" r="10" fill="#FFFFFF"/></svg></div><p><b>Step 4.</b> Add a red star on the middle point to finish!</p></div>
+</section>
+<section class="colour"><h2>Colour it in!</h2>
+<p>Tap a colour, then tap part of the drawing to fill it in.</p>
+<div class="palette" id="palette"></div>
+<div class="colour-wrap" id="colourWrap">
+<svg viewBox="0 0 1000 1000" role="img" aria-label="Colour in the Christmas Crown" xmlns="http://www.w3.org/2000/svg"><g class="cregion"><polygon points="300,700 300,420 400,560 500,320 600,560 700,420 700,700" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="14" stroke-linejoin="round"/></g>
+    <g class="cregion"><rect x="300" y="640" width="400" height="100" rx="18" fill="#FFFFFF" stroke="none"/><rect x="307" y="647" width="386" height="86" rx="11" fill="none" stroke="#1A1A1A" stroke-width="14"/></g>
+    <g class="cregion"><ellipse cx="300" cy="420" rx="28" ry="28" fill="#FFFFFF" stroke="none"/><ellipse cx="300" cy="420" rx="21" ry="21" fill="none" stroke="#1A1A1A" stroke-width="14"/></g>
+    <g class="cregion"><ellipse cx="500" cy="320" rx="28" ry="28" fill="#FFFFFF" stroke="none"/><ellipse cx="500" cy="320" rx="21" ry="21" fill="none" stroke="#1A1A1A" stroke-width="14"/></g>
+    <g class="cregion"><ellipse cx="700" cy="420" rx="28" ry="28" fill="#FFFFFF" stroke="none"/><ellipse cx="700" cy="420" rx="21" ry="21" fill="none" stroke="#1A1A1A" stroke-width="14"/></g>
+    <g class="cregion"><circle cx="400" cy="600" r="20" fill="#FFFFFF"/></g>
+    <g class="cregion"><circle cx="500" cy="560" r="22" fill="#FFFFFF"/></g>
+    <g class="cregion"><circle cx="600" cy="600" r="20" fill="#FFFFFF"/></g>
+    <g class="cregion"><circle cx="350" cy="690" r="14" fill="#FFFFFF"/></g>
+    <g class="cregion"><circle cx="450" cy="690" r="14" fill="#FFFFFF"/></g>
+    <g class="cregion"><circle cx="550" cy="690" r="14" fill="#FFFFFF"/></g>
+    <g class="cregion"><circle cx="650" cy="690" r="14" fill="#FFFFFF"/></g>
+    <g class="cregion"><polygon points="500,190 513,221 547,224 521,246 529,280 500,262 470,280 478,246 452,224 486,221" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="14" stroke-linejoin="round"/></g>
+    <g class="cregion"><polyline points="320,620 680,620" fill="none" stroke="#1A1A1A" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></g>
+    <g class="cregion"><circle cx="400" cy="500" r="10" fill="#FFFFFF"/></g>
+    <g class="cregion"><circle cx="600" cy="500" r="10" fill="#FFFFFF"/></g></svg>
 </div>
-</div>
-<p class="hint">&#128070; Tap the drawing to make it jump!</p>
-<p class="drawline">Draw it in the book!</p>
-<p class="tip">Start with a crown shape — three tall points on top.</p>
-<p><button class="hear" id="hear" type="button">Hear it!</button></p>
+<p><button class="reset" id="resetColour" type="button">Start again</button></p>
+</section>
 <footer>From &lsquo;How to Draw Cute Christmas for Kids&rsquo; by MD. SAIF SIAM<br><a href="../index.html">&larr; All 150 Christmas drawings</a></footer>
 </main>
 <script>
@@ -83,10 +154,13 @@ wrap.classList.remove('jump');void wrap.offsetWidth;wrap.classList.add('jump');
 bubble.classList.add('show');clearTimeout(t);t=setTimeout(function(){bubble.classList.remove('show')},1400);
 }
 stage.addEventListener('click',jump);
-var btn=document.getElementById('hear'),clips=['name.mp3', 'tip.mp3'],playing=false;
+var btn=document.getElementById('hear'),clips=['name.mp3', 'tip.mp3', 'fact.mp3'],playing=false,sfxFile='chime.mp3',sfxAudio=null;
 function playNext(i){
 if(i>=clips.length){btn.disabled=false;btn.textContent='Hear it!';playing=false;return;}
 var a=new Audio(clips[i]);
+if(i===2&&sfxFile){
+try{sfxAudio=new Audio(sfxFile);sfxAudio.volume=0.45;sfxAudio.play();}catch(e){}
+}
 a.onended=function(){playNext(i+1)};
 a.onerror=function(){playNext(i+1)};
 a.play();
@@ -95,6 +169,61 @@ btn.addEventListener('click',function(){
 if(playing)return;
 playing=true;btn.disabled=true;btn.textContent='Playing...';
 jump();playNext(0);
+});
+// replay: reveal the 4 drawing steps one by one, at the chosen speed
+var astep=document.querySelectorAll('.astep'),cards=document.querySelectorAll('.stepcard'),replayTimer=null;
+function markStep(n){
+cards.forEach(function(c,i){c.classList.toggle('active',i===n-1);});
+}
+function replay(speed){
+var gap=speed==='slow'?1400:(speed==='fast'?300:700);
+clearInterval(replayTimer);
+astep.forEach(function(g,i){g.style.visibility=(i===0?'visible':'hidden');});
+markStep(1);
+var n=1;
+replayTimer=setInterval(function(){
+n++;
+if(n>astep.length){clearInterval(replayTimer);markStep(0);return;}
+astep[n-1].style.visibility='visible';markStep(n);
+},gap);
+}
+document.querySelectorAll('.replay button').forEach(function(b){
+b.addEventListener('click',function(){
+document.querySelectorAll('.replay button').forEach(function(x){x.classList.remove('on');});
+b.classList.add('on');replay(b.getAttribute('data-speed'));
+});
+});
+// colouring: tap a colour, then tap part of the drawing
+var COLORS=['#E4572E','#FFD34D','#5B9E3A','#2E86AB','#8E44AD','#FF6B9D','#FF8C42','#00A896','#FFFFFF'];
+var current=COLORS[0],palette=document.getElementById('palette');
+COLORS.forEach(function(c,i){
+var b=document.createElement('button');
+b.type='button';b.className='swatch'+(i===0?' on':'');b.style.background=c;
+b.setAttribute('aria-label','Colour '+c);
+b.addEventListener('click',function(){
+current=c;
+palette.querySelectorAll('.swatch').forEach(function(x){x.classList.remove('on');});
+b.classList.add('on');
+});
+palette.appendChild(b);
+});
+var colourWrap=document.getElementById('colourWrap');
+colourWrap.querySelectorAll('.cregion *').forEach(function(el){
+el.dataset.of=el.getAttribute('fill')||'';
+el.dataset.os=el.getAttribute('stroke')||'';
+});
+colourWrap.addEventListener('click',function(e){
+var g=e.target.closest('.cregion');if(!g)return;
+g.querySelectorAll('*').forEach(function(el){
+if(el.getAttribute('fill')&&el.getAttribute('fill')!=='none')el.setAttribute('fill',current);
+else if(el.getAttribute('stroke')&&el.getAttribute('stroke')!=='none')el.setAttribute('stroke',current);
+});
+});
+document.getElementById('resetColour').addEventListener('click',function(){
+colourWrap.querySelectorAll('.cregion *').forEach(function(el){
+if(el.dataset.of!==undefined&&el.dataset.of!=='')el.setAttribute('fill',el.dataset.of);
+if(el.dataset.os!==undefined&&el.dataset.os!=='')el.setAttribute('stroke',el.dataset.os);
+});
 });
 })();
 </script>
