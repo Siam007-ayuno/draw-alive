@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Magic Carpet comes alive! | How to Draw 300 Cute Things for Kids</title>
+<style>
+:root{--speed:1}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:#EAF2F8;color:#2B2118;text-align:center}
+main{max-width:560px;margin:0 auto;padding:20px 16px 32px}
+h1{font-size:clamp(30px,8vw,44px);margin:10px 0 2px;color:#16324F}
+h2{font-size:24px;color:#16324F;margin:28px 0 6px}
+.sub{color:#5A6B7C;font-size:15px;margin:0 0 14px}
+.stage{position:relative;background:#FFFDF6;border:3px solid #BFD7EA;border-radius:24px;padding:8px;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.veh-wrap svg{width:100%;height:auto;display:block}
+.bubble{position:absolute;top:6%;right:4%;background:#fff;border:3px solid #1A1A1A;border-radius:18px;padding:8px 14px;font-weight:800;font-size:22px;color:#C0392B;opacity:0;transform:scale(.6);pointer-events:none;animation:pop calc(5s / var(--speed)) ease-in-out infinite}
+.bubble::after{content:"";position:absolute;left:18px;bottom:-12px;border:7px solid transparent;border-top-color:#1A1A1A}
+.bubble.show{opacity:1;transform:scale(1);animation:none}
+.hint{font-size:14px;color:#5A6B7C;margin:12px 0 0}
+.speeds{display:flex;gap:8px;justify-content:center;margin:16px 0 0}
+.speeds button,.hear,.reset{display:inline-block;padding:12px 22px;font-size:18px;font-weight:800;font-family:inherit;color:#16324F;background:#fff;border:3px solid #16324F;border-radius:999px;cursor:pointer}
+.speeds button.on{background:#16324F;color:#fff}
+.hear{margin-top:14px;color:#fff;background:#2F6DB3;border-color:#1A1A1A;box-shadow:0 3px 0 #1A1A1A}
+.hear.beep{background:#E4572E;margin-left:8px}
+.hear:active{transform:translateY(2px);box-shadow:0 1px 0 #1A1A1A}
+.hear:disabled{opacity:.65;cursor:default}
+.drawline{font-size:19px;font-weight:700;margin:16px 0 4px}
+.tip{font-size:15px;color:#5A4632;margin:4px 0 0;line-height:1.5}
+.fact{font-size:15px;color:#16324F;background:#FFF7E6;border:2px solid #F0D9A0;border-radius:14px;padding:10px 12px;line-height:1.5;margin:14px 0 0}
+.steps{display:grid;grid-template-columns:1fr 1fr;gap:10px;text-align:left}
+.stepcard{background:#FFFDF6;border:2px solid #BFD7EA;border-radius:16px;padding:8px}
+.stepcard.active{border-color:#2F6DB3;background:#EAF2F8;box-shadow:0 0 0 2px rgba(47,109,179,.35)}
+.stepcard svg{width:100%;height:auto;display:block}
+.stepcard b{display:block;font-size:15px;color:#16324F;margin:2px 0}
+.stepcard p{font-size:13.5px;line-height:1.45;margin:2px 0 0;color:#333}
+.palette{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:10px 0}
+.swatch{width:48px;height:48px;border-radius:50%;border:3px solid #1A1A1A;cursor:pointer;padding:0}
+.swatch.on{outline:4px solid #F5A623;outline-offset:2px}
+.paintbox{background:#fff;border:3px solid #BFD7EA;border-radius:24px;padding:8px}
+.paintbox svg{width:100%;height:auto;display:block}
+.paint-region{cursor:pointer}
+.reset{margin-top:12px;background:#fff}
+footer{margin-top:22px;font-size:13px;color:#5A6B7C}
+footer a{color:#2F6DB3}
+@keyframes pop{0%,82%,100%{opacity:0;transform:scale(.6) translateY(8px)}86%,94%{opacity:1;transform:scale(1) translateY(0)}}
+@keyframes blink{0%,93%,100%{transform:scaleY(1)}95.5%{transform:scaleY(.06)}97%{transform:scaleY(1)}}
+.eye{transform-box:fill-box;transform-origin:center;animation:blink calc(4.2s / var(--speed)) infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+.veh-bob{animation:bob calc(3.2s / var(--speed)) ease-in-out infinite}
+@keyframes drawStroke{from{stroke-dashoffset:100}to{stroke-dashoffset:0}}
+@keyframes fadeFill{from{fill-opacity:0}to{fill-opacity:1}}
+.draw-stroke{stroke-dasharray:100;stroke-dashoffset:100;animation:drawStroke calc(var(--ddur,0.35s) / var(--speed)) linear calc(var(--ddelay,0s) / var(--speed)) both}
+.draw-fill{animation:fadeFill calc(var(--fdur,0.3s) / var(--speed)) ease calc(var(--fdelay,0s) / var(--speed)) both}
+.draw-stroke.draw-fill{animation:drawStroke calc(var(--ddur,0.35s) / var(--speed)) linear calc(var(--ddelay,0s) / var(--speed)) both,fadeFill calc(var(--fdur,0.3s) / var(--speed)) ease calc(var(--fdelay,0s) / var(--speed)) both}
+@keyframes drive{0%{transform:translateX(0) translateY(0)}25%{transform:translateX(12px) translateY(-4px)}50%{transform:translateX(-6px) translateY(0)}75%{transform:translateX(9px) translateY(-3px)}100%{transform:translateX(0) translateY(0)}}
+.veh-wrap.drive{animation:drive calc(.8s / var(--speed)) ease}
+.road{height:8px;margin:2px 8% 0;background:repeating-linear-gradient(90deg,#9DB8CC 0 22px,transparent 22px 44px);background-size:44px 8px;border-radius:4px;opacity:0;transition:opacity .15s}
+.veh-wrap.drive .road{opacity:1;animation:roadmove calc(.3s / var(--speed)) linear infinite}
+@keyframes roadmove{from{background-position-x:0}to{background-position-x:-44px}}
+@media (prefers-reduced-motion:reduce){.eye,.veh-bob,.bubble{animation:none}.bubble{opacity:1;transform:scale(1)}.veh-wrap.drive,.road{animation:none!important}.draw-stroke,.draw-fill{animation:none!important;stroke-dasharray:none;stroke-dashoffset:0;fill-opacity:1}}
+</style>
+</head>
+<body>
+<main>
+<h1>Magic Carpet</h1>
+<p class="sub">Tap the drawing &mdash; it runs and says hello!</p>
+<div class="stage" id="stage">
+<div class="bubble" id="bubble">Whoosh!</div>
+<div class="veh-wrap" id="wrap">
+<svg viewBox="0 0 1000 1000" role="img" aria-label="Magic Carpet" xmlns="http://www.w3.org/2000/svg">
+  <g class="veh-bob">
+    <rect class="draw-fill" style="--fdelay:0.35s;--fdur:0.30s" data-step="0" data-start="0.35" data-end="0.65" x="280" y="450" width="440" height="150" rx="30" fill="#E63946" stroke="none"/><rect class="draw-stroke" pathLength="100" style="--ddelay:0.00s;--ddur:0.35s" data-step="0" data-start="0.00" data-end="0.35" x="287" y="457" width="426" height="136" rx="23" fill="none" stroke="#1A1A1A" stroke-width="14"/>
+    <polyline class="draw-stroke" pathLength="100" style="--ddelay:0.35s;--ddur:0.35s" data-step="1" data-start="0.35" data-end="0.70" points="280,480 230,480" fill="none" stroke="#1A1A1A" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline class="draw-stroke" pathLength="100" style="--ddelay:0.70s;--ddur:0.35s" data-step="1" data-start="0.70" data-end="1.05" points="280,525 230,525" fill="none" stroke="#1A1A1A" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline class="draw-stroke" pathLength="100" style="--ddelay:1.05s;--ddur:0.35s" data-step="1" data-start="1.05" data-end="1.40" points="280,570 230,570" fill="none" stroke="#1A1A1A" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline class="draw-stroke" pathLength="100" style="--ddelay:1.40s;--ddur:0.35s" data-step="1" data-start="1.40" data-end="1.75" points="720,480 770,480" fill="none" stroke="#1A1A1A" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline class="draw-stroke" pathLength="100" style="--ddelay:1.75s;--ddur:0.35s" data-step="1" data-start="1.75" data-end="2.10" points="720,525 770,525" fill="none" stroke="#1A1A1A" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline class="draw-stroke" pathLength="100" style="--ddelay:2.10s;--ddur:0.35s" data-step="1" data-start="2.10" data-end="2.45" points="720,570 770,570" fill="none" stroke="#1A1A1A" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <g class="eye"><ellipse class="draw-fill" style="--fdelay:2.80s;--fdur:0.30s" data-step="2" data-start="2.80" data-end="3.10" cx="450" cy="510" rx="26" ry="26" fill="#FFFFFF" stroke="none"/><ellipse class="draw-stroke" pathLength="100" style="--ddelay:2.45s;--ddur:0.35s" data-step="2" data-start="2.45" data-end="2.80" cx="450" cy="510" rx="19" ry="19" fill="none" stroke="#1A1A1A" stroke-width="14"/><ellipse class="draw-fill" style="--fdelay:2.80s;--fdur:0.30s" data-step="2" data-start="2.80" data-end="3.10" cx="450" cy="513" rx="14" ry="14" fill="#1A1A1A" stroke="none"/><ellipse class="draw-fill" style="--fdelay:3.10s;--fdur:0.30s" data-step="2" data-start="3.10" data-end="3.40" cx="444" cy="503" rx="5" ry="5" fill="#FFFFFF" stroke="none"/></g>
+    <g class="eye"><ellipse class="draw-fill" style="--fdelay:3.75s;--fdur:0.30s" data-step="2" data-start="3.75" data-end="4.05" cx="550" cy="510" rx="26" ry="26" fill="#FFFFFF" stroke="none"/><ellipse class="draw-stroke" pathLength="100" style="--ddelay:3.40s;--ddur:0.35s" data-step="2" data-start="3.40" data-end="3.75" cx="550" cy="510" rx="19" ry="19" fill="none" stroke="#1A1A1A" stroke-width="14"/><ellipse class="draw-fill" style="--fdelay:3.75s;--fdur:0.30s" data-step="2" data-start="3.75" data-end="4.05" cx="550" cy="513" rx="14" ry="14" fill="#1A1A1A" stroke="none"/><ellipse class="draw-fill" style="--fdelay:4.05s;--fdur:0.30s" data-step="2" data-start="4.05" data-end="4.35" cx="544" cy="503" rx="5" ry="5" fill="#FFFFFF" stroke="none"/></g>
+    <path class="draw-stroke" pathLength="100" style="--ddelay:4.35s;--ddur:0.35s" data-step="2" data-start="4.35" data-end="4.70" d="M 537.6 570.2 A 40 22.5 0 0 1 462.4 570.2" fill="none" stroke="#1A1A1A" stroke-width="10" stroke-linecap="round"/>
+    <polygon class="draw-stroke draw-fill" pathLength="100" style="--ddelay:4.70s;--ddur:0.35s;--fdelay:5.05s;--fdur:0.30s" data-step="3" data-start="4.70" data-end="5.35" points="500,460 540,490 500,520 460,490" fill="#FFD34D" stroke="#1A1A1A" stroke-width="14" stroke-linejoin="round"/>
+    <polygon class="draw-stroke draw-fill" pathLength="100" style="--ddelay:5.05s;--ddur:0.35s;--fdelay:5.40s;--fdur:0.30s" data-step="3" data-start="5.05" data-end="5.70" points="360,470 390,490 360,510 330,490" fill="#FFD34D" stroke="#1A1A1A" stroke-width="14" stroke-linejoin="round"/>
+    <polygon class="draw-stroke draw-fill" pathLength="100" style="--ddelay:5.40s;--ddur:0.35s;--fdelay:5.75s;--fdur:0.30s" data-step="3" data-start="5.40" data-end="6.05" points="640,470 670,490 640,510 610,490" fill="#FFD34D" stroke="#1A1A1A" stroke-width="14" stroke-linejoin="round"/>
+    <circle class="draw-fill" style="--fdelay:5.75s;--fdur:0.30s" data-step="3" data-start="5.75" data-end="6.05" cx="420" cy="560" r="14" fill="#FFB3C1"/>
+    <circle class="draw-fill" style="--fdelay:6.05s;--fdur:0.30s" data-step="3" data-start="6.05" data-end="6.35" cx="580" cy="560" r="14" fill="#FFB3C1"/>
+  </g>
+</svg>
+<div class="road"></div>
+</div>
+</div>
+<p class="hint">&#128070; Tap the drawing to make it run!</p>
+<div class="speeds" role="group" aria-label="Replay speed">
+<button type="button" data-speed="0.4">Slow</button>
+<button type="button" data-speed="1" class="on">Normal</button>
+<button type="button" data-speed="1.5">Fast</button>
+</div>
+<p><button class="hear" id="hear" type="button">Hear it!</button> <button class="hear beep" id="beep" type="button">Whoosh!</button></p>
+<p class="drawline">Draw it in the book!</p>
+<p class="tip">Start with a wide flat rectangle for the carpet.</p>
+<p class="fact">Did you know? In old tales, a magic carpet can fly its rider through the sky.</p>
+<h2>Draw it step by step</h2>
+<p class="sub">The same 4 steps as the book &mdash; follow them at your own speed.</p>
+<div class="steps">
+<div class="stepcard"><svg viewBox="0 0 1000 1000" role="img" aria-label="Step 1" xmlns="http://www.w3.org/2000/svg">
+    <rect x="280" y="450" width="440" height="150" rx="30" fill="#FFFFFF" stroke="none"/><rect x="287" y="457" width="426" height="136" rx="23" fill="none" stroke="#1A1A1A" stroke-width="14"/>
+</svg><b>Step 1</b><p>Start with a wide flat rectangle for the carpet.</p></div>
+<div class="stepcard"><svg viewBox="0 0 1000 1000" role="img" aria-label="Step 2" xmlns="http://www.w3.org/2000/svg">
+    <rect x="280" y="450" width="440" height="150" rx="30" fill="#EFEFEF" stroke="none"/><rect x="287" y="457" width="426" height="136" rx="23" fill="none" stroke="#BFBFBF" stroke-width="14"/>
+    <polyline points="280,480 230,480" fill="none" stroke="#1A1A1A" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="280,525 230,525" fill="none" stroke="#1A1A1A" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="280,570 230,570" fill="none" stroke="#1A1A1A" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="720,480 770,480" fill="none" stroke="#1A1A1A" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="720,525 770,525" fill="none" stroke="#1A1A1A" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="720,570 770,570" fill="none" stroke="#1A1A1A" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+</svg><b>Step 2</b><p>Add three tassels on each short end.</p></div>
+<div class="stepcard"><svg viewBox="0 0 1000 1000" role="img" aria-label="Step 3" xmlns="http://www.w3.org/2000/svg">
+    <rect x="280" y="450" width="440" height="150" rx="30" fill="#EFEFEF" stroke="none"/><rect x="287" y="457" width="426" height="136" rx="23" fill="none" stroke="#BFBFBF" stroke-width="14"/>
+    <polyline points="280,480 230,480" fill="none" stroke="#BFBFBF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="280,525 230,525" fill="none" stroke="#BFBFBF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="280,570 230,570" fill="none" stroke="#BFBFBF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="720,480 770,480" fill="none" stroke="#BFBFBF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="720,525 770,525" fill="none" stroke="#BFBFBF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="720,570 770,570" fill="none" stroke="#BFBFBF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <ellipse cx="450" cy="510" rx="26" ry="26" fill="#FFFFFF" stroke="none"/><ellipse cx="450" cy="510" rx="19" ry="19" fill="none" stroke="#1A1A1A" stroke-width="14"/>
+    <ellipse cx="450" cy="513" rx="14" ry="14" fill="#FFFFFF" stroke="none"/>
+    <ellipse cx="444" cy="503" rx="5" ry="5" fill="#FFFFFF" stroke="none"/>
+    <ellipse cx="550" cy="510" rx="26" ry="26" fill="#FFFFFF" stroke="none"/><ellipse cx="550" cy="510" rx="19" ry="19" fill="none" stroke="#1A1A1A" stroke-width="14"/>
+    <ellipse cx="550" cy="513" rx="14" ry="14" fill="#FFFFFF" stroke="none"/>
+    <ellipse cx="544" cy="503" rx="5" ry="5" fill="#FFFFFF" stroke="none"/>
+    <path d="M 537.6 570.2 A 40 22.5 0 0 1 462.4 570.2" fill="none" stroke="#1A1A1A" stroke-width="10" stroke-linecap="round"/>
+</svg><b>Step 3</b><p>Draw two big eyes and a happy smile.</p></div>
+<div class="stepcard"><svg viewBox="0 0 1000 1000" role="img" aria-label="Step 4" xmlns="http://www.w3.org/2000/svg">
+    <rect x="280" y="450" width="440" height="150" rx="30" fill="#EFEFEF" stroke="none"/><rect x="287" y="457" width="426" height="136" rx="23" fill="none" stroke="#BFBFBF" stroke-width="14"/>
+    <polyline points="280,480 230,480" fill="none" stroke="#BFBFBF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="280,525 230,525" fill="none" stroke="#BFBFBF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="280,570 230,570" fill="none" stroke="#BFBFBF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="720,480 770,480" fill="none" stroke="#BFBFBF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="720,525 770,525" fill="none" stroke="#BFBFBF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline points="720,570 770,570" fill="none" stroke="#BFBFBF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <ellipse cx="450" cy="510" rx="26" ry="26" fill="#EFEFEF" stroke="none"/><ellipse cx="450" cy="510" rx="19" ry="19" fill="none" stroke="#BFBFBF" stroke-width="14"/>
+    <ellipse cx="450" cy="513" rx="14" ry="14" fill="#EFEFEF" stroke="none"/>
+    <ellipse cx="444" cy="503" rx="5" ry="5" fill="#EFEFEF" stroke="none"/>
+    <ellipse cx="550" cy="510" rx="26" ry="26" fill="#EFEFEF" stroke="none"/><ellipse cx="550" cy="510" rx="19" ry="19" fill="none" stroke="#BFBFBF" stroke-width="14"/>
+    <ellipse cx="550" cy="513" rx="14" ry="14" fill="#EFEFEF" stroke="none"/>
+    <ellipse cx="544" cy="503" rx="5" ry="5" fill="#EFEFEF" stroke="none"/>
+    <path d="M 537.6 570.2 A 40 22.5 0 0 1 462.4 570.2" fill="none" stroke="#BFBFBF" stroke-width="10" stroke-linecap="round"/>
+    <polygon points="500,460 540,490 500,520 460,490" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="14" stroke-linejoin="round"/>
+    <polygon points="360,470 390,490 360,510 330,490" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="14" stroke-linejoin="round"/>
+    <polygon points="640,470 670,490 640,510 610,490" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="14" stroke-linejoin="round"/>
+    <circle cx="420" cy="560" r="14" fill="#D9D9D9"/>
+    <circle cx="580" cy="560" r="14" fill="#D9D9D9"/>
+</svg><b>Step 4</b><p>Add gold diamonds and rosy cheeks!</p></div>
+</div>
+<h2>Colour it in!</h2>
+<p class="sub">Tap a colour, then tap a part of the drawing to fill it. Nothing is saved anywhere.</p>
+<div class="palette" id="palette">
+<button type="button" class="swatch on" data-color="#E4572E" style="background:#E4572E" aria-label="Colour #E4572E"></button><button type="button" class="swatch" data-color="#F5A623" style="background:#F5A623" aria-label="Colour #F5A623"></button><button type="button" class="swatch" data-color="#FFD34D" style="background:#FFD34D" aria-label="Colour #FFD34D"></button><button type="button" class="swatch" data-color="#7AC74F" style="background:#7AC74F" aria-label="Colour #7AC74F"></button><button type="button" class="swatch" data-color="#2A9D8F" style="background:#2A9D8F" aria-label="Colour #2A9D8F"></button><button type="button" class="swatch" data-color="#4A90D9" style="background:#4A90D9" aria-label="Colour #4A90D9"></button><button type="button" class="swatch" data-color="#9B7EDE" style="background:#9B7EDE" aria-label="Colour #9B7EDE"></button><button type="button" class="swatch" data-color="#F2A0B5" style="background:#F2A0B5" aria-label="Colour #F2A0B5"></button><button type="button" class="swatch" data-color="#C98A4B" style="background:#C98A4B" aria-label="Colour #C98A4B"></button><button type="button" class="swatch eraser" data-color="#FFFFFF" style="background:#FFFFFF" aria-label="Eraser (white)">&#10005;</button>
+</div>
+<div class="paintbox">
+<svg id="paint-svg" viewBox="0 0 1000 1000" role="img" aria-label="Colour in the Magic Carpet" xmlns="http://www.w3.org/2000/svg">
+    <rect class="paint-region" data-i="0" x="280" y="450" width="440" height="150" rx="30" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="14"/>
+    <polyline class="paint-fixed" points="280,480 230,480" fill="none" stroke="#1A1A1A" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline class="paint-fixed" points="280,525 230,525" fill="none" stroke="#1A1A1A" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline class="paint-fixed" points="280,570 230,570" fill="none" stroke="#1A1A1A" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline class="paint-fixed" points="720,480 770,480" fill="none" stroke="#1A1A1A" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline class="paint-fixed" points="720,525 770,525" fill="none" stroke="#1A1A1A" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <polyline class="paint-fixed" points="720,570 770,570" fill="none" stroke="#1A1A1A" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <ellipse class="paint-region" data-i="7" cx="450" cy="510" rx="26" ry="26" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="14"/>
+    <ellipse class="paint-region" data-i="8" cx="450" cy="513" rx="14" ry="14" fill="#FFFFFF" stroke="none"/>
+    <ellipse class="paint-region" data-i="9" cx="444" cy="503" rx="5" ry="5" fill="#FFFFFF" stroke="none"/>
+    <ellipse class="paint-region" data-i="10" cx="550" cy="510" rx="26" ry="26" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="14"/>
+    <ellipse class="paint-region" data-i="11" cx="550" cy="513" rx="14" ry="14" fill="#FFFFFF" stroke="none"/>
+    <ellipse class="paint-region" data-i="12" cx="544" cy="503" rx="5" ry="5" fill="#FFFFFF" stroke="none"/>
+    <path class="paint-fixed" d="M 537.6 570.2 A 40 22.5 0 0 1 462.4 570.2" fill="none" stroke="#1A1A1A" stroke-width="10" stroke-linecap="round"/>
+    <polygon class="paint-region" data-i="14" points="500,460 540,490 500,520 460,490" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="14" stroke-linejoin="round"/>
+    <polygon class="paint-region" data-i="15" points="360,470 390,490 360,510 330,490" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="14" stroke-linejoin="round"/>
+    <polygon class="paint-region" data-i="16" points="640,470 670,490 640,510 610,490" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="14" stroke-linejoin="round"/>
+    <circle class="paint-region" data-i="17" cx="420" cy="560" r="14" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="4"/>
+    <circle class="paint-region" data-i="18" cx="580" cy="560" r="14" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="4"/>
+</svg>
+</div>
+<p><button class="reset" id="reset" type="button">Start over</button></p>
+<footer>From &lsquo;How to Draw 300 Cute Things for Kids&rsquo; by MD. SAIF SIAM<br><a href="../index.html">&larr; All 300 drawings</a></footer>
+</main>
+<script>
+(function(){
+var stage=document.getElementById('stage'),wrap=document.getElementById('wrap'),bubble=document.getElementById('bubble'),t=null;
+var speed=1;
+function showBubble(){
+bubble.classList.add('show');clearTimeout(t);t=setTimeout(function(){bubble.classList.remove('show')},1400/speed);
+}
+// --- tap the vehicle: it RUNS in place (rocks forward/back with a
+// moving road under it) and says hello. It stays on the ground. The
+// 'drive' class is removed when its animation ends, so the road stops too.
+function drive(){
+wrap.classList.remove('drive');void wrap.offsetWidth;wrap.classList.add('drive');
+showBubble();
+}
+wrap.addEventListener('animationend',function(e){
+if(e.animationName==='drive'){wrap.classList.remove('drive');}
+});
+stage.addEventListener('click',drive);
+// --- replay speed: the speed buttons change ONLY the drawing speed
+// (CSS --speed drives the stroke drawing, fills, road and run).
+// The voice narration ALWAYS plays at normal speed (playbackRate 1),
+// and so does the vehicle sound — 2026-11-20 ~00:33, SAIF.
+var speedBtns=document.querySelectorAll('.speeds button');
+function setSpeed(s){
+speed=s;
+document.documentElement.style.setProperty('--speed',s);
+speedBtns.forEach(function(b){b.classList.toggle('on',parseFloat(b.dataset.speed)===s)});
+restartDraw();
+}
+speedBtns.forEach(function(b){b.addEventListener('click',function(){setSpeed(parseFloat(b.dataset.speed))});});
+// --- stroke-by-stroke drawing: highlight the step card being drawn,
+// and restart the drawing from the beginning at the current speed ---
+// Each main-stage element carries data-step / data-start / data-end
+// (seconds at 1x, written by the builder in book step order). The CSS
+// animations auto-play on page load (visual only — the sound is
+// handled by the auto-beep below, which tries once on load and falls
+// back to the first tap); restarting
+// toggles the animation off and on so every element replays from its
+// own delay at the new speed. Step highlights are setTimeouts scaled
+// by the same speed, so they stay in sync with the drawing.
+var drawEls=document.querySelectorAll('#wrap .draw-stroke, #wrap .draw-fill');
+var stepCards=document.querySelectorAll('.stepcard');
+var drawTimers=[];
+function clearDrawTimers(){drawTimers.forEach(function(t){clearTimeout(t)});drawTimers=[];}
+function scheduleStepHighlights(){
+clearDrawTimers();
+stepCards.forEach(function(c){c.classList.remove('active')});
+var windows=[[],[],[],[]];
+drawEls.forEach(function(el){
+var k=parseInt(el.dataset.step||'0',10);
+if(k<0||k>3)return;
+windows[k].push([parseFloat(el.dataset.start||'0'),parseFloat(el.dataset.end||'0')]);
+});
+windows.forEach(function(w,k){
+if(!w.length||!stepCards[k])return;
+var s=Math.min.apply(null,w.map(function(p){return p[0]}));
+var e=Math.max.apply(null,w.map(function(p){return p[1]}));
+drawTimers.push(setTimeout(function(){stepCards[k].classList.add('active')},s*1000/speed));
+drawTimers.push(setTimeout(function(){stepCards[k].classList.remove('active')},e*1000/speed));
+});
+}
+function restartDraw(){
+clearDrawTimers();
+stepCards.forEach(function(c){c.classList.remove('active')});
+drawEls.forEach(function(el){el.style.animation='none';});
+void wrap.offsetWidth;
+drawEls.forEach(function(el){el.style.animation='';});
+scheduleStepHighlights();
+}
+scheduleStepHighlights();
+// --- narration: name -> info1 -> info2 -> info3 -> info4 -> fact,
+// voice ONLY — no vehicle sound (2026-11-20, SAIF) ---
+var btn=document.getElementById('hear');
+var clips=['name.mp3', 'info1.mp3', 'info2.mp3', 'info3.mp3', 'info4.mp3', 'fact.mp3'].map(function(f){var a=new Audio(f);a.preload='auto';return a;});
+var sfx=new Audio('sound.mp3');
+if(sfx){sfx.volume=0.3;sfx.loop=false;sfx.preload='auto';}
+var playing=false;
+function playNext(i){
+if(i>=clips.length){btn.disabled=false;btn.textContent='Hear it!';playing=false;return;}
+var a=clips[i];a.playbackRate=1;
+a.onended=function(){playNext(i+1)};
+a.onerror=function(){playNext(i+1)};
+a.play().catch(function(){playNext(i+1)});
+}
+btn.addEventListener('click',function(){
+if(playing)return;
+playing=true;btn.disabled=true;btn.textContent='Playing...';
+drive();
+restartDraw();
+playNext(0);
+});
+// --- auto-beep: the vehicle sound plays ONCE by itself ---
+// Browsers block sound until the user has tapped something, so the
+// page tries once on load and, if that is blocked, plays once on the
+// FIRST tap anywhere instead. Exactly once, never a loop. The sound
+// is only ever played as a one-shot (auto-beep and beep button);
+// "Hear it!" plays narration only and never touches it.
+var beepPlayed=false;
+function tryAutoBeep(){
+if(beepPlayed||!sfx)return;
+sfx.loop=false;
+sfx.playbackRate=1;
+var p=sfx.play();
+if(p&&p.then){
+p.then(function(){beepPlayed=true;showBubble();}).catch(function(){});
+}else{beepPlayed=true;showBubble();}
+}
+document.addEventListener('pointerdown',function(){tryAutoBeep();});
+tryAutoBeep();
+// --- beep button: plays ONLY the vehicle sound, as often as tapped ---
+var beepBtn=document.getElementById('beep');
+if(beepBtn&&sfx){
+beepBtn.addEventListener('click',function(){
+drive();
+sfx.loop=false;
+sfx.currentTime=0;
+sfx.playbackRate=1;
+sfx.play().catch(function(){});
+});
+}
+// --- tap-to-colour: palette + tappable regions, client-side only ---
+var current='#E4572E';
+var swatches=document.querySelectorAll('.swatch');
+swatches.forEach(function(s){
+s.addEventListener('click',function(){
+current=s.dataset.color;
+swatches.forEach(function(x){x.classList.toggle('on',x===s)});
+});
+});
+document.querySelectorAll('.paint-region').forEach(function(r){
+r.addEventListener('click',function(){r.setAttribute('fill',current);});
+});
+document.getElementById('reset').addEventListener('click',function(){
+document.querySelectorAll('.paint-region').forEach(function(r){r.setAttribute('fill','#FFFFFF');});
+});
+})();
+</script>
+</body>
+</html>
