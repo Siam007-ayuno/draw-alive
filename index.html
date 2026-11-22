@@ -201,7 +201,7 @@ h1,h2,h3,.display{font-family:"Baloo 2","Trebuchet MS","Comic Sans MS",cursive,s
 .ch-body{font-size:clamp(14px,2.2vw,17px);line-height:1.55;margin-top:10px}
 .pill-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
 .pill{font-size:13px;font-weight:900;background:rgba(255,255,255,.8);border:2px solid rgba(0,0,0,.12);border-radius:999px;padding:6px 12px}
-.btn{display:inline-block;font-weight:900;font-size:16px;text-decoration:none;text-align:center;
+.btn{display:inline-block;touch-action:manipulation;position:relative;z-index:2;font-weight:900;font-size:16px;text-decoration:none;text-align:center;
   border-radius:999px;padding:12px 22px;margin-top:16px;cursor:pointer;border:3px solid #1A1A1A;
   box-shadow:0 4px 0 #1A1A1A;font-family:inherit}
 .btn:active{transform:translateY(3px);box-shadow:0 1px 0 #1A1A1A}
@@ -339,6 +339,7 @@ h1,h2,h3,.display{font-family:"Baloo 2","Trebuchet MS","Comic Sans MS",cursive,s
     <p><b>How to Draw Cute Christmas for Kids</b></p>
     <p>150 drawings • 305 pages • Ages 5–9 • $16.99</p>
     <a class="btn btn-amazon" href="https://www.amazon.com/dp/B0HTSK4Y8J" target="_blank" rel="noopener">Buy on Amazon</a>
+    <p class="note">Button not opening? <a href="https://www.amazon.com/dp/B0HTSK4Y8J" target="_blank" rel="noopener">amazon.com/dp/B0HTSK4Y8J</a></p>
     <p class="sp-how">How it works: scan the code → watch it draw → hear its sound → colour it.</p>
   </aside>
   <div class="book-shadow" aria-hidden="true"></div>
@@ -413,6 +414,7 @@ h1,h2,h3,.display{font-family:"Baloo 2","Trebuchet MS","Comic Sans MS",cursive,s
                 <span class="pill">50 animals</span><span class="pill">104 pages</span><span class="pill">Ages 5–9</span><span class="pill">$12.99</span>
               </div>
               <a class="btn btn-amazon" href="https://www.amazon.com/dp/B0HTQBH8HM" target="_blank" rel="noopener">Buy on Amazon</a>
+              <p class="note">Button not opening? Tap or copy: <a href="https://www.amazon.com/dp/B0HTQBH8HM" target="_blank" rel="noopener">amazon.com/dp/B0HTQBH8HM</a></p>
               <p class="note">Our very first book — made before the QR videos existed, so this one has no QR, sound or voice inside. Just 50 animals, 4 steps each, and a practice page for every one.</p>
             </div>
           </div>
@@ -438,6 +440,7 @@ h1,h2,h3,.display{font-family:"Baloo 2","Trebuchet MS","Comic Sans MS",cursive,s
                 <span class="pill">150 drawings</span><span class="pill">305 pages</span><span class="pill">Ages 5–9</span><span class="pill">$16.99</span>
               </div>
               <a class="btn btn-amazon" href="https://www.amazon.com/dp/B0HTSK4Y8J" target="_blank" rel="noopener">Buy on Amazon</a>
+              <p class="note">Button not opening? Tap or copy: <a href="https://www.amazon.com/dp/B0HTSK4Y8J" target="_blank" rel="noopener">amazon.com/dp/B0HTSK4Y8J</a></p>
               <p class="note">QR code on every page — scan it to watch the drawing move, hear its real sounds, and hear a friendly voice tell a true fact. No app needed.</p>
             </div>
           </div>
@@ -568,6 +571,7 @@ h1,h2,h3,.display{font-family:"Baloo 2","Trebuchet MS","Comic Sans MS",cursive,s
           <p class="note">The two books live on Amazon today:</p>
           <p><a class="btn btn-amazon" href="https://www.amazon.com/dp/B0HTQBH8HM" target="_blank" rel="noopener">Animals — $12.99</a>
           &nbsp;<a class="btn btn-amazon" href="https://www.amazon.com/dp/B0HTSK4Y8J" target="_blank" rel="noopener">Christmas — $16.99</a></p>
+          <p class="note">Buttons not opening? Animals: <a href="https://www.amazon.com/dp/B0HTQBH8HM" target="_blank" rel="noopener">amazon.com/dp/B0HTQBH8HM</a> • Christmas: <a href="https://www.amazon.com/dp/B0HTSK4Y8J" target="_blank" rel="noopener">amazon.com/dp/B0HTSK4Y8J</a></p>
         </section>
         <section class="face back ch-about">
           <div class="back-inner"><div class="big">MD. Saif Siam</div><div class="small">Chapter 8 • Draw Alive</div></div>
@@ -739,8 +743,8 @@ book.addEventListener('click', function(e){
   if (e.target.closest('a,button,iframe,input')) return;
   var r = book.getBoundingClientRect();
   var x = (e.clientX - r.left) / r.width;
-  if (x > 0.62) next();
-  else if (x < 0.22) prev();
+  if (x > 0.85) next();
+  else if (x < 0.12) prev();
 });
 
 /* ---------- 3D tilt: mouse on desktop, device tilt on phones ---------- */
@@ -830,6 +834,10 @@ document.querySelectorAll('.demo-btns button').forEach(function(btn){
     btn.classList.add('on');
     demoShow(btn.getAttribute('data-demo'));
   });
+});
+/* Amazon links must always win over the book's edge-tap handler: stop the tap here so it can never turn a page instead */
+document.querySelectorAll('a[href*="amazon.com/dp/"]').forEach(function(b){
+  b.addEventListener('click', function(e){ e.stopPropagation(); });
 });
 demoArm();
 update();
