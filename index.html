@@ -171,6 +171,7 @@ h1,h2,h3,.display{font-family:"Baloo 2","Trebuchet MS","Comic Sans MS",cursive,s
   text-shadow:0 3px 0 #fff,0 6px 0 rgba(0,0,0,.08);letter-spacing:1px}
 .ch-cover .logo .alive{color:#2F6DB3}
 .ch-cover .tag{font-family:"Baloo 2",cursive;font-weight:700;font-size:clamp(19px,3.6vw,28px);color:#5B2E0E;margin-top:10px}
+.ch-cover .byline{font-family:"Baloo 2",cursive;font-weight:800;font-size:clamp(17px,3vw,23px);color:#8A5A33;margin-top:8px}
 .ch-cover .promise{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:18px}
 .ch-cover .promise span{background:#fff;border:2.5px solid #1A1A1A;border-radius:999px;padding:8px 14px;font-weight:900;font-size:14px;box-shadow:0 3px 0 #1A1A1A}
 .ch-cover .rainbow{height:12px;border-radius:99px;margin-top:22px;width:min(420px,86%);
@@ -185,6 +186,8 @@ h1,h2,h3,.display{font-family:"Baloo 2","Trebuchet MS","Comic Sans MS",cursive,s
 .ch-dinos{background:linear-gradient(165deg,#CDEFE8,#9ADFCB);color:#123B33}
 .ch-try{background:linear-gradient(165deg,#E7DCFF,#CBB2FF);color:#2E1A5E}
 .ch-about{background:linear-gradient(165deg,#FFF8E7,#FFEFC2);color:#4A2E12}
+.ch-feedback{background:linear-gradient(165deg,#FFE3B3,#FFB26B);color:#4A2400}
+.ch-feedback .kicker{background:rgba(255,255,255,.85)}
 .ch-end{background:linear-gradient(165deg,#22304F,#16213A);color:#FFF3D6;align-items:center;text-align:center}
 .ch-end .kicker{background:rgba(255,255,255,.16);color:#FFF3D6;border-color:rgba(255,255,255,.35)}
 
@@ -196,8 +199,16 @@ h1,h2,h3,.display{font-family:"Baloo 2","Trebuchet MS","Comic Sans MS",cursive,s
 .step b{display:block;font-size:15px;margin:4px 0 2px}
 .step p{font-size:13.5px;line-height:1.45}
 /* demo frame (Try It) */
-.demo-frame{margin-top:14px;border:4px solid #2E1A5E;border-radius:18px;overflow:hidden;background:#fff;box-shadow:0 10px 22px rgba(0,0,0,.25);flex:1;min-height:0}
+.demo-frame{position:relative;margin-top:14px;border:4px solid #2E1A5E;border-radius:18px;overflow:hidden;background:#fff;box-shadow:0 10px 22px rgba(0,0,0,.25);flex:1;min-height:0}
 .demo-frame iframe{width:100%;height:100%;min-height:300px;border:0;display:block}
+.demo-loading{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:#fff;font-weight:900;color:#2E1A5E;z-index:2;text-align:center;padding:16px}
+.demo-loading[hidden]{display:none}
+.demo-fallback{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;background:#fff;color:#2E1A5E;text-align:center;padding:20px;z-index:3}
+.demo-fallback[hidden]{display:none}
+.demo-fallback p{font-size:15px;line-height:1.5}
+/* feedback form frame */
+.form-frame{position:relative;margin-top:14px;border:4px solid #4A2400;border-radius:18px;overflow:hidden;background:#fff;box-shadow:0 10px 22px rgba(0,0,0,.25);flex:1;min-height:0}
+.form-frame iframe{width:100%;height:100%;min-height:320px;border:0;display:block}
 .demo-btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
 .demo-btns button{font-family:inherit;font-weight:900;font-size:14px;padding:9px 15px;border-radius:999px;border:3px solid #2E1A5E;background:#fff;color:#2E1A5E;cursor:pointer}
 .demo-btns button.on{background:#2E1A5E;color:#fff}
@@ -262,6 +273,7 @@ h1,h2,h3,.display{font-family:"Baloo 2","Trebuchet MS","Comic Sans MS",cursive,s
           <div class="kicker">A book brand by MD. Saif Siam</div>
           <div class="logo">DRAW<br><span class="alive">ALIVE</span></div>
           <p class="tag">Watch every drawing come alive!</p>
+          <p class="byline">by MD. Saif Siam</p>
           <div class="promise">
             <span>Scan the code</span><span>Watch it draw</span><span>Hear its sound</span><span>Tap to colour</span>
           </div>
@@ -439,8 +451,14 @@ h1,h2,h3,.display{font-family:"Baloo 2","Trebuchet MS","Comic Sans MS",cursive,s
             <button data-demo="https://siam007-ayuno.github.io/draw-alive/vehicle-fire-truck/">Fire Truck</button>
           </div>
           <div class="demo-frame">
+            <div class="demo-loading" id="demoLoading">Loading the demo…</div>
             <iframe id="demoFrame" src="https://siam007-ayuno.github.io/draw-alive/300-cat/" title="Draw Alive live demo — a cat drawing that comes alive" loading="lazy" allow="autoplay"></iframe>
+            <div class="demo-fallback" id="demoFallback" hidden>
+              <p><b>The demo is taking too long to load.</b><br>Your internet may be slow right now — no problem, you can open it directly:</p>
+              <a class="btn btn-demo" id="demoFallbackBtn" href="https://siam007-ayuno.github.io/draw-alive/300-cat/" target="_blank" rel="noopener">Open the demo</a>
+            </div>
           </div>
+          <p class="note"><a id="demoOpenLink" href="https://siam007-ayuno.github.io/draw-alive/300-cat/" target="_blank" rel="noopener" style="color:inherit;font-weight:900">Open the demo in a new tab ↗</a></p>
           <p class="note"><a href="all-drawings.html" style="color:inherit;font-weight:900">See all 700 drawings →</a> &nbsp;•&nbsp; More books are on the way — word search, Sudoku, crosswords and more.</p>
         </section>
         <section class="face back ch-try">
@@ -456,10 +474,10 @@ h1,h2,h3,.display{font-family:"Baloo 2","Trebuchet MS","Comic Sans MS",cursive,s
           <div class="shade"></div>
           <div class="kicker">Chapter 8 • About</div>
           <h2 class="ch-title">Made by a student, with code &amp; care</h2>
-          <p class="ch-body">Hi — I'm <b>MD. Saif Siam</b>, a computer science student in Bangladesh. I make these books with code and a lot of care: every drawing is built step by step, so any kid can follow it — and every QR code is a small video I made, with real sounds and a friendly voice.</p>
+          <p class="ch-body">Hi — I'm <b>MD. Saif Siam</b>, a computer science student. I make these books with code and a lot of care: every drawing is built step by step, so any kid can follow it — and every QR code is a small video I made, with real sounds and a friendly voice.</p>
           <p class="ch-body">Draw Alive started with one simple idea: a drawing book should not just sit still. It should move, make sounds, and teach something true. That idea is now five books — and more are coming, including puzzle books for grown-ups.</p>
           <div class="pill-row">
-            <span class="pill">5 drawing books</span><span class="pill">700+ drawings online</span><span class="pill">Made in Bangladesh</span>
+            <span class="pill">5 drawing books</span><span class="pill">700+ drawings online</span>
           </div>
           <p class="note">The two books live on Amazon today:</p>
           <p><a class="btn btn-amazon" href="https://www.amazon.com/dp/B0HTQBH8HM" target="_blank" rel="noopener">Animals — $12.99</a>
@@ -471,8 +489,27 @@ h1,h2,h3,.display{font-family:"Baloo 2","Trebuchet MS","Comic Sans MS",cursive,s
       </div>
     </div>
 
-    <!-- LEAF 9 — BACK COVER -->
-    <div class="leaf" style="--i:9" data-chapter="The End">
+    <!-- LEAF 9 — FEEDBACK -->
+    <div class="leaf" style="--i:9" data-chapter="Tell Us What to Make Next">
+      <div class="bend">
+        <section class="face front ch-feedback">
+          <div class="shade"></div>
+          <div class="kicker">Chapter 9 • Tell us what to make next</div>
+          <h2 class="ch-title">What should we make next?</h2>
+          <p class="ch-sub">You choose the next Draw Alive book! Tell us which book you want — more animals, space, dinosaurs, trucks, puzzles, anything — and leave your email so we can tell you when it is ready.</p>
+          <div class="form-frame">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfZf46jQZw23gNMT9vBC21VUJAhQ_2xEvWtlNU6kuMehn2MGQ/viewform?embedded=true" title="Draw Alive feedback form — which book should we make next?" loading="lazy">Loading…</iframe>
+          </div>
+          <p class="note"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfZf46jQZw23gNMT9vBC21VUJAhQ_2xEvWtlNU6kuMehn2MGQ/viewform" target="_blank" rel="noopener" style="color:inherit;font-weight:900">Form not loading? Open it here →</a></p>
+        </section>
+        <section class="face back ch-feedback">
+          <div class="back-inner"><div class="big">Your Ideas</div><div class="small">Chapter 9 • Draw Alive</div></div>
+        </section>
+      </div>
+    </div>
+
+    <!-- LEAF 10 — BACK COVER -->
+    <div class="leaf" style="--i:10" data-chapter="The End">
       <div class="bend">
         <section class="face front ch-end">
           <div class="shade"></div>
@@ -480,7 +517,7 @@ h1,h2,h3,.display{font-family:"Baloo 2","Trebuchet MS","Comic Sans MS",cursive,s
           <h2 class="ch-title">Thanks for flipping through!</h2>
           <p class="ch-sub">More Draw Alive books are coming soon — including puzzle books for grown-ups.</p>
           <p><a class="btn btn-ghost" href="all-drawings.html">See all 700 drawings</a></p>
-          <p class="note" style="color:#FFF3D6">Draw Alive • by MD. Saif Siam • Made with code and care in Bangladesh</p>
+          <p class="note" style="color:#FFF3D6">Draw Alive • by MD. Saif Siam • Made with code and care</p>
         </section>
         <section class="face back ch-end">
           <div class="back-inner"><div class="big">DRAW ALIVE</div><div class="small">The End • Draw Alive</div></div>
@@ -562,6 +599,7 @@ function update(){
   prevBtn.disabled = flipped === 0;
   nextBtn.disabled = flipped === total;
   dots.forEach(function(d, i){ d.classList.toggle('on', i === Math.min(flipped, total - 1)); });
+  if (visible === 'Try It') demoArm();
 }
 function setFlipped(i, on){
   var leaf = leaves[i];
@@ -635,14 +673,42 @@ if (finePointer) {
 
 /* ---------- Try It demo switcher ---------- */
 var frame = document.getElementById('demoFrame');
+var demoLoading = document.getElementById('demoLoading');
+var demoFallback = document.getElementById('demoFallback');
+var demoFallbackBtn = document.getElementById('demoFallbackBtn');
+var demoOpenLink = document.getElementById('demoOpenLink');
+var demoTimer = null;
+var demoLoaded = false;
+function demoArm(){
+  if (demoLoaded || demoTimer) return;
+  demoLoading.hidden = false;
+  demoFallback.hidden = true;
+  demoTimer = window.setTimeout(function(){
+    demoTimer = null;
+    if (!demoLoaded) { demoLoading.hidden = true; demoFallback.hidden = false; }
+  }, 8000);
+}
+function demoShow(url){
+  demoLoaded = false;
+  demoFallbackBtn.href = url;
+  demoOpenLink.href = url;
+  frame.src = url;
+  demoArm();
+}
+frame.addEventListener('load', function(){
+  demoLoaded = true;
+  if (demoTimer) { window.clearTimeout(demoTimer); demoTimer = null; }
+  demoLoading.hidden = true;
+  demoFallback.hidden = true;
+});
 document.querySelectorAll('.demo-btns button').forEach(function(btn){
   btn.addEventListener('click', function(){
     document.querySelectorAll('.demo-btns button').forEach(function(b){ b.classList.remove('on'); });
     btn.classList.add('on');
-    frame.src = btn.getAttribute('data-demo');
+    demoShow(btn.getAttribute('data-demo'));
   });
 });
-
+demoArm();
 update();
 })();
 </script>
