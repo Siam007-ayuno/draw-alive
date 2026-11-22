@@ -55,6 +55,60 @@ h1,h2,h3,.display{font-family:"Baloo 2","Trebuchet MS","Comic Sans MS",cursive,s
   touch-action:pan-y;
 }
 @media (max-width:640px){ .scene{perspective:1150px;min-height:calc(var(--bh) + 84px)} }
+
+/* ---------- desktop: bigger book, decorated background ---------- */
+@media (min-width:901px){
+  :root{ --thick:34px; --bw:min(960px,90vw); --bh:min(780px,82vh); }
+  body{
+    background:
+      radial-gradient(700px 420px at 8% 12%, rgba(255,150,150,.30) 0%, rgba(255,150,150,0) 70%),
+      radial-gradient(700px 460px at 94% 78%, rgba(120,170,255,.32) 0%, rgba(120,170,255,0) 70%),
+      radial-gradient(560px 380px at 88% 8%, rgba(140,220,160,.28) 0%, rgba(140,220,160,0) 70%),
+      radial-gradient(900px 420px at 50% -8%, #FFECAA 0%, rgba(255,236,170,0) 70%),
+      linear-gradient(180deg,#E9B968 0%,#DFA95A 55%,#C98F45 100%);
+  }
+  .scene{min-height:calc(var(--bh) + 84px);padding:6px 0 22px}
+  .demo-frame iframe{min-height:420px}
+  .form-frame iframe{min-height:480px}
+}
+/* floating doodles in the empty space around the book — desktop only */
+.doodles{display:none}
+@media (min-width:901px){
+  .doodles{display:block;position:absolute;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+  .doodles span{position:absolute;opacity:.32;animation:doodleFloat 9s ease-in-out infinite}
+  .doodles .d-star{width:26px;height:26px;background:#FFF3D6;
+    clip-path:polygon(50% 0%,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%)}
+  .doodles .d-dot{width:18px;height:18px;border-radius:50%;background:#fff}
+  .doodles .d-ring{width:24px;height:24px;border-radius:50%;border:4px solid #fff;background:transparent}
+  .doodles .d-crayon{width:46px;height:12px;border-radius:99px;box-shadow:0 2px 0 rgba(0,0,0,.15)}
+  @keyframes doodleFloat{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-12px) rotate(6deg)}}
+}
+@media (prefers-reduced-motion:reduce){ .doodles span{animation:none} }
+/* slim side panels beside the book — very wide screens only */
+.side-panel{display:none}
+@media (min-width:1360px){
+  :root{ --bw:min(920px,calc(100vw - 460px)); --bh:min(820px,84vh); }
+  .side-panel{
+    display:block;position:absolute;top:50%;transform:translateY(-50%);z-index:5;
+    width:190px;background:#FFFDF6;border:3px solid #5B2E0E;border-radius:18px;
+    box-shadow:0 14px 30px rgba(60,30,5,.30);padding:16px;color:#4A2E12;
+  }
+  .side-left{left:calc(50% - var(--bw) / 2 - 212px)}
+  .side-right{right:calc(50% - var(--bw) / 2 - 212px)}
+  .side-panel h3{font-size:19px;color:#5B2E0E;margin-bottom:8px}
+  .side-panel .sp-big{font-family:"Baloo 2",cursive;font-weight:800;font-size:26px;line-height:1.05;color:#E4572E;margin-top:8px}
+  .side-panel .sp-big span{font-size:13px;color:#4A2E12;font-family:"Nunito",sans-serif;font-weight:800}
+  .side-panel p{font-size:13.5px;line-height:1.5;margin-top:8px}
+  .side-panel img{width:100%;border-radius:10px;border:3px solid #fff;box-shadow:0 8px 18px rgba(0,0,0,.25);display:block}
+  .side-panel a,.side-panel button{
+    display:block;width:100%;text-align:left;background:none;border:none;font-family:inherit;
+    font-size:14px;font-weight:900;color:#2F6DB3;text-decoration:underline;cursor:pointer;
+    padding:7px 0 0;margin:0;
+  }
+  .side-panel a:hover,.side-panel button:hover{color:#E4572E}
+  .side-panel .btn-amazon{display:inline-block;width:auto;text-decoration:none;margin-top:12px;padding:10px 18px;font-size:15px}
+  .side-panel .sp-how{font-size:12.5px;opacity:.85}
+}
 .book-float{animation:floaty 7s ease-in-out infinite}
 @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
 @media (prefers-reduced-motion:reduce){ .book-float{animation:none} }
@@ -130,6 +184,8 @@ h1,h2,h3,.display{font-family:"Baloo 2","Trebuchet MS","Comic Sans MS",cursive,s
 }
 .face.back{transform:rotateY(180deg);border-radius:16px 5px 5px 16px;border-left:none;border-right:6px solid rgba(0,0,0,.08)}
 .face.back .back-inner{margin:auto;text-align:center;opacity:.55}
+.face.back .back-inner.solid{opacity:1}
+.face.back .back-inner .back-note{font-size:15px;line-height:1.55;margin-top:10px;font-weight:700;max-width:420px}
 .face.back .back-inner .big{font-family:"Baloo 2",cursive;font-weight:800;font-size:clamp(26px,5vw,40px)}
 .face.back .back-inner .small{font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:13px;margin-top:6px}
 /* curl shade that sweeps across the page while it turns */
@@ -198,8 +254,9 @@ h1,h2,h3,.display{font-family:"Baloo 2","Trebuchet MS","Comic Sans MS",cursive,s
 .step .n{font-family:"Baloo 2",cursive;font-weight:800;font-size:26px;line-height:1;color:#2F6DB3}
 .step b{display:block;font-size:15px;margin:4px 0 2px}
 .step p{font-size:13.5px;line-height:1.45}
-/* demo frame (Try It) */
-.demo-frame{position:relative;margin-top:14px;border:4px solid #2E1A5E;border-radius:18px;overflow:hidden;background:#fff;box-shadow:0 10px 22px rgba(0,0,0,.25);flex:1;min-height:0}
+/* demo frame (Try It) — height is set by JS to the demo page's full content height so the whole demo shows with no inner scrollbar; the Try It page itself scrolls inside the book */
+.face.ch-try{overflow-y:auto;overflow-x:hidden}
+.demo-frame{position:relative;margin-top:14px;border:4px solid #2E1A5E;border-radius:18px;overflow:hidden;background:#fff;box-shadow:0 10px 22px rgba(0,0,0,.25);flex:none;min-height:0}
 .demo-frame iframe{width:100%;height:100%;min-height:300px;border:0;display:block}
 .demo-loading{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:#fff;font-weight:900;color:#2E1A5E;z-index:2;text-align:center;padding:16px}
 .demo-loading[hidden]{display:none}
@@ -257,6 +314,33 @@ h1,h2,h3,.display{font-family:"Baloo 2","Trebuchet MS","Comic Sans MS",cursive,s
 </header>
 
 <div class="scene" id="scene">
+  <div class="doodles" aria-hidden="true">
+    <span class="d-star" style="left:3%;top:14%"></span>
+    <span class="d-dot" style="left:7%;top:62%;animation-delay:-2s"></span>
+    <span class="d-ring" style="left:4%;bottom:10%;animation-delay:-4s"></span>
+    <span class="d-crayon" style="left:9%;top:38%;background:#E4572E;transform:rotate(-18deg);animation-delay:-1s"></span>
+    <span class="d-star" style="right:4%;top:22%;animation-delay:-3s"></span>
+    <span class="d-dot" style="right:8%;top:70%;animation-delay:-5s"></span>
+    <span class="d-ring" style="right:3%;bottom:14%;animation-delay:-2.5s"></span>
+    <span class="d-crayon" style="right:9%;top:46%;background:#2F6DB3;transform:rotate(14deg);animation-delay:-6s"></span>
+  </div>
+  <aside class="side-panel side-left" aria-label="Draw Alive at a glance">
+    <h3>Draw Alive</h3>
+    <p class="sp-big">700 <span>drawings online</span></p>
+    <p class="sp-big">5 <span>drawing books</span></p>
+    <p class="sp-big">2 <span>live on Amazon</span></p>
+    <a href="all-drawings.html">See all 700 drawings →</a>
+    <button type="button" data-goto="7">Try the live demo →</button>
+    <button type="button" data-goto="9">Tell us what to make next →</button>
+  </aside>
+  <aside class="side-panel side-right" aria-label="Featured book">
+    <h3>Featured book</h3>
+    <img src="covers/christmas.jpg" alt="How to Draw Cute Christmas for Kids cover">
+    <p><b>How to Draw Cute Christmas for Kids</b></p>
+    <p>150 drawings • 305 pages • Ages 5–9 • $16.99</p>
+    <a class="btn btn-amazon" href="https://www.amazon.com/dp/B0HTSK4Y8J" target="_blank" rel="noopener">Buy on Amazon</a>
+    <p class="sp-how">How it works: scan the code → watch it draw → hear its sound → colour it.</p>
+  </aside>
   <div class="book-shadow" aria-hidden="true"></div>
   <div class="book-float">
   <div class="book" id="book" role="region" aria-label="Draw Alive — a 3D book. Turn the pages to explore.">
@@ -282,9 +366,11 @@ h1,h2,h3,.display{font-family:"Baloo 2","Trebuchet MS","Comic Sans MS",cursive,s
           <p class="note">Turn the page to open the book →</p>
         </section>
         <section class="face back ch-cover">
-          <div class="back-inner">
+          <div class="back-inner solid">
             <div class="big">★ Draw Alive ★</div>
             <div class="small">This book belongs to ___________</div>
+            <p class="back-note">Every drawing in a Draw Alive book has a little code. Scan it — and the drawing comes alive: it draws itself, makes its sound, and tells you something true.</p>
+            <div class="small">Draw Alive • by MD. Saif Siam</div>
           </div>
         </section>
       </div>
@@ -521,7 +607,13 @@ h1,h2,h3,.display{font-family:"Baloo 2","Trebuchet MS","Comic Sans MS",cursive,s
           <p class="note" style="color:#FFF3D6">Draw Alive • by MD. Saif Siam • Made with code and care</p>
         </section>
         <section class="face back ch-end">
-          <div class="back-inner"><div class="big">DRAW ALIVE</div><div class="small">The End • Draw Alive</div></div>
+          <div class="back-inner solid">
+            <div class="big">Thanks for reading!</div>
+            <p class="back-note">You flipped through the whole Draw Alive book.</p>
+            <p class="back-note">More books are coming soon — including puzzle books for grown-ups.</p>
+            <p class="back-note"><a href="all-drawings.html" style="color:#FFD66B;font-weight:900">See all 700 drawings →</a></p>
+            <div class="small">The End • Draw Alive</div>
+          </div>
         </section>
       </div>
     </div>
@@ -580,6 +672,10 @@ contentsBtn.addEventListener('click', function(){
   var open = contentsPanel.classList.toggle('open');
   contentsBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
 });
+/* side-panel quick links jump straight to a chapter (Try It = 7, Tell Us = 9) */
+document.querySelectorAll('[data-goto]').forEach(function(b){
+  b.addEventListener('click', function(){ goTo(parseInt(b.getAttribute('data-goto'), 10)); });
+});
 document.addEventListener('click', function(e){
   if (!contentsPanel.classList.contains('open')) return;
   if (!contentsPanel.contains(e.target) && e.target !== contentsBtn) {
@@ -598,7 +694,7 @@ function update(){
   var visible = flipped < total ? leaves[flipped].getAttribute('data-chapter') : 'The End';
   pageLabel.textContent = visible + ' • ' + Math.min(flipped + 1, total) + ' of ' + total;
   prevBtn.disabled = flipped === 0;
-  nextBtn.disabled = flipped === total;
+  nextBtn.disabled = flipped >= total - 1; /* no flipping past the last chapter — a blank back face can never show */
   dots.forEach(function(d, i){ d.classList.toggle('on', i === Math.min(flipped, total - 1)); });
   if (visible === 'Try It') demoArm();
 }
@@ -609,11 +705,11 @@ function setFlipped(i, on){
   leaf.classList.toggle('flipped', on);
   window.setTimeout(function(){ leaf.classList.remove('flipping'); }, FLIP_MS + 60);
 }
-function next(){ if (flipped < total) { setFlipped(flipped, true); flipped++; update(); } }
+function next(){ if (flipped < total - 1) { setFlipped(flipped, true); flipped++; update(); } }
 function prev(){ if (flipped > 0) { flipped--; setFlipped(flipped, false); update(); } }
 var jumpTimer = null;
 function goTo(target){
-  target = Math.max(0, Math.min(total, target));
+  target = Math.max(0, Math.min(total - 1, target)); /* never past Cover (0) or past The End (total-1) */
   if (jumpTimer) { window.clearInterval(jumpTimer); jumpTimer = null; }
   if (target === flipped) return;
   var step = target > flipped ? 1 : -1;
@@ -680,6 +776,28 @@ var demoFallbackBtn = document.getElementById('demoFallbackBtn');
 var demoOpenLink = document.getElementById('demoOpenLink');
 var demoTimer = null;
 var demoLoaded = false;
+var demoFrameWrap = frame.parentElement; /* .demo-frame */
+/* The demo pages are tall (title + square drawing + steps + colouring ≈ 750px on phones, ≈ 1000px on desktop),
+   taller than any book page — so grow the iframe to the page's FULL content height (same site, so we can read it)
+   and let the Try It book page scroll. The iframe itself then never has an inner scrollbar. */
+function demoResize(){
+  try{
+    var doc = frame.contentDocument || (frame.contentWindow && frame.contentWindow.document);
+    if(!doc) return;
+    var h = Math.max(doc.body ? doc.body.scrollHeight : 0,
+                     doc.documentElement ? doc.documentElement.scrollHeight : 0);
+    if(h > 200){
+      frame.style.height = h + 'px';
+      demoFrameWrap.style.height = h + 'px';
+    }
+  }catch(e){ /* not loaded yet or unreadable — keep the fallback heights */ }
+}
+var demoResizeTimer = null;
+window.addEventListener('resize', function(){
+  if(!demoLoaded) return;
+  if(demoResizeTimer) window.clearTimeout(demoResizeTimer);
+  demoResizeTimer = window.setTimeout(demoResize, 250);
+});
 function demoArm(){
   if (demoLoaded || demoTimer) return;
   demoLoading.hidden = false;
@@ -693,6 +811,8 @@ function demoShow(url){
   demoLoaded = false;
   demoFallbackBtn.href = url;
   demoOpenLink.href = url;
+  frame.style.height = '';
+  demoFrameWrap.style.height = '';
   frame.src = url;
   demoArm();
 }
@@ -701,6 +821,8 @@ frame.addEventListener('load', function(){
   if (demoTimer) { window.clearTimeout(demoTimer); demoTimer = null; }
   demoLoading.hidden = true;
   demoFallback.hidden = true;
+  demoResize();
+  window.setTimeout(demoResize, 600); /* re-measure once fonts/layout settle */
 });
 document.querySelectorAll('.demo-btns button').forEach(function(btn){
   btn.addEventListener('click', function(){
