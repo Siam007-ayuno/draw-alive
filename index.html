@@ -2,692 +2,649 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Draw-Alive | How to Draw Cute Dinosaurs, Christmas, Vehicles &amp; 300 Cute Things for Kids</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Draw Alive — How to Draw Cute Things for Kids | A Book That Comes Alive</title>
+<meta name="description" content="Draw Alive books by MD. Saif Siam. Scan the QR code in the book and the drawing draws itself stroke by stroke, makes its real sound, and tells you a true fact. No app needed.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
 <style>
-body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:#FFF3D6;color:#2B2118;text-align:center}
-main{max-width:560px;margin:0 auto;padding:24px 16px 32px}
-h1{color:#3E7A1E;font-size:32px}p{color:#7A5A2E}
-ul{list-style:none;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:10px}
-li a{display:block;background:#FFFDF6;border:2px solid #F0D9A0;border-radius:14px;padding:12px 8px;text-decoration:none;color:#2B2118;font-weight:700}
-li a:hover{border-color:#3E7A1E}
-footer{margin-top:22px;font-size:13px;color:#8A6A3A}
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --thick:30px;
+  --bw:min(940px,94vw);
+  --bh:min(640px,78vh);
+  --ink:#2B2118;
+  --paper:#FFFDF6;
+  --rx:6deg;
+  --ry:-20deg;
+}
+@media (max-width:640px){
+  :root{ --thick:18px; --bh:min(600px,72vh); --ry:-14deg; }
+}
+html,body{height:100%}
+body{
+  font-family:"Nunito",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  color:var(--ink);
+  background:
+    radial-gradient(900px 420px at 50% -8%, #FFECAA 0%, rgba(255,236,170,0) 70%),
+    linear-gradient(180deg,#E9B968 0%,#DFA95A 55%,#C98F45 100%);
+  min-height:100vh;
+  display:flex;flex-direction:column;align-items:center;
+  overflow-x:hidden;
+}
+h1,h2,h3,.display{font-family:"Baloo 2","Trebuchet MS","Comic Sans MS",cursive,sans-serif}
 
-h2{color:#3E7A1E;font-size:24px;margin:26px 0 2px}
-h2 + p{margin:0 0 12px}
+/* ---------- top bar ---------- */
+.topbar{width:100%;max-width:1060px;display:flex;align-items:center;justify-content:space-between;padding:14px 18px 4px}
+.brand{display:flex;align-items:center;gap:9px;font-family:"Baloo 2",cursive;font-weight:800;font-size:26px;color:#5B2E0E;letter-spacing:.5px}
+.brand svg{width:30px;height:30px;flex:none}
+.contents-btn{
+  font-family:inherit;font-weight:800;font-size:15px;color:#5B2E0E;background:#FFF7DB;
+  border:3px solid #5B2E0E;border-radius:999px;padding:8px 16px;cursor:pointer;
+  box-shadow:0 3px 0 #5B2E0E;
+}
+.contents-btn:active{transform:translateY(2px);box-shadow:0 1px 0 #5B2E0E}
+
+/* ---------- 3D scene ---------- */
+.scene{
+  position:relative;width:100%;flex:1;display:flex;align-items:center;justify-content:center;
+  perspective:1700px;
+  min-height:calc(var(--bh) + 110px);
+  padding:10px 0 30px;
+  touch-action:pan-y;
+}
+@media (max-width:640px){ .scene{perspective:1150px;min-height:calc(var(--bh) + 84px)} }
+.book-float{animation:floaty 7s ease-in-out infinite}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@media (prefers-reduced-motion:reduce){ .book-float{animation:none} }
+
+.book{
+  position:relative;width:var(--bw);height:var(--bh);
+  transform-style:preserve-3d;
+  transform:rotateX(var(--rx)) rotateY(var(--ry));
+  transition:transform .25s ease-out;
+}
+/* back cover, sits one thickness behind the front */
+.book-back{
+  position:absolute;inset:0;border-radius:6px 14px 14px 6px;
+  background:linear-gradient(135deg,#6B4226,#4A2C17);
+  transform:translateZ(calc(var(--thick) / -2));
+  box-shadow:0 30px 60px rgba(60,30,5,.45);
+}
+/* spine on the left edge — a slab standing in the depth direction */
+.spine{
+  position:absolute;left:calc(var(--thick) / -2);top:0;width:var(--thick);height:100%;
+  transform:rotateY(-90deg);
+  background:linear-gradient(90deg,#8A5A33,#6B4226 45%,#54331B);
+  border-radius:3px;
+}
+.spine::before,.spine::after{content:"";position:absolute;left:15%;right:15%;height:5px;background:#F5C542;border-radius:3px}
+.spine::before{top:16px}.spine::after{bottom:16px}
+/* page-block edges on the right and top — the thickness you see */
+.edges-right{
+  position:absolute;right:calc(var(--thick) / -2);top:3px;bottom:3px;width:var(--thick);
+  transform:rotateY(90deg);
+  background:repeating-linear-gradient(90deg,#FFFDF6 0 2px,#E4DCC6 2px 4px);
+  border-radius:2px;
+}
+.edges-top{
+  position:absolute;top:calc(var(--thick) / -2);left:3px;right:3px;height:var(--thick);
+  transform:rotateX(90deg);
+  background:repeating-linear-gradient(0deg,#FFFDF6 0 2px,#E4DCC6 2px 4px);
+  border-radius:2px;
+}
+/* soft shadow on the table under the book */
+.book-shadow{
+  position:absolute;left:50%;top:calc(50% + var(--bh) / 2 - 6px);
+  width:calc(var(--bw) * .92);height:110px;transform:translateX(-50%) rotateX(72deg);
+  background:radial-gradient(ellipse at center,rgba(50,25,5,.5) 0%,rgba(50,25,5,.18) 55%,rgba(50,25,5,0) 75%);
+  filter:blur(10px);pointer-events:none;
+}
+
+/* ---------- leaves: the turning pages ---------- */
+.leaf{
+  position:absolute;inset:0;
+  transform-style:preserve-3d;
+  transform-origin:left center;
+  transform:translateZ(calc(var(--thick) / 2 - var(--i) * 1.1px)) rotateY(0deg);
+  z-index:calc(20 - var(--i));
+  transition:transform .95s cubic-bezier(.65,.02,.23,1), z-index 0s linear .45s;
+  will-change:transform;
+}
+.leaf.flipped{
+  transform:translateZ(calc(var(--thick) / 2 - var(--i) * 1.1px)) rotateY(-180deg);
+  z-index:calc(var(--i) + 1);
+}
+.leaf.flipping{filter:drop-shadow(-22px 8px 16px rgba(40,20,0,.4))}
+.leaf.flipping .bend{transform:rotateX(2.5deg)}
+.bend{position:absolute;inset:0;transform-style:preserve-3d;transition:transform .95s cubic-bezier(.65,.02,.23,1)}
+.face{
+  position:absolute;inset:0;overflow:hidden;
+  backface-visibility:hidden;-webkit-backface-visibility:hidden;
+  border-radius:5px 16px 16px 5px;
+  padding:clamp(18px,3.2vw,34px);
+  display:flex;flex-direction:column;
+  border-left:6px solid rgba(0,0,0,.08);
+  box-shadow:inset 0 0 60px rgba(120,70,10,.06);
+}
+.face.back{transform:rotateY(180deg);border-radius:16px 5px 5px 16px;border-left:none;border-right:6px solid rgba(0,0,0,.08)}
+.face.back .back-inner{margin:auto;text-align:center;opacity:.55}
+.face.back .back-inner .big{font-family:"Baloo 2",cursive;font-weight:800;font-size:clamp(26px,5vw,40px)}
+.face.back .back-inner .small{font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:13px;margin-top:6px}
+/* curl shade that sweeps across the page while it turns */
+.shade{position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .95s;
+  background:linear-gradient(90deg,rgba(0,0,0,0) 52%,rgba(0,0,0,.16) 78%,rgba(0,0,0,.34) 100%)}
+.leaf.flipping .shade{opacity:1}
+
+/* ---------- chapter furniture ---------- */
+.kicker{display:inline-block;font-size:12px;font-weight:900;letter-spacing:2.5px;text-transform:uppercase;
+  background:rgba(255,255,255,.75);border-radius:999px;padding:5px 12px;margin-bottom:10px}
+.ch-title{font-size:clamp(28px,5.2vw,46px);line-height:1.02;font-weight:800}
+.ch-sub{font-size:clamp(15px,2.4vw,19px);line-height:1.45;margin-top:8px;font-weight:700}
+.ch-body{font-size:clamp(14px,2.2vw,17px);line-height:1.55;margin-top:10px}
+.pill-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.pill{font-size:13px;font-weight:900;background:rgba(255,255,255,.8);border:2px solid rgba(0,0,0,.12);border-radius:999px;padding:6px 12px}
+.btn{display:inline-block;font-weight:900;font-size:16px;text-decoration:none;text-align:center;
+  border-radius:999px;padding:12px 22px;margin-top:16px;cursor:pointer;border:3px solid #1A1A1A;
+  box-shadow:0 4px 0 #1A1A1A;font-family:inherit}
+.btn:active{transform:translateY(3px);box-shadow:0 1px 0 #1A1A1A}
+.btn-amazon{background:#FF9900;color:#131921}
+.btn-soon{background:#FFF3D6;color:#8A6A3A;cursor:default}
+.btn-demo{background:#2F6DB3;color:#fff}
+.btn-ghost{background:#fff;color:var(--ink)}
+.note{font-size:13px;line-height:1.5;margin-top:12px;opacity:.85}
+.row{display:flex;gap:clamp(14px,3vw,26px);align-items:flex-start;flex:1;min-height:0}
+.cover-img{
+  width:min(42%,300px);flex:none;aspect-ratio:2550/3300;object-fit:cover;
+  border-radius:10px;border:4px solid #fff;box-shadow:0 12px 26px rgba(0,0,0,.28);
+}
+.col{flex:1;min-width:0}
+@media (max-width:640px){
+  .cover-img{width:min(38%,190px)}
+  .row{gap:12px}
+}
+
+/* chapter themes — every chapter looks different */
+.ch-cover{background:linear-gradient(160deg,#FFF6D8 0%,#FFE9A8 55%,#FFD66B 100%);align-items:center;text-align:center}
+.ch-cover .logo{font-family:"Baloo 2",cursive;font-weight:800;font-size:clamp(52px,11vw,96px);line-height:.95;color:#E4572E;
+  text-shadow:0 3px 0 #fff,0 6px 0 rgba(0,0,0,.08);letter-spacing:1px}
+.ch-cover .logo .alive{color:#2F6DB3}
+.ch-cover .tag{font-family:"Baloo 2",cursive;font-weight:700;font-size:clamp(19px,3.6vw,28px);color:#5B2E0E;margin-top:10px}
+.ch-cover .promise{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:18px}
+.ch-cover .promise span{background:#fff;border:2.5px solid #1A1A1A;border-radius:999px;padding:8px 14px;font-weight:900;font-size:14px;box-shadow:0 3px 0 #1A1A1A}
+.ch-cover .rainbow{height:12px;border-radius:99px;margin-top:22px;width:min(420px,86%);
+  background:linear-gradient(90deg,#E4572E,#F5A623,#3E7A1E,#2F6DB3,#7B4BA6)}
+.ch-cover .meta{margin-top:16px;font-weight:800;color:#7A4A1E}
+.ch-how{background:linear-gradient(165deg,#D6ECFF,#BFE0FF);color:#16324F}
+.ch-animals{background:linear-gradient(165deg,#DFF2C9,#BEE8A4);color:#1E4D1A}
+.ch-xmas{background:linear-gradient(165deg,#B02334,#7E1420);color:#FFF3D6}
+.ch-xmas .kicker,.ch-xmas .pill{background:rgba(255,255,255,.16);color:#FFF3D6;border-color:rgba(255,255,255,.35)}
+.ch-things{background:linear-gradient(165deg,#FFD9D2,#FFB3A7);color:#5B2333}
+.ch-vehicles{background:linear-gradient(165deg,#D9EBFF,#A9D0FF);color:#12294D}
+.ch-dinos{background:linear-gradient(165deg,#CDEFE8,#9ADFCB);color:#123B33}
+.ch-try{background:linear-gradient(165deg,#E7DCFF,#CBB2FF);color:#2E1A5E}
+.ch-about{background:linear-gradient(165deg,#FFF8E7,#FFEFC2);color:#4A2E12}
+.ch-end{background:linear-gradient(165deg,#22304F,#16213A);color:#FFF3D6;align-items:center;text-align:center}
+.ch-end .kicker{background:rgba(255,255,255,.16);color:#FFF3D6;border-color:rgba(255,255,255,.35)}
+
+/* step cards (How It Works) */
+.steps{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}
+@media (max-width:640px){.steps{grid-template-columns:1fr 1fr;gap:8px}}
+.step{background:#FFFDF6;border:3px solid #16324F;border-radius:16px;padding:12px}
+.step .n{font-family:"Baloo 2",cursive;font-weight:800;font-size:26px;line-height:1;color:#2F6DB3}
+.step b{display:block;font-size:15px;margin:4px 0 2px}
+.step p{font-size:13.5px;line-height:1.45}
+/* demo frame (Try It) */
+.demo-frame{margin-top:14px;border:4px solid #2E1A5E;border-radius:18px;overflow:hidden;background:#fff;box-shadow:0 10px 22px rgba(0,0,0,.25);flex:1;min-height:0}
+.demo-frame iframe{width:100%;height:100%;min-height:300px;border:0;display:block}
+.demo-btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.demo-btns button{font-family:inherit;font-weight:900;font-size:14px;padding:9px 15px;border-radius:999px;border:3px solid #2E1A5E;background:#fff;color:#2E1A5E;cursor:pointer}
+.demo-btns button.on{background:#2E1A5E;color:#fff}
+
+/* ---------- controls under the book ---------- */
+.controls{display:flex;align-items:center;gap:14px;padding:6px 16px 4px}
+.nav-btn{
+  font-family:inherit;font-weight:900;font-size:17px;color:#5B2E0E;background:#FFF7DB;
+  border:3px solid #5B2E0E;border-radius:999px;padding:10px 20px;cursor:pointer;box-shadow:0 3px 0 #5B2E0E;
+}
+.nav-btn:active{transform:translateY(2px);box-shadow:0 1px 0 #5B2E0E}
+.nav-btn:disabled{opacity:.4;cursor:default}
+.page-label{font-weight:900;color:#5B2E0E;font-size:14px;min-width:118px;text-align:center}
+.dots{display:flex;gap:6px;justify-content:center;flex-wrap:wrap;max-width:220px}
+.dots button{width:11px;height:11px;border-radius:50%;border:2px solid #5B2E0E;background:transparent;cursor:pointer;padding:0}
+.dots button.on{background:#5B2E0E}
+.hint{font-size:13px;font-weight:700;color:#7A4A1E;padding:2px 16px 18px;text-align:center}
+
+/* contents panel */
+.contents-panel{
+  position:fixed;top:64px;right:14px;z-index:60;width:min(320px,88vw);
+  background:#FFFDF6;border:3px solid #5B2E0E;border-radius:18px;box-shadow:0 18px 40px rgba(60,30,5,.4);
+  padding:14px;display:none;
+}
+.contents-panel.open{display:block}
+.contents-panel h3{font-size:19px;margin-bottom:8px}
+.contents-panel button{
+  display:flex;width:100%;text-align:left;gap:10px;align-items:baseline;
+  font-family:inherit;font-size:15px;font-weight:800;background:none;border:none;border-bottom:1px solid #F0D9A0;
+  padding:9px 2px;cursor:pointer;color:var(--ink);
+}
+.contents-panel button .no{font-family:"Baloo 2",cursive;color:#E4572E;min-width:22px}
+.contents-panel button:hover{color:#E4572E}
+@media (prefers-reduced-motion:reduce){
+  .leaf,.bend,.shade,.book{transition:none !important}
+}
 </style>
 </head>
 <body>
-<main>
-<h1>Draw-Alive</h1>
-<p>Scan the QR code in the book &mdash; your drawing comes alive! Tap a name below to try one.</p>
-<h2>Dinosaurs</h2>
-<p>From &lsquo;How to Draw Cute Dinosaurs for Kids&rsquo; &mdash; 100 dinosaurs</p>
-<ul>
-<li><a href="dino-t-rex/">T-Rex</a></li>
-<li><a href="dino-triceratops/">Triceratops</a></li>
-<li><a href="dino-stegosaurus/">Stegosaurus</a></li>
-<li><a href="dino-apatosaurus/">Apatosaurus</a></li>
-<li><a href="dino-velociraptor/">Velociraptor</a></li>
-<li><a href="dino-pterodactyl/">Pterodactyl</a></li>
-<li><a href="dino-ankylosaurus/">Ankylosaurus</a></li>
-<li><a href="dino-spinosaurus/">Spinosaurus</a></li>
-<li><a href="dino-brachiosaurus/">Brachiosaurus</a></li>
-<li><a href="dino-parasaurolophus/">Parasaurolophus</a></li>
-<li><a href="dino-allosaurus/">Allosaurus</a></li>
-<li><a href="dino-diplodocus/">Diplodocus</a></li>
-<li><a href="dino-iguanodon/">Iguanodon</a></li>
-<li><a href="dino-carnotaurus/">Carnotaurus</a></li>
-<li><a href="dino-dilophosaurus/">Dilophosaurus</a></li>
-<li><a href="dino-pachycephalosaurus/">Pachycephalosaurus</a></li>
-<li><a href="dino-plesiosaurus/">Plesiosaurus</a></li>
-<li><a href="dino-mosasaurus/">Mosasaurus</a></li>
-<li><a href="dino-archaeopteryx/">Archaeopteryx</a></li>
-<li><a href="dino-compsognathus/">Compsognathus</a></li>
-<li><a href="dino-gallimimus/">Gallimimus</a></li>
-<li><a href="dino-corythosaurus/">Corythosaurus</a></li>
-<li><a href="dino-maiasaura/">Maiasaura</a></li>
-<li><a href="dino-oviraptor/">Oviraptor</a></li>
-<li><a href="dino-protoceratops/">Protoceratops</a></li>
-<li><a href="dino-therizinosaurus/">Therizinosaurus</a></li>
-<li><a href="dino-baryonyx/">Baryonyx</a></li>
-<li><a href="dino-ceratosaurus/">Ceratosaurus</a></li>
-<li><a href="dino-edmontosaurus/">Edmontosaurus</a></li>
-<li><a href="dino-camarasaurus/">Camarasaurus</a></li>
-<li><a href="dino-coelophysis/">Coelophysis</a></li>
-<li><a href="dino-megalosaurus/">Megalosaurus</a></li>
-<li><a href="dino-kentrosaurus/">Kentrosaurus</a></li>
-<li><a href="dino-ouranosaurus/">Ouranosaurus</a></li>
-<li><a href="dino-saurolophus/">Saurolophus</a></li>
-<li><a href="dino-styracosaurus/">Styracosaurus</a></li>
-<li><a href="dino-torosaurus/">Torosaurus</a></li>
-<li><a href="dino-amargasaurus/">Amargasaurus</a></li>
-<li><a href="dino-argentinosaurus/">Argentinosaurus</a></li>
-<li><a href="dino-giganotosaurus/">Giganotosaurus</a></li>
-<li><a href="dino-troodon/">Troodon</a></li>
-<li><a href="dino-utahraptor/">Utahraptor</a></li>
-<li><a href="dino-microraptor/">Microraptor</a></li>
-<li><a href="dino-quetzalcoatlus/">Quetzalcoatlus</a></li>
-<li><a href="dino-elasmosaurus/">Elasmosaurus</a></li>
-<li><a href="dino-kronosaurus/">Kronosaurus</a></li>
-<li><a href="dino-tarbosaurus/">Tarbosaurus</a></li>
-<li><a href="dino-suchomimus/">Suchomimus</a></li>
-<li><a href="dino-mamenchisaurus/">Mamenchisaurus</a></li>
-<li><a href="dino-chasmosaurus/">Chasmosaurus</a></li>
-<li><a href="dino-abelisaurus/">Abelisaurus</a></li>
-<li><a href="dino-albertosaurus/">Albertosaurus</a></li>
-<li><a href="dino-acrocanthosaurus/">Acrocanthosaurus</a></li>
-<li><a href="dino-daspletosaurus/">Daspletosaurus</a></li>
-<li><a href="dino-herrerasaurus/">Herrerasaurus</a></li>
-<li><a href="dino-neovenator/">Neovenator</a></li>
-<li><a href="dino-sinraptor/">Sinraptor</a></li>
-<li><a href="dino-yangchuanosaurus/">Yangchuanosaurus</a></li>
-<li><a href="dino-cryolophosaurus/">Cryolophosaurus</a></li>
-<li><a href="dino-torvosaurus/">Torvosaurus</a></li>
-<li><a href="dino-irritator/">Irritator</a></li>
-<li><a href="dino-majungasaurus/">Majungasaurus</a></li>
-<li><a href="dino-carcharodontosaurus/">Carcharodontosaurus</a></li>
-<li><a href="dino-mapusaurus/">Mapusaurus</a></li>
-<li><a href="dino-qianzhousaurus/">Qianzhousaurus</a></li>
-<li><a href="dino-deinonychus/">Deinonychus</a></li>
-<li><a href="dino-dromaeosaurus/">Dromaeosaurus</a></li>
-<li><a href="dino-pyroraptor/">Pyroraptor</a></li>
-<li><a href="dino-austroraptor/">Austroraptor</a></li>
-<li><a href="dino-dilong/">Dilong</a></li>
-<li><a href="dino-guanlong/">Guanlong</a></li>
-<li><a href="dino-yutyrannus/">Yutyrannus</a></li>
-<li><a href="dino-sinosauropteryx/">Sinosauropteryx</a></li>
-<li><a href="dino-citipati/">Citipati</a></li>
-<li><a href="dino-caudipteryx/">Caudipteryx</a></li>
-<li><a href="dino-struthiomimus/">Struthiomimus</a></li>
-<li><a href="dino-ornithomimus/">Ornithomimus</a></li>
-<li><a href="dino-gigantoraptor/">Gigantoraptor</a></li>
-<li><a href="dino-anzu/">Anzu</a></li>
-<li><a href="dino-erlikosaurus/">Erlikosaurus</a></li>
-<li><a href="dino-beipiaosaurus/">Beipiaosaurus</a></li>
-<li><a href="dino-barosaurus/">Barosaurus</a></li>
-<li><a href="dino-dicraeosaurus/">Dicraeosaurus</a></li>
-<li><a href="dino-saltasaurus/">Saltasaurus</a></li>
-<li><a href="dino-rapetosaurus/">Rapetosaurus</a></li>
-<li><a href="dino-euhelopus/">Euhelopus</a></li>
-<li><a href="dino-shunosaurus/">Shunosaurus</a></li>
-<li><a href="dino-jobaria/">Jobaria</a></li>
-<li><a href="dino-nigersaurus/">Nigersaurus</a></li>
-<li><a href="dino-giraffatitan/">Giraffatitan</a></li>
-<li><a href="dino-dreadnoughtus/">Dreadnoughtus</a></li>
-<li><a href="dino-euoplocephalus/">Euoplocephalus</a></li>
-<li><a href="dino-nodosaurus/">Nodosaurus</a></li>
-<li><a href="dino-polacanthus/">Polacanthus</a></li>
-<li><a href="dino-gastonia/">Gastonia</a></li>
-<li><a href="dino-pinacosaurus/">Pinacosaurus</a></li>
-<li><a href="dino-huayangosaurus/">Huayangosaurus</a></li>
-<li><a href="dino-miragaia/">Miragaia</a></li>
-<li><a href="dino-hesperosaurus/">Hesperosaurus</a></li>
-<li><a href="dino-tuojangosaurus/">Tuojiangosaurus</a></li>
-</ul>
-<h2>Christmas</h2>
-<p>From &lsquo;How to Draw Cute Christmas for Kids&rsquo;</p>
-<ul>
-<li><a href="xmas-santa-claus/">Santa Claus</a></li>
-<li><a href="xmas-mrs-claus/">Mrs. Claus</a></li>
-<li><a href="xmas-elf/">Christmas Elf</a></li>
-<li><a href="xmas-reindeer/">Reindeer</a></li>
-<li><a href="xmas-baby-reindeer/">Baby Reindeer</a></li>
-<li><a href="xmas-sleigh/">Santa's Sleigh</a></li>
-<li><a href="xmas-santa-sack/">Santa's Toy Sack</a></li>
-<li><a href="xmas-santa-hat/">Santa Hat</a></li>
-<li><a href="xmas-santa-boots/">Santa Boots</a></li>
-<li><a href="xmas-north-pole-sign/">North Pole Sign</a></li>
-<li><a href="xmas-snowman/">Snowman</a></li>
-<li><a href="xmas-snow-woman/">Snow Woman</a></li>
-<li><a href="xmas-baby-snowman/">Baby Snowman</a></li>
-<li><a href="xmas-penguin/">Penguin</a></li>
-<li><a href="xmas-baby-penguin/">Baby Penguin</a></li>
-<li><a href="xmas-polar-bear/">Polar Bear</a></li>
-<li><a href="xmas-arctic-fox/">Arctic Fox</a></li>
-<li><a href="xmas-snowy-owl/">Snowy Owl</a></li>
-<li><a href="xmas-robin/">Robin</a></li>
-<li><a href="xmas-baby-seal/">Baby Seal</a></li>
-<li><a href="xmas-christmas-tree/">Christmas Tree</a></li>
-<li><a href="xmas-pine-tree/">Pine Tree</a></li>
-<li><a href="xmas-star-topper/">Star Tree Topper</a></li>
-<li><a href="xmas-angel-topper/">Angel Tree Topper</a></li>
-<li><a href="xmas-ornament/">Christmas Ornament</a></li>
-<li><a href="xmas-icicle-ornament/">Icicle Ornament</a></li>
-<li><a href="xmas-tinsel/">Tinsel</a></li>
-<li><a href="xmas-garland/">Garland</a></li>
-<li><a href="xmas-fairy-lights/">Fairy Lights</a></li>
-<li><a href="xmas-snowflake-ornament/">Snowflake Ornament</a></li>
-<li><a href="xmas-wreath/">Christmas Wreath</a></li>
-<li><a href="xmas-holly/">Holly</a></li>
-<li><a href="xmas-mistletoe/">Mistletoe</a></li>
-<li><a href="xmas-poinsettia/">Poinsettia</a></li>
-<li><a href="xmas-pinecone/">Pinecone</a></li>
-<li><a href="xmas-christmas-bells/">Christmas Bells</a></li>
-<li><a href="xmas-jingle-bell/">Jingle Bell</a></li>
-<li><a href="xmas-ribbon/">Ribbon</a></li>
-<li><a href="xmas-christmas-bow/">Christmas Bow</a></li>
-<li><a href="xmas-candle/">Christmas Candle</a></li>
-<li><a href="xmas-gift-box/">Gift Box</a></li>
-<li><a href="xmas-gift-bag/">Gift Bag</a></li>
-<li><a href="xmas-stocking/">Christmas Stocking</a></li>
-<li><a href="xmas-gift-tag/">Gift Tag</a></li>
-<li><a href="xmas-christmas-cracker/">Christmas Cracker</a></li>
-<li><a href="xmas-wrapping-paper/">Wrapping Paper</a></li>
-<li><a href="xmas-toy-box/">Toy Box</a></li>
-<li><a href="xmas-advent-calendar/">Advent Calendar</a></li>
-<li><a href="xmas-snow-globe/">Snow Globe</a></li>
-<li><a href="xmas-christmas-card/">Christmas Card</a></li>
-<li><a href="xmas-candy-cane/">Candy Cane</a></li>
-<li><a href="xmas-gingerbread-man/">Gingerbread Man</a></li>
-<li><a href="xmas-gingerbread-woman/">Gingerbread Woman</a></li>
-<li><a href="xmas-gingerbread-house/">Gingerbread House</a></li>
-<li><a href="xmas-christmas-cookie/">Christmas Cookie</a></li>
-<li><a href="xmas-star-cookie/">Star Cookie</a></li>
-<li><a href="xmas-hot-cocoa/">Hot Cocoa</a></li>
-<li><a href="xmas-christmas-pudding/">Christmas Pudding</a></li>
-<li><a href="xmas-mince-pie/">Mince Pie</a></li>
-<li><a href="xmas-yule-log/">Yule Log</a></li>
-<li><a href="xmas-fruitcake/">Fruitcake</a></li>
-<li><a href="xmas-eggnog/">Eggnog</a></li>
-<li><a href="xmas-sugar-plum/">Sugar Plum</a></li>
-<li><a href="xmas-cookies-for-santa/">Cookies for Santa</a></li>
-<li><a href="xmas-milk-for-santa/">Milk for Santa</a></li>
-<li><a href="xmas-popcorn-garland/">Popcorn Garland</a></li>
-<li><a href="xmas-roasted-chestnuts/">Roasted Chestnuts</a></li>
-<li><a href="xmas-christmas-candy/">Christmas Candy</a></li>
-<li><a href="xmas-christmas-lollipop/">Christmas Lollipop</a></li>
-<li><a href="xmas-chocolate-santa/">Chocolate Santa</a></li>
-<li><a href="xmas-snowflake/">Snowflake</a></li>
-<li><a href="xmas-snowball/">Snowball</a></li>
-<li><a href="xmas-sled/">Sled</a></li>
-<li><a href="xmas-ice-skates/">Ice Skates</a></li>
-<li><a href="xmas-snow-boots/">Snow Boots</a></li>
-<li><a href="xmas-mittens/">Mittens</a></li>
-<li><a href="xmas-scarf/">Scarf</a></li>
-<li><a href="xmas-woolly-hat/">Woolly Hat</a></li>
-<li><a href="xmas-earmuffs/">Earmuffs</a></li>
-<li><a href="xmas-igloo/">Igloo</a></li>
-<li><a href="xmas-fireplace/">Fireplace</a></li>
-<li><a href="xmas-chimney/">Chimney</a></li>
-<li><a href="xmas-santa-in-chimney/">Santa in the Chimney</a></li>
-<li><a href="xmas-christmas-village/">Christmas Village</a></li>
-<li><a href="xmas-christmas-lantern/">Christmas Lantern</a></li>
-<li><a href="xmas-firewood/">Firewood</a></li>
-<li><a href="xmas-rocking-chair/">Rocking Chair</a></li>
-<li><a href="xmas-christmas-teapot/">Christmas Teapot</a></li>
-<li><a href="xmas-candy-dish/">Candy Dish</a></li>
-<li><a href="xmas-christmas-pillow/">Christmas Pillow</a></li>
-<li><a href="xmas-nativity-star/">Nativity Star</a></li>
-<li><a href="xmas-angel/">Angel</a></li>
-<li><a href="xmas-manger/">Manger</a></li>
-<li><a href="xmas-shepherd/">Shepherd</a></li>
-<li><a href="xmas-wise-man/">Wise Man</a></li>
-<li><a href="xmas-camel/">Camel</a></li>
-<li><a href="xmas-donkey/">Donkey</a></li>
-<li><a href="xmas-church/">Church</a></li>
-<li><a href="xmas-shepherds-crook/">Shepherd's Crook</a></li>
-<li><a href="xmas-christmas-moon/">Christmas Moon</a></li>
-<li><a href="xmas-toy-train/">Toy Train</a></li>
-<li><a href="xmas-teddy-bear/">Teddy Bear</a></li>
-<li><a href="xmas-doll/">Doll</a></li>
-<li><a href="xmas-toy-drum/">Toy Drum</a></li>
-<li><a href="xmas-rocking-horse/">Rocking Horse</a></li>
-<li><a href="xmas-toy-soldier/">Toy Soldier</a></li>
-<li><a href="xmas-nutcracker/">Nutcracker</a></li>
-<li><a href="xmas-ballerina/">Ballerina</a></li>
-<li><a href="xmas-jack-in-the-box/">Jack-in-the-Box</a></li>
-<li><a href="xmas-toy-robot/">Toy Robot</a></li>
-<li><a href="xmas-kite/">Kite</a></li>
-<li><a href="xmas-christmas-balloon/">Christmas Balloon</a></li>
-<li><a href="xmas-toy-car/">Toy Car</a></li>
-<li><a href="xmas-toy-plane/">Toy Plane</a></li>
-<li><a href="xmas-toy-boat/">Toy Boat</a></li>
-<li><a href="xmas-building-blocks/">Building Blocks</a></li>
-<li><a href="xmas-toy-bunny/">Toy Bunny</a></li>
-<li><a href="xmas-toy-duck/">Toy Duck</a></li>
-<li><a href="xmas-skipping-rope/">Skipping Rope</a></li>
-<li><a href="xmas-jigsaw-puzzle/">Jigsaw Puzzle</a></li>
-<li><a href="xmas-hedgehog/">Hedgehog</a></li>
-<li><a href="xmas-squirrel/">Squirrel</a></li>
-<li><a href="xmas-mouse/">Mouse</a></li>
-<li><a href="xmas-rabbit/">Rabbit</a></li>
-<li><a href="xmas-horse/">Horse</a></li>
-<li><a href="xmas-christmas-cat/">Cat in a Santa Hat</a></li>
-<li><a href="xmas-christmas-dog/">Dog in a Santa Hat</a></li>
-<li><a href="xmas-koala/">Koala in a Santa Hat</a></li>
-<li><a href="xmas-lamb/">Lamb</a></li>
-<li><a href="xmas-goose/">Goose</a></li>
-<li><a href="xmas-party-hat/">Party Hat</a></li>
-<li><a href="xmas-christmas-crown/">Christmas Crown</a></li>
-<li><a href="xmas-christmas-trumpet/">Christmas Trumpet</a></li>
-<li><a href="xmas-christmas-guitar/">Christmas Guitar</a></li>
-<li><a href="xmas-christmas-flute/">Christmas Flute</a></li>
-<li><a href="xmas-christmas-piano/">Christmas Piano</a></li>
-<li><a href="xmas-christmas-microphone/">Christmas Microphone</a></li>
-<li><a href="xmas-carol-book/">Carol Book</a></li>
-<li><a href="xmas-christmas-cupcake/">Christmas Cupcake</a></li>
-<li><a href="xmas-christmas-donut/">Christmas Donut</a></li>
-<li><a href="xmas-christmas-tree-farm/">Christmas Tree Farm</a></li>
-<li><a href="xmas-christmas-market/">Christmas Market</a></li>
-<li><a href="xmas-reindeer-stable/">Reindeer Stable</a></li>
-<li><a href="xmas-snow-castle/">Snow Castle</a></li>
-<li><a href="xmas-log-cabin/">Log Cabin</a></li>
-<li><a href="xmas-santa-letter/">Letter to Santa</a></li>
-<li><a href="xmas-reindeer-food/">Reindeer Food</a></li>
-<li><a href="xmas-carrot-for-reindeer/">Carrot for the Reindeer</a></li>
-<li><a href="xmas-marshmallow/">Marshmallow</a></li>
-<li><a href="xmas-christmas-heart/">Christmas Heart</a></li>
-</ul>
-<h2>Vehicles</h2>
-<p>From ‘How to Draw Cute Vehicles for Kids’ — 100 vehicles</p>
-<ul>
-<li><a href="vehicle-car/">Car</a></li>
-<li><a href="vehicle-bus/">Bus</a></li>
-<li><a href="vehicle-school-bus/">School Bus</a></li>
-<li><a href="vehicle-taxi/">Taxi</a></li>
-<li><a href="vehicle-bicycle/">Bicycle</a></li>
-<li><a href="vehicle-scooter/">Scooter</a></li>
-<li><a href="vehicle-motorcycle/">Motorcycle</a></li>
-<li><a href="vehicle-pickup-truck/">Pickup Truck</a></li>
-<li><a href="vehicle-van/">Van</a></li>
-<li><a href="vehicle-truck/">Truck</a></li>
-<li><a href="vehicle-minivan/">Minivan</a></li>
-<li><a href="vehicle-jeep/">Jeep</a></li>
-<li><a href="vehicle-suv/">SUV</a></li>
-<li><a href="vehicle-limousine/">Limousine</a></li>
-<li><a href="vehicle-convertible/">Convertible</a></li>
-<li><a href="vehicle-sports-car/">Sports Car</a></li>
-<li><a href="vehicle-race-car/">Race Car</a></li>
-<li><a href="vehicle-ice-cream-truck/">Ice Cream Truck</a></li>
-<li><a href="vehicle-food-truck/">Food Truck</a></li>
-<li><a href="vehicle-camper-van/">Camper Van</a></li>
-<li><a href="vehicle-double-decker-bus/">Double-Decker Bus</a></li>
-<li><a href="vehicle-go-kart/">Go-Kart</a></li>
-<li><a href="vehicle-police-car/">Police Car</a></li>
-<li><a href="vehicle-fire-truck/">Fire Truck</a></li>
-<li><a href="vehicle-ambulance/">Ambulance</a></li>
-<li><a href="vehicle-tow-truck/">Tow Truck</a></li>
-<li><a href="vehicle-police-motorcycle/">Police Motorcycle</a></li>
-<li><a href="vehicle-ladder-truck/">Ladder Truck</a></li>
-<li><a href="vehicle-garbage-truck/">Garbage Truck</a></li>
-<li><a href="vehicle-mail-truck/">Mail Truck</a></li>
-<li><a href="vehicle-street-sweeper/">Street Sweeper</a></li>
-<li><a href="vehicle-snowplow/">Snowplow</a></li>
-<li><a href="vehicle-dump-truck/">Dump Truck</a></li>
-<li><a href="vehicle-cement-mixer/">Cement Mixer</a></li>
-<li><a href="vehicle-excavator/">Excavator</a></li>
-<li><a href="vehicle-bulldozer/">Bulldozer</a></li>
-<li><a href="vehicle-forklift/">Forklift</a></li>
-<li><a href="vehicle-tower-crane/">Tower Crane</a></li>
-<li><a href="vehicle-road-roller/">Road Roller</a></li>
-<li><a href="vehicle-backhoe-loader/">Backhoe Loader</a></li>
-<li><a href="vehicle-wheel-loader/">Wheel Loader</a></li>
-<li><a href="vehicle-crane-truck/">Crane Truck</a></li>
-<li><a href="vehicle-skid-steer-loader/">Skid-Steer Loader</a></li>
-<li><a href="vehicle-log-truck/">Log Truck</a></li>
-<li><a href="vehicle-tractor/">Tractor</a></li>
-<li><a href="vehicle-combine-harvester/">Combine Harvester</a></li>
-<li><a href="vehicle-farm-trailer/">Farm Trailer</a></li>
-<li><a href="vehicle-hay-wagon/">Hay Wagon</a></li>
-<li><a href="vehicle-quad-bike/">Quad Bike</a></li>
-<li><a href="vehicle-milk-tanker/">Milk Tanker</a></li>
-<li><a href="vehicle-steam-train/">Steam Train</a></li>
-<li><a href="vehicle-bullet-train/">Bullet Train</a></li>
-<li><a href="vehicle-passenger-train/">Passenger Train</a></li>
-<li><a href="vehicle-freight-train/">Freight Train</a></li>
-<li><a href="vehicle-tram/">Tram</a></li>
-<li><a href="vehicle-subway-train/">Subway Train</a></li>
-<li><a href="vehicle-monorail/">Monorail</a></li>
-<li><a href="vehicle-cable-car/">Cable Car</a></li>
-<li><a href="vehicle-airplane/">Airplane</a></li>
-<li><a href="vehicle-jet-plane/">Jet Plane</a></li>
-<li><a href="vehicle-biplane/">Biplane</a></li>
-<li><a href="vehicle-fighter-jet/">Fighter Jet</a></li>
-<li><a href="vehicle-helicopter/">Helicopter</a></li>
-<li><a href="vehicle-rescue-helicopter/">Rescue Helicopter</a></li>
-<li><a href="vehicle-hot-air-balloon/">Hot-Air Balloon</a></li>
-<li><a href="vehicle-rocket/">Rocket</a></li>
-<li><a href="vehicle-space-shuttle/">Space Shuttle</a></li>
-<li><a href="vehicle-glider/">Glider</a></li>
-<li><a href="vehicle-seaplane/">Seaplane</a></li>
-<li><a href="vehicle-blimp/">Blimp</a></li>
-<li><a href="vehicle-drone/">Drone</a></li>
-<li><a href="vehicle-sailboat/">Sailboat</a></li>
-<li><a href="vehicle-ferry/">Ferry</a></li>
-<li><a href="vehicle-submarine/">Submarine</a></li>
-<li><a href="vehicle-speedboat/">Speedboat</a></li>
-<li><a href="vehicle-yacht/">Yacht</a></li>
-<li><a href="vehicle-cruise-ship/">Cruise Ship</a></li>
-<li><a href="vehicle-tugboat/">Tugboat</a></li>
-<li><a href="vehicle-canoe/">Canoe</a></li>
-<li><a href="vehicle-kayak/">Kayak</a></li>
-<li><a href="vehicle-jet-ski/">Jet Ski</a></li>
-<li><a href="vehicle-hovercraft/">Hovercraft</a></li>
-<li><a href="vehicle-fishing-boat/">Fishing Boat</a></li>
-<li><a href="vehicle-rowboat/">Rowboat</a></li>
-<li><a href="vehicle-golf-cart/">Golf Cart</a></li>
-<li><a href="vehicle-tuk-tuk/">Tuk-Tuk</a></li>
-<li><a href="vehicle-rickshaw/">Rickshaw</a></li>
-<li><a href="vehicle-fire-boat/">Fire Boat</a></li>
-<li><a href="vehicle-patrol-boat/">Patrol Boat</a></li>
-<li><a href="vehicle-paddle-steamer/">Paddle Steamer</a></li>
-<li><a href="vehicle-vintage-car/">Vintage Car</a></li>
-<li><a href="vehicle-monster-truck/">Monster Truck</a></li>
-<li><a href="vehicle-tractor-trailer/">Tractor-Trailer</a></li>
-<li><a href="vehicle-army-truck/">Army Truck</a></li>
-<li><a href="vehicle-caravan/">Caravan</a></li>
-<li><a href="vehicle-unicycle/">Unicycle</a></li>
-<li><a href="vehicle-horse-carriage/">Horse Carriage</a></li>
-<li><a href="vehicle-dune-buggy/">Dune Buggy</a></li>
-<li><a href="vehicle-hang-glider/">Hang Glider</a></li>
-<li><a href="vehicle-funicular/">Funicular</a></li>
-</ul>
-<h2>300 Cute Things</h2>
-<p>From &lsquo;How to Draw 300 Cute Things for Kids&rsquo; &mdash; 300 drawings</p>
-<ul>
-<li><a href="300-fish/">Fish</a></li>
-<li><a href="300-chick/">Chick</a></li>
-<li><a href="300-bee/">Bee</a></li>
-<li><a href="300-snail/">Snail</a></li>
-<li><a href="300-ladybug/">Ladybug</a></li>
-<li><a href="300-butterfly/">Butterfly</a></li>
-<li><a href="300-duck/">Duck</a></li>
-<li><a href="300-frog/">Frog</a></li>
-<li><a href="300-mouse/">Mouse</a></li>
-<li><a href="300-pig/">Pig</a></li>
-<li><a href="300-rabbit/">Rabbit</a></li>
-<li><a href="300-cat/">Cat</a></li>
-<li><a href="300-dog/">Dog</a></li>
-<li><a href="300-hamster/">Hamster</a></li>
-<li><a href="300-turtle/">Turtle</a></li>
-<li><a href="300-penguin/">Penguin</a></li>
-<li><a href="300-panda/">Panda</a></li>
-<li><a href="300-koala/">Koala</a></li>
-<li><a href="300-bear/">Bear</a></li>
-<li><a href="300-owl/">Owl</a></li>
-<li><a href="300-fox/">Fox</a></li>
-<li><a href="300-sheep/">Sheep</a></li>
-<li><a href="300-goat/">Goat</a></li>
-<li><a href="300-cow/">Cow</a></li>
-<li><a href="300-horse/">Horse</a></li>
-<li><a href="300-chicken/">Chicken</a></li>
-<li><a href="300-goose/">Goose</a></li>
-<li><a href="300-donkey/">Donkey</a></li>
-<li><a href="300-camel/">Camel</a></li>
-<li><a href="300-deer/">Deer</a></li>
-<li><a href="300-raccoon/">Raccoon</a></li>
-<li><a href="300-squirrel/">Squirrel</a></li>
-<li><a href="300-hedgehog/">Hedgehog</a></li>
-<li><a href="300-sloth/">Sloth</a></li>
-<li><a href="300-monkey/">Monkey</a></li>
-<li><a href="300-kangaroo/">Kangaroo</a></li>
-<li><a href="300-bat/">Bat</a></li>
-<li><a href="300-skunk/">Skunk</a></li>
-<li><a href="300-otter/">Otter</a></li>
-<li><a href="300-parrot/">Parrot</a></li>
-<li><a href="300-flamingo/">Flamingo</a></li>
-<li><a href="300-swan/">Swan</a></li>
-<li><a href="300-peacock/">Peacock</a></li>
-<li><a href="300-crocodile/">Crocodile</a></li>
-<li><a href="300-hippo/">Hippo</a></li>
-<li><a href="300-rhino/">Rhino</a></li>
-<li><a href="300-zebra/">Zebra</a></li>
-<li><a href="300-lion/">Lion</a></li>
-<li><a href="300-tiger/">Tiger</a></li>
-<li><a href="300-llama/">Llama</a></li>
-<li><a href="300-alpaca/">Alpaca</a></li>
-<li><a href="300-shark/">Shark</a></li>
-<li><a href="300-whale/">Whale</a></li>
-<li><a href="300-dolphin/">Dolphin</a></li>
-<li><a href="300-crab/">Crab</a></li>
-<li><a href="300-starfish/">Starfish</a></li>
-<li><a href="300-seahorse/">Seahorse</a></li>
-<li><a href="300-octopus/">Octopus</a></li>
-<li><a href="300-elephant/">Elephant</a></li>
-<li><a href="300-giraffe/">Giraffe</a></li>
-<li><a href="300-seashell/">Seashell</a></li>
-<li><a href="300-coral/">Coral</a></li>
-<li><a href="300-jellyfish/">Jellyfish</a></li>
-<li><a href="300-clownfish/">Clownfish</a></li>
-<li><a href="300-shrimp/">Shrimp</a></li>
-<li><a href="300-pufferfish/">Pufferfish</a></li>
-<li><a href="300-angelfish/">Angelfish</a></li>
-<li><a href="300-eel/">Eel</a></li>
-<li><a href="300-squid/">Squid</a></li>
-<li><a href="300-hermit-crab/">Hermit Crab</a></li>
-<li><a href="300-sea-anemone/">Sea Anemone</a></li>
-<li><a href="300-lobster/">Lobster</a></li>
-<li><a href="300-stingray/">Stingray</a></li>
-<li><a href="300-manta-ray/">Manta Ray</a></li>
-<li><a href="300-seal/">Seal</a></li>
-<li><a href="300-sea-lion/">Sea Lion</a></li>
-<li><a href="300-walrus/">Walrus</a></li>
-<li><a href="300-puffin/">Puffin</a></li>
-<li><a href="300-narwhal/">Narwhal</a></li>
-<li><a href="300-orca/">Orca</a></li>
-<li><a href="300-t-rex/">T-Rex</a></li>
-<li><a href="300-triceratops/">Triceratops</a></li>
-<li><a href="300-stegosaurus/">Stegosaurus</a></li>
-<li><a href="300-apatosaurus/">Apatosaurus</a></li>
-<li><a href="300-brachiosaurus/">Brachiosaurus</a></li>
-<li><a href="300-velociraptor/">Velociraptor</a></li>
-<li><a href="300-ankylosaurus/">Ankylosaurus</a></li>
-<li><a href="300-spinosaurus/">Spinosaurus</a></li>
-<li><a href="300-parasaurolophus/">Parasaurolophus</a></li>
-<li><a href="300-pterodactyl/">Pterodactyl</a></li>
-<li><a href="300-apple/">Apple</a></li>
-<li><a href="300-banana/">Banana</a></li>
-<li><a href="300-orange/">Orange</a></li>
-<li><a href="300-cherry/">Cherry</a></li>
-<li><a href="300-lemon/">Lemon</a></li>
-<li><a href="300-pear/">Pear</a></li>
-<li><a href="300-peach/">Peach</a></li>
-<li><a href="300-egg/">Egg</a></li>
-<li><a href="300-carrot/">Carrot</a></li>
-<li><a href="300-tomato/">Tomato</a></li>
-<li><a href="300-grapes/">Grapes</a></li>
-<li><a href="300-strawberry/">Strawberry</a></li>
-<li><a href="300-mango/">Mango</a></li>
-<li><a href="300-avocado/">Avocado</a></li>
-<li><a href="300-watermelon/">Watermelon</a></li>
-<li><a href="300-pineapple/">Pineapple</a></li>
-<li><a href="300-pumpkin/">Pumpkin</a></li>
-<li><a href="300-bread/">Bread</a></li>
-<li><a href="300-croissant/">Croissant</a></li>
-<li><a href="300-cookie/">Cookie</a></li>
-<li><a href="300-donut/">Donut</a></li>
-<li><a href="300-cupcake/">Cupcake</a></li>
-<li><a href="300-muffin/">Muffin</a></li>
-<li><a href="300-cake/">Cake</a></li>
-<li><a href="300-pancake/">Pancake</a></li>
-<li><a href="300-lollipop/">Lollipop</a></li>
-<li><a href="300-candy/">Candy</a></li>
-<li><a href="300-chocolate-bar/">Chocolate Bar</a></li>
-<li><a href="300-popcorn/">Popcorn</a></li>
-<li><a href="300-ice-lolly/">Ice Lolly</a></li>
-<li><a href="300-ice-cream-cone/">Ice-Cream Cone</a></li>
-<li><a href="300-milk/">Milk</a></li>
-<li><a href="300-juice-box/">Juice Box</a></li>
-<li><a href="300-sandwich/">Sandwich</a></li>
-<li><a href="300-pizza/">Pizza</a></li>
-<li><a href="300-burger/">Burger</a></li>
-<li><a href="300-hot-dog/">Hot Dog</a></li>
-<li><a href="300-fries/">Fries</a></li>
-<li><a href="300-taco/">Taco</a></li>
-<li><a href="300-spaghetti/">Spaghetti</a></li>
-<li><a href="300-car/">Car</a></li>
-<li><a href="300-bus/">Bus</a></li>
-<li><a href="300-bicycle/">Bicycle</a></li>
-<li><a href="300-scooter/">Scooter</a></li>
-<li><a href="300-taxi/">Taxi</a></li>
-<li><a href="300-van/">Van</a></li>
-<li><a href="300-truck/">Truck</a></li>
-<li><a href="300-jeep/">Jeep</a></li>
-<li><a href="300-suv/">SUV</a></li>
-<li><a href="300-motorcycle/">Motorcycle</a></li>
-<li><a href="300-go-kart/">Go-Kart</a></li>
-<li><a href="300-tractor/">Tractor</a></li>
-<li><a href="300-pickup-truck/">Pickup Truck</a></li>
-<li><a href="300-school-bus/">School Bus</a></li>
-<li><a href="300-double-decker-bus/">Double-Decker Bus</a></li>
-<li><a href="300-camper-van/">Camper Van</a></li>
-<li><a href="300-food-truck/">Food Truck</a></li>
-<li><a href="300-ice-cream-truck/">Ice-Cream Truck</a></li>
-<li><a href="300-police-car/">Police Car</a></li>
-<li><a href="300-fire-truck/">Fire Truck</a></li>
-<li><a href="300-ambulance/">Ambulance</a></li>
-<li><a href="300-tow-truck/">Tow Truck</a></li>
-<li><a href="300-garbage-truck/">Garbage Truck</a></li>
-<li><a href="300-dump-truck/">Dump Truck</a></li>
-<li><a href="300-cement-mixer/">Cement Mixer</a></li>
-<li><a href="300-excavator/">Excavator</a></li>
-<li><a href="300-bulldozer/">Bulldozer</a></li>
-<li><a href="300-forklift/">Forklift</a></li>
-<li><a href="300-crane-truck/">Crane Truck</a></li>
-<li><a href="300-tractor-trailer/">Tractor-Trailer</a></li>
-<li><a href="300-monster-truck/">Monster Truck</a></li>
-<li><a href="300-sports-car/">Sports Car</a></li>
-<li><a href="300-race-car/">Race Car</a></li>
-<li><a href="300-steam-train/">Steam Train</a></li>
-<li><a href="300-bullet-train/">Bullet Train</a></li>
-<li><a href="300-passenger-train/">Passenger Train</a></li>
-<li><a href="300-freight-train/">Freight Train</a></li>
-<li><a href="300-tram/">Tram</a></li>
-<li><a href="300-airplane/">Airplane</a></li>
-<li><a href="300-jet-plane/">Jet Plane</a></li>
-<li><a href="300-helicopter/">Helicopter</a></li>
-<li><a href="300-hot-air-balloon/">Hot-Air Balloon</a></li>
-<li><a href="300-rocket/">Rocket</a></li>
-<li><a href="300-sailboat/">Sailboat</a></li>
-<li><a href="300-ferry/">Ferry</a></li>
-<li><a href="300-submarine/">Submarine</a></li>
-<li><a href="300-speedboat/">Speedboat</a></li>
-<li><a href="300-yacht/">Yacht</a></li>
-<li><a href="300-canoe/">Canoe</a></li>
-<li><a href="300-kayak/">Kayak</a></li>
-<li><a href="300-kite/">Kite</a></li>
-<li><a href="300-yo-yo/">Yo-Yo</a></li>
-<li><a href="300-pinwheel/">Pinwheel</a></li>
-<li><a href="300-frisbee/">Frisbee</a></li>
-<li><a href="300-dice/">Dice</a></li>
-<li><a href="300-beach-ball/">Beach Ball</a></li>
-<li><a href="300-soccer-ball/">Soccer Ball</a></li>
-<li><a href="300-basketball/">Basketball</a></li>
-<li><a href="300-baseball/">Baseball</a></li>
-<li><a href="300-tennis-ball/">Tennis Ball</a></li>
-<li><a href="300-bubble-wand/">Bubble Wand</a></li>
-<li><a href="300-dollhouse/">Dollhouse</a></li>
-<li><a href="300-puppet/">Puppet</a></li>
-<li><a href="300-teddy-bear/">Teddy Bear</a></li>
-<li><a href="300-doll/">Doll</a></li>
-<li><a href="300-toy-duck/">Toy Duck</a></li>
-<li><a href="300-toy-bunny/">Toy Bunny</a></li>
-<li><a href="300-toy-train/">Toy Train</a></li>
-<li><a href="300-toy-boat/">Toy Boat</a></li>
-<li><a href="300-building-blocks/">Building Blocks</a></li>
-<li><a href="300-toy-drum/">Toy Drum</a></li>
-<li><a href="300-skipping-rope/">Skipping Rope</a></li>
-<li><a href="300-jigsaw-puzzle/">Jigsaw Puzzle</a></li>
-<li><a href="300-toy-robot/">Toy Robot</a></li>
-<li><a href="300-toy-soldier/">Toy Soldier</a></li>
-<li><a href="300-nutcracker/">Nutcracker</a></li>
-<li><a href="300-ballerina/">Ballerina</a></li>
-<li><a href="300-rocking-horse/">Rocking Horse</a></li>
-<li><a href="300-jack-in-the-box/">Jack-in-the-Box</a></li>
-<li><a href="300-toy-guitar/">Toy Guitar</a></li>
-<li><a href="300-sun/">Sun</a></li>
-<li><a href="300-moon/">Moon</a></li>
-<li><a href="300-star/">Star</a></li>
-<li><a href="300-cloud/">Cloud</a></li>
-<li><a href="300-leaf/">Leaf</a></li>
-<li><a href="300-flower/">Flower</a></li>
-<li><a href="300-daisy/">Daisy</a></li>
-<li><a href="300-acorn/">Acorn</a></li>
-<li><a href="300-sprout/">Sprout</a></li>
-<li><a href="300-worm/">Worm</a></li>
-<li><a href="300-ant/">Ant</a></li>
-<li><a href="300-caterpillar/">Caterpillar</a></li>
-<li><a href="300-cocoon/">Cocoon</a></li>
-<li><a href="300-firefly/">Firefly</a></li>
-<li><a href="300-spider/">Spider</a></li>
-<li><a href="300-tulip/">Tulip</a></li>
-<li><a href="300-rose/">Rose</a></li>
-<li><a href="300-daffodil/">Daffodil</a></li>
-<li><a href="300-sunflower/">Sunflower</a></li>
-<li><a href="300-cactus/">Cactus</a></li>
-<li><a href="300-tree/">Tree</a></li>
-<li><a href="300-apple-tree/">Apple Tree</a></li>
-<li><a href="300-palm-tree/">Palm Tree</a></li>
-<li><a href="300-bird/">Bird</a></li>
-<li><a href="300-robin/">Robin</a></li>
-<li><a href="300-nest/">Nest</a></li>
-<li><a href="300-birdhouse/">Birdhouse</a></li>
-<li><a href="300-pinecone/">Pinecone</a></li>
-<li><a href="300-lightning-bolt/">Lightning Bolt</a></li>
-<li><a href="300-watering-can/">Watering Can</a></li>
-<li><a href="300-key/">Key</a></li>
-<li><a href="300-book/">Book</a></li>
-<li><a href="300-pencil/">Pencil</a></li>
-<li><a href="300-crayon/">Crayon</a></li>
-<li><a href="300-paintbrush/">Paintbrush</a></li>
-<li><a href="300-scissors/">Scissors</a></li>
-<li><a href="300-spoon/">Spoon</a></li>
-<li><a href="300-fork/">Fork</a></li>
-<li><a href="300-toothbrush/">Toothbrush</a></li>
-<li><a href="300-clock/">Clock</a></li>
-<li><a href="300-watch/">Watch</a></li>
-<li><a href="300-hat/">Hat</a></li>
-<li><a href="300-cap/">Cap</a></li>
-<li><a href="300-mug/">Mug</a></li>
-<li><a href="300-plate/">Plate</a></li>
-<li><a href="300-bowl/">Bowl</a></li>
-<li><a href="300-umbrella/">Umbrella</a></li>
-<li><a href="300-sunglasses/">Sunglasses</a></li>
-<li><a href="300-shoes/">Shoes</a></li>
-<li><a href="300-sneaker/">Sneaker</a></li>
-<li><a href="300-boot/">Boot</a></li>
-<li><a href="300-backpack/">Backpack</a></li>
-<li><a href="300-lunchbox/">Lunchbox</a></li>
-<li><a href="300-lamp/">Lamp</a></li>
-<li><a href="300-mirror/">Mirror</a></li>
-<li><a href="300-chair/">Chair</a></li>
-<li><a href="300-table/">Table</a></li>
-<li><a href="300-bed/">Bed</a></li>
-<li><a href="300-phone/">Phone</a></li>
-<li><a href="300-camera/">Camera</a></li>
-<li><a href="300-computer/">Computer</a></li>
-<li><a href="300-tv/">TV</a></li>
-<li><a href="300-house/">House</a></li>
-<li><a href="300-gift-box/">Gift Box</a></li>
-<li><a href="300-gift-bag/">Gift Bag</a></li>
-<li><a href="300-balloon/">Balloon</a></li>
-<li><a href="300-party-hat/">Party Hat</a></li>
-<li><a href="300-crown/">Crown</a></li>
-<li><a href="300-scarf/">Scarf</a></li>
-<li><a href="300-teapot/">Teapot</a></li>
-<li><a href="300-ghost/">Ghost</a></li>
-<li><a href="300-crystal/">Crystal</a></li>
-<li><a href="300-wizard-hat/">Wizard Hat</a></li>
-<li><a href="300-pirate-hat/">Pirate Hat</a></li>
-<li><a href="300-treasure-map/">Treasure Map</a></li>
-<li><a href="300-potion-bottle/">Potion Bottle</a></li>
-<li><a href="300-shooting-star/">Shooting Star</a></li>
-<li><a href="300-rainbow/">Rainbow</a></li>
-<li><a href="300-cauldron/">Cauldron</a></li>
-<li><a href="300-witch-broom/">Witch Broom</a></li>
-<li><a href="300-genie-lamp/">Genie Lamp</a></li>
-<li><a href="300-magic-carpet/">Magic Carpet</a></li>
-<li><a href="300-treasure-chest/">Treasure Chest</a></li>
-<li><a href="300-castle/">Castle</a></li>
-<li><a href="300-fairy/">Fairy</a></li>
-<li><a href="300-unicorn/">Unicorn</a></li>
-<li><a href="300-phoenix/">Phoenix</a></li>
-<li><a href="300-yeti/">Yeti</a></li>
-<li><a href="300-dragon/">Dragon</a></li>
-<li><a href="300-mermaid/">Mermaid</a></li>
-</ul>
-<footer>From &lsquo;How to Draw Cute Dinosaurs for Kids&rsquo; and &lsquo;How to Draw Cute Christmas for Kids&rsquo; and &lsquo;How to Draw Cute Vehicles for Kids&rsquo; by MD. SAIF SIAM</footer>
-</main>
+<header class="topbar">
+  <div class="brand">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 26 L10 20 L24 6 a3.5 3.5 0 0 1 5 5 L15 25 Z" fill="#F5A623" stroke="#1A1A1A" stroke-width="2" stroke-linejoin="round"/><path d="M4 26 L8 28 L6 24 Z" fill="#E4572E" stroke="#1A1A1A" stroke-width="2" stroke-linejoin="round"/><circle cx="22" cy="8" r="2" fill="#2F6DB3"/></svg>
+    Draw Alive
+  </div>
+  <button class="contents-btn" id="contentsBtn" aria-haspopup="true" aria-expanded="false">Contents</button>
+</header>
+
+<div class="scene" id="scene">
+  <div class="book-shadow" aria-hidden="true"></div>
+  <div class="book-float">
+  <div class="book" id="book" role="region" aria-label="Draw Alive — a 3D book. Turn the pages to explore.">
+    <div class="book-back" aria-hidden="true"></div>
+    <div class="spine" aria-hidden="true"></div>
+    <div class="edges-right" aria-hidden="true"></div>
+    <div class="edges-top" aria-hidden="true"></div>
+
+    <!-- LEAF 0 — COVER -->
+    <div class="leaf" style="--i:0" data-chapter="Cover">
+      <div class="bend">
+        <section class="face front ch-cover">
+          <div class="shade"></div>
+          <div class="kicker">A book brand by MD. Saif Siam</div>
+          <div class="logo">DRAW<br><span class="alive">ALIVE</span></div>
+          <p class="tag">Watch every drawing come alive!</p>
+          <div class="promise">
+            <span>Scan the code</span><span>Watch it draw</span><span>Hear its sound</span><span>Tap to colour</span>
+          </div>
+          <div class="rainbow" aria-hidden="true"></div>
+          <p class="meta">How-to-draw books for kids &nbsp;•&nbsp; Ages 4–9 &nbsp;•&nbsp; No app needed</p>
+          <p class="note">Turn the page to open the book →</p>
+        </section>
+        <section class="face back ch-cover">
+          <div class="back-inner">
+            <div class="big">★ Draw Alive ★</div>
+            <div class="small">This book belongs to ___________</div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- LEAF 1 — HOW IT WORKS -->
+    <div class="leaf" style="--i:1" data-chapter="How It Works">
+      <div class="bend">
+        <section class="face front ch-how">
+          <div class="shade"></div>
+          <div class="kicker">Chapter 1 • How it works</div>
+          <h2 class="ch-title">The QR magic</h2>
+          <p class="ch-sub">Every drawing in our books has a little code. Scan it — and the drawing comes alive.</p>
+          <div class="steps">
+            <div class="step"><div class="n">1</div><b>Find the code</b><p>On the practice page of your book, in a bordered badge.</p></div>
+            <div class="step"><div class="n">2</div><b>Scan with a phone</b><p>Just the camera. No app, no account, no extra cost.</p></div>
+            <div class="step"><div class="n">3</div><b>Watch it draw</b><p>The drawing draws itself, stroke by stroke, with its real sound.</p></div>
+            <div class="step"><div class="n">4</div><b>Hear &amp; colour</b><p>A friendly voice tells a true fact — then tap to colour it on screen.</p></div>
+          </div>
+          <p class="note">Honest note: the code shows <b>the book's drawing</b> moving. It does not make your own drawing come alive — that part is yours, with your crayons.</p>
+        </section>
+        <section class="face back ch-how">
+          <div class="back-inner"><div class="big">Scan • Watch • Hear</div><div class="small">Chapter 1 • Draw Alive</div></div>
+        </section>
+      </div>
+    </div>
+
+    <!-- LEAF 2 — ANIMALS -->
+    <div class="leaf" style="--i:2" data-chapter="Animals">
+      <div class="bend">
+        <section class="face front ch-animals">
+          <div class="shade"></div>
+          <div class="kicker">Chapter 2 • The books • Live on Amazon</div>
+          <div class="row">
+            <img class="cover-img" src="covers/animals.jpg" alt="Cover of How to Draw Cute Animals for Kids" loading="lazy">
+            <div class="col">
+              <h2 class="ch-title">How to Draw Cute Animals for Kids</h2>
+              <p class="ch-sub">50 cute animals — every one in 4 easy steps, starting with a circle.</p>
+              <div class="pill-row">
+                <span class="pill">50 animals</span><span class="pill">104 pages</span><span class="pill">Ages 5–9</span><span class="pill">$12.99</span>
+              </div>
+              <a class="btn btn-amazon" href="https://www.amazon.com/dp/B0HTQBH8HM" target="_blank" rel="noopener">Buy on Amazon</a>
+              <p class="note">Our very first book — made before the QR videos existed, so this one has no QR, sound or voice inside. Just 50 animals, 4 steps each, and a practice page for every one.</p>
+            </div>
+          </div>
+        </section>
+        <section class="face back ch-animals">
+          <div class="back-inner"><div class="big">★ 50 Animals ★</div><div class="small">Chapter 2 • Draw Alive</div></div>
+        </section>
+      </div>
+    </div>
+
+    <!-- LEAF 3 — CHRISTMAS -->
+    <div class="leaf" style="--i:3" data-chapter="Christmas">
+      <div class="bend">
+        <section class="face front ch-xmas">
+          <div class="shade"></div>
+          <div class="kicker">Chapter 3 • The books • Live on Amazon</div>
+          <div class="row">
+            <img class="cover-img" src="covers/christmas.jpg" alt="Cover of How to Draw Cute Christmas for Kids" loading="lazy">
+            <div class="col">
+              <h2 class="ch-title">How to Draw Cute Christmas for Kids</h2>
+              <p class="ch-sub">150 Christmas drawings — Santa, snowmen, trees, gifts and more.</p>
+              <div class="pill-row">
+                <span class="pill">150 drawings</span><span class="pill">305 pages</span><span class="pill">Ages 5–9</span><span class="pill">$16.99</span>
+              </div>
+              <a class="btn btn-amazon" href="https://www.amazon.com/dp/B0HTSK4Y8J" target="_blank" rel="noopener">Buy on Amazon</a>
+              <p class="note">QR code on every page — scan it to watch the drawing move, hear its real sounds, and hear a friendly voice tell a true fact. No app needed.</p>
+            </div>
+          </div>
+        </section>
+        <section class="face back ch-xmas">
+          <div class="back-inner"><div class="big">★ 150 Christmas Drawings ★</div><div class="small">Chapter 3 • Draw Alive</div></div>
+        </section>
+      </div>
+    </div>
+
+    <!-- LEAF 4 — 300 THINGS -->
+    <div class="leaf" style="--i:4" data-chapter="300 Things">
+      <div class="bend">
+        <section class="face front ch-things">
+          <div class="shade"></div>
+          <div class="kicker">Chapter 4 • The books • Coming soon</div>
+          <div class="row">
+            <img class="cover-img" src="covers/things300.jpg" alt="Cover of How to Draw 300 Cute Things for Kids" loading="lazy">
+            <div class="col">
+              <h2 class="ch-title">How to Draw 300 Cute Things for Kids</h2>
+              <p class="ch-sub">300 drawings in one book — animals, food, vehicles, dinosaurs and more!</p>
+              <div class="pill-row">
+                <span class="pill">300 drawings</span><span class="pill">149 pages</span><span class="pill">Ages 4–8</span><span class="pill">$12.99</span>
+              </div>
+              <span class="btn btn-soon">Coming soon — in review</span>
+              <p class="note">Two drawings per page, with difficulty stars, a fun fact and a colour tip for every drawing — plus a QR video, real sounds and a friendly voice on every page.</p>
+            </div>
+          </div>
+        </section>
+        <section class="face back ch-things">
+          <div class="back-inner"><div class="big">300 Cute Things</div><div class="small">Chapter 4 • Draw Alive</div></div>
+        </section>
+      </div>
+    </div>
+
+    <!-- LEAF 5 — VEHICLES -->
+    <div class="leaf" style="--i:5" data-chapter="Vehicles">
+      <div class="bend">
+        <section class="face front ch-vehicles">
+          <div class="shade"></div>
+          <div class="kicker">Chapter 5 • The books • Coming soon</div>
+          <div class="row">
+            <img class="cover-img" src="covers/vehicles.jpg" alt="Cover of How to Draw Cute Vehicles for Kids" loading="lazy">
+            <div class="col">
+              <h2 class="ch-title">How to Draw Cute Vehicles for Kids</h2>
+              <p class="ch-sub">100 vehicles — cars, trucks, fire trucks, trains, planes, boats and more.</p>
+              <div class="pill-row">
+                <span class="pill">100 vehicles</span><span class="pill">205 pages</span><span class="pill">Ages 4–8</span><span class="pill">$10.99</span>
+              </div>
+              <span class="btn btn-soon">Coming soon — in review</span>
+              <p class="note">QR + real sounds + voice on every practice page, a fun fact for every vehicle, a progress tracker, and a certificate when you finish all 100.</p>
+            </div>
+          </div>
+        </section>
+        <section class="face back ch-vehicles">
+          <div class="back-inner"><div class="big">100 Vehicles</div><div class="small">Chapter 5 • Draw Alive</div></div>
+        </section>
+      </div>
+    </div>
+
+    <!-- LEAF 6 — DINOSAURS -->
+    <div class="leaf" style="--i:6" data-chapter="Dinosaurs">
+      <div class="bend">
+        <section class="face front ch-dinos">
+          <div class="shade"></div>
+          <div class="kicker">Chapter 6 • The books • Coming soon</div>
+          <div class="row">
+            <img class="cover-img" src="covers/dinosaurs.jpg" alt="Cover of How to Draw Cute Dinosaurs for Kids" loading="lazy">
+            <div class="col">
+              <h2 class="ch-title">How to Draw Cute Dinosaurs for Kids</h2>
+              <p class="ch-sub">100 dinosaurs — T-Rex, Triceratops, Stegosaurus and 97 more.</p>
+              <div class="pill-row">
+                <span class="pill">100 dinosaurs</span><span class="pill">205 pages</span><span class="pill">Ages 4–8</span><span class="pill">$14.99</span>
+              </div>
+              <span class="btn btn-soon">Coming soon</span>
+              <p class="note">QR + real sounds + voice on every animated page. Our roaring book — built and ready, coming to Amazon soon.</p>
+            </div>
+          </div>
+        </section>
+        <section class="face back ch-dinos">
+          <div class="back-inner"><div class="big">100 Dinosaurs</div><div class="small">Chapter 6 • Draw Alive</div></div>
+        </section>
+      </div>
+    </div>
+
+    <!-- LEAF 7 — TRY IT -->
+    <div class="leaf" style="--i:7" data-chapter="Try It">
+      <div class="bend">
+        <section class="face front ch-try">
+          <div class="shade"></div>
+          <div class="kicker">Chapter 7 • Try it — live demo</div>
+          <h2 class="ch-title">Watch one come alive</h2>
+          <p class="ch-sub">This is a real page from our books. Tap the drawing to play it, hear its sound, and try colouring it.</p>
+          <div class="demo-btns" role="group" aria-label="Choose a demo drawing">
+            <button data-demo="https://siam007-ayuno.github.io/draw-alive/300-cat/" class="on">Cat</button>
+            <button data-demo="https://siam007-ayuno.github.io/draw-alive/xmas-santa-claus/">Santa</button>
+            <button data-demo="https://siam007-ayuno.github.io/draw-alive/vehicle-fire-truck/">Fire Truck</button>
+          </div>
+          <div class="demo-frame">
+            <iframe id="demoFrame" src="https://siam007-ayuno.github.io/draw-alive/300-cat/" title="Draw Alive live demo — a cat drawing that comes alive" loading="lazy" allow="autoplay"></iframe>
+          </div>
+          <p class="note"><a href="all-drawings.html" style="color:inherit;font-weight:900">See all 700 drawings →</a> &nbsp;•&nbsp; More books are on the way — word search, Sudoku, crosswords and more.</p>
+        </section>
+        <section class="face back ch-try">
+          <div class="back-inner"><div class="big">Try It Live</div><div class="small">Chapter 7 • Draw Alive</div></div>
+        </section>
+      </div>
+    </div>
+
+    <!-- LEAF 8 — ABOUT -->
+    <div class="leaf" style="--i:8" data-chapter="About">
+      <div class="bend">
+        <section class="face front ch-about">
+          <div class="shade"></div>
+          <div class="kicker">Chapter 8 • About</div>
+          <h2 class="ch-title">Made by a student, with code &amp; care</h2>
+          <p class="ch-body">Hi — I'm <b>MD. Saif Siam</b>, a computer science student in Bangladesh. I make these books with code and a lot of care: every drawing is built step by step, so any kid can follow it — and every QR code is a small video I made, with real sounds and a friendly voice.</p>
+          <p class="ch-body">Draw Alive started with one simple idea: a drawing book should not just sit still. It should move, make sounds, and teach something true. That idea is now five books — and more are coming, including puzzle books for grown-ups.</p>
+          <div class="pill-row">
+            <span class="pill">5 drawing books</span><span class="pill">700+ drawings online</span><span class="pill">Made in Bangladesh</span>
+          </div>
+          <p class="note">The two books live on Amazon today:</p>
+          <p><a class="btn btn-amazon" href="https://www.amazon.com/dp/B0HTQBH8HM" target="_blank" rel="noopener">Animals — $12.99</a>
+          &nbsp;<a class="btn btn-amazon" href="https://www.amazon.com/dp/B0HTSK4Y8J" target="_blank" rel="noopener">Christmas — $16.99</a></p>
+        </section>
+        <section class="face back ch-about">
+          <div class="back-inner"><div class="big">MD. Saif Siam</div><div class="small">Chapter 8 • Draw Alive</div></div>
+        </section>
+      </div>
+    </div>
+
+    <!-- LEAF 9 — BACK COVER -->
+    <div class="leaf" style="--i:9" data-chapter="The End">
+      <div class="bend">
+        <section class="face front ch-end">
+          <div class="shade"></div>
+          <div class="kicker">The end — for now</div>
+          <h2 class="ch-title">Thanks for flipping through!</h2>
+          <p class="ch-sub">More Draw Alive books are coming soon — including puzzle books for grown-ups.</p>
+          <p><a class="btn btn-ghost" href="all-drawings.html">See all 700 drawings</a></p>
+          <p class="note" style="color:#FFF3D6">Draw Alive • by MD. Saif Siam • Made with code and care in Bangladesh</p>
+        </section>
+        <section class="face back ch-end">
+          <div class="back-inner"><div class="big">DRAW ALIVE</div><div class="small">The End • Draw Alive</div></div>
+        </section>
+      </div>
+    </div>
+
+  </div>
+  </div>
+</div>
+
+<nav class="controls" aria-label="Book navigation">
+  <button class="nav-btn" id="prevBtn" aria-label="Previous page">‹ Prev</button>
+  <div class="dots" id="dots" role="tablist" aria-label="Chapters"></div>
+  <button class="nav-btn" id="nextBtn" aria-label="Next page">Next ›</button>
+</nav>
+<div class="page-label" id="pageLabel">Cover • 1 of 10</div>
+<p class="hint">Tap the right edge of the page, swipe left or right, or use the arrows — just like a real book.</p>
+
+<aside class="contents-panel" id="contentsPanel" aria-label="Table of contents">
+  <h3>Contents</h3>
+  <div id="contentsList"></div>
+</aside>
+<script>
+(function(){
+"use strict";
+var book = document.getElementById('book');
+var scene = document.getElementById('scene');
+var leaves = Array.prototype.slice.call(document.querySelectorAll('.leaf'));
+var total = leaves.length;               /* 10 leaves */
+var flipped = 0;                          /* how many leaves are turned */
+var prevBtn = document.getElementById('prevBtn');
+var nextBtn = document.getElementById('nextBtn');
+var pageLabel = document.getElementById('pageLabel');
+var dotsWrap = document.getElementById('dots');
+var contentsBtn = document.getElementById('contentsBtn');
+var contentsPanel = document.getElementById('contentsPanel');
+var contentsList = document.getElementById('contentsList');
+var reduced = (typeof window.matchMedia === 'function') && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+var FLIP_MS = reduced ? 0 : 950;
+
+/* ---------- dots + contents ---------- */
+var dots = leaves.map(function(leaf, i){
+  var d = document.createElement('button');
+  d.type = 'button';
+  d.setAttribute('aria-label', 'Go to ' + leaf.getAttribute('data-chapter'));
+  d.addEventListener('click', function(){ goTo(i); });
+  dotsWrap.appendChild(d);
+  return d;
+});
+leaves.forEach(function(leaf, i){
+  var b = document.createElement('button');
+  b.type = 'button';
+  b.innerHTML = '<span class="no">' + (i + 1) + '</span><span>' + leaf.getAttribute('data-chapter') + '</span>';
+  b.addEventListener('click', function(){ goTo(i); contentsPanel.classList.remove('open'); contentsBtn.setAttribute('aria-expanded','false'); });
+  contentsList.appendChild(b);
+});
+contentsBtn.addEventListener('click', function(){
+  var open = contentsPanel.classList.toggle('open');
+  contentsBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+});
+document.addEventListener('click', function(e){
+  if (!contentsPanel.classList.contains('open')) return;
+  if (!contentsPanel.contains(e.target) && e.target !== contentsBtn) {
+    contentsPanel.classList.remove('open');
+    contentsBtn.setAttribute('aria-expanded','false');
+  }
+});
+document.addEventListener('keydown', function(e){
+  if (e.key === 'Escape') { contentsPanel.classList.remove('open'); contentsBtn.setAttribute('aria-expanded','false'); }
+  if (e.key === 'ArrowRight') next();
+  if (e.key === 'ArrowLeft') prev();
+});
+
+/* ---------- flipping ---------- */
+function update(){
+  var visible = flipped < total ? leaves[flipped].getAttribute('data-chapter') : 'The End';
+  pageLabel.textContent = visible + ' • ' + Math.min(flipped + 1, total) + ' of ' + total;
+  prevBtn.disabled = flipped === 0;
+  nextBtn.disabled = flipped === total;
+  dots.forEach(function(d, i){ d.classList.toggle('on', i === Math.min(flipped, total - 1)); });
+}
+function setFlipped(i, on){
+  var leaf = leaves[i];
+  if (!leaf) return;
+  leaf.classList.add('flipping');
+  leaf.classList.toggle('flipped', on);
+  window.setTimeout(function(){ leaf.classList.remove('flipping'); }, FLIP_MS + 60);
+}
+function next(){ if (flipped < total) { setFlipped(flipped, true); flipped++; update(); } }
+function prev(){ if (flipped > 0) { flipped--; setFlipped(flipped, false); update(); } }
+var jumpTimer = null;
+function goTo(target){
+  target = Math.max(0, Math.min(total, target));
+  if (jumpTimer) { window.clearInterval(jumpTimer); jumpTimer = null; }
+  if (target === flipped) return;
+  var step = target > flipped ? 1 : -1;
+  jumpTimer = window.setInterval(function(){
+    if (flipped === target) { window.clearInterval(jumpTimer); jumpTimer = null; return; }
+    if (step > 0) next(); else prev();
+  }, reduced ? 0 : 150);
+}
+prevBtn.addEventListener('click', prev);
+nextBtn.addEventListener('click', next);
+
+/* tap the page edges to turn, swipe to turn */
+var touchX = null, touchY = null;
+scene.addEventListener('touchstart', function(e){
+  var t = e.changedTouches[0]; touchX = t.clientX; touchY = t.clientY;
+}, {passive:true});
+scene.addEventListener('touchend', function(e){
+  if (touchX === null) return;
+  var t = e.changedTouches[0];
+  var dx = t.clientX - touchX, dy = t.clientY - touchY;
+  touchX = null; touchY = null;
+  if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.5) {
+    if (dx < 0) next(); else prev();
+  }
+}, {passive:true});
+book.addEventListener('click', function(e){
+  if (e.target.closest('a,button,iframe,input')) return;
+  var r = book.getBoundingClientRect();
+  var x = (e.clientX - r.left) / r.width;
+  if (x > 0.62) next();
+  else if (x < 0.22) prev();
+});
+
+/* ---------- 3D tilt: mouse on desktop, device tilt on phones ---------- */
+var finePointer = (typeof window.matchMedia === 'function') && window.matchMedia('(pointer:fine)').matches;
+var baseRX = 6, baseRY = finePointer ? -20 : -14;
+if (finePointer) {
+  scene.addEventListener('pointermove', function(e){
+    var r = scene.getBoundingClientRect();
+    var dx = (e.clientX - r.left) / r.width - 0.5;
+    var dy = (e.clientY - r.top) / r.height - 0.5;
+    book.style.setProperty('--ry', (baseRY + dx * 11) + 'deg');
+    book.style.setProperty('--rx', (baseRX - dy * 7) + 'deg');
+  });
+  scene.addEventListener('pointerleave', function(){
+    book.style.setProperty('--ry', baseRY + 'deg');
+    book.style.setProperty('--rx', baseRX + 'deg');
+  });
+} else if (window.DeviceOrientationEvent) {
+  window.addEventListener('deviceorientation', function(e){
+    if (e.gamma === null || e.beta === null) return;
+    var g = Math.max(-9, Math.min(9, e.gamma * 0.45));
+    var b = Math.max(-5, Math.min(5, (e.beta - 45) * 0.18));
+    book.style.setProperty('--ry', (baseRY + g) + 'deg');
+    book.style.setProperty('--rx', (baseRX + b) + 'deg');
+  });
+}
+
+/* ---------- Try It demo switcher ---------- */
+var frame = document.getElementById('demoFrame');
+document.querySelectorAll('.demo-btns button').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    document.querySelectorAll('.demo-btns button').forEach(function(b){ b.classList.remove('on'); });
+    btn.classList.add('on');
+    frame.src = btn.getAttribute('data-demo');
+  });
+});
+
+update();
+})();
+</script>
 </body>
 </html>
