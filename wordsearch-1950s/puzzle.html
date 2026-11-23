@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Puzzle — 1950s Nostalgia Word Search Helper</title>
+<style>
+  body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+         max-width: 640px; margin: 0 auto; padding: 16px;
+         background: #FBF3E2; color: #222; font-size: 20px; line-height: 1.5; }
+  h1 { color: #1F5F6B; font-size: 26px; text-align: center; margin-bottom: 4px; }
+  .back { text-align: center; margin-bottom: 12px; }
+  .back a { color: #1F5F6B; font-size: 19px; }
+  #grid { display: grid; grid-template-columns: repeat(15, 1fr); gap: 2px;
+          background: #999; border: 2px solid #999; margin: 12px 0; }
+  #grid span { background: #fff; aspect-ratio: 1; display: flex;
+               align-items: center; justify-content: center;
+               font-weight: bold; font-size: clamp(13px, 4.4vw, 24px); }
+  #grid span.hit { background: #D94F5C; color: #fff; }
+  #grid span.hit-hidden { background: #B8860B; color: #fff; }
+  .words { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  button.word { font-size: 20px; font-weight: bold; padding: 12px 8px;
+                border-radius: 10px; border: 2px solid #1F5F6B;
+                background: #fff; color: #1F5F6B; cursor: pointer;
+                text-align: left; }
+  button.word.on { background: #1F5F6B; color: #fff; }
+  button.word .spk { float: right; }
+  .row { display: flex; gap: 10px; margin-top: 14px; }
+  .row button { flex: 1; font-size: 19px; padding: 12px; border-radius: 10px;
+                border: none; background: #1F5F6B; color: #fff; cursor: pointer; }
+  .row button.secondary { background: #B8860B; }
+  .trivia { background: #fff; border: 2px solid #B8860B; border-radius: 10px;
+            padding: 14px; margin-top: 18px; }
+  .trivia b { color: #1F5F6B; }
+  #hiddenAnswer { font-size: 26px; font-weight: bold; color: #B8860B;
+                  text-align: center; margin-top: 10px; display: none; }
+  .foot { text-align: center; color: #555; font-size: 17px; margin-top: 24px; }
+  .err { color: #D94F5C; text-align: center; }
+</style>
+</head>
+<body>
+<h1 id="title">Puzzle</h1>
+<p class="back"><a href="index.html">&larr; All puzzles</a></p>
+<div id="grid"></div>
+<div class="words" id="words"></div>
+<div class="row">
+  <button id="hearAll">&#128266; Hear all words</button>
+  <button id="clear" class="secondary">Clear highlight</button>
+</div>
+<div class="trivia">
+  <b>Trivia:</b> <span id="triviaQ"></span><br>
+  <div class="row">
+    <button id="showHidden">Show the hidden word</button>
+    <button id="hearQ" class="secondary">&#128266; Hear the question</button>
+  </div>
+  <div id="hiddenAnswer"></div>
+</div>
+<p class="foot">Tap a word to see only that word in the grid. The book is
+complete on paper alone — this page is a helper.</p>
+<script>
+const params = new URLSearchParams(location.search);
+const num = parseInt(params.get("p") || "1", 10);
+let puzzle = null;
+
+function speak(text) {
+  if (!("speechSynthesis" in window)) { alert("Your phone cannot read aloud."); return; }
+  speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = "en-US"; u.rate = 0.85;
+  speechSynthesis.speak(u);
+}
+function speakAll(words) {
+  if (!("speechSynthesis" in window)) { alert("Your phone cannot read aloud."); return; }
+  speechSynthesis.cancel();
+  words.forEach(w => {
+    const u = new SpeechSynthesisUtterance(w);
+    u.lang = "en-US"; u.rate = 0.85;
+    speechSynthesis.speak(u);
+  });
+}
+function pathCells(place) {
+  const [r, c, dr, dc] = place, cells = [];
+  const len = currentWordLen;
+  for (let k = 0; k < len; k++) cells.push([r + dr * k, c + dc * k]);
+  return cells;
+}
+let currentWordLen = 0;
+function highlight(place, word, cls) {
+  currentWordLen = word.length;
+  clearHighlight();
+  pathCells(place).forEach(([r, c]) => {
+    document.querySelector(`#grid span[data-r="${r}"][data-c="${c}"]`).classList.add(cls);
+  });
+}
+function clearHighlight() {
+  document.querySelectorAll("#grid span").forEach(s => s.classList.remove("hit", "hit-hidden"));
+  document.querySelectorAll("button.word").forEach(b => b.classList.remove("on"));
+}
+
+fetch("data/puzzles.json").then(r => r.json()).then(data => {
+  puzzle = data.puzzles.find(p => p.num === num);
+  if (!puzzle) {
+    document.body.innerHTML = '<p class="err">Puzzle ' + num + ' not found. ' +
+      '<a href="index.html">Back to all puzzles</a></p>';
+    return;
+  }
+  document.title = "Puzzle " + puzzle.num + " — 1950s Word Search Helper";
+  document.getElementById("title").textContent = "Puzzle " + puzzle.num + " — " + puzzle.theme;
+  const grid = document.getElementById("grid");
+  puzzle.grid.forEach((row, r) => {
+    [...row].forEach((ch, c) => {
+      const s = document.createElement("span");
+      s.textContent = ch; s.dataset.r = r; s.dataset.c = c;
+      grid.appendChild(s);
+    });
+  });
+  const wordsDiv = document.getElementById("words");
+  puzzle.words.forEach(w => {
+    const b = document.createElement("button");
+    b.className = "word";
+    b.innerHTML = w + ' <span class="spk">&#128266;</span>';
+    b.onclick = ev => {
+      if (ev.target.classList.contains("spk")) { speak(w); return; }
+      const on = b.classList.contains("on");
+      clearHighlight();
+      if (!on) { b.classList.add("on"); highlight(puzzle.placements[w], w, "hit"); }
+    };
+    wordsDiv.appendChild(b);
+  });
+  document.getElementById("triviaQ").textContent = puzzle.trivia;
+  document.getElementById("showHidden").onclick = () => {
+    highlight(puzzle.hidden_placement, puzzle.hidden, "hit-hidden");
+    const a = document.getElementById("hiddenAnswer");
+    a.textContent = puzzle.hidden;
+    a.style.display = "block";
+  };
+  document.getElementById("hearQ").onclick = () => speak(puzzle.trivia);
+  document.getElementById("hearAll").onclick = () => speakAll(puzzle.words);
+  document.getElementById("clear").onclick = () => {
+    clearHighlight();
+    document.getElementById("hiddenAnswer").style.display = "none";
+  };
+}).catch(() => {
+  document.body.innerHTML = '<p class="err">Could not load the puzzle. ' +
+    'Check your internet connection and try again.</p>';
+});
+</script>
+</body>
+</html>

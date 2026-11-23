@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>30 Days of Puzzles — Phone Helper</title>
+<style>
+  body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+         max-width: 640px; margin: 0 auto; padding: 20px;
+         background: #FBF3E2; color: #222; font-size: 20px; line-height: 1.5; }
+  h1 { color: #1F3A5F; font-size: 30px; text-align: center; }
+  h2 { color: #1F3A5F; font-size: 24px; margin-top: 28px; }
+  .sub { text-align: center; color: #555; }
+  .grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
+  .grid4 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  a.btn, button.btn { display: block; background: #1F3A5F; color: #fff;
+    text-align: center; text-decoration: none; padding: 14px 6px;
+    border-radius: 10px; font-size: 20px; font-weight: bold; border: 0;
+    width: 100%; cursor: pointer; font-family: inherit; }
+  a.btn:active, button.btn:active { background: #E8821E; }
+  button.btn.orange { background: #E8821E; }
+  button.btn.teal { background: #1F5F6B; }
+  button.btn.ghost { background: #fff; color: #1F3A5F; border: 2px solid #1F3A5F; }
+  .row { display: flex; gap: 10px; margin-top: 12px; }
+  .row > * { flex: 1; }
+  .note { background: #fff; border: 2px solid #B8860B; border-radius: 10px;
+          padding: 14px; margin-top: 28px; font-size: 18px; }
+  .foot { text-align: center; color: #555; font-size: 17px; margin-top: 28px; }
+  table.puzzle { border-collapse: collapse; margin: 12px auto; }
+  table.puzzle td { width: 34px; height: 34px; text-align: center;
+    border: 1px solid #999; font-size: 20px; font-weight: bold;
+    background: #fff; }
+  table.puzzle td.hl { background: #FFD966; }
+  table.puzzle td.given { background: #EAF0F6; }
+  table.puzzle td.right { background: #C6E7C6; }
+  table.puzzle td.wrong { background: #F5C6C6; }
+  table.puzzle td input { width: 30px; height: 30px; border: 0; text-align: center;
+    font-size: 20px; font-weight: bold; background: transparent; }
+  table.puzzle td.black { background: #1F3A5F; }
+  .words { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+  .words button { font-size: 18px; padding: 10px 12px; border-radius: 8px;
+    border: 2px solid #1F3A5F; background: #fff; cursor: pointer; }
+  .words button.done { background: #C6E7C6; }
+  .clues { font-size: 18px; }
+  .clues li { margin-bottom: 8px; }
+  .clues button { font-size: 16px; margin-left: 6px; padding: 4px 8px; }
+  .big { font-size: 24px; letter-spacing: 2px; word-break: break-word;
+         background: #fff; border: 2px solid #1F3A5F; border-radius: 10px;
+         padding: 16px; margin-top: 12px; }
+  .msg { margin-top: 14px; font-weight: bold; min-height: 28px; }
+  .back { display: inline-block; margin-top: 20px; color: #1F3A5F; font-size: 18px; }
+</style>
+</head>
+<body>
+<div id="app"><p>Loading your puzzles&hellip;</p></div>
+<script src="app.js"></script>
+<script>
+var DATA = null;
+var params = new URLSearchParams(location.search);
+var day = parseInt(params.get("d") || "0", 10);
+var type = params.get("t") || "";
+
+function esc(s) { return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;"); }
+function speak(text) {
+  if (!("speechSynthesis" in window)) { alert("Your phone cannot read aloud."); return; }
+  speechSynthesis.cancel();
+  var u = new SpeechSynthesisUtterance(text);
+  u.rate = 0.85;
+  speechSynthesis.speak(u);
+}
+function go(d, t) {
+  var q = d ? ("?d=" + d + (t ? "&t=" + t : "")) : "";
+  history.pushState(null, "", location.pathname + q);
+  day = d; type = t || "";
+  render();
+}
+function link(d, t, label) {
+  return '<a class="btn" href="?d=' + d + "&t=" + t + '">' + esc(label) + "</a>";
+}
+
+function render() {
+  var app = document.getElementById("app");
+  if (!DATA) { app.innerHTML = "<p>Could not load the puzzles. Check your internet and try again.</p>"; return; }
+  if (!day) return renderHub(app);
+  if (!type) return renderDay(app);
+  if (type === "ws") return renderWS(app);
+  if (type === "sd") return renderSD(app);
+  if (type === "xw") return renderXW(app);
+  if (type === "cr") return renderCR(app);
+  return renderHub(app);
+}
+
+function renderHub(app) {
+  var h = "<h1>30 Days of Puzzles</h1><p class='sub'>Phone helper for the book by MD. Saif Siam</p>"
+    + "<p>Tap your day. Then tap the puzzle. You can ask for a <b>hint</b>, "
+    + "<b>check one answer</b>, or see the <b>solution</b> — for that puzzle only. "
+    + "You never see another puzzle's answer.</p><div class='grid'>";
+  for (var d = 1; d <= 30; d++) h += '<a class="btn" href="?d=' + d + '">Day ' + d + "</a>";
+  h += "</div><div class='note'>The book is complete on paper alone — this page is a bonus helper. "
+    + "It needs internet. No app, no account, nothing to install.</div>"
+    + "<p class='foot'>Large Print Variety Puzzle Book for Seniors &middot; 120 puzzles</p>";
+  app.innerHTML = h;
+}
+
+function renderDay(app) {
+  var ws = DATA.word_search[day - 1], sd = DATA.sudoku[day - 1],
+      xw = DATA.crosswords[day - 1], cr = DATA.cryptograms[day - 1];
+  var h = "<h1>Day " + day + "</h1><p class='sub'>Pick a puzzle. Same order as the book.</p><div class='grid4'>"
+    + link(day, "ws", "Word Search<br><span style='font-size:16px'>" + esc(ws.theme) + "</span>")
+    + link(day, "sd", "Sudoku<br><span style='font-size:16px'>" + esc(sd.difficulty) + "</span>")
+    + link(day, "xw", "Crossword<br><span style='font-size:16px'>" + esc(xw.title) + "</span>")
+    + link(day, "cr", "Cryptogram<br><span style='font-size:16px'>" + esc(cr.author) + "</span>")
+    + "</div><a class='back' href='?'>&larr; All 30 days</a>";
+  app.innerHTML = h;
+}
+
+/* ---------------------------------------------------------- word search */
+function renderWS(app) {
+  var p = DATA.word_search[day - 1];
+  var h = "<h1>Day " + day + " — Word Search</h1><p class='sub'>" + esc(p.theme)
+    + " &middot; " + esc(p.difficulty) + " &middot; Words go across and down only</p>"
+    + "<table class='puzzle' id='wsgrid'>";
+  for (var r = 0; r < 15; r++) {
+    h += "<tr>";
+    for (var c = 0; c < 15; c++)
+      h += "<td data-r='" + r + "' data-c='" + c + "'>" + p.grid[r][c] + "</td>";
+    h += "</tr>";
+  }
+  h += "</table><p>Tap a word you cannot find — you will see <b>only that word</b>:</p><div class='words'>";
+  p.words.forEach(function (w) {
+    h += "<button data-word='" + w + "'>" + w + "</button>";
+  });
+  h += "</div><div class='row'><button class='btn teal' id='ws-hear'>Hear the words</button>"
+    + "<button class='btn orange' id='ws-hidden'>Hidden word?</button></div>"
+    + "<div class='row'><button class='btn ghost' id='ws-show'>Show the whole answer</button></div>"
+    + "<p class='msg' id='ws-msg'></p>"
+    + "<p id='ws-trivia'></p>"
+    + "<a class='back' href='?d=" + day + "'>&larr; Day " + day + "</a> &middot; <a class='back' href='?'>All days</a>";
+  app.innerHTML = h;
+  var shown = {};
+  function highlight(word) {
+    var cells = wsCells(p, word);
+    if (!cells) return;
+    document.querySelectorAll("#wsgrid td").forEach(function (td) { td.classList.remove("hl"); });
+    cells.forEach(function (rc) {
+      document.querySelector('#wsgrid td[data-r="' + rc[0] + '"][data-c="' + rc[1] + '"]').classList.add("hl");
+    });
+    shown[word] = true;
+    document.querySelector('button[data-word="' + word + '"]').classList.add("done");
+  }
+  document.querySelectorAll(".words button").forEach(function (b) {
+    b.addEventListener("click", function () {
+      highlight(b.getAttribute("data-word"));
+      document.getElementById("ws-msg").textContent = b.getAttribute("data-word") + " is highlighted above.";
+    });
+  });
+  document.getElementById("ws-hear").addEventListener("click", function () {
+    speak(p.words.join(", "));
+  });
+  document.getElementById("ws-hidden").addEventListener("click", function () {
+    highlight(p.hidden);
+    document.getElementById("ws-trivia").innerHTML = "<b>Trivia:</b> " + esc(p.trivia)
+      + "<br><b>Answer:</b> " + esc(p.hidden);
+  });
+  var armed = false;
+  document.getElementById("ws-show").addEventListener("click", function () {
+    if (!armed) { armed = true; this.textContent = "Tap again to show the whole answer"; return; }
+    p.words.concat([p.hidden]).forEach(highlight);
+    document.getElementById("ws-msg").textContent = "All words are highlighted above.";
+  });
+}
+
+/* -------------------------------------------------------------- sudoku */
+function renderSD(app) {
+  var p = DATA.sudoku[day - 1];
+  var h = "<h1>Day " + day + " — Sudoku</h1><p class='sub'>" + esc(p.difficulty)
+    + " &middot; Every row, column and box holds 1 to 9</p><table class='puzzle' id='sdgrid'>";
+  for (var r = 0; r < 9; r++) {
+    h += "<tr>";
+    for (var c = 0; c < 9; c++) {
+      var i = r * 9 + c, g = p.givens[i];
+      if (g !== "0") h += "<td class='given'>" + g + "</td>";
+      else h += "<td><input data-i='" + i + "' inputmode='numeric' maxlength='1'></td>";
+    }
+    h += "</tr>";
+  }
+  h += "</table><div class='row'><button class='btn teal' id='sd-check'>Check my numbers</button>"
+    + "<button class='btn orange' id='sd-hint'>Give me one number</button></div>"
+    + "<div class='row'><button class='btn ghost' id='sd-show'>Show the solution</button>"
+    + "<button class='btn ghost' id='sd-clear'>Clear my numbers</button></div>"
+    + "<p class='msg' id='sd-msg'></p>"
+    + "<a class='back' href='?d=" + day + "'>&larr; Day " + day + "</a> &middot; <a class='back' href='?'>All days</a>";
+  app.innerHTML = h;
+  function entered() {
+    var s = "";
+    for (var i = 0; i < 81; i++) {
+      var inp = document.querySelector('input[data-i="' + i + '"]');
+      s += inp ? (inp.value || "0") : p.givens[i];
+    }
+    return s;
+  }
+  document.getElementById("sd-check").addEventListener("click", function () {
+    var states = sudokuCheck(p.givens, p.solution, entered());
+    var wrong = 0, right = 0, empty = 0;
+    document.querySelectorAll("#sdgrid td").forEach(function (td) { td.classList.remove("right", "wrong"); });
+    for (var i = 0; i < 81; i++) {
+      if (p.givens[i] !== "0") continue;
+      var inp = document.querySelector('input[data-i="' + i + '"]');
+      var td = inp.parentElement;
+      if (states[i] === "right") { td.classList.add("right"); right++; }
+      else if (states[i] === "wrong") { td.classList.add("wrong"); wrong++; }
+      else empty++;
+    }
+    document.getElementById("sd-msg").textContent =
+      wrong ? (wrong + " number" + (wrong > 1 ? "s are" : " is") + " wrong — the red squares. Try again.")
+            : (empty ? ("All " + right + " numbers so far are right. " + empty + " empty squares left.")
+                     : "Perfect — every number is right!");
+  });
+  document.getElementById("sd-hint").addEventListener("click", function () {
+    var hint = sudokuNextHint(p.givens, p.solution, entered());
+    if (!hint) { document.getElementById("sd-msg").textContent = "Nothing left to fill — well done!"; return; }
+    var inp = document.querySelector('input[data-i="' + hint.cell + '"]');
+    inp.value = hint.digit;
+    inp.parentElement.classList.add("right");
+    var r = Math.floor(hint.cell / 9) + 1, c = hint.cell % 9 + 1;
+    document.getElementById("sd-msg").textContent =
+      "Row " + r + ", column " + c + " is " + hint.digit + ".";
+  });
+  var armed = false;
+  document.getElementById("sd-show").addEventListener("click", function () {
+    if (!armed) { armed = true; this.textContent = "Tap again to show the solution"; return; }
+    for (var i = 0; i < 81; i++) {
+      var inp = document.querySelector('input[data-i="' + i + '"]');
+      if (inp) inp.value = p.solution[i];
+    }
+    document.getElementById("sd-msg").textContent = "Solution shown.";
+  });
+  document.getElementById("sd-clear").addEventListener("click", function () {
+    document.querySelectorAll("#sdgrid input").forEach(function (inp) { inp.value = ""; });
+    document.querySelectorAll("#sdgrid td").forEach(function (td) { td.classList.remove("right", "wrong"); });
+    document.getElementById("sd-msg").textContent = "";
+  });
+}
+
+/* ------------------------------------------------------------ crosswords */
+function renderXW(app) {
+  var p = DATA.crosswords[day - 1];
+  var revealed = new Set();
+  var h = "<h1>Day " + day + " — Crossword</h1><p class='sub'>" + esc(p.title)
+    + " &middot; " + "*".repeat(p.stars) + " star" + (p.stars > 1 ? "s" : "")
+    + " &middot; The diamond clue is the themed answer</p>"
+    + "<table class='puzzle' id='xwgrid'>";
+  for (var r = 0; r < 11; r++) {
+    h += "<tr>";
+    for (var c = 0; c < 11; c++) {
+      var ch = p.grid[r][c];
+      if (ch === "#") h += "<td class='black'></td>";
+      else h += "<td data-r='" + r + "' data-c='" + c + "'></td>";
+    }
+    h += "</tr>";
+  }
+  h += "</table><h2>Across</h2><ol class='clues'>";
+  p.across.forEach(function (e) {
+    h += "<li>" + esc(e.clue) + " <button data-num='" + e.num + "' data-dir='A'>One letter</button>"
+      + " <button data-check='" + e.num + "|A'>Check</button></li>";
+  });
+  h += "</ol><h2>Down</h2><ol class='clues'>";
+  p.down.forEach(function (e) {
+    h += "<li>" + esc(e.clue) + " <button data-num='" + e.num + "' data-dir='D'>One letter</button>"
+      + " <button data-check='" + e.num + "|D'>Check</button></li>";
+  });
+  h += "</ol><div class='row'><button class='btn teal' id='xw-hear'>Hear the clues</button>"
+    + "<button class='btn ghost' id='xw-show'>Show the full answer</button></div>"
+    + "<p class='msg' id='xw-msg'></p>"
+    + "<a class='back' href='?d=" + day + "'>&larr; Day " + day + "</a> &middot; <a class='back' href='?'>All days</a>";
+  app.innerHTML = h;
+  function paint() {
+    document.querySelectorAll("#xwgrid td[data-r]").forEach(function (td) {
+      var key = td.getAttribute("data-r") + "," + td.getAttribute("data-c");
+      td.textContent = revealed.has(key) ? p.grid[+td.getAttribute("data-r")][+td.getAttribute("data-c")] : "";
+      td.classList.toggle("hl", revealed.has(key));
+    });
+  }
+  document.querySelectorAll("button[data-num]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      var entry = xwAnswer(p, +b.getAttribute("data-num"), b.getAttribute("data-dir"));
+      var next = xwNextLetter(entry, b.getAttribute("data-dir"), revealed);
+      if (!next) { document.getElementById("xw-msg").textContent = "That answer is fully shown already."; return; }
+      revealed.add(next.cell[0] + "," + next.cell[1]);
+      paint();
+      document.getElementById("xw-msg").textContent =
+        "One letter of " + entry.num + (b.getAttribute("data-dir") === "A" ? "-Across" : "-Down")
+        + ": " + next.letter + ".";
+    });
+  });
+  document.querySelectorAll("button[data-check]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      var parts = b.getAttribute("data-check").split("|");
+      var entry = xwAnswer(p, +parts[0], parts[1]);
+      var guess = (prompt("Type your answer for " + entry.num + (parts[1] === "A" ? "-Across" : "-Down") + ":") || "")
+        .trim().toUpperCase();
+      if (!guess) return;
+      document.getElementById("xw-msg").textContent =
+        guess === entry.word ? ("Right! " + entry.num + " is " + entry.word + ".")
+                             : ("Not that — try again. (It has " + entry.word.length + " letters.)");
+    });
+  });
+  document.getElementById("xw-hear").addEventListener("click", function () {
+    var all = p.across.concat(p.down).map(function (e) { return e.num + ". " + e.clue; }).join(" ");
+    speak(all);
+  });
+  var armed = false;
+  document.getElementById("xw-show").addEventListener("click", function () {
+    if (!armed) { armed = true; this.textContent = "Tap again to show the full answer"; return; }
+    for (var r = 0; r < 11; r++) for (var c = 0; c < 11; c++)
+      if (p.grid[r][c] !== "#") revealed.add(r + "," + c);
+    paint();
+    document.getElementById("xw-msg").textContent = "Full answer shown.";
+  });
+}
+
+/* ----------------------------------------------------------- cryptograms */
+function renderCR(app) {
+  var p = DATA.cryptograms[day - 1];
+  var revealed = new Set(p.starters.map(function (s) { return s.plain; }));
+  var freq = cryptoFreqLetters(p.quote);
+  var h = "<h1>Day " + day + " — Cryptogram</h1><p class='sub'>" + esc(p.difficulty)
+    + " &middot; A famous old quote, in code</p>"
+    + "<div class='big' id='cr-cipher'>" + esc(p.cipher) + "</div>"
+    + "<div class='big' id='cr-decoded'></div>"
+    + "<p>Starter letters: <b>" + p.starters.map(function (s) { return s.cipher + " = " + s.plain; }).join(", ") + "</b></p>"
+    + "<div class='row'><button class='btn teal' id='cr-letter'>Reveal one letter</button>"
+    + "<button class='btn orange' id='cr-author'>Reveal the author</button></div>"
+    + "<div class='row'><button class='btn teal' id='cr-hear'>Hear the quote</button>"
+    + "<button class='btn ghost' id='cr-show'>Show the quote</button></div>"
+    + "<p class='msg' id='cr-msg'></p><p id='cr-author-line'></p>"
+    + "<a class='back' href='?d=" + day + "'>&larr; Day " + day + "</a> &middot; <a class='back' href='?'>All days</a>";
+  app.innerHTML = h;
+  function paint() {
+    document.getElementById("cr-decoded").textContent = cryptoDecode(p.cipher, p.mapping, revealed);
+  }
+  paint();
+  document.getElementById("cr-letter").addEventListener("click", function () {
+    var next = freq.find(function (ch) { return !revealed.has(ch); });
+    if (!next) { document.getElementById("cr-msg").textContent = "Every letter is revealed already."; return; }
+    revealed.add(next);
+    paint();
+    document.getElementById("cr-msg").textContent =
+      "The code letter " + p.mapping[next] + " is " + next + ".";
+  });
+  document.getElementById("cr-author").addEventListener("click", function () {
+    document.getElementById("cr-author-line").innerHTML =
+      "<b>Author:</b> " + esc(p.author) + " — " + esc(p.work) + " (" + p.year + ")";
+  });
+  document.getElementById("cr-hear").addEventListener("click", function () {
+    speak(p.quote);
+  });
+  var armed = false;
+  document.getElementById("cr-show").addEventListener("click", function () {
+    if (!armed) { armed = true; this.textContent = "Tap again to show the quote"; return; }
+    freq.forEach(function (ch) { revealed.add(ch); });
+    paint();
+    document.getElementById("cr-author-line").innerHTML =
+      "<b>" + esc(p.quote) + "</b><br>— " + esc(p.author) + ", " + esc(p.work) + " (" + p.year + ")";
+  });
+}
+
+fetch("data/puzzles.json").then(function (r) { return r.json(); }).then(function (d) {
+  DATA = d;
+  render();
+}).catch(function () {
+  document.getElementById("app").innerHTML =
+    "<p>Could not load the puzzles. Check your internet and try again.</p>";
+});
+window.addEventListener("popstate", function () {
+  params = new URLSearchParams(location.search);
+  day = parseInt(params.get("d") || "0", 10);
+  type = params.get("t") || "";
+  render();
+});
+</script>
+</body>
+</html>

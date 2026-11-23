@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Photo Hint — 100 Large Print Sudoku</title>
+<style>
+  body { font-family: Georgia, 'Times New Roman', serif; max-width: 640px; margin: 0 auto; padding: 16px; color: #222; background: #fffdf6; }
+  h1 { font-size: 26px; color: #1f3a5f; margin-bottom: 4px; }
+  h2 { font-size: 19px; color: #1f3a5f; margin-top: 28px; }
+  p, li { font-size: 17px; line-height: 1.5; }
+  .sub { color: #555; font-size: 15px; }
+  .step { background: #fff; border: 2px solid #e8821e; border-radius: 10px; padding: 14px; margin: 12px 0; }
+  .step h3 { margin: 0 0 8px; color: #1f3a5f; font-size: 18px; }
+  button { font-size: 17px; padding: 10px 16px; margin: 4px 4px 4px 0; border-radius: 8px; border: 2px solid #1f3a5f; background: #1f3a5f; color: #fff; cursor: pointer; }
+  button.secondary { background: #fff; color: #1f3a5f; }
+  button:disabled { opacity: .45; cursor: default; }
+  select, input[type=file] { font-size: 17px; padding: 8px; margin: 4px 4px 4px 0; }
+  #grid { border-collapse: collapse; margin: 12px auto; }
+  #grid td { width: 52px; height: 52px; text-align: center; font-size: 30px; font-weight: bold; border: 1px solid #8a94a6; cursor: pointer; background: #fff; }
+  #grid td.given { color: #1f3a5f; cursor: default; }
+  #grid td.mine { color: #0b6fa4; }
+  #grid td.sel { background: #fff3d6; outline: 3px solid #e8821e; }
+  #grid td.hintcell { background: #d6f5d6; outline: 3px solid #2e7d32; }
+  #grid td.conflict { background: #ffd6d6; }
+  #grid td:nth-child(3), #grid td:nth-child(6) { border-right: 3px solid #1f3a5f; }
+  #grid tr:nth-child(3) td, #grid tr:nth-child(6) td { border-bottom: 3px solid #1f3a5f; }
+  #grid { border: 3px solid #1f3a5f; }
+  #keypad { text-align: center; margin: 8px 0; }
+  #keypad button { width: 52px; height: 52px; font-size: 24px; padding: 0; margin: 3px; }
+  #hintBox { background: #eaf6ea; border: 2px solid #2e7d32; border-radius: 10px; padding: 14px; font-size: 18px; line-height: 1.5; display: none; }
+  #hintBox .tech { font-weight: bold; color: #2e7d32; }
+  #status { font-size: 16px; color: #555; min-height: 24px; }
+  #photoPreview { max-width: 100%; display: none; margin-top: 10px; border: 2px solid #1f3a5f; }
+  .note { font-size: 15px; color: #555; }
+  .hidden { display: none; }
+</style>
+</head>
+<body>
+<h1>Photo Hint</h1>
+<p class="sub">Companion to <b>100 Large Print Sudoku — Easy, Medium &amp; Hard</b> by MD. Saif Siam.<br>
+Stuck on a puzzle? This page shows you the <b>next step</b> — and explains the thinking behind it. It never shows the full solution.</p>
+
+<div class="step">
+  <h3>Step 1 — Load your puzzle</h3>
+  <p>Three ways — pick the one that suits you:</p>
+  <p><b>A. Pick it from the book:</b>
+    <select id="chapterSel"><option value="easy">Easy</option><option value="medium">Medium</option><option value="hard">Hard</option><option value="championship">Championship Challenge</option></select>
+    <select id="numSel"></select>
+    <button id="loadPicked">Load puzzle</button>
+  </p>
+  <p><b>B. Photograph the printed page:</b> fit the whole grid in the photo, in good light.
+    <br><input type="file" id="photoInput" accept="image/*" capture="environment">
+    <button id="photoBtn" class="secondary">Read the photo</button>
+    <span id="cvStatus" class="note">Photo reading loads when the page opens…</span>
+    <br><img id="photoPreview" alt="">
+  </p>
+  <p><b>C. Type the numbers yourself:</b> tap a cell below, then tap a number. The dark numbers are the printed givens — tap them in first, or use option A.</p>
+  <p class="note">A photo reads the <b>printed</b> puzzle only. Handwritten pencil numbers cannot be read reliably from a photo — after the photo loads the givens, tap in the numbers you have already filled in yourself.</p>
+</div>
+
+<div class="step">
+  <h3>Step 2 — Add the numbers you have filled in</h3>
+  <p id="loadedLabel">No puzzle loaded yet — pick one above, or tap the empty grid to type the givens in.</p>
+  <table id="grid"></table>
+  <div id="keypad"></div>
+  <p class="note">Tap a cell, then tap a number. Tap <b>⌫</b> to clear a cell. Printed givens (dark) cannot be changed — load the puzzle again to start over.</p>
+  <p>
+    <button id="hintBtn">💡 Give me a hint</button>
+    <button id="checkBtn" class="secondary">Check my numbers</button>
+    <button id="clearMineBtn" class="secondary">Clear my numbers</button>
+  </p>
+  <div id="status"></div>
+  <div id="hintBox"></div>
+</div>
+
+<div class="step">
+  <h3>How the hint works</h3>
+  <ul>
+    <li><b>Easy puzzles</b> only need <i>singles</i> — a cell that can only be one number, or a number that can only go in one cell.</li>
+    <li><b>Medium puzzles</b> also use <i>pairs</i> and <i>pointing</i> — two cells sharing two numbers, or a number trapped in one row of a box.</li>
+    <li><b>Hard puzzles</b> add <i>triples</i>, <i>box-line reduction</i> and the <i>X-wing</i> — a rectangle of four cells.</li>
+    <li><b>Championship Challenge puzzles</b> use the same Hard techniques — they are the hardest puzzles in the book.</li>
+    <li>The hint always shows the <b>easiest next step</b> first, and explains <b>why</b> — so you learn the thinking, not just the answer.</li>
+  </ul>
+  <p class="note">The book is complete on paper alone — this page is a free helper, not a requirement. No account, no app, no payment.</p>
+</div>
+
+<script src="sudoku-hint.js"></script>
+<script src="puzzles-data.js"></script>
+<script async src="https://docs.opencv.org/4.8.0/opencv.js" onload="window.__cvReady=true;document.getElementById('cvStatus').textContent='Photo reading is ready.';" onerror="window.__cvReady=false;document.getElementById('cvStatus').textContent='Photo reading could not load (offline?). Pick the puzzle by number instead — the hint still works.';"></script>
+<script>
+(function () {
+  var grid = new Array(81).fill(0);   // current state: givens + typed numbers
+  var givens = new Array(81).fill(0); // locked printed numbers
+  var sel = -1, loadedName = "";
+  var table = document.getElementById("grid");
+  var statusEl = document.getElementById("status");
+  var hintBox = document.getElementById("hintBox");
+
+  function buildGrid() {
+    table.innerHTML = "";
+    for (var r = 0; r < 9; r++) {
+      var tr = document.createElement("tr");
+      for (var c = 0; c < 9; c++) {
+        var td = document.createElement("td");
+        td.dataset.i = r * 9 + c;
+        td.onclick = (function (cell) { return function () { selectCell(cell); }; })(r * 9 + c);
+        tr.appendChild(td);
+      }
+      table.appendChild(tr);
+    }
+  }
+  function render() {
+    var cells = table.getElementsByTagName("td");
+    for (var i = 0; i < 81; i++) {
+      var td = cells[i];
+      td.textContent = grid[i] ? grid[i] : "";
+      td.className = "";
+      if (givens[i]) td.classList.add("given");
+      else if (grid[i]) td.classList.add("mine");
+      if (i === sel) td.classList.add("sel");
+    }
+  }
+  function selectCell(i) {
+    if (givens[i]) { status("That number is printed in the book — it cannot be changed."); return; }
+    sel = i; render();
+  }
+  function status(msg) { statusEl.textContent = msg; }
+
+  // keypad 1-9 + clear
+  var kp = document.getElementById("keypad");
+  [1,2,3,4,5,6,7,8,9].forEach(function (d) {
+    var b = document.createElement("button");
+    b.textContent = d;
+    b.onclick = function () {
+      if (sel < 0) { status("Tap a cell first, then a number."); return; }
+      if (givens[sel]) return;
+      grid[sel] = d; hintBox.style.display = "none"; render(); status("");
+    };
+    kp.appendChild(b);
+  });
+  var clr = document.createElement("button"); clr.textContent = "⌫";
+  clr.onclick = function () { if (sel >= 0 && !givens[sel]) { grid[sel] = 0; hintBox.style.display = "none"; render(); } };
+  kp.appendChild(clr);
+
+  function loadPuzzle(givensStr, name) {
+    givens = givensStr.split("").map(Number);
+    grid = givens.slice();
+    loadedName = name;
+    document.getElementById("loadedLabel").textContent = "Loaded: " + name + ". Now tap in any numbers you have already filled in, then ask for a hint.";
+    sel = -1; hintBox.style.display = "none"; render(); status("");
+  }
+
+  // --- A. pick by chapter + number ---
+  var chapterSel = document.getElementById("chapterSel");
+  var numSel = document.getElementById("numSel");
+  function fillNums() {
+    var ch = chapterSel.value, n = (window.PUZZLES && PUZZLES[ch]) ? PUZZLES[ch].length : 0;
+    numSel.innerHTML = "";
+    for (var k = 1; k <= n; k++) { var o = document.createElement("option"); o.value = k; o.textContent = k; numSel.appendChild(o); }
+  }
+  chapterSel.onchange = fillNums; fillNums();
+  document.getElementById("loadPicked").onclick = function () {
+    var ch = chapterSel.value, n = +numSel.value;
+    if (!window.PUZZLES || !PUZZLES[ch] || !PUZZLES[ch][n - 1]) { status("Puzzle list is still loading — try again in a moment."); return; }
+    var label = { easy: "Easy", medium: "Medium", hard: "Hard",
+                  championship: "Championship Challenge" }[ch] || ch;
+    loadPuzzle(PUZZLES[ch][n - 1], label + " " + n);
+  };
+
+  // --- B. photo reading (OpenCV.js, same method as the tested prototype) ---
+  var photoFile = null;
+  document.getElementById("photoInput").onchange = function (e) { photoFile = e.target.files[0] || null; };
+  document.getElementById("photoBtn").onclick = function () {
+    if (!photoFile) { status("Choose a photo of the puzzle page first."); return; }
+    if (!window.cv || !window.__cvReady) { status("Photo reading is not ready (it needs the internet the first time). Pick the puzzle by number instead — the hint still works."); return; }
+    status("Reading the photo… hold on.");
+    var img = document.getElementById("photoPreview");
+    var url = URL.createObjectURL(photoFile);
+    img.onload = function () { img.style.display = "block"; try { readPhoto(img); } catch (err) { status("Could not read that photo: " + err.message + ". Try again in better light, or pick the puzzle by number."); } };
+    img.src = url;
+  };
+
+  function orderPoints(pts) {
+    // pts: 4x [x,y] -> [top-left, top-right, bottom-right, bottom-left]
+    var s = pts.map(function (p) { return p[0] + p[1]; });
+    var d = pts.map(function (p) { return p[0] - p[1]; });
+    return [pts[s.indexOf(Math.min.apply(null, s))], pts[d.indexOf(Math.max.apply(null, d))],
+            pts[s.indexOf(Math.max.apply(null, s))], pts[d.indexOf(Math.min.apply(null, d))]];
+  }
+  function makeTemplates() {
+    // Digit templates in bold Helvetica/Arial — the same family as the
+    // book's printed numbers. Rendered on canvas, cropped to the ink.
+    var out = {}, cell = 100;
+    for (var d = 1; d <= 9; d++) {
+      var cvv = document.createElement("canvas"); cvv.width = cvv.height = cell;
+      var ctx = cvv.getContext("2d");
+      ctx.fillStyle = "#fff"; ctx.fillRect(0, 0, cell, cell);
+      ctx.fillStyle = "#000"; ctx.font = "bold " + Math.floor(cell * 0.62) + "px Helvetica, Arial, sans-serif";
+      ctx.textAlign = "center"; ctx.textBaseline = "middle";
+      ctx.fillText(String(d), cell / 2, cell / 2 + 2);
+      out[d] = normalise(templatePixels(cvv, cell));
+    }
+    return out;
+  }
+  function templatePixels(cvv, cell) {
+    var ctx = cvv.getContext("2d");
+    var data = ctx.getImageData(0, 0, cell, cell).data;
+    var minX = cell, minY = cell, maxX = 0, maxY = 0;
+    for (var y = 0; y < cell; y++) for (var x = 0; x < cell; x++) {
+      if (data[(y * cell + x) * 4] < 128) { if (x < minX) minX = x; if (x > maxX) maxX = x; if (y < minY) minY = y; if (y > maxY) maxY = y; }
+    }
+    var w = maxX - minX + 1, h = maxY - minY + 1;
+    var small = document.createElement("canvas"); small.width = 40; small.height = 56;
+    var sctx = small.getContext("2d");
+    sctx.fillStyle = "#fff"; sctx.fillRect(0, 0, 40, 56);
+    sctx.drawImage(cvv, minX, minY, w, h, 0, 0, 40, 56);
+    return sctx.getImageData(0, 0, 40, 56).data;
+  }
+  function normalise(px) { // -> Float array, ink = 1, paper = 0
+    var out = new Float32Array(40 * 56);
+    for (var i = 0; i < 40 * 56; i++) out[i] = px[i * 4] < 128 ? 1 : 0;
+    return out;
+  }
+  function ncc(a, b) {
+    var ma = 0, mb = 0, i;
+    for (i = 0; i < a.length; i++) { ma += a[i]; mb += b[i]; }
+    ma /= a.length; mb /= b.length;
+    var num = 0, da = 0, db = 0;
+    for (i = 0; i < a.length; i++) { var x = a[i] - ma, y = b[i] - mb; num += x * y; da += x * x; db += y * y; }
+    return da && db ? num / Math.sqrt(da * db) : 0;
+  }
+  function readPhoto(img) {
+    var src = cv.imread(img);
+    var gray = new cv.Mat(), blur = new cv.Mat(), th = new cv.Mat();
+    cv.cvtColor(src, gray, cv.COLOR_RGBA2GRAY);
+    cv.GaussianBlur(gray, blur, new cv.Size(5, 5), 0);
+    cv.adaptiveThreshold(blur, th, 255, cv.ADAPTIVE_THRESH_GAUSSIAN_C, cv.THRESH_BINARY_INV, 51, 12);
+    var contours = new cv.MatVector(), hierarchy = new cv.Mat();
+    cv.findContours(th, contours, hierarchy, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE);
+    var warped = null;
+    var areas = [];
+    for (var i = 0; i < contours.size(); i++) areas.push([cv.contourArea(contours.get(i)), i]);
+    areas.sort(function (a, b) { return b[0] - a[0]; });
+    for (var k = 0; k < Math.min(6, areas.length); k++) {
+      var cnt = contours.get(areas[k][1]);
+      var peri = cv.arcLength(cnt, true);
+      var approx = new cv.Mat();
+      cv.approxPolyDP(cnt, approx, 0.02 * peri, true);
+      if (approx.rows === 4 && areas[k][0] > 0.15 * src.rows * src.cols) {
+        var pts = [];
+        for (var p = 0; p < 4; p++) pts.push([approx.data32S[p * 2], approx.data32S[p * 2 + 1]]);
+        var ord = orderPoints(pts);
+        var srcPts = cv.matFromArray(4, 1, cv.CV_32FC2, [].concat.apply([], ord));
+        var dstPts = cv.matFromArray(4, 1, cv.CV_32FC2, [0, 0, 900, 0, 900, 900, 0, 900]);
+        var M = cv.getPerspectiveTransform(srcPts, dstPts);
+        warped = new cv.Mat();
+        cv.warpPerspective(gray, warped, M, new cv.Size(900, 900));
+        srcPts.delete(); dstPts.delete(); M.delete();
+      }
+      approx.delete();
+      if (warped) break;
+    }
+    src.delete(); gray.delete(); blur.delete(); th.delete(); contours.delete(); hierarchy.delete();
+    if (!warped) { status("I could not find the grid in that photo. Make sure the whole grid is in view, in good light, and try again — or pick the puzzle by number."); return; }
+    // split into cells, template-match each digit
+    var templates = makeTemplates();
+    var wdata = new Uint8Array(warped.data);
+    var givensStr = "", lowScore = 1, lowCount = 0;
+    for (var r = 0; r < 9; r++) for (var c = 0; c < 9; c++) {
+      var cell = 100, x0 = c * cell, y0 = r * cell;
+      var inner = [];
+      for (var y = y0 + 12; y < y0 + cell - 12; y++) for (var x = x0 + 12; x < x0 + cell - 12; x++) inner.push(wdata[y * 900 + x]);
+      var ink = inner.filter(function (v) { return v < 128; }).length / inner.length;
+      if (ink < 0.02) { givensStr += "0"; continue; }
+      // crop ink bounding box, resize to 40x56 on canvas
+      var minX = 76, minY = 76, maxX = 0, maxY = 0;
+      for (var yy = 0; yy < 76; yy++) for (var xx = 0; xx < 76; xx++) {
+        if (inner[yy * 76 + xx] < 128) { if (xx < minX) minX = xx; if (xx > maxX) maxX = xx; if (yy < minY) minY = yy; if (yy > maxY) maxY = yy; }
+      }
+      var tmp = document.createElement("canvas"); tmp.width = 76; tmp.height = 76;
+      var tctx = tmp.getContext("2d");
+      var imgData = tctx.createImageData(76, 76);
+      for (var q = 0; q < inner.length; q++) { imgData.data[q * 4] = imgData.data[q * 4 + 1] = imgData.data[q * 4 + 2] = inner[q]; imgData.data[q * 4 + 3] = 255; }
+      tctx.putImageData(imgData, 0, 0);
+      var small = document.createElement("canvas"); small.width = 40; small.height = 56;
+      var sctx = small.getContext("2d");
+      sctx.fillStyle = "#fff"; sctx.fillRect(0, 0, 40, 56);
+      sctx.drawImage(tmp, minX, minY, maxX - minX + 1, maxY - minY + 1, 0, 0, 40, 56);
+      var arr = normalise(sctx.getImageData(0, 0, 40, 56).data);
+      var bestD = "?", bestS = -1;
+      for (var d = 1; d <= 9; d++) { var s = ncc(arr, templates[d]); if (s > bestS) { bestS = s; bestD = String(d); } }
+      if (bestS < 0.45) { givensStr += "?"; lowCount++; }
+      else { givensStr += bestD; if (bestS < lowScore) lowScore = bestS; }
+    }
+    warped.delete();
+    if (givensStr.indexOf("?") >= 0 || (givensStr.match(/[^0]/g) || []).length < 17) {
+      status("The photo was hard to read (" + lowCount + " unclear digits). Try again in better light with the whole grid in view — or pick the puzzle by number below.");
+      return;
+    }
+    loadPuzzle(givensStr, "photo of your puzzle");
+    status("Photo read OK — " + (givensStr.match(/[^0]/g) || []).length + " printed numbers found. Now tap in any numbers you have filled in, then ask for a hint.");
+  }
+
+  // --- hint / check / clear ---
+  document.getElementById("hintBtn").onclick = function () {
+    var conflicts = SudokuHint.findConflicts(grid);
+    if (conflicts.length) { status("First, fix the highlighted cells — the same number appears twice in a row, column or box."); markConflicts(conflicts); return; }
+    var hint = SudokuHint.nextHint(grid);
+    var cells = table.getElementsByTagName("td");
+    for (var i = 0; i < 81; i++) cells[i].classList.remove("hintcell");
+    if (!hint) {
+      if (grid.every(function (v) { return v !== 0; })) { status("The grid is full — well done! Check it against the answer key at the back of the book."); }
+      else { status("No logical next step was found — this position needs a technique beyond this book. Try the answer key, or start the puzzle again."); }
+      hintBox.style.display = "none"; return;
+    }
+    cells[hint.cell].classList.add("hintcell");
+    hintBox.innerHTML = "<span class='tech'>Next step — " + hint.technique + " (" +
+      (hint.tier === 1 ? "Easy" : hint.tier === 2 ? "Medium" : "Hard") + ")</span><br>" +
+      "Put <b>" + hint.digit + "</b> in <b>" + SudokuHint.CELL_NAME[hint.cell] + "</b> (the green cell).<br>" + hint.why;
+    hintBox.style.display = "block";
+    status("One step at a time — try it, then ask again when you are stuck.");
+  };
+  function markConflicts(list) {
+    var cells = table.getElementsByTagName("td");
+    for (var i = 0; i < 81; i++) cells[i].classList.remove("conflict");
+    list.forEach(function (i) { cells[i].classList.add("conflict"); });
+  }
+  document.getElementById("checkBtn").onclick = function () {
+    var conflicts = SudokuHint.findConflicts(grid);
+    markConflicts(conflicts);
+    status(conflicts.length ? "There are " + conflicts.length + " cells that break the rules (highlighted in pink) — the same number twice in a row, column or box."
+      : "No clashes so far — every row, column and box is still legal. Keep going!");
+  };
+  document.getElementById("clearMineBtn").onclick = function () {
+    grid = givens.slice(); hintBox.style.display = "none"; render(); status("Your numbers are cleared. The printed givens are still there.");
+  };
+
+  buildGrid(); render();
+})();
+</script>
+</body>
+</html>

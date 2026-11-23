@@ -1,0 +1,9853 @@
+{
+ "title": "Large Print Variety Puzzle Book for Seniors",
+ "author": "MD. Saif Siam",
+ "hub_url": "https://siam007-ayuno.github.io/draw-alive/variety-30-days/",
+ "word_search": [
+  {
+   "day": 1,
+   "theme": "Going Fishing",
+   "grid": [
+    "TIXUNWOVVFDQQDC",
+    "MSQZXCCDFOLEDXV",
+    "CNWCKJANIMVCCTW",
+    "WJRLAXNDSCIHBTL",
+    "ZMLLRPOHHXCATCH",
+    "BAIRRXEKIYPSEXY",
+    "SVNRRHTNNEOMJJV",
+    "EQEOEOAPGLHOOKH",
+    "OEIDEQCXBAUCATD",
+    "YISILSKAINFWOEW",
+    "NQBAITLYTGYUWHQ",
+    "MQMKNREZZLOPRNT",
+    "ACLQVXCQCESCCHK",
+    "VPQHGXMPQRUIVFN",
+    "WOASLPONDQYZPNQ"
+   ],
+   "words": [
+    "ANGLER",
+    "BAIT",
+    "CANOE",
+    "FISHING",
+    "HOOK",
+    "LINE",
+    "POND",
+    "REEL",
+    "ROD",
+    "TACKLE"
+   ],
+   "placements": {
+    "ROD": [
+     6,
+     3,
+     1,
+     0
+    ],
+    "REEL": [
+     6,
+     4,
+     1,
+     0
+    ],
+    "HOOK": [
+     7,
+     10,
+     0,
+     1
+    ],
+    "LINE": [
+     4,
+     2,
+     1,
+     0
+    ],
+    "BAIT": [
+     10,
+     2,
+     0,
+     1
+    ],
+    "TACKLE": [
+     6,
+     6,
+     1,
+     0
+    ],
+    "POND": [
+     14,
+     5,
+     0,
+     1
+    ],
+    "CANOE": [
+     1,
+     6,
+     1,
+     0
+    ],
+    "FISHING": [
+     1,
+     8,
+     1,
+     0
+    ],
+    "ANGLER": [
+     8,
+     9,
+     1,
+     0
+    ]
+   },
+   "hidden": "CATCH",
+   "hidden_placement": [
+    4,
+    10,
+    0,
+    1
+   ],
+   "trivia": "What do you call the fish a fisherman brings home?",
+   "difficulty": "Easy"
+  },
+  {
+   "day": 2,
+   "theme": "Wild Animals",
+   "grid": [
+    "WTCBUXSUGBHSDPL",
+    "PJDWPFSWROFNUSU",
+    "AISWIOAZTYHAFTX",
+    "NSCVRXFHFAPNATK",
+    "DVORSDAQACWIVHW",
+    "ATFFFQRZDUQQJNB",
+    "DFGWQGIQEZEBRAG",
+    "KGSDELEPHANTIBK",
+    "PIMDWYNWWADDYZR",
+    "YROLODIJWSLIONY",
+    "SANGLBEARKKZPQZ",
+    "HFKFFAKVYICTUPC",
+    "BFEANJXADZSCTFY",
+    "OEYCDJRMSBGHYQU",
+    "RVNPXPSTIGERAJT"
+   ],
+   "words": [
+    "BEAR",
+    "ELEPHANT",
+    "FOX",
+    "GIRAFFE",
+    "LION",
+    "MONKEY",
+    "PANDA",
+    "TIGER",
+    "WOLF",
+    "ZEBRA"
+   ],
+   "placements": {
+    "LION": [
+     9,
+     10,
+     0,
+     1
+    ],
+    "TIGER": [
+     14,
+     7,
+     0,
+     1
+    ],
+    "ELEPHANT": [
+     7,
+     4,
+     0,
+     1
+    ],
+    "GIRAFFE": [
+     7,
+     1,
+     1,
+     0
+    ],
+    "ZEBRA": [
+     6,
+     9,
+     0,
+     1
+    ],
+    "MONKEY": [
+     8,
+     2,
+     1,
+     0
+    ],
+    "PANDA": [
+     1,
+     0,
+     1,
+     0
+    ],
+    "WOLF": [
+     8,
+     4,
+     1,
+     0
+    ],
+    "BEAR": [
+     10,
+     5,
+     0,
+     1
+    ],
+    "FOX": [
+     1,
+     5,
+     1,
+     0
+    ]
+   },
+   "hidden": "SAFARI",
+   "hidden_placement": [
+    1,
+    6,
+    1,
+    0
+   ],
+   "trivia": "What is a journey to watch wild animals called?",
+   "difficulty": "Easy"
+  },
+  {
+   "day": 3,
+   "theme": "At the Seaside",
+   "grid": [
+    "MNRDEYROCRYXCBZ",
+    "KYBVYDLBRENQOEZ",
+    "CZFHERNOMIWPRAX",
+    "WFDZARCASSAJACJ",
+    "XLHVAOFTRLVRLHH",
+    "GCEXRVMSPAEWNCR",
+    "VBNAYTCBDNSGAAM",
+    "CAWTSIXGUDINJJS",
+    "YKKZHDUTSANDYPZ",
+    "EYZJEEYANBXPQDM",
+    "OADLLSVJYTRHUQJ",
+    "HBCZLDPEARLYKYA",
+    "HJOQSPEANBHJGAG",
+    "KVDJYSGOERCRABS",
+    "JNHXIYITHSAILSA"
+   ],
+   "words": [
+    "BEACH",
+    "BOATS",
+    "CORAL",
+    "CRABS",
+    "PEARL",
+    "SAILS",
+    "SANDY",
+    "SHELLS",
+    "TIDES",
+    "WAVES"
+   ],
+   "placements": {
+    "BEACH": [
+     0,
+     13,
+     1,
+     0
+    ],
+    "WAVES": [
+     2,
+     10,
+     1,
+     0
+    ],
+    "SHELLS": [
+     7,
+     4,
+     1,
+     0
+    ],
+    "SANDY": [
+     8,
+     8,
+     0,
+     1
+    ],
+    "CRABS": [
+     13,
+     10,
+     0,
+     1
+    ],
+    "BOATS": [
+     1,
+     7,
+     1,
+     0
+    ],
+    "SAILS": [
+     14,
+     9,
+     0,
+     1
+    ],
+    "TIDES": [
+     6,
+     5,
+     1,
+     0
+    ],
+    "PEARL": [
+     11,
+     6,
+     0,
+     1
+    ],
+    "CORAL": [
+     0,
+     12,
+     1,
+     0
+    ]
+   },
+   "hidden": "ISLAND",
+   "hidden_placement": [
+    2,
+    9,
+    1,
+    0
+   ],
+   "trivia": "What is land with sea all around it called?",
+   "difficulty": "Easy"
+  },
+  {
+   "day": 4,
+   "theme": "In the Garden",
+   "grid": [
+    "VWATERXCRNSEEDS",
+    "GMNEPUCUPCIQLCI",
+    "PRUNINGMEJAJILG",
+    "SZCXHTXETGKPLTV",
+    "KROSEFGAATJUYPW",
+    "ZZICSVEXLVEHBRO",
+    "OPXJQAGCAIUVPAY",
+    "NTWNETDGHXVGJOW",
+    "MCYIYFAVDTFMHLB",
+    "VFGWBEIUVJQCHLL",
+    "CTAIPNSAYTJPVOO",
+    "UURIOIYCRVMJDTO",
+    "VLDVVIOLETLYOBM",
+    "FIEVMJEFYUXOAGN",
+    "KPNFORMUFQVEYTW"
+   ],
+   "words": [
+    "DAISY",
+    "GARDEN",
+    "LILY",
+    "PETAL",
+    "PRUNING",
+    "ROSE",
+    "SEEDS",
+    "TULIP",
+    "VIOLET",
+    "WATER"
+   ],
+   "placements": {
+    "ROSE": [
+     4,
+     1,
+     0,
+     1
+    ],
+    "TULIP": [
+     10,
+     1,
+     1,
+     0
+    ],
+    "DAISY": [
+     7,
+     6,
+     1,
+     0
+    ],
+    "LILY": [
+     1,
+     12,
+     1,
+     0
+    ],
+    "VIOLET": [
+     12,
+     4,
+     0,
+     1
+    ],
+    "PETAL": [
+     1,
+     8,
+     1,
+     0
+    ],
+    "SEEDS": [
+     0,
+     10,
+     0,
+     1
+    ],
+    "WATER": [
+     0,
+     1,
+     0,
+     1
+    ],
+    "PRUNING": [
+     2,
+     0,
+     0,
+     1
+    ],
+    "GARDEN": [
+     9,
+     2,
+     1,
+     0
+    ]
+   },
+   "hidden": "BLOOM",
+   "hidden_placement": [
+    8,
+    14,
+    1,
+    0
+   ],
+   "trivia": "What does a flower bud do when it opens?",
+   "difficulty": "Easy"
+  },
+  {
+   "day": 5,
+   "theme": "Birds of the Garden",
+   "grid": [
+    "CJPFDPCPPQHPKAE",
+    "TGNQUPCIDWRENBC",
+    "FQHUCFMLJBHDBDX",
+    "PIEDKYURXLLVBSS",
+    "NSRQSTWHIAFXXPC",
+    "YNONBSWANCFOPJW",
+    "UNNYACRPOKIEDDM",
+    "JWCQEASOCBUXLMC",
+    "SPARROWRKIRHYMB",
+    "OONFEATHERLJWRC",
+    "WGXHVZRQVDIDBOF",
+    "LCMEAQILIQGASBF",
+    "JNFINCHAQSKBXIU",
+    "ZNNTHRUSHOBJPNN",
+    "ONMCQLVFGZCPJXY"
+   ],
+   "words": [
+    "BLACKBIRD",
+    "DUCKS",
+    "FINCH",
+    "HERON",
+    "OWL",
+    "ROBIN",
+    "SPARROW",
+    "SWAN",
+    "THRUSH",
+    "WREN"
+   ],
+   "placements": {
+    "ROBIN": [
+     9,
+     13,
+     1,
+     0
+    ],
+    "SPARROW": [
+     8,
+     0,
+     0,
+     1
+    ],
+    "BLACKBIRD": [
+     2,
+     9,
+     1,
+     0
+    ],
+    "THRUSH": [
+     13,
+     3,
+     0,
+     1
+    ],
+    "FINCH": [
+     12,
+     2,
+     0,
+     1
+    ],
+    "WREN": [
+     1,
+     9,
+     0,
+     1
+    ],
+    "OWL": [
+     9,
+     0,
+     1,
+     0
+    ],
+    "HERON": [
+     2,
+     2,
+     1,
+     0
+    ],
+    "SWAN": [
+     5,
+     5,
+     0,
+     1
+    ],
+    "DUCKS": [
+     0,
+     4,
+     1,
+     0
+    ]
+   },
+   "hidden": "FEATHER",
+   "hidden_placement": [
+    9,
+    3,
+    0,
+    1
+   ],
+   "trivia": "What covers a bird's body?",
+   "difficulty": "Easy"
+  },
+  {
+   "day": 6,
+   "theme": "In the Orchard",
+   "grid": [
+    "GQDSCYWVZVPEACH",
+    "WEOXGJMDROERTOZ",
+    "YBASKETBRDHAPLP",
+    "VJXJYNFDCHERRYP",
+    "ZUIHCYGHBAGORPW",
+    "SYVAMDPFDMRILPD",
+    "WNURTFQIITAUJGD",
+    "QBIVCGTPKWPSWGA",
+    "IOKEWYCBTSESUVQ",
+    "UMESBERRYAXAIXC",
+    "PMLTTREXYHLMVTI",
+    "LWHRQVORCHARDBD",
+    "URFCOAPPLEKIGIE",
+    "MIVLMELONSKQTVR",
+    "SOPIKHKNGTZJXQQ"
+   ],
+   "words": [
+    "APPLE",
+    "BASKET",
+    "BERRY",
+    "CIDER",
+    "GRAPE",
+    "HARVEST",
+    "MELON",
+    "ORCHARD",
+    "PEACH",
+    "PLUMS"
+   ],
+   "placements": {
+    "APPLE": [
+     12,
+     5,
+     0,
+     1
+    ],
+    "PEACH": [
+     0,
+     10,
+     0,
+     1
+    ],
+    "PLUMS": [
+     10,
+     0,
+     1,
+     0
+    ],
+    "GRAPE": [
+     4,
+     10,
+     1,
+     0
+    ],
+    "MELON": [
+     13,
+     4,
+     0,
+     1
+    ],
+    "BERRY": [
+     9,
+     4,
+     0,
+     1
+    ],
+    "ORCHARD": [
+     11,
+     6,
+     0,
+     1
+    ],
+    "HARVEST": [
+     4,
+     3,
+     1,
+     0
+    ],
+    "BASKET": [
+     2,
+     1,
+     0,
+     1
+    ],
+    "CIDER": [
+     9,
+     14,
+     1,
+     0
+    ]
+   },
+   "hidden": "CHERRY",
+   "hidden_placement": [
+    3,
+    8,
+    0,
+    1
+   ],
+   "trivia": "What small, round, red fruit grows on a tree?",
+   "difficulty": "Easy"
+  },
+  {
+   "day": 7,
+   "theme": "On the Farm",
+   "grid": [
+    "WSGQWLCOMDQPCYM",
+    "MHTUCJOSECZQQSC",
+    "OERBLJWCQHXHSCB",
+    "NEBARNSUJIHORSE",
+    "VPWFASGQKCFPNAM",
+    "NVGFBIZYLKSWWBA",
+    "BCOFARMERSMWLEK",
+    "BMAWTAAKPFMDLCU",
+    "FNTZVJTRHCJNNWP",
+    "DUSYETGUWCLVLPJ",
+    "PVUTRACTORGTRJG",
+    "SCWHAYSTACKIHJV",
+    "JEYDONKEYKWLFRU",
+    "CLEWDMILKINGVVU",
+    "AJSYVMZYILUOYIG"
+   ],
+   "words": [
+    "BARN",
+    "CHICKS",
+    "COWS",
+    "FARMER",
+    "GOATS",
+    "HAYSTACK",
+    "HORSE",
+    "MILKING",
+    "SHEEP",
+    "TRACTOR"
+   ],
+   "placements": {
+    "COWS": [
+     0,
+     6,
+     1,
+     0
+    ],
+    "HORSE": [
+     3,
+     10,
+     0,
+     1
+    ],
+    "SHEEP": [
+     0,
+     1,
+     1,
+     0
+    ],
+    "GOATS": [
+     5,
+     2,
+     1,
+     0
+    ],
+    "BARN": [
+     3,
+     2,
+     0,
+     1
+    ],
+    "TRACTOR": [
+     10,
+     3,
+     0,
+     1
+    ],
+    "HAYSTACK": [
+     11,
+     3,
+     0,
+     1
+    ],
+    "MILKING": [
+     13,
+     5,
+     0,
+     1
+    ],
+    "FARMER": [
+     6,
+     3,
+     0,
+     1
+    ],
+    "CHICKS": [
+     1,
+     9,
+     1,
+     0
+    ]
+   },
+   "hidden": "DONKEY",
+   "hidden_placement": [
+    12,
+    3,
+    0,
+    1
+   ],
+   "trivia": "Which farm animal is famous for carrying loads?",
+   "difficulty": "Easy"
+  },
+  {
+   "day": 8,
+   "theme": "A Cup of Tea",
+   "grid": [
+    "DPAFIVPDBISCUIT",
+    "NBREAKFASTDKWFX",
+    "LJHOLMUGSFTDLXQ",
+    "HZORABTEAPOTWMZ",
+    "DHHFBSQKQSHONEY",
+    "ORLSMOTEACUPILJ",
+    "XBXRASBPNFZGHBC",
+    "SUGARCTEABAGNMD",
+    "EEHPTJSETEHGJCF",
+    "TQRVPOURINGPCYB",
+    "CKETTLEEXQEPDQD",
+    "YVHKZOTTNAOZDAE",
+    "LLOZQDFVOQAXCYC",
+    "DMINTNCIGSYYHQO",
+    "VPURHUDWPQAOLHV"
+   ],
+   "words": [
+    "BISCUIT",
+    "BREAKFAST",
+    "HONEY",
+    "KETTLE",
+    "MINT",
+    "MUGS",
+    "POURING",
+    "SUGAR",
+    "TEABAG",
+    "TEAPOT"
+   ],
+   "placements": {
+    "TEAPOT": [
+     3,
+     6,
+     0,
+     1
+    ],
+    "KETTLE": [
+     10,
+     1,
+     0,
+     1
+    ],
+    "SUGAR": [
+     7,
+     0,
+     0,
+     1
+    ],
+    "HONEY": [
+     4,
+     10,
+     0,
+     1
+    ],
+    "MINT": [
+     13,
+     1,
+     0,
+     1
+    ],
+    "MUGS": [
+     2,
+     5,
+     0,
+     1
+    ],
+    "BISCUIT": [
+     0,
+     8,
+     0,
+     1
+    ],
+    "TEABAG": [
+     7,
+     6,
+     0,
+     1
+    ],
+    "POURING": [
+     9,
+     4,
+     0,
+     1
+    ],
+    "BREAKFAST": [
+     1,
+     1,
+     0,
+     1
+    ]
+   },
+   "hidden": "TEACUP",
+   "hidden_placement": [
+    5,
+    6,
+    0,
+    1
+   ],
+   "trivia": "What do you drink your tea from?",
+   "difficulty": "Easy"
+  },
+  {
+   "day": 9,
+   "theme": "In the Kitchen",
+   "grid": [
+    "NANGSRFRECIPEZF",
+    "JFPDINNERRLFNZI",
+    "UGARLICXLRNGOTY",
+    "KQJVPBQEOUATABW",
+    "UICXRBASEIWKPXQ",
+    "RGVFQNLTBETOCRZ",
+    "BQGXHLRDUOQJACZ",
+    "ALHDOPKFTHXFDOD",
+    "KUMPOYITTVSSEOW",
+    "IDBESPICESUHQKC",
+    "NNPPWDQFRKPIMII",
+    "GWDPEYITOMATONX",
+    "ACHEESEMHSPJDGO",
+    "JSORXUFCARRHLJX",
+    "PCONIONZUJUFQRP"
+   ],
+   "words": [
+    "BAKING",
+    "BUTTER",
+    "CHEESE",
+    "COOKING",
+    "GARLIC",
+    "ONION",
+    "PEPPER",
+    "RECIPE",
+    "SPICES",
+    "TOMATO"
+   ],
+   "placements": {
+    "RECIPE": [
+     0,
+     7,
+     0,
+     1
+    ],
+    "COOKING": [
+     6,
+     13,
+     1,
+     0
+    ],
+    "BAKING": [
+     6,
+     0,
+     1,
+     0
+    ],
+    "BUTTER": [
+     5,
+     8,
+     1,
+     0
+    ],
+    "CHEESE": [
+     12,
+     1,
+     0,
+     1
+    ],
+    "SPICES": [
+     9,
+     4,
+     0,
+     1
+    ],
+    "PEPPER": [
+     8,
+     3,
+     1,
+     0
+    ],
+    "ONION": [
+     14,
+     2,
+     0,
+     1
+    ],
+    "GARLIC": [
+     2,
+     1,
+     0,
+     1
+    ],
+    "TOMATO": [
+     11,
+     7,
+     0,
+     1
+    ]
+   },
+   "hidden": "DINNER",
+   "hidden_placement": [
+    1,
+    3,
+    0,
+    1
+   ],
+   "trivia": "What is the evening meal called?",
+   "difficulty": "Easy"
+  },
+  {
+   "day": 10,
+   "theme": "Music to Enjoy",
+   "grid": [
+    "DXLBSGSULYOXZWZ",
+    "FYCGTUKJKJZOCLK",
+    "PUWVYIEUBHQZYZM",
+    "HBQLHTZQHHKZYXR",
+    "AOAPPAUHKJKFKIH",
+    "ROIEIRVIOLINDKY",
+    "MGXJAJYHRSMUCDT",
+    "OKIJNRQCIIEPHJH",
+    "NBXJOLSOXNLLOCM",
+    "YUOUKQPNTGODRGW",
+    "DJCYWISCNEDDURY",
+    "SUQJRYYEURYSSSX",
+    "OBJTJAWRXCWNYXX",
+    "TRUMPETTKNFRZTN",
+    "PYOLBANJOCSTURK"
+   ],
+   "words": [
+    "BANJO",
+    "CHORUS",
+    "CONCERT",
+    "GUITAR",
+    "MELODY",
+    "PIANO",
+    "RHYTHM",
+    "SINGER",
+    "TRUMPET",
+    "VIOLIN"
+   ],
+   "placements": {
+    "MELODY": [
+     6,
+     10,
+     1,
+     0
+    ],
+    "RHYTHM": [
+     3,
+     14,
+     1,
+     0
+    ],
+    "GUITAR": [
+     0,
+     5,
+     1,
+     0
+    ],
+    "PIANO": [
+     4,
+     4,
+     1,
+     0
+    ],
+    "VIOLIN": [
+     5,
+     6,
+     0,
+     1
+    ],
+    "SINGER": [
+     6,
+     9,
+     1,
+     0
+    ],
+    "CHORUS": [
+     6,
+     12,
+     1,
+     0
+    ],
+    "CONCERT": [
+     7,
+     7,
+     1,
+     0
+    ],
+    "BANJO": [
+     14,
+     4,
+     0,
+     1
+    ],
+    "TRUMPET": [
+     13,
+     0,
+     0,
+     1
+    ]
+   },
+   "hidden": "HARMONY",
+   "hidden_placement": [
+    3,
+    0,
+    1,
+    0
+   ],
+   "trivia": "What do voices singing sweetly together make?",
+   "difficulty": "Easy"
+  },
+  {
+   "day": 11,
+   "theme": "At the Market",
+   "grid": [
+    "MHPULJEEUCHANGE",
+    "PHUCXBBJGFLLMTD",
+    "STALLSWZJIQDVUB",
+    "GMQOLMNATXSUHZR",
+    "CRSVWYYQCTAZUNE",
+    "AEAEIFKQARJOJDA",
+    "RHIGIWGXQUMSPKD",
+    "RFRGQFLOURAXOSG",
+    "OBUIORXFCWKZTGT",
+    "TUWEIGHINGHMANY",
+    "SNWSWPNDIVVZTJG",
+    "ECFNVIAPWQGHOTF",
+    "WHBJUUMYMHWKQCI",
+    "OESHOPPERYJAMWS",
+    "XSCLXBDSEPCHQBB"
+   ],
+   "words": [
+    "BREAD",
+    "BUNCHES",
+    "CARROTS",
+    "CHANGE",
+    "FLOUR",
+    "JAM",
+    "POTATO",
+    "STALLS",
+    "VEGGIES",
+    "WEIGHING"
+   ],
+   "placements": {
+    "STALLS": [
+     2,
+     0,
+     0,
+     1
+    ],
+    "BREAD": [
+     2,
+     14,
+     1,
+     0
+    ],
+    "FLOUR": [
+     7,
+     5,
+     0,
+     1
+    ],
+    "JAM": [
+     13,
+     10,
+     0,
+     1
+    ],
+    "VEGGIES": [
+     4,
+     3,
+     1,
+     0
+    ],
+    "CARROTS": [
+     4,
+     0,
+     1,
+     0
+    ],
+    "POTATO": [
+     6,
+     12,
+     1,
+     0
+    ],
+    "BUNCHES": [
+     8,
+     1,
+     1,
+     0
+    ],
+    "WEIGHING": [
+     9,
+     2,
+     0,
+     1
+    ],
+    "CHANGE": [
+     0,
+     9,
+     0,
+     1
+    ]
+   },
+   "hidden": "SHOPPER",
+   "hidden_placement": [
+    13,
+    2,
+    0,
+    1
+   ],
+   "trivia": "What do you call a person buying things at a market?",
+   "difficulty": "Easy"
+  },
+  {
+   "day": 12,
+   "theme": "At Home",
+   "grid": [
+    "FFQBFWKLTEFKHWO",
+    "ZMXGWPDHAZYSBHW",
+    "YAZNHZOOBIRJEJL",
+    "ENETTFOMLGRIXCD",
+    "VTLYELREEJNYTAY",
+    "FEEEYBWTGEXLPRB",
+    "ZLGWLAAMUHSAIFE",
+    "QKBKRRYQREEMCFD",
+    "NGNUPMESZOUPTRR",
+    "UCWPQCTOGTTOURO",
+    "AIHMIHRFZVAUROO",
+    "JMKSHAYACWCAEJM",
+    "PWAZLIFNCDPEWYS",
+    "CTQNYRJMCUSHION",
+    "XOCICARPETOLNCQ"
+   ],
+   "words": [
+    "ARMCHAIR",
+    "BEDROOM",
+    "CARPET",
+    "CUSHION",
+    "DOORWAY",
+    "LAMP",
+    "MANTEL",
+    "PICTURE",
+    "SOFA",
+    "TABLE"
+   ],
+   "placements": {
+    "ARMCHAIR": [
+     6,
+     5,
+     1,
+     0
+    ],
+    "LAMP": [
+     5,
+     11,
+     1,
+     0
+    ],
+    "CUSHION": [
+     13,
+     8,
+     0,
+     1
+    ],
+    "CARPET": [
+     14,
+     4,
+     0,
+     1
+    ],
+    "SOFA": [
+     8,
+     7,
+     1,
+     0
+    ],
+    "TABLE": [
+     0,
+     8,
+     1,
+     0
+    ],
+    "BEDROOM": [
+     5,
+     14,
+     1,
+     0
+    ],
+    "DOORWAY": [
+     1,
+     6,
+     1,
+     0
+    ],
+    "MANTEL": [
+     1,
+     1,
+     1,
+     0
+    ],
+    "PICTURE": [
+     5,
+     12,
+     1,
+     0
+    ]
+   },
+   "hidden": "HOME",
+   "hidden_placement": [
+    1,
+    7,
+    1,
+    0
+   ],
+   "trivia": "What is the word for the place where you live?",
+   "difficulty": "Easy"
+  },
+  {
+   "day": 13,
+   "theme": "Games and Sport",
+   "grid": [
+    "HCOVBVFWHBKQEFX",
+    "UXOFOSFADHTFFAO",
+    "LEGLXKDRFTROPHY",
+    "OEDRISTROEAZUFN",
+    "WCNMNKGUOTCJRJY",
+    "NXYZGONITHRDKPN",
+    "ZNRNVEEEBQIOYMT",
+    "FQDHWOTLAXCKTKI",
+    "STADIUMPLEKZSRT",
+    "ADWBPBSOLTEGFAR",
+    "GDITENNISSTOCCM",
+    "FDNGPVWTKCWLJIP",
+    "RUNNEREEYWNFINJ",
+    "SKEXWSWIMMERLGX",
+    "EURLYGHINBZLCFX"
+   ],
+   "words": [
+    "BOXING",
+    "CRICKET",
+    "FOOTBALL",
+    "GOLF",
+    "RACING",
+    "RUNNER",
+    "SWIMMER",
+    "TENNIS",
+    "TROPHY",
+    "WINNER"
+   ],
+   "placements": {
+    "FOOTBALL": [
+     2,
+     8,
+     1,
+     0
+    ],
+    "CRICKET": [
+     4,
+     10,
+     1,
+     0
+    ],
+    "TENNIS": [
+     10,
+     3,
+     0,
+     1
+    ],
+    "GOLF": [
+     9,
+     11,
+     1,
+     0
+    ],
+    "BOXING": [
+     0,
+     4,
+     1,
+     0
+    ],
+    "RACING": [
+     8,
+     13,
+     1,
+     0
+    ],
+    "SWIMMER": [
+     13,
+     5,
+     0,
+     1
+    ],
+    "RUNNER": [
+     12,
+     0,
+     0,
+     1
+    ],
+    "WINNER": [
+     9,
+     2,
+     1,
+     0
+    ],
+    "TROPHY": [
+     2,
+     9,
+     0,
+     1
+    ]
+   },
+   "hidden": "STADIUM",
+   "hidden_placement": [
+    8,
+    0,
+    0,
+    1
+   ],
+   "trivia": "Where do big football matches happen?",
+   "difficulty": "Easy"
+  },
+  {
+   "day": 14,
+   "theme": "In the Vegetable Patch",
+   "grid": [
+    "BVKGRKCKYPCACJX",
+    "TSSXTURNIPOGHCW",
+    "FWUBHYYSXYXDTMQ",
+    "IVDDJCLXUENCXRU",
+    "FZUQCABBAGECHYX",
+    "WADNXILXAHTCIPQ",
+    "WZPJTCPUMPKINYI",
+    "DFITSESPROUTSXW",
+    "OHVZHLJGROWINGB",
+    "HGARDENERGPEASR",
+    "FXARQRGGIZIRTFA",
+    "RNVHPYZGSCUMZUD",
+    "YUMHLETTUCESINI",
+    "EJNRWYYGXBTHZMS",
+    "LPFNMNBIYBEANSH"
+   ],
+   "words": [
+    "BEANS",
+    "CABBAGE",
+    "CELERY",
+    "GROWING",
+    "LETTUCE",
+    "PEAS",
+    "PUMPKIN",
+    "RADISH",
+    "SPROUTS",
+    "TURNIP"
+   ],
+   "placements": {
+    "CABBAGE": [
+     4,
+     4,
+     0,
+     1
+    ],
+    "LETTUCE": [
+     12,
+     4,
+     0,
+     1
+    ],
+    "TURNIP": [
+     1,
+     4,
+     0,
+     1
+    ],
+    "PEAS": [
+     9,
+     10,
+     0,
+     1
+    ],
+    "BEANS": [
+     14,
+     9,
+     0,
+     1
+    ],
+    "CELERY": [
+     6,
+     5,
+     1,
+     0
+    ],
+    "RADISH": [
+     9,
+     14,
+     1,
+     0
+    ],
+    "PUMPKIN": [
+     6,
+     6,
+     0,
+     1
+    ],
+    "SPROUTS": [
+     7,
+     6,
+     0,
+     1
+    ],
+    "GROWING": [
+     8,
+     7,
+     0,
+     1
+    ]
+   },
+   "hidden": "GARDENER",
+   "hidden_placement": [
+    9,
+    1,
+    0,
+    1
+   ],
+   "trivia": "Who looks after the vegetable patch?",
+   "difficulty": "Easy"
+  },
+  {
+   "day": 15,
+   "theme": "Winter Days",
+   "grid": [
+    "TCAMITTENSSCARF",
+    "HGJKEOHEYFNILUC",
+    "PAOFROSTYAPCKNR",
+    "MGIQKJBSYFQIPGS",
+    "MHPEEUXPMNMCCFW",
+    "YEEZHKPQPFILJCR",
+    "PAETISJBLSCENVB",
+    "BTOFLAKESJTBXBN",
+    "LEZPDMYMSNOWMAN",
+    "SRYUUTEZGSLXSIA",
+    "LEVBLWBRHQXTVZQ",
+    "EZNCHMFIREPLACE",
+    "IPDQTPXQPHAPMXA",
+    "GQUSBLANKETTTVI",
+    "HCOCOAAJTEBRFYQ"
+   ],
+   "words": [
+    "BLANKET",
+    "COCOA",
+    "FIREPLACE",
+    "FLAKES",
+    "FROSTY",
+    "HEATER",
+    "ICICLE",
+    "MITTENS",
+    "SCARF",
+    "SLEIGH"
+   ],
+   "placements": {
+    "FLAKES": [
+     7,
+     3,
+     0,
+     1
+    ],
+    "SLEIGH": [
+     9,
+     0,
+     1,
+     0
+    ],
+    "FROSTY": [
+     2,
+     3,
+     0,
+     1
+    ],
+    "MITTENS": [
+     0,
+     3,
+     0,
+     1
+    ],
+    "SCARF": [
+     0,
+     10,
+     0,
+     1
+    ],
+    "HEATER": [
+     4,
+     1,
+     1,
+     0
+    ],
+    "COCOA": [
+     14,
+     1,
+     0,
+     1
+    ],
+    "FIREPLACE": [
+     11,
+     6,
+     0,
+     1
+    ],
+    "BLANKET": [
+     13,
+     4,
+     0,
+     1
+    ],
+    "ICICLE": [
+     1,
+     11,
+     1,
+     0
+    ]
+   },
+   "hidden": "SNOWMAN",
+   "hidden_placement": [
+    8,
+    8,
+    0,
+    1
+   ],
+   "trivia": "What do children build from snow, with a carrot for a nose?",
+   "difficulty": "Easy"
+  },
+  {
+   "day": 16,
+   "theme": "Around the World",
+   "grid": [
+    "BSJHCPARISWYRRI",
+    "XTUAMWDCTPNQVSH",
+    "HBJKCRUISENLRYI",
+    "MHYPICDJENBZPPO",
+    "XLJFUWGJGKEJHAL",
+    "RRSPUSYHUNAYPSU",
+    "LQXFQFNGAXIHTSN",
+    "QLONDONCRPRSIPJ",
+    "OCAMERAATHPXCOO",
+    "QLUGGAGEAOOOKRU",
+    "PWXGKFNXQTRPETR",
+    "RVKTSJPZYETYTGN",
+    "ZIYSMZECZLAHQNE",
+    "BDSVYOPWTZVGJZY",
+    "ULITRAVELMYQRYZ"
+   ],
+   "words": [
+    "AIRPORT",
+    "CAMERA",
+    "HOTEL",
+    "JOURNEY",
+    "LONDON",
+    "LUGGAGE",
+    "PARIS",
+    "PASSPORT",
+    "TICKET",
+    "TRAVEL"
+   ],
+   "placements": {
+    "PARIS": [
+     0,
+     5,
+     0,
+     1
+    ],
+    "LONDON": [
+     7,
+     1,
+     0,
+     1
+    ],
+    "TRAVEL": [
+     14,
+     3,
+     0,
+     1
+    ],
+    "PASSPORT": [
+     3,
+     13,
+     1,
+     0
+    ],
+    "JOURNEY": [
+     7,
+     14,
+     1,
+     0
+    ],
+    "AIRPORT": [
+     5,
+     10,
+     1,
+     0
+    ],
+    "LUGGAGE": [
+     9,
+     1,
+     0,
+     1
+    ],
+    "TICKET": [
+     6,
+     12,
+     1,
+     0
+    ],
+    "HOTEL": [
+     8,
+     9,
+     1,
+     0
+    ],
+    "CAMERA": [
+     8,
+     1,
+     0,
+     1
+    ]
+   },
+   "hidden": "CRUISE",
+   "hidden_placement": [
+    2,
+    4,
+    0,
+    1
+   ],
+   "trivia": "What is a holiday voyage by ship called?",
+   "difficulty": "Medium"
+  },
+  {
+   "day": 17,
+   "theme": "Autumn Days",
+   "grid": [
+    "EGZCRISPMZIHFID",
+    "BZUWVFPBUQGGTXC",
+    "LVJDHOASSFGGDKK",
+    "GOLDENXXHVEOXEI",
+    "WAUTUMNURECXYNO",
+    "MTSEDOACOFYLIOI",
+    "OMBWULLHOXHJXID",
+    "IRAMBLGEMSEATGO",
+    "PAAHDMFSFGDABHT",
+    "HKFPAEUTNSGAORH",
+    "YEHZCLFNNQEKNIN",
+    "EULGOLLUNUHQFBO",
+    "AXOUROYTXAOPIKB",
+    "RAQONWMGHSGXRQE",
+    "KXHQMDMOCHGJEGJ"
+   ],
+   "words": [
+    "ACORN",
+    "BONFIRE",
+    "CHESTNUT",
+    "CRISP",
+    "GOLDEN",
+    "HEDGEHOG",
+    "MELLOW",
+    "MUSHROOM",
+    "RAKE",
+    "SQUASH"
+   ],
+   "placements": {
+    "ACORN": [
+     9,
+     4,
+     1,
+     0
+    ],
+    "CHESTNUT": [
+     5,
+     7,
+     1,
+     0
+    ],
+    "BONFIRE": [
+     8,
+     12,
+     1,
+     0
+    ],
+    "SQUASH": [
+     9,
+     9,
+     1,
+     0
+    ],
+    "MELLOW": [
+     8,
+     5,
+     1,
+     0
+    ],
+    "GOLDEN": [
+     3,
+     0,
+     0,
+     1
+    ],
+    "CRISP": [
+     0,
+     3,
+     0,
+     1
+    ],
+    "RAKE": [
+     7,
+     1,
+     1,
+     0
+    ],
+    "MUSHROOM": [
+     0,
+     8,
+     1,
+     0
+    ],
+    "HEDGEHOG": [
+     6,
+     10,
+     1,
+     0
+    ]
+   },
+   "hidden": "AUTUMN",
+   "hidden_placement": [
+    4,
+    1,
+    0,
+    1
+   ],
+   "trivia": "Which season comes between summer and winter?",
+   "difficulty": "Medium"
+  },
+  {
+   "day": 18,
+   "theme": "A Walk in Nature",
+   "grid": [
+    "QIEBIEVMMKENWCC",
+    "URJDAXAOGYDWOOG",
+    "DUFORESTQTPJXGG",
+    "DRIVERZGSLMQUIJ",
+    "VSHWHGLEAVESGAY",
+    "FSOKXNEMEADOWMC",
+    "VUDMARKHYGSZHEA",
+    "INROCVNYHCLZHFB",
+    "ASAUGAFMDZQPUSK",
+    "YEINELHZBREEZEE",
+    "HTNTRLWHKGNBMVW",
+    "KEBAEEHWILDLIFE",
+    "JJOIHYOPAZIKKCS",
+    "ROWNAIKQXNLQRKA",
+    "PDPITHZSTREAMLA"
+   ],
+   "words": [
+    "BREEZE",
+    "FOREST",
+    "MEADOW",
+    "MOUNTAIN",
+    "RAINBOW",
+    "RIVER",
+    "STREAM",
+    "SUNSET",
+    "VALLEY",
+    "WILDLIFE"
+   ],
+   "placements": {
+    "FOREST": [
+     2,
+     2,
+     0,
+     1
+    ],
+    "RIVER": [
+     3,
+     1,
+     0,
+     1
+    ],
+    "MOUNTAIN": [
+     6,
+     3,
+     1,
+     0
+    ],
+    "MEADOW": [
+     5,
+     7,
+     0,
+     1
+    ],
+    "STREAM": [
+     14,
+     7,
+     0,
+     1
+    ],
+    "VALLEY": [
+     7,
+     5,
+     1,
+     0
+    ],
+    "WILDLIFE": [
+     11,
+     7,
+     0,
+     1
+    ],
+    "SUNSET": [
+     5,
+     1,
+     1,
+     0
+    ],
+    "RAINBOW": [
+     7,
+     2,
+     1,
+     0
+    ],
+    "BREEZE": [
+     9,
+     8,
+     0,
+     1
+    ]
+   },
+   "hidden": "LEAVES",
+   "hidden_placement": [
+    4,
+    6,
+    0,
+    1
+   ],
+   "trivia": "What falls from the trees in autumn?",
+   "difficulty": "Medium"
+  },
+  {
+   "day": 19,
+   "theme": "A Good Book",
+   "grid": [
+    "JAPDKRXREADINGD",
+    "CKDRSHELFTBNDUN",
+    "HAQCIYOPOETRYPC",
+    "AULIBRARYHPKVKL",
+    "PTXPAGESYSYXMBZ",
+    "THEXVASQQMFSPQS",
+    "EORHNSTMRTQAUXD",
+    "RRDOREOKJLTQYNR",
+    "NVPAVDRBOOKMARK",
+    "ONOVELIOQRIQFDT",
+    "PUYZKREQCHAKZQO",
+    "HYZAQBSYQCGWZSJ",
+    "RATFNQBOLASQYZT",
+    "ROXOOPXPFECIMMI",
+    "KFYAQNKMYSTERYA"
+   ],
+   "words": [
+    "AUTHOR",
+    "BOOKMARK",
+    "CHAPTER",
+    "LIBRARY",
+    "MYSTERY",
+    "NOVEL",
+    "PAGES",
+    "POETRY",
+    "READING",
+    "STORIES"
+   ],
+   "placements": {
+    "READING": [
+     0,
+     7,
+     0,
+     1
+    ],
+    "AUTHOR": [
+     2,
+     1,
+     1,
+     0
+    ],
+    "STORIES": [
+     5,
+     6,
+     1,
+     0
+    ],
+    "CHAPTER": [
+     1,
+     0,
+     1,
+     0
+    ],
+    "LIBRARY": [
+     3,
+     2,
+     0,
+     1
+    ],
+    "NOVEL": [
+     9,
+     1,
+     0,
+     1
+    ],
+    "POETRY": [
+     2,
+     7,
+     0,
+     1
+    ],
+    "MYSTERY": [
+     14,
+     7,
+     0,
+     1
+    ],
+    "PAGES": [
+     4,
+     3,
+     0,
+     1
+    ],
+    "BOOKMARK": [
+     8,
+     7,
+     0,
+     1
+    ]
+   },
+   "hidden": "SHELF",
+   "hidden_placement": [
+    1,
+    4,
+    0,
+    1
+   ],
+   "trivia": "What do you keep your books on?",
+   "difficulty": "Medium"
+  },
+  {
+   "day": 20,
+   "theme": "Christmas Time",
+   "grid": [
+    "VFOCPCJSXMUBAAD",
+    "UGXEVLUYCRACKER",
+    "TYBSASANTAKCSTS",
+    "SMEPRESENTSMFFO",
+    "UXGTNPHMAPHGBBF",
+    "YTJJQUHIZCWGUFO",
+    "TUOTCDWSFDYNGVN",
+    "JRRCCDYTACAROLS",
+    "AKEZYILLXLUZVIU",
+    "BEIVENPEREPRRZN",
+    "EYNALGSTOCKINGR",
+    "BUDUUUROPCMVQIB",
+    "VEEXUAWETREEUQS",
+    "EXEQXYKFEWREATH",
+    "WORNHXFSCXZPNUW"
+   ],
+   "words": [
+    "CAROLS",
+    "CRACKER",
+    "PRESENTS",
+    "PUDDING",
+    "REINDEER",
+    "SANTA",
+    "STOCKING",
+    "TREE",
+    "TURKEY",
+    "WREATH"
+   ],
+   "placements": {
+    "TREE": [
+     12,
+     8,
+     0,
+     1
+    ],
+    "PRESENTS": [
+     3,
+     3,
+     0,
+     1
+    ],
+    "STOCKING": [
+     10,
+     6,
+     0,
+     1
+    ],
+    "CRACKER": [
+     1,
+     8,
+     0,
+     1
+    ],
+    "PUDDING": [
+     4,
+     5,
+     1,
+     0
+    ],
+    "CAROLS": [
+     7,
+     9,
+     0,
+     1
+    ],
+    "REINDEER": [
+     7,
+     2,
+     1,
+     0
+    ],
+    "SANTA": [
+     2,
+     5,
+     0,
+     1
+    ],
+    "TURKEY": [
+     5,
+     1,
+     1,
+     0
+    ],
+    "WREATH": [
+     13,
+     9,
+     0,
+     1
+    ]
+   },
+   "hidden": "MISTLETOE",
+   "hidden_placement": [
+    4,
+    7,
+    1,
+    0
+   ],
+   "trivia": "Under what plant do people kiss at Christmas?",
+   "difficulty": "Medium"
+  },
+  {
+   "day": 21,
+   "theme": "Weather Watch",
+   "grid": [
+    "ULWBYQQVBPGGKQT",
+    "BINPOBUCGXAMNHC",
+    "VGWDTWCHDHCLOOO",
+    "ZHWVRUMBRELLAEH",
+    "ETUCDICABFRSPAG",
+    "HNCLOUDYJOUTCTO",
+    "RINYMJGYIRQOVUT",
+    "QNJXZCNMRESRSDH",
+    "GGOWQOLSLCCMHWU",
+    "HFHCLSAERAIYORN",
+    "YGWGOSJABSXBWAD",
+    "SIIUIUDSCTUNEIE",
+    "MVNMKNXOOUJSRNR",
+    "XCDBRNQNNCUUDYP",
+    "UYYAZYBSVHELIPJ"
+   ],
+   "words": [
+    "CLOUDY",
+    "FORECAST",
+    "LIGHTNING",
+    "RAINY",
+    "SHOWER",
+    "STORMY",
+    "SUNNY",
+    "THUNDER",
+    "UMBRELLA",
+    "WINDY"
+   ],
+   "placements": {
+    "RAINY": [
+     9,
+     13,
+     1,
+     0
+    ],
+    "CLOUDY": [
+     5,
+     2,
+     0,
+     1
+    ],
+    "SUNNY": [
+     10,
+     5,
+     1,
+     0
+    ],
+    "STORMY": [
+     4,
+     11,
+     1,
+     0
+    ],
+    "WINDY": [
+     10,
+     2,
+     1,
+     0
+    ],
+    "THUNDER": [
+     6,
+     14,
+     1,
+     0
+    ],
+    "LIGHTNING": [
+     0,
+     1,
+     1,
+     0
+    ],
+    "SHOWER": [
+     7,
+     12,
+     1,
+     0
+    ],
+    "UMBRELLA": [
+     3,
+     5,
+     0,
+     1
+    ],
+    "FORECAST": [
+     4,
+     9,
+     1,
+     0
+    ]
+   },
+   "hidden": "SEASONS",
+   "hidden_placement": [
+    8,
+    7,
+    1,
+    0
+   ],
+   "trivia": "What are spring, summer, autumn and winter?",
+   "difficulty": "Medium"
+  },
+  {
+   "day": 22,
+   "theme": "Classic Cars",
+   "grid": [
+    "YJELAFLMGQRLTLV",
+    "YWOMZPCLASSICQJ",
+    "IQHIZPVSZBLUUMY",
+    "NANRRSBTLOZZARA",
+    "CDIRSQCEIXTWWHF",
+    "MRJOUHEEAXWRSYS",
+    "OOLREIDRWWMEQEV",
+    "TAMPDGRIHXAFAON",
+    "ODPEXHINGARAGEI",
+    "RSATQWVGKTVCQNW",
+    "KTURJAIVLLHUUKH",
+    "SEDOGYNTHEZQDRE",
+    "IRTLZIGGOZGSDIE",
+    "EUBDJVULOZILKTL",
+    "JTCHROMEDQGXOGS"
+   ],
+   "words": [
+    "CHROME",
+    "DRIVING",
+    "GARAGE",
+    "HIGHWAY",
+    "MIRROR",
+    "MOTOR",
+    "PETROL",
+    "ROADSTER",
+    "STEERING",
+    "WHEELS"
+   ],
+   "placements": {
+    "PETROL": [
+     7,
+     3,
+     1,
+     0
+    ],
+    "DRIVING": [
+     6,
+     6,
+     1,
+     0
+    ],
+    "GARAGE": [
+     8,
+     8,
+     0,
+     1
+    ],
+    "WHEELS": [
+     9,
+     14,
+     1,
+     0
+    ],
+    "STEERING": [
+     2,
+     7,
+     1,
+     0
+    ],
+    "MIRROR": [
+     1,
+     3,
+     1,
+     0
+    ],
+    "MOTOR": [
+     5,
+     0,
+     1,
+     0
+    ],
+    "CHROME": [
+     14,
+     2,
+     0,
+     1
+    ],
+    "HIGHWAY": [
+     5,
+     5,
+     1,
+     0
+    ],
+    "ROADSTER": [
+     5,
+     1,
+     1,
+     0
+    ]
+   },
+   "hidden": "CLASSIC",
+   "hidden_placement": [
+    1,
+    6,
+    0,
+    1
+   ],
+   "trivia": "What do we call a much-loved old car?",
+   "difficulty": "Medium"
+  },
+  {
+   "day": 23,
+   "theme": "At the Cinema",
+   "grid": [
+    "GVHGTEHZCNWADSH",
+    "VDFCMHORHQCJRTU",
+    "TJKXRGLUWKBOAZN",
+    "WPRZLJCMGSLWMJY",
+    "YUJFAXTCREDEAXT",
+    "RVWYJWMUZTNSPRS",
+    "CARXMMSRIEKTRMC",
+    "OCVZUWCTIPXEOJU",
+    "MTMPTJRANNRRJRU",
+    "ERUOYVEIBQHNELT",
+    "DESPAJENQGGACCL",
+    "YSICZHNQSFGXTPW",
+    "DSCOIUBACTOROBM",
+    "RJARFRIJOULIRNO",
+    "TKLNRQATHRILLER"
+   ],
+   "words": [
+    "ACTOR",
+    "ACTRESS",
+    "COMEDY",
+    "DRAMA",
+    "MUSICAL",
+    "POPCORN",
+    "PROJECTOR",
+    "SCREEN",
+    "THRILLER",
+    "WESTERN"
+   ],
+   "placements": {
+    "SCREEN": [
+     6,
+     6,
+     1,
+     0
+    ],
+    "POPCORN": [
+     8,
+     3,
+     1,
+     0
+    ],
+    "ACTOR": [
+     12,
+     7,
+     0,
+     1
+    ],
+    "ACTRESS": [
+     6,
+     1,
+     1,
+     0
+    ],
+    "COMEDY": [
+     6,
+     0,
+     1,
+     0
+    ],
+    "DRAMA": [
+     0,
+     12,
+     1,
+     0
+    ],
+    "MUSICAL": [
+     8,
+     2,
+     1,
+     0
+    ],
+    "WESTERN": [
+     3,
+     11,
+     1,
+     0
+    ],
+    "THRILLER": [
+     14,
+     7,
+     0,
+     1
+    ],
+    "PROJECTOR": [
+     5,
+     12,
+     1,
+     0
+    ]
+   },
+   "hidden": "CURTAIN",
+   "hidden_placement": [
+    4,
+    7,
+    1,
+    0
+   ],
+   "trivia": "What opens at the start of a show?",
+   "difficulty": "Medium"
+  },
+  {
+   "day": 24,
+   "theme": "Under Canvas",
+   "grid": [
+    "CAMPFIREFLCKCCW",
+    "CRJGYBNLEYKWVYN",
+    "QJTTOAANVXTRAIL",
+    "QGPCAMPINGQXNAQ",
+    "YTPADVENTUREKZD",
+    "YUIAVWOODSJWSCU",
+    "OZDXMARSHMALLOW",
+    "ZCRLPFIWHYKGZIE",
+    "XRZKZULANTERNWB",
+    "NNXUGXWVPBFIAXH",
+    "COMPASSYRVSTARS",
+    "ESJPTENTFZYOBBT",
+    "WUVMTBACKPACKRT",
+    "DRGSCKCIFJIUQCO",
+    "JTHIRJCZVSOYAHG"
+   ],
+   "words": [
+    "BACKPACK",
+    "CAMPFIRE",
+    "CAMPING",
+    "COMPASS",
+    "LANTERN",
+    "MARSHMALLOW",
+    "STARS",
+    "TENT",
+    "TRAIL",
+    "WOODS"
+   ],
+   "placements": {
+    "TENT": [
+     11,
+     4,
+     0,
+     1
+    ],
+    "CAMPING": [
+     3,
+     3,
+     0,
+     1
+    ],
+    "CAMPFIRE": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "LANTERN": [
+     8,
+     6,
+     0,
+     1
+    ],
+    "BACKPACK": [
+     12,
+     5,
+     0,
+     1
+    ],
+    "COMPASS": [
+     10,
+     0,
+     0,
+     1
+    ],
+    "TRAIL": [
+     2,
+     10,
+     0,
+     1
+    ],
+    "WOODS": [
+     5,
+     5,
+     0,
+     1
+    ],
+    "STARS": [
+     10,
+     10,
+     0,
+     1
+    ],
+    "MARSHMALLOW": [
+     6,
+     4,
+     0,
+     1
+    ]
+   },
+   "hidden": "ADVENTURE",
+   "hidden_placement": [
+    4,
+    3,
+    0,
+    1
+   ],
+   "trivia": "What is an exciting journey into the wild called?",
+   "difficulty": "Medium"
+  },
+  {
+   "day": 25,
+   "theme": "Our Pets",
+   "grid": [
+    "HNWJHLEKITTENNC",
+    "ANPVEPDFJVHDSQX",
+    "MFEFUUCOLLARJOA",
+    "SFTCPPMPXBCRVZI",
+    "TASVVPJKYDSGLDL",
+    "EHHWWYBUDGIEVGK",
+    "RNORABBITVZYXKR",
+    "PGPPODYLPARROTD",
+    "PONEFQYRMDKPKXE",
+    "EFFFLWUQNVOAAKV",
+    "KKAQGUINEAPIGCU",
+    "XSIJWQKRBYIALWD",
+    "PWTORTOISESOHPN",
+    "QGOLDFISHHKPUYE",
+    "EWLAONJIDLSCZNU"
+   ],
+   "words": [
+    "BUDGIE",
+    "COLLAR",
+    "GOLDFISH",
+    "GUINEAPIG",
+    "HAMSTER",
+    "KITTEN",
+    "PARROT",
+    "PUPPY",
+    "RABBIT",
+    "TORTOISE"
+   ],
+   "placements": {
+    "KITTEN": [
+     0,
+     7,
+     0,
+     1
+    ],
+    "PUPPY": [
+     1,
+     5,
+     1,
+     0
+    ],
+    "HAMSTER": [
+     0,
+     0,
+     1,
+     0
+    ],
+    "RABBIT": [
+     6,
+     3,
+     0,
+     1
+    ],
+    "GOLDFISH": [
+     13,
+     1,
+     0,
+     1
+    ],
+    "PARROT": [
+     7,
+     8,
+     0,
+     1
+    ],
+    "TORTOISE": [
+     12,
+     2,
+     0,
+     1
+    ],
+    "GUINEAPIG": [
+     10,
+     4,
+     0,
+     1
+    ],
+    "BUDGIE": [
+     5,
+     6,
+     0,
+     1
+    ],
+    "COLLAR": [
+     2,
+     6,
+     0,
+     1
+    ]
+   },
+   "hidden": "PETSHOP",
+   "hidden_placement": [
+    1,
+    2,
+    1,
+    0
+   ],
+   "trivia": "Where do you buy a pet?",
+   "difficulty": "Medium"
+  },
+  {
+   "day": 26,
+   "theme": "School Days",
+   "grid": [
+    "ALESSONUNOKKMZH",
+    "JYLDKHFRIENDSXL",
+    "JLEJZULNHURRPPK",
+    "VACHBEEHGHTKLME",
+    "WCOSLMVVTWEEABY",
+    "BLACKBOARDQLYFP",
+    "MVPSNNIUDJERGMP",
+    "GCVVUVNLDESKRNF",
+    "FOPXCSERASEROTQ",
+    "AIEILCWBCSNMUEU",
+    "IZNLLHRULERDNAA",
+    "XRCJMOIYXBVTDCG",
+    "XXINHOMEWORKKHK",
+    "IULYDLKWOSORHER",
+    "EDYLTHPKJJPYBRV"
+   ],
+   "words": [
+    "BLACKBOARD",
+    "DESK",
+    "ERASER",
+    "FRIENDS",
+    "HOMEWORK",
+    "LESSON",
+    "PENCIL",
+    "PLAYGROUND",
+    "RULER",
+    "TEACHER"
+   ],
+   "placements": {
+    "TEACHER": [
+     8,
+     13,
+     1,
+     0
+    ],
+    "PENCIL": [
+     8,
+     2,
+     1,
+     0
+    ],
+    "ERASER": [
+     8,
+     6,
+     0,
+     1
+    ],
+    "RULER": [
+     10,
+     6,
+     0,
+     1
+    ],
+    "DESK": [
+     7,
+     8,
+     0,
+     1
+    ],
+    "BLACKBOARD": [
+     5,
+     0,
+     0,
+     1
+    ],
+    "LESSON": [
+     0,
+     1,
+     0,
+     1
+    ],
+    "PLAYGROUND": [
+     2,
+     12,
+     1,
+     0
+    ],
+    "HOMEWORK": [
+     12,
+     4,
+     0,
+     1
+    ],
+    "FRIENDS": [
+     1,
+     6,
+     0,
+     1
+    ]
+   },
+   "hidden": "SCHOOL",
+   "hidden_placement": [
+    8,
+    5,
+    1,
+    0
+   ],
+   "trivia": "Where do children go to learn?",
+   "difficulty": "Medium"
+  },
+  {
+   "day": 27,
+   "theme": "Travelling by Train",
+   "grid": [
+    "EUTBYSIGNALCNIF",
+    "NRBUCVCJAKVFUKL",
+    "AFZFOUAWINDOWJL",
+    "VSIFNYRSPORTERT",
+    "AECEDURHTCYTSII",
+    "QDBTUFIFQUDOTXM",
+    "DKQJCRAILWAYANE",
+    "TJCZTDGUMVUBTST",
+    "ESBLOPEHXQVGIPA",
+    "NAUERDPOIUEIOZB",
+    "GBJXATIEVYNQNXL",
+    "IGMZOXSAKWGUPNE",
+    "NZHUUCUCDTYUBAB",
+    "EVBEPLATFORMWYT",
+    "TUYOPIISEAKLRUN"
+   ],
+   "words": [
+    "BUFFET",
+    "CARRIAGE",
+    "ENGINE",
+    "PLATFORM",
+    "PORTER",
+    "RAILWAY",
+    "SIGNAL",
+    "STATION",
+    "TIMETABLE",
+    "WINDOW"
+   ],
+   "placements": {
+    "PLATFORM": [
+     13,
+     4,
+     0,
+     1
+    ],
+    "CARRIAGE": [
+     1,
+     6,
+     1,
+     0
+    ],
+    "ENGINE": [
+     8,
+     0,
+     1,
+     0
+    ],
+    "SIGNAL": [
+     0,
+     5,
+     0,
+     1
+    ],
+    "STATION": [
+     4,
+     12,
+     1,
+     0
+    ],
+    "PORTER": [
+     3,
+     8,
+     0,
+     1
+    ],
+    "RAILWAY": [
+     6,
+     5,
+     0,
+     1
+    ],
+    "WINDOW": [
+     2,
+     7,
+     0,
+     1
+    ],
+    "TIMETABLE": [
+     3,
+     14,
+     1,
+     0
+    ],
+    "BUFFET": [
+     0,
+     3,
+     1,
+     0
+    ]
+   },
+   "hidden": "CONDUCTOR",
+   "hidden_placement": [
+    1,
+    4,
+    1,
+    0
+   ],
+   "trivia": "Who checks the tickets on a train?",
+   "difficulty": "Medium"
+  },
+  {
+   "day": 28,
+   "theme": "Up in Space",
+   "grid": [
+    "QWEDBGPLANETSFW",
+    "FMYBEKSULLPETDR",
+    "CFMXNMOONAOLEDN",
+    "TMZNWOVQVUAALKU",
+    "CISMZMTJENCSEVG",
+    "AOOGTJGLACQTSQA",
+    "UOWSVCRUSHSRCXL",
+    "ORHAXGQBTKKOOQA",
+    "ROVTQFJCEJYNPKX",
+    "BCOECUWFRGIAEOY",
+    "IKBLOVVEOTLUTUG",
+    "TEELMZACIESTGJJ",
+    "UTPIEDBIDZUTZLH",
+    "RRXTTHQVGQYZQMY",
+    "ECTEOQANDYWWEXP"
+   ],
+   "words": [
+    "ASTEROID",
+    "ASTRONAUT",
+    "COMET",
+    "GALAXY",
+    "LAUNCH",
+    "ORBIT",
+    "PLANET",
+    "ROCKET",
+    "SATELLITE",
+    "TELESCOPE"
+   ],
+   "placements": {
+    "ROCKET": [
+     7,
+     1,
+     1,
+     0
+    ],
+    "PLANET": [
+     0,
+     6,
+     0,
+     1
+    ],
+    "COMET": [
+     9,
+     4,
+     1,
+     0
+    ],
+    "ASTEROID": [
+     5,
+     8,
+     1,
+     0
+    ],
+    "GALAXY": [
+     4,
+     14,
+     1,
+     0
+    ],
+    "ASTRONAUT": [
+     3,
+     11,
+     1,
+     0
+    ],
+    "SATELLITE": [
+     6,
+     3,
+     1,
+     0
+    ],
+    "ORBIT": [
+     7,
+     0,
+     1,
+     0
+    ],
+    "LAUNCH": [
+     1,
+     9,
+     1,
+     0
+    ],
+    "TELESCOPE": [
+     1,
+     12,
+     1,
+     0
+    ]
+   },
+   "hidden": "MOON",
+   "hidden_placement": [
+    2,
+    5,
+    0,
+    1
+   ],
+   "trivia": "What shines in the night sky and circles the Earth?",
+   "difficulty": "Medium"
+  },
+  {
+   "day": 29,
+   "theme": "At Work",
+   "grid": [
+    "LTJPPAYDAYEQHUO",
+    "EEFXWORKSHOPDWL",
+    "TLDNZOGEYHOEEIX",
+    "TECYDKCTBFTSLXJ",
+    "EPTLUIOYQARMIFB",
+    "RHDBDSJMRKECVEO",
+    "SOMSECRETARYECF",
+    "ONZNIMANAGERREF",
+    "YEIHDFIRUXMSYWI",
+    "MEETINGJRUEWGCC",
+    "DTICUIEWURQPLJE",
+    "MOIDOZHZFACTORY",
+    "AVUPQSCMKGAGMOF",
+    "LECOLLEAGUEAFTP",
+    "PAPIYZQGXMASAAD"
+   ],
+   "words": [
+    "DELIVERY",
+    "FACTORY",
+    "LETTER",
+    "MANAGER",
+    "MEETING",
+    "OFFICE",
+    "PAYDAY",
+    "SECRETARY",
+    "TELEPHONE",
+    "WORKSHOP"
+   ],
+   "placements": {
+    "OFFICE": [
+     5,
+     14,
+     1,
+     0
+    ],
+    "MEETING": [
+     9,
+     0,
+     0,
+     1
+    ],
+    "LETTER": [
+     0,
+     0,
+     1,
+     0
+    ],
+    "TELEPHONE": [
+     0,
+     1,
+     1,
+     0
+    ],
+    "MANAGER": [
+     7,
+     5,
+     0,
+     1
+    ],
+    "SECRETARY": [
+     6,
+     3,
+     0,
+     1
+    ],
+    "WORKSHOP": [
+     1,
+     4,
+     0,
+     1
+    ],
+    "FACTORY": [
+     11,
+     8,
+     0,
+     1
+    ],
+    "DELIVERY": [
+     1,
+     12,
+     1,
+     0
+    ],
+    "PAYDAY": [
+     0,
+     4,
+     0,
+     1
+    ]
+   },
+   "hidden": "COLLEAGUE",
+   "hidden_placement": [
+    13,
+    2,
+    0,
+    1
+   ],
+   "trivia": "What do you call a person you work with?",
+   "difficulty": "Medium"
+  },
+  {
+   "day": 30,
+   "theme": "Summer Days",
+   "grid": [
+    "HOLIDAYOSOXSLVS",
+    "YOKRYOBIUYOAENO",
+    "GFLOWERSNOJNMEC",
+    "QAAEKAMNSOJDOSC",
+    "KGXLVQBRHNMANDX",
+    "SBBDZIMIIJOLABS",
+    "WZAXKVZTNBASDFG",
+    "IZRSWADXELPYEJJ",
+    "MNBKLKMHLJGEDWT",
+    "MFENQRIASUNHATD",
+    "IZCOVRAJOLKXGSE",
+    "NAULRBPICNICYOR",
+    "GMEWXLKBDUAANOJ",
+    "XKVQDICECREAMWW",
+    "KJIQRSEASIDEJHT"
+   ],
+   "words": [
+    "BARBECUE",
+    "FLOWERS",
+    "HOLIDAY",
+    "ICECREAM",
+    "LEMONADE",
+    "PICNIC",
+    "SANDALS",
+    "SEASIDE",
+    "SUNSHINE",
+    "SWIMMING"
+   ],
+   "placements": {
+    "SUNSHINE": [
+     0,
+     8,
+     1,
+     0
+    ],
+    "PICNIC": [
+     11,
+     6,
+     0,
+     1
+    ],
+    "LEMONADE": [
+     0,
+     12,
+     1,
+     0
+    ],
+    "SWIMMING": [
+     5,
+     0,
+     1,
+     0
+    ],
+    "BARBECUE": [
+     5,
+     2,
+     1,
+     0
+    ],
+    "HOLIDAY": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "SEASIDE": [
+     14,
+     5,
+     0,
+     1
+    ],
+    "ICECREAM": [
+     13,
+     5,
+     0,
+     1
+    ],
+    "FLOWERS": [
+     2,
+     1,
+     0,
+     1
+    ],
+    "SANDALS": [
+     0,
+     11,
+     1,
+     0
+    ]
+   },
+   "hidden": "SUNHAT",
+   "hidden_placement": [
+    9,
+    8,
+    0,
+    1
+   ],
+   "trivia": "What do you wear to keep the sun off your head?",
+   "difficulty": "Medium"
+  }
+ ],
+ "sudoku": [
+  {
+   "day": 1,
+   "givens": "056072001003000000000001200000014030000700082010060094000920000060005000408000009",
+   "solution": "856372941123459876794681253987214635645793182312568794531927468269845317478136529",
+   "difficulty": "Easy"
+  },
+  {
+   "day": 2,
+   "givens": "000000600900860000700030040002080000360701008080020074890300000000000000400000250",
+   "solution": "238147695941865732756239841572483916364791528189526374895312467627954183413678259",
+   "difficulty": "Easy"
+  },
+  {
+   "day": 3,
+   "givens": "040008000006000250002014000600800100270000039300000000060000500005600090090730001",
+   "solution": "547268913816379254932514786654893172271456839389127465163982547725641398498735621",
+   "difficulty": "Easy"
+  },
+  {
+   "day": 4,
+   "givens": "104305000000900380700200004800106003906520000000090050600000000070030020080050430",
+   "solution": "194385267562947381738261594825176943946523718317894652653412879479638125281759436",
+   "difficulty": "Easy"
+  },
+  {
+   "day": 5,
+   "givens": "000060003706930000094001000000500000050043968000006700000000870002000049960008300",
+   "solution": "518267493726934581394851627673589214251743968489126735145392876832675149967418352",
+   "difficulty": "Easy"
+  },
+  {
+   "day": 6,
+   "givens": "370900014000061820000700000000070950029004006006100000001000230000850400030600000",
+   "solution": "378925614945361827162748593413276958829534176756189342681497235297853461534612789",
+   "difficulty": "Easy"
+  },
+  {
+   "day": 7,
+   "givens": "680000050700800029000050003034076000020000000000090100092080030000300500000001200",
+   "solution": "683912754715834629249657813534176982921548367876293145192785436468329571357461298",
+   "difficulty": "Easy"
+  },
+  {
+   "day": 8,
+   "givens": "030740010000000000007006003000000380002000500000610000045079060000860000006502900",
+   "solution": "238745619964321758157986423491257386682493571573618294345179862729864135816532947",
+   "difficulty": "Easy"
+  },
+  {
+   "day": 9,
+   "givens": "000060005002804600009700180004003700007500000690080003925000010040008030000001006",
+   "solution": "478169325512834679369725184254613798837592461691487253925346817146978532783251946",
+   "difficulty": "Easy"
+  },
+  {
+   "day": 10,
+   "givens": "600500000003000850040091000001803600000006007806270500794300000000000720000000900",
+   "solution": "627538419913427856548691273471853692259146387836279541794382165365914728182765934",
+   "difficulty": "Easy"
+  },
+  {
+   "day": 11,
+   "givens": "002140800000305000900008000301400000860000100040090200000000000790003040000700032",
+   "solution": "632149857178365429954278316321487695869532174547691283213954768796823541485716932",
+   "difficulty": "Easy"
+  },
+  {
+   "day": 12,
+   "givens": "000000300030057008900200700007508000600100020090020000800005000104609000000000097",
+   "solution": "752861349436957218918243756247598631683174925591326874829715463174639582365482197",
+   "difficulty": "Easy"
+  },
+  {
+   "day": 13,
+   "givens": "800106004005000000100004060580000203000003008004500000000700600060385040409600700",
+   "solution": "893176524645932817172854369586417293917263458324598176258749631761385942439621785",
+   "difficulty": "Easy"
+  },
+  {
+   "day": 14,
+   "givens": "031000000029300050000190030700000800000006040590034600000000006050002080000050924",
+   "solution": "831245769429367158675198432764521893318976245592834671243789516956412387187653924",
+   "difficulty": "Easy"
+  },
+  {
+   "day": 15,
+   "givens": "000064537785000200406200080253089400900403025000520300070000040004000700320000158",
+   "solution": "192864537785931264436275981253789416967413825841526379578192643614358792329647158",
+   "difficulty": "Easy"
+  },
+  {
+   "day": 16,
+   "givens": "070900000300000028025000930000005009050804001000060000067080000000300100503270080",
+   "solution": "874932516391657428625418937136725849752894361948163752467581293289346175513279684",
+   "difficulty": "Medium"
+  },
+  {
+   "day": 17,
+   "givens": "300000040170430060000070509004250006000006000003000020000020490050700008400800050",
+   "solution": "398562741175439862246178539914257386582316974763984125831625497659743218427891653",
+   "difficulty": "Medium"
+  },
+  {
+   "day": 18,
+   "givens": "000200006090000030001075080020000000500037900016000000800020009000000400063010802",
+   "solution": "457283196298461537631975284329148675584637921716592348845326719172859463963714852",
+   "difficulty": "Medium"
+  },
+  {
+   "day": 19,
+   "givens": "400583910000900403000100000051600000004007500000300090000000204190000350000000000",
+   "solution": "427583916815976423639142875351629748964817532278354691583791264192468357746235189",
+   "difficulty": "Medium"
+  },
+  {
+   "day": 20,
+   "givens": "000000080070008009006137000600000520403002008000010030000020000080600000100090056",
+   "solution": "534269781271458369896137245619384527453972618728516934965821473387645192142793856",
+   "difficulty": "Medium"
+  },
+  {
+   "day": 21,
+   "givens": "300008054001600000020050000000200901600000730000009000130085000700000300094000015",
+   "solution": "367198254541632879928754163475263981689541732213879546136985427752416398894327615",
+   "difficulty": "Medium"
+  },
+  {
+   "day": 22,
+   "givens": "000000410018009200752000000037800006000500940000000000000000000800901000090230065",
+   "solution": "369725418418369257752148639937814526681572943245693781573486192826951374194237865",
+   "difficulty": "Medium"
+  },
+  {
+   "day": 23,
+   "givens": "360080200405000670700010500070030000020000700004006001250040100000070000001008000",
+   "solution": "369587214415392678782614593176839425823451769594726831257943186638175942941268357",
+   "difficulty": "Medium"
+  },
+  {
+   "day": 24,
+   "givens": "800001040000200000109050200052000097008360000040000580006100000000000002005076009",
+   "solution": "823791645564283971179654238652418397798365124341927586986142753417539862235876419",
+   "difficulty": "Medium"
+  },
+  {
+   "day": 25,
+   "givens": "032008000780000002500000100006000521000600000120090000000000670004300000008562300",
+   "solution": "432918756781456932569237148896743521345621897127895463253184679614379285978562314",
+   "difficulty": "Medium"
+  },
+  {
+   "day": 26,
+   "givens": "040000060201067003005031000000018020400700000820500600100000002502300100009000800",
+   "solution": "348295761291867453675431298957618324416723985823549617184976532562384179739152846",
+   "difficulty": "Medium"
+  },
+  {
+   "day": 27,
+   "givens": "000090008008000040001670000000020003054000100006700800082050000005009020010006700",
+   "solution": "537492618698531247241678359179824563854963172326715894482157936765389421913246785",
+   "difficulty": "Medium"
+  },
+  {
+   "day": 28,
+   "givens": "460000030000403000007020050009040607000000200004057800002709000700100008000080004",
+   "solution": "468591732925473186137826459589342617376918245214657893842739561753164928691285374",
+   "difficulty": "Medium"
+  },
+  {
+   "day": 29,
+   "givens": "000700820083406000000000060100000009509000010004002000010005436000004050000027000",
+   "solution": "651739824283456197947281563126578349579643218834912675712895436398164752465327981",
+   "difficulty": "Medium"
+  },
+  {
+   "day": 30,
+   "givens": "700601083000052060002080007080000001000510090060000870040000020900300600000006004",
+   "solution": "795641283834752169612983547489267351273518496561439872346195728928374615157826934",
+   "difficulty": "Medium"
+  }
+ ],
+ "crosswords": [
+  {
+   "day": 1,
+   "title": "Animal Friends",
+   "stars": 1,
+   "grid": [
+    "####M#TIDE#",
+    "LUGGAGE####",
+    "O###P#ALIVE",
+    "CRAB##M####",
+    "K##I#C#B###",
+    "##ARCHERY##",
+    "###D#O#A##W",
+    "#####R#N##E",
+    "##MENU#C##A",
+    "##A##S#HOOK",
+    "##Y########"
+   ],
+   "across": [
+    {
+     "num": 2,
+     "word": "TIDE",
+     "row": 0,
+     "col": 6,
+     "len": 4,
+     "theme": false,
+     "clue": "Sea rising and falling"
+    },
+    {
+     "num": 3,
+     "word": "LUGGAGE",
+     "row": 1,
+     "col": 0,
+     "len": 7,
+     "theme": false,
+     "clue": "Bags you take on a trip"
+    },
+    {
+     "num": 4,
+     "word": "ALIVE",
+     "row": 2,
+     "col": 6,
+     "len": 5,
+     "theme": false,
+     "clue": "Living, not dead"
+    },
+    {
+     "num": 5,
+     "word": "CRAB",
+     "row": 3,
+     "col": 0,
+     "len": 4,
+     "theme": false,
+     "clue": "Sea animal with claws"
+    },
+    {
+     "num": 9,
+     "word": "ARCHERY",
+     "row": 5,
+     "col": 2,
+     "len": 7,
+     "theme": false,
+     "clue": "Sport with bow and arrow"
+    },
+    {
+     "num": 11,
+     "word": "MENU",
+     "row": 8,
+     "col": 2,
+     "len": 4,
+     "theme": false,
+     "clue": "List of dishes in a restaurant"
+    },
+    {
+     "num": 12,
+     "word": "HOOK",
+     "row": 9,
+     "col": 7,
+     "len": 4,
+     "theme": false,
+     "clue": "Catch a fish on it"
+    }
+   ],
+   "down": [
+    {
+     "num": 1,
+     "word": "MAP",
+     "row": 0,
+     "col": 4,
+     "len": 3,
+     "theme": false,
+     "clue": "Guide to a place"
+    },
+    {
+     "num": 2,
+     "word": "TEAM",
+     "row": 0,
+     "col": 6,
+     "len": 4,
+     "theme": false,
+     "clue": "Group that plays together"
+    },
+    {
+     "num": 3,
+     "word": "LOCK",
+     "row": 1,
+     "col": 0,
+     "len": 4,
+     "theme": false,
+     "clue": "It keeps a door shut"
+    },
+    {
+     "num": 6,
+     "word": "BIRD",
+     "row": 3,
+     "col": 3,
+     "len": 4,
+     "theme": true,
+     "clue": "Animal with wings and feathers"
+    },
+    {
+     "num": 7,
+     "word": "CHORUS",
+     "row": 4,
+     "col": 5,
+     "len": 6,
+     "theme": false,
+     "clue": "Part of a song everyone joins"
+    },
+    {
+     "num": 8,
+     "word": "BRANCH",
+     "row": 4,
+     "col": 7,
+     "len": 6,
+     "theme": false,
+     "clue": "It grows from a tree trunk"
+    },
+    {
+     "num": 10,
+     "word": "WEAK",
+     "row": 6,
+     "col": 10,
+     "len": 4,
+     "theme": false,
+     "clue": "Not strong"
+    },
+    {
+     "num": 11,
+     "word": "MAY",
+     "row": 8,
+     "col": 2,
+     "len": 3,
+     "theme": false,
+     "clue": "Fifth month"
+    }
+   ]
+  },
+  {
+   "day": 2,
+   "title": "Good to Eat",
+   "stars": 1,
+   "grid": [
+    "G#SHIP#####",
+    "ONE##O##S##",
+    "L#A#TOURIST",
+    "F#L##L##L#A",
+    "###W##P#V#N",
+    "#SUITCASE#G",
+    "#E#N##S#R#O",
+    "#C#T##T####",
+    "LOSE#MATHS#",
+    "#N#R#####A#",
+    "#D#######W#"
+   ],
+   "across": [
+    {
+     "num": 2,
+     "word": "SHIP",
+     "row": 0,
+     "col": 2,
+     "len": 4,
+     "theme": false,
+     "clue": "Big sea vessel"
+    },
+    {
+     "num": 4,
+     "word": "ONE",
+     "row": 1,
+     "col": 0,
+     "len": 3,
+     "theme": false,
+     "clue": "First number"
+    },
+    {
+     "num": 6,
+     "word": "TOURIST",
+     "row": 2,
+     "col": 4,
+     "len": 7,
+     "theme": false,
+     "clue": "One who visits a place"
+    },
+    {
+     "num": 10,
+     "word": "SUITCASE",
+     "row": 5,
+     "col": 1,
+     "len": 8,
+     "theme": false,
+     "clue": "Pack clothes in it"
+    },
+    {
+     "num": 11,
+     "word": "LOSE",
+     "row": 8,
+     "col": 0,
+     "len": 4,
+     "theme": false,
+     "clue": "Fail to win"
+    },
+    {
+     "num": 12,
+     "word": "MATHS",
+     "row": 8,
+     "col": 5,
+     "len": 5,
+     "theme": false,
+     "clue": "Numbers subject"
+    }
+   ],
+   "down": [
+    {
+     "num": 1,
+     "word": "GOLF",
+     "row": 0,
+     "col": 0,
+     "len": 4,
+     "theme": false,
+     "clue": "Game with clubs and a small ball"
+    },
+    {
+     "num": 2,
+     "word": "SEAL",
+     "row": 0,
+     "col": 2,
+     "len": 4,
+     "theme": false,
+     "clue": "Sea mammal that basks on rocks"
+    },
+    {
+     "num": 3,
+     "word": "POOL",
+     "row": 0,
+     "col": 5,
+     "len": 4,
+     "theme": false,
+     "clue": "Swim in it"
+    },
+    {
+     "num": 5,
+     "word": "SILVER",
+     "row": 1,
+     "col": 8,
+     "len": 6,
+     "theme": false,
+     "clue": "Colour of a coin"
+    },
+    {
+     "num": 7,
+     "word": "TANGO",
+     "row": 2,
+     "col": 10,
+     "len": 5,
+     "theme": false,
+     "clue": "Passionate dance from Argentina"
+    },
+    {
+     "num": 8,
+     "word": "WINTER",
+     "row": 4,
+     "col": 3,
+     "len": 6,
+     "theme": false,
+     "clue": "Cold season"
+    },
+    {
+     "num": 9,
+     "word": "PASTA",
+     "row": 4,
+     "col": 6,
+     "len": 5,
+     "theme": true,
+     "clue": "Italian food made from dough"
+    },
+    {
+     "num": 10,
+     "word": "SECOND",
+     "row": 5,
+     "col": 1,
+     "len": 6,
+     "theme": false,
+     "clue": "Shortest time unit"
+    },
+    {
+     "num": 13,
+     "word": "SAW",
+     "row": 8,
+     "col": 9,
+     "len": 3,
+     "theme": false,
+     "clue": "Cut wood with it"
+    }
+   ]
+  },
+  {
+   "day": 3,
+   "title": "At Home",
+   "stars": 1,
+   "grid": [
+    "O##S#######",
+    "R#PILL#####",
+    "A##N#######",
+    "NECK#G##V##",
+    "G#A##A##E##",
+    "E#TOURIST##",
+    "#A#F#D#M###",
+    "#P#T#E#IVY#",
+    "#PIE#N#L###",
+    "#L#N##LEARN",
+    "PEA########"
+   ],
+   "across": [
+    {
+     "num": 3,
+     "word": "PILL",
+     "row": 1,
+     "col": 2,
+     "len": 4,
+     "theme": false,
+     "clue": "Small round medicine"
+    },
+    {
+     "num": 4,
+     "word": "NECK",
+     "row": 3,
+     "col": 0,
+     "len": 4,
+     "theme": false,
+     "clue": "It joins head to body"
+    },
+    {
+     "num": 8,
+     "word": "TOURIST",
+     "row": 5,
+     "col": 2,
+     "len": 7,
+     "theme": false,
+     "clue": "He or she takes photos"
+    },
+    {
+     "num": 12,
+     "word": "IVY",
+     "row": 7,
+     "col": 7,
+     "len": 3,
+     "theme": false,
+     "clue": "Climbing plant"
+    },
+    {
+     "num": 13,
+     "word": "PIE",
+     "row": 8,
+     "col": 1,
+     "len": 3,
+     "theme": false,
+     "clue": "Baked dish with a crust"
+    },
+    {
+     "num": 14,
+     "word": "LEARN",
+     "row": 9,
+     "col": 6,
+     "len": 5,
+     "theme": false,
+     "clue": "Gain knowledge"
+    },
+    {
+     "num": 15,
+     "word": "PEA",
+     "row": 10,
+     "col": 0,
+     "len": 3,
+     "theme": false,
+     "clue": "Small round green vegetable"
+    }
+   ],
+   "down": [
+    {
+     "num": 1,
+     "word": "ORANGE",
+     "row": 0,
+     "col": 0,
+     "len": 6,
+     "theme": false,
+     "clue": "Citrus fruit and a colour"
+    },
+    {
+     "num": 2,
+     "word": "SINK",
+     "row": 0,
+     "col": 3,
+     "len": 4,
+     "theme": false,
+     "clue": "Wash your hands in it"
+    },
+    {
+     "num": 5,
+     "word": "CAT",
+     "row": 3,
+     "col": 2,
+     "len": 3,
+     "theme": false,
+     "clue": "Pet that purrs"
+    },
+    {
+     "num": 6,
+     "word": "GARDEN",
+     "row": 3,
+     "col": 5,
+     "len": 6,
+     "theme": true,
+     "clue": "Outdoor space with plants"
+    },
+    {
+     "num": 7,
+     "word": "VET",
+     "row": 3,
+     "col": 8,
+     "len": 3,
+     "theme": false,
+     "clue": "Animal doctor"
+    },
+    {
+     "num": 9,
+     "word": "OFTEN",
+     "row": 5,
+     "col": 3,
+     "len": 5,
+     "theme": false,
+     "clue": "Many times"
+    },
+    {
+     "num": 10,
+     "word": "SMILE",
+     "row": 5,
+     "col": 7,
+     "len": 5,
+     "theme": false,
+     "clue": "Show happiness with it"
+    },
+    {
+     "num": 11,
+     "word": "APPLE",
+     "row": 6,
+     "col": 1,
+     "len": 5,
+     "theme": false,
+     "clue": "Red fruit that grows on trees"
+    }
+   ]
+  },
+  {
+   "day": 4,
+   "title": "On the Road",
+   "stars": 1,
+   "grid": [
+    "##P#F######",
+    "GUITAR##M##",
+    "O#G#C###ARM",
+    "A##PEPPER##",
+    "L##U####S#T",
+    "##BRANCH##W",
+    "###S##I#L#E",
+    "#DEER#N#A#L",
+    "######E#M#V",
+    "######MAPLE",
+    "##PIZZA####"
+   ],
+   "across": [
+    {
+     "num": 3,
+     "word": "GUITAR",
+     "row": 1,
+     "col": 0,
+     "len": 6,
+     "theme": false,
+     "clue": "Instrument with six strings"
+    },
+    {
+     "num": 5,
+     "word": "ARM",
+     "row": 2,
+     "col": 8,
+     "len": 3,
+     "theme": false,
+     "clue": "It ends in a hand"
+    },
+    {
+     "num": 6,
+     "word": "PEPPER",
+     "row": 3,
+     "col": 3,
+     "len": 6,
+     "theme": false,
+     "clue": "Black spice for food"
+    },
+    {
+     "num": 8,
+     "word": "BRANCH",
+     "row": 5,
+     "col": 2,
+     "len": 6,
+     "theme": false,
+     "clue": "Birds perch on it"
+    },
+    {
+     "num": 11,
+     "word": "DEER",
+     "row": 7,
+     "col": 1,
+     "len": 4,
+     "theme": false,
+     "clue": "Animal with antlers"
+    },
+    {
+     "num": 12,
+     "word": "MAPLE",
+     "row": 9,
+     "col": 6,
+     "len": 5,
+     "theme": false,
+     "clue": "Tree that gives syrup"
+    },
+    {
+     "num": 13,
+     "word": "PIZZA",
+     "row": 10,
+     "col": 2,
+     "len": 5,
+     "theme": false,
+     "clue": "Italian dish with cheese on top"
+    }
+   ],
+   "down": [
+    {
+     "num": 1,
+     "word": "PIG",
+     "row": 0,
+     "col": 2,
+     "len": 3,
+     "theme": false,
+     "clue": "Farm animal that oinks"
+    },
+    {
+     "num": 2,
+     "word": "FACE",
+     "row": 0,
+     "col": 4,
+     "len": 4,
+     "theme": false,
+     "clue": "Front of your head"
+    },
+    {
+     "num": 3,
+     "word": "GOAL",
+     "row": 1,
+     "col": 0,
+     "len": 4,
+     "theme": false,
+     "clue": "Score in football"
+    },
+    {
+     "num": 4,
+     "word": "MARS",
+     "row": 1,
+     "col": 8,
+     "len": 4,
+     "theme": false,
+     "clue": "Red planet"
+    },
+    {
+     "num": 6,
+     "word": "PURSE",
+     "row": 3,
+     "col": 3,
+     "len": 5,
+     "theme": false,
+     "clue": "Small bag for money"
+    },
+    {
+     "num": 7,
+     "word": "TWELVE",
+     "row": 4,
+     "col": 10,
+     "len": 6,
+     "theme": false,
+     "clue": "Number after eleven"
+    },
+    {
+     "num": 9,
+     "word": "CINEMA",
+     "row": 5,
+     "col": 6,
+     "len": 6,
+     "theme": true,
+     "clue": "Watch films there"
+    },
+    {
+     "num": 10,
+     "word": "LAMP",
+     "row": 6,
+     "col": 8,
+     "len": 4,
+     "theme": false,
+     "clue": "It gives light at night"
+    }
+   ]
+  },
+  {
+   "day": 5,
+   "title": "Game On",
+   "stars": 1,
+   "grid": [
+    "###H##T####",
+    "###E#WALTZ#",
+    "###A##X#U##",
+    "###L#PIANO#",
+    "###T#E##E##",
+    "S#CHANCE###",
+    "U#O####L##F",
+    "N#A###NEVER",
+    "DOCK#G#V##Y",
+    "A#H##Y#E###",
+    "Y####MONDAY"
+   ],
+   "across": [
+    {
+     "num": 3,
+     "word": "WALTZ",
+     "row": 1,
+     "col": 5,
+     "len": 5,
+     "theme": false,
+     "clue": "Dance in three-four time"
+    },
+    {
+     "num": 5,
+     "word": "PIANO",
+     "row": 3,
+     "col": 5,
+     "len": 5,
+     "theme": false,
+     "clue": "Instrument with black and white keys"
+    },
+    {
+     "num": 7,
+     "word": "CHANCE",
+     "row": 5,
+     "col": 2,
+     "len": 6,
+     "theme": false,
+     "clue": "Opportunity"
+    },
+    {
+     "num": 10,
+     "word": "NEVER",
+     "row": 7,
+     "col": 6,
+     "len": 5,
+     "theme": false,
+     "clue": "Not ever"
+    },
+    {
+     "num": 11,
+     "word": "DOCK",
+     "row": 8,
+     "col": 0,
+     "len": 4,
+     "theme": false,
+     "clue": "Ships tie up there"
+    },
+    {
+     "num": 13,
+     "word": "MONDAY",
+     "row": 10,
+     "col": 5,
+     "len": 6,
+     "theme": false,
+     "clue": "First day of the week"
+    }
+   ],
+   "down": [
+    {
+     "num": 1,
+     "word": "HEALTH",
+     "row": 0,
+     "col": 3,
+     "len": 6,
+     "theme": false,
+     "clue": "State of being well"
+    },
+    {
+     "num": 2,
+     "word": "TAXI",
+     "row": 0,
+     "col": 6,
+     "len": 4,
+     "theme": false,
+     "clue": "Car you hire"
+    },
+    {
+     "num": 4,
+     "word": "TUNE",
+     "row": 1,
+     "col": 8,
+     "len": 4,
+     "theme": false,
+     "clue": "Melody"
+    },
+    {
+     "num": 5,
+     "word": "PEN",
+     "row": 3,
+     "col": 5,
+     "len": 3,
+     "theme": false,
+     "clue": "Write with it"
+    },
+    {
+     "num": 6,
+     "word": "SUNDAY",
+     "row": 5,
+     "col": 0,
+     "len": 6,
+     "theme": false,
+     "clue": "Last day of the week"
+    },
+    {
+     "num": 7,
+     "word": "COACH",
+     "row": 5,
+     "col": 2,
+     "len": 5,
+     "theme": true,
+     "clue": "He or she trains a team"
+    },
+    {
+     "num": 8,
+     "word": "ELEVEN",
+     "row": 5,
+     "col": 7,
+     "len": 6,
+     "theme": false,
+     "clue": "Number after ten"
+    },
+    {
+     "num": 9,
+     "word": "FRY",
+     "row": 6,
+     "col": 10,
+     "len": 3,
+     "theme": false,
+     "clue": "Cook in hot oil"
+    },
+    {
+     "num": 12,
+     "word": "GYM",
+     "row": 8,
+     "col": 5,
+     "len": 3,
+     "theme": false,
+     "clue": "Place to exercise"
+    }
+   ]
+  },
+  {
+   "day": 6,
+   "title": "Music Time",
+   "stars": 1,
+   "grid": [
+    "#SALAD#####",
+    "#N###O##FIT",
+    "WOLF#G####I",
+    "#W#O###H##C",
+    "##SLIPPER#K",
+    "###K#A#A##E",
+    "#####R#DIET",
+    "#CLOCK###X#",
+    "####U####A#",
+    "###SPELL#M#",
+    "###########"
+   ],
+   "across": [
+    {
+     "num": 1,
+     "word": "SALAD",
+     "row": 0,
+     "col": 1,
+     "len": 5,
+     "theme": false,
+     "clue": "Dish of raw vegetables"
+    },
+    {
+     "num": 3,
+     "word": "FIT",
+     "row": 1,
+     "col": 8,
+     "len": 3,
+     "theme": false,
+     "clue": "Healthy and strong"
+    },
+    {
+     "num": 5,
+     "word": "WOLF",
+     "row": 2,
+     "col": 0,
+     "len": 4,
+     "theme": false,
+     "clue": "Wild animal that howls"
+    },
+    {
+     "num": 8,
+     "word": "SLIPPER",
+     "row": 4,
+     "col": 2,
+     "len": 7,
+     "theme": false,
+     "clue": "Soft shoe for indoors"
+    },
+    {
+     "num": 10,
+     "word": "DIET",
+     "row": 6,
+     "col": 7,
+     "len": 4,
+     "theme": false,
+     "clue": "Food you usually eat"
+    },
+    {
+     "num": 12,
+     "word": "CLOCK",
+     "row": 7,
+     "col": 1,
+     "len": 5,
+     "theme": false,
+     "clue": "It tells the time"
+    },
+    {
+     "num": 14,
+     "word": "SPELL",
+     "row": 9,
+     "col": 3,
+     "len": 5,
+     "theme": false,
+     "clue": "Say the letters of a word"
+    }
+   ],
+   "down": [
+    {
+     "num": 1,
+     "word": "SNOW",
+     "row": 0,
+     "col": 1,
+     "len": 4,
+     "theme": false,
+     "clue": "White flakes in winter"
+    },
+    {
+     "num": 2,
+     "word": "DOG",
+     "row": 0,
+     "col": 5,
+     "len": 3,
+     "theme": false,
+     "clue": "Pet that barks"
+    },
+    {
+     "num": 4,
+     "word": "TICKET",
+     "row": 1,
+     "col": 10,
+     "len": 6,
+     "theme": false,
+     "clue": "It lets you travel"
+    },
+    {
+     "num": 6,
+     "word": "FOLK",
+     "row": 2,
+     "col": 3,
+     "len": 4,
+     "theme": true,
+     "clue": "Traditional music"
+    },
+    {
+     "num": 7,
+     "word": "HEAD",
+     "row": 3,
+     "col": 7,
+     "len": 4,
+     "theme": false,
+     "clue": "Top part of the body"
+    },
+    {
+     "num": 9,
+     "word": "PARK",
+     "row": 4,
+     "col": 5,
+     "len": 4,
+     "theme": false,
+     "clue": "Green space in a town"
+    },
+    {
+     "num": 11,
+     "word": "EXAM",
+     "row": 6,
+     "col": 9,
+     "len": 4,
+     "theme": false,
+     "clue": "Test of what you know"
+    },
+    {
+     "num": 13,
+     "word": "CUP",
+     "row": 7,
+     "col": 4,
+     "len": 3,
+     "theme": false,
+     "clue": "Drink tea from it"
+    }
+   ]
+  },
+  {
+   "day": 7,
+   "title": "By the Sea",
+   "stars": 1,
+   "grid": [
+    "W######B###",
+    "A###B##A##S",
+    "K#G#ROOT##H",
+    "EAR#A##HOUR",
+    "##A#I#K###I",
+    "##SUNDAY##M",
+    "##S###Y#B#P",
+    "###CLEANER#",
+    "##M#I#K#E##",
+    "#BOIL###F##",
+    "##P#Y######"
+   ],
+   "across": [
+    {
+     "num": 6,
+     "word": "ROOT",
+     "row": 2,
+     "col": 4,
+     "len": 4,
+     "theme": false,
+     "clue": "Part of a plant underground"
+    },
+    {
+     "num": 7,
+     "word": "EAR",
+     "row": 3,
+     "col": 0,
+     "len": 3,
+     "theme": false,
+     "clue": "You hear with it"
+    },
+    {
+     "num": 8,
+     "word": "HOUR",
+     "row": 3,
+     "col": 7,
+     "len": 4,
+     "theme": false,
+     "clue": "Sixty minutes"
+    },
+    {
+     "num": 10,
+     "word": "SUNDAY",
+     "row": 5,
+     "col": 2,
+     "len": 6,
+     "theme": false,
+     "clue": "Day of rest"
+    },
+    {
+     "num": 12,
+     "word": "CLEANER",
+     "row": 7,
+     "col": 3,
+     "len": 7,
+     "theme": false,
+     "clue": "One who cleans houses"
+    },
+    {
+     "num": 15,
+     "word": "BOIL",
+     "row": 9,
+     "col": 1,
+     "len": 4,
+     "theme": false,
+     "clue": "Cook in bubbling water"
+    }
+   ],
+   "down": [
+    {
+     "num": 1,
+     "word": "WAKE",
+     "row": 0,
+     "col": 0,
+     "len": 4,
+     "theme": false,
+     "clue": "Stop sleeping"
+    },
+    {
+     "num": 2,
+     "word": "BATH",
+     "row": 0,
+     "col": 7,
+     "len": 4,
+     "theme": false,
+     "clue": "Wash in a tub of water"
+    },
+    {
+     "num": 3,
+     "word": "BRAIN",
+     "row": 1,
+     "col": 4,
+     "len": 5,
+     "theme": false,
+     "clue": "It thinks"
+    },
+    {
+     "num": 4,
+     "word": "SHRIMP",
+     "row": 1,
+     "col": 10,
+     "len": 6,
+     "theme": false,
+     "clue": "Small sea animal"
+    },
+    {
+     "num": 5,
+     "word": "GRASS",
+     "row": 2,
+     "col": 2,
+     "len": 5,
+     "theme": false,
+     "clue": "Green ground cover"
+    },
+    {
+     "num": 9,
+     "word": "KAYAK",
+     "row": 4,
+     "col": 6,
+     "len": 5,
+     "theme": true,
+     "clue": "Small boat for one paddler"
+    },
+    {
+     "num": 11,
+     "word": "BEEF",
+     "row": 6,
+     "col": 8,
+     "len": 4,
+     "theme": false,
+     "clue": "Meat from a cow"
+    },
+    {
+     "num": 13,
+     "word": "LILY",
+     "row": 7,
+     "col": 4,
+     "len": 4,
+     "theme": false,
+     "clue": "Tall white flower"
+    },
+    {
+     "num": 14,
+     "word": "MOP",
+     "row": 8,
+     "col": 2,
+     "len": 3,
+     "theme": false,
+     "clue": "Wash the floor with it"
+    }
+   ]
+  },
+  {
+   "day": 8,
+   "title": "Out in Nature",
+   "stars": 1,
+   "grid": [
+    "##########A",
+    "#####HAND#W",
+    "########R#A",
+    "H#IVY#BLACK",
+    "U##I##U#W#E",
+    "N#FOREST#H#",
+    "D##L#Y#ROOF",
+    "ROPE#E#I#N#",
+    "E##T###PIE#",
+    "D########Y#",
+    "###########"
+   ],
+   "across": [
+    {
+     "num": 2,
+     "word": "HAND",
+     "row": 1,
+     "col": 5,
+     "len": 4,
+     "theme": false,
+     "clue": "It has fingers and a thumb"
+    },
+    {
+     "num": 5,
+     "word": "IVY",
+     "row": 3,
+     "col": 2,
+     "len": 3,
+     "theme": false,
+     "clue": "It covers old walls"
+    },
+    {
+     "num": 7,
+     "word": "BLACK",
+     "row": 3,
+     "col": 6,
+     "len": 5,
+     "theme": false,
+     "clue": "Darkest colour"
+    },
+    {
+     "num": 8,
+     "word": "FOREST",
+     "row": 5,
+     "col": 2,
+     "len": 6,
+     "theme": false,
+     "clue": "Land full of trees"
+    },
+    {
+     "num": 12,
+     "word": "ROOF",
+     "row": 6,
+     "col": 7,
+     "len": 4,
+     "theme": false,
+     "clue": "Top cover of a house"
+    },
+    {
+     "num": 13,
+     "word": "ROPE",
+     "row": 7,
+     "col": 0,
+     "len": 4,
+     "theme": false,
+     "clue": "Tie things with it"
+    },
+    {
+     "num": 14,
+     "word": "PIE",
+     "row": 8,
+     "col": 7,
+     "len": 3,
+     "theme": false,
+     "clue": "Apple ___ with ice cream"
+    }
+   ],
+   "down": [
+    {
+     "num": 1,
+     "word": "AWAKE",
+     "row": 0,
+     "col": 10,
+     "len": 5,
+     "theme": false,
+     "clue": "Not asleep"
+    },
+    {
+     "num": 3,
+     "word": "DRAW",
+     "row": 1,
+     "col": 8,
+     "len": 4,
+     "theme": false,
+     "clue": "Equal score at the end"
+    },
+    {
+     "num": 4,
+     "word": "HUNDRED",
+     "row": 3,
+     "col": 0,
+     "len": 7,
+     "theme": false,
+     "clue": "Ten tens"
+    },
+    {
+     "num": 6,
+     "word": "VIOLET",
+     "row": 3,
+     "col": 3,
+     "len": 6,
+     "theme": true,
+     "clue": "Small purple flower"
+    },
+    {
+     "num": 7,
+     "word": "BUS",
+     "row": 3,
+     "col": 6,
+     "len": 3,
+     "theme": false,
+     "clue": "Public road vehicle"
+    },
+    {
+     "num": 9,
+     "word": "EYE",
+     "row": 5,
+     "col": 5,
+     "len": 3,
+     "theme": false,
+     "clue": "You see with it"
+    },
+    {
+     "num": 10,
+     "word": "TRIP",
+     "row": 5,
+     "col": 7,
+     "len": 4,
+     "theme": false,
+     "clue": "Short journey"
+    },
+    {
+     "num": 11,
+     "word": "HONEY",
+     "row": 5,
+     "col": 9,
+     "len": 5,
+     "theme": false,
+     "clue": "Sweet food made by bees"
+    }
+   ]
+  },
+  {
+   "day": 9,
+   "title": "School Days",
+   "stars": 1,
+   "grid": [
+    "######P####",
+    "CAKE##O#T#P",
+    "R###B#PHOTO",
+    "U#P#E###D#N",
+    "ICE#A#L#A#D",
+    "S#ARCHERY##",
+    "E#R#H#S####",
+    "######STEAM",
+    "####TWO###I",
+    "######N###L",
+    "#######SOCK"
+   ],
+   "across": [
+    {
+     "num": 2,
+     "word": "CAKE",
+     "row": 1,
+     "col": 0,
+     "len": 4,
+     "theme": false,
+     "clue": "Sweet food for birthdays"
+    },
+    {
+     "num": 6,
+     "word": "PHOTO",
+     "row": 2,
+     "col": 6,
+     "len": 5,
+     "theme": false,
+     "clue": "Take it with a camera"
+    },
+    {
+     "num": 8,
+     "word": "ICE",
+     "row": 4,
+     "col": 0,
+     "len": 3,
+     "theme": false,
+     "clue": "Frozen water"
+    },
+    {
+     "num": 10,
+     "word": "ARCHERY",
+     "row": 5,
+     "col": 2,
+     "len": 7,
+     "theme": false,
+     "clue": "Hit the target"
+    },
+    {
+     "num": 11,
+     "word": "STEAM",
+     "row": 7,
+     "col": 6,
+     "len": 5,
+     "theme": false,
+     "clue": "Cook with hot vapour"
+    },
+    {
+     "num": 13,
+     "word": "TWO",
+     "row": 8,
+     "col": 4,
+     "len": 3,
+     "theme": false,
+     "clue": "Number after one"
+    },
+    {
+     "num": 14,
+     "word": "SOCK",
+     "row": 10,
+     "col": 7,
+     "len": 4,
+     "theme": false,
+     "clue": "Wear it inside a shoe"
+    }
+   ],
+   "down": [
+    {
+     "num": 1,
+     "word": "POP",
+     "row": 0,
+     "col": 6,
+     "len": 3,
+     "theme": false,
+     "clue": "Popular music"
+    },
+    {
+     "num": 2,
+     "word": "CRUISE",
+     "row": 1,
+     "col": 0,
+     "len": 6,
+     "theme": false,
+     "clue": "Holiday on a big ship"
+    },
+    {
+     "num": 3,
+     "word": "TODAY",
+     "row": 1,
+     "col": 8,
+     "len": 5,
+     "theme": false,
+     "clue": "This day"
+    },
+    {
+     "num": 4,
+     "word": "POND",
+     "row": 1,
+     "col": 10,
+     "len": 4,
+     "theme": false,
+     "clue": "Small pool of still water"
+    },
+    {
+     "num": 5,
+     "word": "BEACH",
+     "row": 2,
+     "col": 4,
+     "len": 5,
+     "theme": false,
+     "clue": "Sandy shore by the sea"
+    },
+    {
+     "num": 7,
+     "word": "PEAR",
+     "row": 3,
+     "col": 2,
+     "len": 4,
+     "theme": false,
+     "clue": "Fruit shaped like a light bulb"
+    },
+    {
+     "num": 9,
+     "word": "LESSON",
+     "row": 4,
+     "col": 6,
+     "len": 6,
+     "theme": true,
+     "clue": "A class period"
+    },
+    {
+     "num": 12,
+     "word": "MILK",
+     "row": 7,
+     "col": 10,
+     "len": 4,
+     "theme": false,
+     "clue": "White drink from a cow"
+    }
+   ]
+  },
+  {
+   "day": 10,
+   "title": "At Work",
+   "stars": 1,
+   "grid": [
+    "#SCIENCE###",
+    "#Q########B",
+    "#U########O",
+    "EIGHT###COW",
+    "#D#A#P##H#L",
+    "S#GIRAFFE##",
+    "H##L#I##SUN",
+    "E#F##N##T##",
+    "L#A##T####B",
+    "FRIDGE####E",
+    "##L##RECORD"
+   ],
+   "across": [
+    {
+     "num": 1,
+     "word": "SCIENCE",
+     "row": 0,
+     "col": 1,
+     "len": 7,
+     "theme": false,
+     "clue": "Subject about nature"
+    },
+    {
+     "num": 3,
+     "word": "EIGHT",
+     "row": 3,
+     "col": 0,
+     "len": 5,
+     "theme": false,
+     "clue": "Number after seven"
+    },
+    {
+     "num": 5,
+     "word": "COW",
+     "row": 3,
+     "col": 8,
+     "len": 3,
+     "theme": false,
+     "clue": "Farm animal that moos"
+    },
+    {
+     "num": 8,
+     "word": "GIRAFFE",
+     "row": 5,
+     "col": 2,
+     "len": 7,
+     "theme": false,
+     "clue": "Animal with a very long neck"
+    },
+    {
+     "num": 9,
+     "word": "SUN",
+     "row": 6,
+     "col": 8,
+     "len": 3,
+     "theme": false,
+     "clue": "It shines in the day"
+    },
+    {
+     "num": 12,
+     "word": "FRIDGE",
+     "row": 9,
+     "col": 0,
+     "len": 6,
+     "theme": false,
+     "clue": "Keep food cold in it"
+    },
+    {
+     "num": 13,
+     "word": "RECORD",
+     "row": 10,
+     "col": 5,
+     "len": 6,
+     "theme": false,
+     "clue": "Best ever result"
+    }
+   ],
+   "down": [
+    {
+     "num": 1,
+     "word": "SQUID",
+     "row": 0,
+     "col": 1,
+     "len": 5,
+     "theme": false,
+     "clue": "Sea animal with ten arms"
+    },
+    {
+     "num": 2,
+     "word": "BOWL",
+     "row": 1,
+     "col": 10,
+     "len": 4,
+     "theme": false,
+     "clue": "Eat soup from it"
+    },
+    {
+     "num": 4,
+     "word": "HAIL",
+     "row": 3,
+     "col": 3,
+     "len": 4,
+     "theme": false,
+     "clue": "Balls of ice from the sky"
+    },
+    {
+     "num": 5,
+     "word": "CHEST",
+     "row": 3,
+     "col": 8,
+     "len": 5,
+     "theme": false,
+     "clue": "Front of your body above the waist"
+    },
+    {
+     "num": 6,
+     "word": "PAINTER",
+     "row": 4,
+     "col": 5,
+     "len": 7,
+     "theme": true,
+     "clue": "One who paints walls"
+    },
+    {
+     "num": 7,
+     "word": "SHELF",
+     "row": 5,
+     "col": 0,
+     "len": 5,
+     "theme": false,
+     "clue": "Store books on it"
+    },
+    {
+     "num": 10,
+     "word": "FAIL",
+     "row": 7,
+     "col": 2,
+     "len": 4,
+     "theme": false,
+     "clue": "Not pass a test"
+    },
+    {
+     "num": 11,
+     "word": "BED",
+     "row": 8,
+     "col": 10,
+     "len": 3,
+     "theme": false,
+     "clue": "Sleep in it"
+    }
+   ]
+  },
+  {
+   "day": 11,
+   "title": "Out in Space",
+   "stars": 2,
+   "grid": [
+    "TOE#B###L##",
+    "#R##E#BREAD",
+    "#BANANA#A##",
+    "#I##T#G#FLU",
+    "#T#V###M#E#",
+    "##DOUBLE#T#",
+    "###L#I#R#T#",
+    "#J#C#R#C#U#",
+    "#U#A#CHURCH",
+    "#M#N#H#R#E#",
+    "APRON##Y###"
+   ],
+   "across": [
+    {
+     "num": 1,
+     "word": "TOE",
+     "row": 0,
+     "col": 0,
+     "len": 3,
+     "theme": false,
+     "clue": "It is at the end of your foot"
+    },
+    {
+     "num": 5,
+     "word": "BREAD",
+     "row": 1,
+     "col": 6,
+     "len": 5,
+     "theme": false,
+     "clue": "Food made from flour and yeast"
+    },
+    {
+     "num": 6,
+     "word": "BANANA",
+     "row": 2,
+     "col": 1,
+     "len": 6,
+     "theme": false,
+     "clue": "Yellow fruit monkeys love"
+    },
+    {
+     "num": 7,
+     "word": "FLU",
+     "row": 3,
+     "col": 8,
+     "len": 3,
+     "theme": false,
+     "clue": "Bad cold with a fever"
+    },
+    {
+     "num": 11,
+     "word": "DOUBLE",
+     "row": 5,
+     "col": 2,
+     "len": 6,
+     "theme": false,
+     "clue": "Twice as much"
+    },
+    {
+     "num": 14,
+     "word": "CHURCH",
+     "row": 8,
+     "col": 5,
+     "len": 6,
+     "theme": false,
+     "clue": "Place of Christian worship"
+    },
+    {
+     "num": 15,
+     "word": "APRON",
+     "row": 10,
+     "col": 0,
+     "len": 5,
+     "theme": false,
+     "clue": "Wear it while cooking"
+    }
+   ],
+   "down": [
+    {
+     "num": 2,
+     "word": "ORBIT",
+     "row": 0,
+     "col": 1,
+     "len": 5,
+     "theme": false,
+     "clue": "Path round a planet"
+    },
+    {
+     "num": 3,
+     "word": "BEAT",
+     "row": 0,
+     "col": 4,
+     "len": 4,
+     "theme": false,
+     "clue": "Pulse of a song"
+    },
+    {
+     "num": 4,
+     "word": "LEAF",
+     "row": 0,
+     "col": 8,
+     "len": 4,
+     "theme": false,
+     "clue": "Green part of a plant"
+    },
+    {
+     "num": 5,
+     "word": "BAG",
+     "row": 1,
+     "col": 6,
+     "len": 3,
+     "theme": false,
+     "clue": "Carry books in it"
+    },
+    {
+     "num": 8,
+     "word": "LETTUCE",
+     "row": 3,
+     "col": 9,
+     "len": 7,
+     "theme": false,
+     "clue": "Leafy salad green"
+    },
+    {
+     "num": 9,
+     "word": "VOLCANO",
+     "row": 4,
+     "col": 3,
+     "len": 7,
+     "theme": false,
+     "clue": "Mountain that erupts"
+    },
+    {
+     "num": 10,
+     "word": "MERCURY",
+     "row": 4,
+     "col": 7,
+     "len": 7,
+     "theme": true,
+     "clue": "Closest planet to the sun"
+    },
+    {
+     "num": 12,
+     "word": "BIRCH",
+     "row": 5,
+     "col": 5,
+     "len": 5,
+     "theme": false,
+     "clue": "Tree with white bark"
+    },
+    {
+     "num": 13,
+     "word": "JUMP",
+     "row": 7,
+     "col": 1,
+     "len": 4,
+     "theme": false,
+     "clue": "Leap into the air"
+    }
+   ]
+  },
+  {
+   "day": 12,
+   "title": "Weather Watch",
+   "stars": 2,
+   "grid": [
+    "#####JAZZ##",
+    "BRICK###O#T",
+    "U##L#S#SOFA",
+    "B#FISH#N##B",
+    "B##M#O#O##L",
+    "L#JANUARY#E",
+    "E##T#L#K###",
+    "#TIE#D#E##B",
+    "#####E#LAVA",
+    "##ZEBRA###I",
+    "#######BOAT"
+   ],
+   "across": [
+    {
+     "num": 1,
+     "word": "JAZZ",
+     "row": 0,
+     "col": 5,
+     "len": 4,
+     "theme": false,
+     "clue": "Music with swing"
+    },
+    {
+     "num": 3,
+     "word": "BRICK",
+     "row": 1,
+     "col": 0,
+     "len": 5,
+     "theme": false,
+     "clue": "Block used to build walls"
+    },
+    {
+     "num": 7,
+     "word": "SOFA",
+     "row": 2,
+     "col": 7,
+     "len": 4,
+     "theme": false,
+     "clue": "Soft seat for two or three"
+    },
+    {
+     "num": 8,
+     "word": "FISH",
+     "row": 3,
+     "col": 2,
+     "len": 4,
+     "theme": false,
+     "clue": "Animal that swims"
+    },
+    {
+     "num": 9,
+     "word": "JANUARY",
+     "row": 5,
+     "col": 2,
+     "len": 7,
+     "theme": false,
+     "clue": "First month"
+    },
+    {
+     "num": 10,
+     "word": "TIE",
+     "row": 7,
+     "col": 1,
+     "len": 3,
+     "theme": false,
+     "clue": "Draw in a game"
+    },
+    {
+     "num": 12,
+     "word": "LAVA",
+     "row": 8,
+     "col": 7,
+     "len": 4,
+     "theme": false,
+     "clue": "Hot melted rock"
+    },
+    {
+     "num": 13,
+     "word": "ZEBRA",
+     "row": 9,
+     "col": 2,
+     "len": 5,
+     "theme": false,
+     "clue": "Striped horse-like animal"
+    },
+    {
+     "num": 14,
+     "word": "BOAT",
+     "row": 10,
+     "col": 7,
+     "len": 4,
+     "theme": false,
+     "clue": "It floats on water"
+    }
+   ],
+   "down": [
+    {
+     "num": 2,
+     "word": "ZOO",
+     "row": 0,
+     "col": 8,
+     "len": 3,
+     "theme": false,
+     "clue": "See wild animals there"
+    },
+    {
+     "num": 3,
+     "word": "BUBBLE",
+     "row": 1,
+     "col": 0,
+     "len": 6,
+     "theme": false,
+     "clue": "Ball of air in water"
+    },
+    {
+     "num": 4,
+     "word": "CLIMATE",
+     "row": 1,
+     "col": 3,
+     "len": 7,
+     "theme": true,
+     "clue": "Usual weather of a place"
+    },
+    {
+     "num": 5,
+     "word": "TABLE",
+     "row": 1,
+     "col": 10,
+     "len": 5,
+     "theme": false,
+     "clue": "Eat at it"
+    },
+    {
+     "num": 6,
+     "word": "SHOULDER",
+     "row": 2,
+     "col": 5,
+     "len": 8,
+     "theme": false,
+     "clue": "Carry a bag on it"
+    },
+    {
+     "num": 7,
+     "word": "SNORKEL",
+     "row": 2,
+     "col": 7,
+     "len": 7,
+     "theme": false,
+     "clue": "Tube for breathing under water"
+    },
+    {
+     "num": 11,
+     "word": "BAIT",
+     "row": 7,
+     "col": 10,
+     "len": 4,
+     "theme": false,
+     "clue": "Food to catch a fish"
+    }
+   ]
+  },
+  {
+   "day": 13,
+   "title": "Animal Friends",
+   "stars": 2,
+   "grid": [
+    "#COMPASS#T#",
+    "######A##R#",
+    "##P#HANDBAG",
+    "#TEN##D##I#",
+    "C#N#C#W##N#",
+    "O#GRAVITY##",
+    "FLU#B#C#O#B",
+    "F#I#I#H#G#A",
+    "E#NINE#DARK",
+    "E##C######E",
+    "###E#MIRROR"
+   ],
+   "across": [
+    {
+     "num": 1,
+     "word": "COMPASS",
+     "row": 0,
+     "col": 1,
+     "len": 7,
+     "theme": false,
+     "clue": "It points north"
+    },
+    {
+     "num": 5,
+     "word": "HANDBAG",
+     "row": 2,
+     "col": 4,
+     "len": 7,
+     "theme": false,
+     "clue": "Carry things in it"
+    },
+    {
+     "num": 6,
+     "word": "TEN",
+     "row": 3,
+     "col": 1,
+     "len": 3,
+     "theme": false,
+     "clue": "Number after nine"
+    },
+    {
+     "num": 9,
+     "word": "GRAVITY",
+     "row": 5,
+     "col": 2,
+     "len": 7,
+     "theme": false,
+     "clue": "Force that pulls things down"
+    },
+    {
+     "num": 11,
+     "word": "FLU",
+     "row": 6,
+     "col": 0,
+     "len": 3,
+     "theme": false,
+     "clue": "It lays you low"
+    },
+    {
+     "num": 13,
+     "word": "NINE",
+     "row": 8,
+     "col": 2,
+     "len": 4,
+     "theme": false,
+     "clue": "Number after eight"
+    },
+    {
+     "num": 15,
+     "word": "DARK",
+     "row": 8,
+     "col": 7,
+     "len": 4,
+     "theme": false,
+     "clue": "Without light"
+    },
+    {
+     "num": 16,
+     "word": "MIRROR",
+     "row": 10,
+     "col": 5,
+     "len": 6,
+     "theme": false,
+     "clue": "Look in it to see yourself"
+    }
+   ],
+   "down": [
+    {
+     "num": 2,
+     "word": "SANDWICH",
+     "row": 0,
+     "col": 6,
+     "len": 8,
+     "theme": false,
+     "clue": "Food between two slices of bread"
+    },
+    {
+     "num": 3,
+     "word": "TRAIN",
+     "row": 0,
+     "col": 9,
+     "len": 5,
+     "theme": false,
+     "clue": "It runs on rails"
+    },
+    {
+     "num": 4,
+     "word": "PENGUIN",
+     "row": 2,
+     "col": 2,
+     "len": 7,
+     "theme": true,
+     "clue": "Flightless bird of the Antarctic"
+    },
+    {
+     "num": 7,
+     "word": "COFFEE",
+     "row": 4,
+     "col": 0,
+     "len": 6,
+     "theme": false,
+     "clue": "Hot drink made from beans"
+    },
+    {
+     "num": 8,
+     "word": "CABIN",
+     "row": 4,
+     "col": 4,
+     "len": 5,
+     "theme": false,
+     "clue": "Small wooden house"
+    },
+    {
+     "num": 10,
+     "word": "YOGA",
+     "row": 5,
+     "col": 8,
+     "len": 4,
+     "theme": false,
+     "clue": "Stretching and breathing exercise"
+    },
+    {
+     "num": 12,
+     "word": "BAKER",
+     "row": 6,
+     "col": 10,
+     "len": 5,
+     "theme": false,
+     "clue": "One who bakes bread"
+    },
+    {
+     "num": 14,
+     "word": "ICE",
+     "row": 8,
+     "col": 3,
+     "len": 3,
+     "theme": false,
+     "clue": "It is cold and slippery"
+    }
+   ]
+  },
+  {
+   "day": 14,
+   "title": "Good to Eat",
+   "stars": 2,
+   "grid": [
+    "########S#S",
+    "#M##COSTUME",
+    "REEF#L##R#E",
+    "#D##GYM#F#D",
+    "#I#V#M#Y###",
+    "#CHAMPION##",
+    "#I#C#I#G#T#",
+    "#N#U#C#U#E#",
+    "VENUS##RING",
+    "E##M#ANT#T#",
+    "TEA########"
+   ],
+   "across": [
+    {
+     "num": 4,
+     "word": "COSTUME",
+     "row": 1,
+     "col": 4,
+     "len": 7,
+     "theme": false,
+     "clue": "Fancy dress outfit"
+    },
+    {
+     "num": 6,
+     "word": "REEF",
+     "row": 2,
+     "col": 0,
+     "len": 4,
+     "theme": false,
+     "clue": "Rocky ridge under the sea"
+    },
+    {
+     "num": 7,
+     "word": "GYM",
+     "row": 3,
+     "col": 4,
+     "len": 3,
+     "theme": false,
+     "clue": "It has weights"
+    },
+    {
+     "num": 10,
+     "word": "CHAMPION",
+     "row": 5,
+     "col": 1,
+     "len": 8,
+     "theme": false,
+     "clue": "Winner of a contest"
+    },
+    {
+     "num": 12,
+     "word": "VENUS",
+     "row": 8,
+     "col": 0,
+     "len": 5,
+     "theme": false,
+     "clue": "Brightest planet"
+    },
+    {
+     "num": 13,
+     "word": "RING",
+     "row": 8,
+     "col": 7,
+     "len": 4,
+     "theme": false,
+     "clue": "Wear it on a finger"
+    },
+    {
+     "num": 14,
+     "word": "ANT",
+     "row": 9,
+     "col": 5,
+     "len": 3,
+     "theme": false,
+     "clue": "Tiny insect that marches in lines"
+    },
+    {
+     "num": 15,
+     "word": "TEA",
+     "row": 10,
+     "col": 0,
+     "len": 3,
+     "theme": false,
+     "clue": "Hot drink made from leaves"
+    }
+   ],
+   "down": [
+    {
+     "num": 1,
+     "word": "SURF",
+     "row": 0,
+     "col": 8,
+     "len": 4,
+     "theme": false,
+     "clue": "Waves breaking on the shore"
+    },
+    {
+     "num": 2,
+     "word": "SEED",
+     "row": 0,
+     "col": 10,
+     "len": 4,
+     "theme": false,
+     "clue": "Plant it and it grows"
+    },
+    {
+     "num": 3,
+     "word": "MEDICINE",
+     "row": 1,
+     "col": 1,
+     "len": 8,
+     "theme": false,
+     "clue": "Drug that heals"
+    },
+    {
+     "num": 5,
+     "word": "OLYMPIC",
+     "row": 1,
+     "col": 5,
+     "len": 7,
+     "theme": false,
+     "clue": "Games held every four years"
+    },
+    {
+     "num": 8,
+     "word": "VACUUM",
+     "row": 4,
+     "col": 3,
+     "len": 6,
+     "theme": false,
+     "clue": "Clean the carpet with it"
+    },
+    {
+     "num": 9,
+     "word": "YOGURT",
+     "row": 4,
+     "col": 7,
+     "len": 6,
+     "theme": true,
+     "clue": "Thick cultured milk food"
+    },
+    {
+     "num": 11,
+     "word": "TENT",
+     "row": 6,
+     "col": 9,
+     "len": 4,
+     "theme": false,
+     "clue": "Canvas shelter"
+    },
+    {
+     "num": 12,
+     "word": "VET",
+     "row": 8,
+     "col": 0,
+     "len": 3,
+     "theme": false,
+     "clue": "Treats sick pets"
+    }
+   ]
+  },
+  {
+   "day": 15,
+   "title": "At Home",
+   "stars": 2,
+   "grid": [
+    "PINE####T##",
+    "E###TEACHER",
+    "A#######E##",
+    "CITY#PICNIC",
+    "H#O##A####U",
+    "#SATURDAY#S",
+    "C#S##R#L##H",
+    "HAT##O#M##I",
+    "E#E##TWO##O",
+    "FIRST##N##N",
+    "#####MEDAL#"
+   ],
+   "across": [
+    {
+     "num": 1,
+     "word": "PINE",
+     "row": 0,
+     "col": 0,
+     "len": 4,
+     "theme": false,
+     "clue": "Evergreen tree with needles"
+    },
+    {
+     "num": 3,
+     "word": "TEACHER",
+     "row": 1,
+     "col": 4,
+     "len": 7,
+     "theme": false,
+     "clue": "One who teaches children"
+    },
+    {
+     "num": 4,
+     "word": "CITY",
+     "row": 3,
+     "col": 0,
+     "len": 4,
+     "theme": false,
+     "clue": "Big place with many people"
+    },
+    {
+     "num": 6,
+     "word": "PICNIC",
+     "row": 3,
+     "col": 5,
+     "len": 6,
+     "theme": false,
+     "clue": "Outdoor meal on a blanket"
+    },
+    {
+     "num": 8,
+     "word": "SATURDAY",
+     "row": 5,
+     "col": 1,
+     "len": 8,
+     "theme": false,
+     "clue": "First day of the weekend"
+    },
+    {
+     "num": 11,
+     "word": "HAT",
+     "row": 7,
+     "col": 0,
+     "len": 3,
+     "theme": false,
+     "clue": "Wear it on your head"
+    },
+    {
+     "num": 12,
+     "word": "TWO",
+     "row": 8,
+     "col": 5,
+     "len": 3,
+     "theme": false,
+     "clue": "It is a pair"
+    },
+    {
+     "num": 13,
+     "word": "FIRST",
+     "row": 9,
+     "col": 0,
+     "len": 5,
+     "theme": false,
+     "clue": "Number one in order"
+    },
+    {
+     "num": 14,
+     "word": "MEDAL",
+     "row": 10,
+     "col": 5,
+     "len": 5,
+     "theme": false,
+     "clue": "Gold, silver or bronze prize"
+    }
+   ],
+   "down": [
+    {
+     "num": 1,
+     "word": "PEACH",
+     "row": 0,
+     "col": 0,
+     "len": 5,
+     "theme": false,
+     "clue": "Soft fruit with a stone"
+    },
+    {
+     "num": 2,
+     "word": "THEN",
+     "row": 0,
+     "col": 8,
+     "len": 4,
+     "theme": false,
+     "clue": "At that time"
+    },
+    {
+     "num": 5,
+     "word": "TOASTER",
+     "row": 3,
+     "col": 2,
+     "len": 7,
+     "theme": true,
+     "clue": "Brown bread in it"
+    },
+    {
+     "num": 6,
+     "word": "PARROT",
+     "row": 3,
+     "col": 5,
+     "len": 6,
+     "theme": false,
+     "clue": "Bird that can copy words"
+    },
+    {
+     "num": 7,
+     "word": "CUSHION",
+     "row": 3,
+     "col": 10,
+     "len": 7,
+     "theme": false,
+     "clue": "Soft pad on a sofa"
+    },
+    {
+     "num": 9,
+     "word": "ALMOND",
+     "row": 5,
+     "col": 7,
+     "len": 6,
+     "theme": false,
+     "clue": "Nut used in baking"
+    },
+    {
+     "num": 10,
+     "word": "CHEF",
+     "row": 6,
+     "col": 0,
+     "len": 4,
+     "theme": false,
+     "clue": "One who cooks in a restaurant"
+    }
+   ]
+  },
+  {
+   "day": 16,
+   "title": "On the Road",
+   "stars": 2,
+   "grid": [
+    "###TOWN####",
+    "LAKE#######",
+    "U##S#######",
+    "N##TACO####",
+    "C#B##A##FOG",
+    "H#OYSTER#A#",
+    "##R##T#ART#",
+    "RED##L#I#S#",
+    "A#E#FEAST##",
+    "I#R####I###",
+    "N####BANJO#"
+   ],
+   "across": [
+    {
+     "num": 1,
+     "word": "TOWN",
+     "row": 0,
+     "col": 3,
+     "len": 4,
+     "theme": false,
+     "clue": "Place bigger than a village"
+    },
+    {
+     "num": 2,
+     "word": "LAKE",
+     "row": 1,
+     "col": 0,
+     "len": 4,
+     "theme": false,
+     "clue": "Big pool of water inland"
+    },
+    {
+     "num": 3,
+     "word": "TACO",
+     "row": 3,
+     "col": 3,
+     "len": 4,
+     "theme": false,
+     "clue": "Mexican folded tortilla"
+    },
+    {
+     "num": 6,
+     "word": "FOG",
+     "row": 4,
+     "col": 8,
+     "len": 3,
+     "theme": false,
+     "clue": "Thick mist that hides the road"
+    },
+    {
+     "num": 8,
+     "word": "OYSTER",
+     "row": 5,
+     "col": 2,
+     "len": 6,
+     "theme": false,
+     "clue": "Shellfish that makes pearls"
+    },
+    {
+     "num": 10,
+     "word": "ART",
+     "row": 6,
+     "col": 7,
+     "len": 3,
+     "theme": false,
+     "clue": "Subject for drawing"
+    },
+    {
+     "num": 11,
+     "word": "RED",
+     "row": 7,
+     "col": 0,
+     "len": 3,
+     "theme": false,
+     "clue": "Colour of blood"
+    },
+    {
+     "num": 12,
+     "word": "FEAST",
+     "row": 8,
+     "col": 4,
+     "len": 5,
+     "theme": false,
+     "clue": "Big special meal"
+    },
+    {
+     "num": 13,
+     "word": "BANJO",
+     "row": 10,
+     "col": 5,
+     "len": 5,
+     "theme": false,
+     "clue": "Stringed instrument with a round body"
+    }
+   ],
+   "down": [
+    {
+     "num": 1,
+     "word": "TEST",
+     "row": 0,
+     "col": 3,
+     "len": 4,
+     "theme": false,
+     "clue": "Short exam"
+    },
+    {
+     "num": 2,
+     "word": "LUNCH",
+     "row": 1,
+     "col": 0,
+     "len": 5,
+     "theme": false,
+     "clue": "Midday meal"
+    },
+    {
+     "num": 4,
+     "word": "CATTLE",
+     "row": 3,
+     "col": 5,
+     "len": 6,
+     "theme": false,
+     "clue": "Cows and bulls, together"
+    },
+    {
+     "num": 5,
+     "word": "BORDER",
+     "row": 4,
+     "col": 2,
+     "len": 6,
+     "theme": true,
+     "clue": "Line between two countries"
+    },
+    {
+     "num": 7,
+     "word": "OATS",
+     "row": 4,
+     "col": 9,
+     "len": 4,
+     "theme": false,
+     "clue": "Grain for porridge"
+    },
+    {
+     "num": 9,
+     "word": "RAISIN",
+     "row": 5,
+     "col": 7,
+     "len": 6,
+     "theme": false,
+     "clue": "Dried grape"
+    },
+    {
+     "num": 11,
+     "word": "RAIN",
+     "row": 7,
+     "col": 0,
+     "len": 4,
+     "theme": false,
+     "clue": "Water falling from the sky"
+    }
+   ]
+  },
+  {
+   "day": 17,
+   "title": "Game On",
+   "stars": 2,
+   "grid": [
+    "##HOMEWORK#",
+    "###A#####A#",
+    "###K#CEDAR#",
+    "##C#S#N##A#",
+    "CAR#T#G#ROD",
+    "H#YEARLY#K#",
+    "O###D#I#LEG",
+    "RED#I#S###R",
+    "D##SUSHI##E",
+    "####M###KEY",
+    "###########"
+   ],
+   "across": [
+    {
+     "num": 1,
+     "word": "HOMEWORK",
+     "row": 0,
+     "col": 2,
+     "len": 8,
+     "theme": false,
+     "clue": "Work done at home"
+    },
+    {
+     "num": 4,
+     "word": "CEDAR",
+     "row": 2,
+     "col": 5,
+     "len": 5,
+     "theme": false,
+     "clue": "Sweet-smelling evergreen"
+    },
+    {
+     "num": 8,
+     "word": "CAR",
+     "row": 4,
+     "col": 0,
+     "len": 3,
+     "theme": false,
+     "clue": "Drive it"
+    },
+    {
+     "num": 9,
+     "word": "ROD",
+     "row": 4,
+     "col": 8,
+     "len": 3,
+     "theme": false,
+     "clue": "Long pole for fishing"
+    },
+    {
+     "num": 10,
+     "word": "YEARLY",
+     "row": 5,
+     "col": 2,
+     "len": 6,
+     "theme": false,
+     "clue": "Every year"
+    },
+    {
+     "num": 11,
+     "word": "LEG",
+     "row": 6,
+     "col": 8,
+     "len": 3,
+     "theme": false,
+     "clue": "It helps you walk"
+    },
+    {
+     "num": 13,
+     "word": "RED",
+     "row": 7,
+     "col": 0,
+     "len": 3,
+     "theme": false,
+     "clue": "It is a traffic-light colour"
+    },
+    {
+     "num": 14,
+     "word": "SUSHI",
+     "row": 8,
+     "col": 3,
+     "len": 5,
+     "theme": false,
+     "clue": "Japanese rice and raw fish"
+    },
+    {
+     "num": 15,
+     "word": "KEY",
+     "row": 9,
+     "col": 8,
+     "len": 3,
+     "theme": false,
+     "clue": "It opens a lock"
+    }
+   ],
+   "down": [
+    {
+     "num": 2,
+     "word": "OAK",
+     "row": 0,
+     "col": 3,
+     "len": 3,
+     "theme": false,
+     "clue": "Tree that gives acorns"
+    },
+    {
+     "num": 3,
+     "word": "KARAOKE",
+     "row": 0,
+     "col": 9,
+     "len": 7,
+     "theme": false,
+     "clue": "Sing along to music"
+    },
+    {
+     "num": 5,
+     "word": "ENGLISH",
+     "row": 2,
+     "col": 6,
+     "len": 7,
+     "theme": false,
+     "clue": "Language subject"
+    },
+    {
+     "num": 6,
+     "word": "CRY",
+     "row": 3,
+     "col": 2,
+     "len": 3,
+     "theme": false,
+     "clue": "Shed tears"
+    },
+    {
+     "num": 7,
+     "word": "STADIUM",
+     "row": 3,
+     "col": 4,
+     "len": 7,
+     "theme": true,
+     "clue": "Big sports ground"
+    },
+    {
+     "num": 8,
+     "word": "CHORD",
+     "row": 4,
+     "col": 0,
+     "len": 5,
+     "theme": false,
+     "clue": "Notes played together"
+    },
+    {
+     "num": 12,
+     "word": "GREY",
+     "row": 6,
+     "col": 10,
+     "len": 4,
+     "theme": false,
+     "clue": "Colour between black and white"
+    }
+   ]
+  },
+  {
+   "day": 18,
+   "title": "Music Time",
+   "stars": 2,
+   "grid": [
+    "I###H#NAIL#",
+    "CABBAGE####",
+    "E###R#T#T##",
+    "#CLIMB##R##",
+    "##U#O##BUS#",
+    "#PLANET#M##",
+    "C#L#Y###P##",
+    "L#A###N#E##",
+    "A#BISCUIT##",
+    "SKY#E#T####",
+    "S##PASS####"
+   ],
+   "across": [
+    {
+     "num": 3,
+     "word": "NAIL",
+     "row": 0,
+     "col": 6,
+     "len": 4,
+     "theme": false,
+     "clue": "Hit it into wood"
+    },
+    {
+     "num": 4,
+     "word": "CABBAGE",
+     "row": 1,
+     "col": 0,
+     "len": 7,
+     "theme": false,
+     "clue": "Leafy green vegetable"
+    },
+    {
+     "num": 6,
+     "word": "CLIMB",
+     "row": 3,
+     "col": 1,
+     "len": 5,
+     "theme": false,
+     "clue": "Go up a hill or a ladder"
+    },
+    {
+     "num": 8,
+     "word": "BUS",
+     "row": 4,
+     "col": 7,
+     "len": 3,
+     "theme": false,
+     "clue": "Catch it at a stop"
+    },
+    {
+     "num": 9,
+     "word": "PLANET",
+     "row": 5,
+     "col": 1,
+     "len": 6,
+     "theme": false,
+     "clue": "Earth is one"
+    },
+    {
+     "num": 12,
+     "word": "BISCUIT",
+     "row": 8,
+     "col": 2,
+     "len": 7,
+     "theme": false,
+     "clue": "Small crisp cake"
+    },
+    {
+     "num": 14,
+     "word": "SKY",
+     "row": 9,
+     "col": 0,
+     "len": 3,
+     "theme": false,
+     "clue": "It is blue on a clear day"
+    },
+    {
+     "num": 15,
+     "word": "PASS",
+     "row": 10,
+     "col": 3,
+     "len": 4,
+     "theme": false,
+     "clue": "Succeed in an exam"
+    }
+   ],
+   "down": [
+    {
+     "num": 1,
+     "word": "ICE",
+     "row": 0,
+     "col": 0,
+     "len": 3,
+     "theme": false,
+     "clue": "Skate on it"
+    },
+    {
+     "num": 2,
+     "word": "HARMONY",
+     "row": 0,
+     "col": 4,
+     "len": 7,
+     "theme": false,
+     "clue": "Notes that sound good together"
+    },
+    {
+     "num": 3,
+     "word": "NET",
+     "row": 0,
+     "col": 6,
+     "len": 3,
+     "theme": false,
+     "clue": "It divides a tennis court"
+    },
+    {
+     "num": 5,
+     "word": "TRUMPET",
+     "row": 2,
+     "col": 8,
+     "len": 7,
+     "theme": false,
+     "clue": "Brass instrument"
+    },
+    {
+     "num": 7,
+     "word": "LULLABY",
+     "row": 3,
+     "col": 2,
+     "len": 7,
+     "theme": true,
+     "clue": "Song to send a baby to sleep"
+    },
+    {
+     "num": 10,
+     "word": "CLASS",
+     "row": 6,
+     "col": 0,
+     "len": 5,
+     "theme": false,
+     "clue": "Group of pupils"
+    },
+    {
+     "num": 11,
+     "word": "NUTS",
+     "row": 7,
+     "col": 6,
+     "len": 4,
+     "theme": false,
+     "clue": "Cashews or almonds, e.g."
+    },
+    {
+     "num": 13,
+     "word": "SEA",
+     "row": 8,
+     "col": 4,
+     "len": 3,
+     "theme": false,
+     "clue": "Salt water around land"
+    }
+   ]
+  },
+  {
+   "day": 19,
+   "title": "By the Sea",
+   "stars": 2,
+   "grid": [
+    "####FROG###",
+    "L###O###SIX",
+    "I#P#G#C#P##",
+    "OWL#H#A#I#M",
+    "N#U#O#S#C#A",
+    "##MERCURY#R",
+    "D#B#N#A###A",
+    "E#E##CLOSET",
+    "SCREW###T#H",
+    "K##G####E#O",
+    "###G##LEMON"
+   ],
+   "across": [
+    {
+     "num": 1,
+     "word": "FROG",
+     "row": 0,
+     "col": 4,
+     "len": 4,
+     "theme": false,
+     "clue": "Animal that croaks and hops"
+    },
+    {
+     "num": 3,
+     "word": "SIX",
+     "row": 1,
+     "col": 8,
+     "len": 3,
+     "theme": false,
+     "clue": "Number after five"
+    },
+    {
+     "num": 6,
+     "word": "OWL",
+     "row": 3,
+     "col": 0,
+     "len": 3,
+     "theme": false,
+     "clue": "Night bird that hoots"
+    },
+    {
+     "num": 8,
+     "word": "MERCURY",
+     "row": 5,
+     "col": 2,
+     "len": 7,
+     "theme": false,
+     "clue": "Smallest planet"
+    },
+    {
+     "num": 10,
+     "word": "CLOSET",
+     "row": 7,
+     "col": 5,
+     "len": 6,
+     "theme": false,
+     "clue": "Store clothes in it"
+    },
+    {
+     "num": 12,
+     "word": "SCREW",
+     "row": 8,
+     "col": 0,
+     "len": 5,
+     "theme": false,
+     "clue": "Turn it into wood"
+    },
+    {
+     "num": 14,
+     "word": "LEMON",
+     "row": 10,
+     "col": 6,
+     "len": 5,
+     "theme": false,
+     "clue": "Sour yellow citrus fruit"
+    }
+   ],
+   "down": [
+    {
+     "num": 1,
+     "word": "FOGHORN",
+     "row": 0,
+     "col": 4,
+     "len": 7,
+     "theme": true,
+     "clue": "It warns ships in fog"
+    },
+    {
+     "num": 2,
+     "word": "LION",
+     "row": 1,
+     "col": 0,
+     "len": 4,
+     "theme": false,
+     "clue": "King of the jungle"
+    },
+    {
+     "num": 3,
+     "word": "SPICY",
+     "row": 1,
+     "col": 8,
+     "len": 5,
+     "theme": false,
+     "clue": "Hot with chilli"
+    },
+    {
+     "num": 4,
+     "word": "PLUMBER",
+     "row": 2,
+     "col": 2,
+     "len": 7,
+     "theme": false,
+     "clue": "One who fixes pipes"
+    },
+    {
+     "num": 5,
+     "word": "CASUAL",
+     "row": 2,
+     "col": 6,
+     "len": 6,
+     "theme": false,
+     "clue": "Relaxed and informal"
+    },
+    {
+     "num": 7,
+     "word": "MARATHON",
+     "row": 3,
+     "col": 10,
+     "len": 8,
+     "theme": false,
+     "clue": "Long race of about 26 miles"
+    },
+    {
+     "num": 9,
+     "word": "DESK",
+     "row": 6,
+     "col": 0,
+     "len": 4,
+     "theme": false,
+     "clue": "Work at it"
+    },
+    {
+     "num": 11,
+     "word": "STEM",
+     "row": 7,
+     "col": 8,
+     "len": 4,
+     "theme": false,
+     "clue": "Stalk of a flower"
+    },
+    {
+     "num": 13,
+     "word": "EGG",
+     "row": 8,
+     "col": 3,
+     "len": 3,
+     "theme": false,
+     "clue": "Boil it, fry it or scramble it"
+    }
+   ]
+  },
+  {
+   "day": 20,
+   "title": "Out in Nature",
+   "stars": 2,
+   "grid": [
+    "######J#B#B",
+    "##BANDAGE#R",
+    "##I###M#R#O",
+    "##C####CROW",
+    "S#Y#G#B#Y#N",
+    "P#CRATER###",
+    "I#L#L#E#F#W",
+    "N#EYE#TEACH",
+    "A#####L#N#E",
+    "COMPOSER##A",
+    "H#######BAT"
+   ],
+   "across": [
+    {
+     "num": 4,
+     "word": "BANDAGE",
+     "row": 1,
+     "col": 2,
+     "len": 7,
+     "theme": false,
+     "clue": "Cover a cut with it"
+    },
+    {
+     "num": 5,
+     "word": "CROW",
+     "row": 3,
+     "col": 7,
+     "len": 4,
+     "theme": false,
+     "clue": "Black bird that caws"
+    },
+    {
+     "num": 9,
+     "word": "CRATER",
+     "row": 5,
+     "col": 2,
+     "len": 6,
+     "theme": false,
+     "clue": "Hole on the moon"
+    },
+    {
+     "num": 12,
+     "word": "EYE",
+     "row": 7,
+     "col": 2,
+     "len": 3,
+     "theme": false,
+     "clue": "It blinks"
+    },
+    {
+     "num": 13,
+     "word": "TEACH",
+     "row": 7,
+     "col": 6,
+     "len": 5,
+     "theme": false,
+     "clue": "Show someone how"
+    },
+    {
+     "num": 14,
+     "word": "COMPOSER",
+     "row": 9,
+     "col": 0,
+     "len": 8,
+     "theme": false,
+     "clue": "One who writes music"
+    },
+    {
+     "num": 15,
+     "word": "BAT",
+     "row": 10,
+     "col": 8,
+     "len": 3,
+     "theme": false,
+     "clue": "Flying mammal of the night"
+    }
+   ],
+   "down": [
+    {
+     "num": 1,
+     "word": "JAM",
+     "row": 0,
+     "col": 6,
+     "len": 3,
+     "theme": false,
+     "clue": "Sweet fruit spread"
+    },
+    {
+     "num": 2,
+     "word": "BERRY",
+     "row": 0,
+     "col": 8,
+     "len": 5,
+     "theme": false,
+     "clue": "Small juicy fruit"
+    },
+    {
+     "num": 3,
+     "word": "BROWN",
+     "row": 0,
+     "col": 10,
+     "len": 5,
+     "theme": false,
+     "clue": "Colour of wood"
+    },
+    {
+     "num": 4,
+     "word": "BICYCLE",
+     "row": 1,
+     "col": 2,
+     "len": 7,
+     "theme": false,
+     "clue": "Two-wheeled ride you pedal"
+    },
+    {
+     "num": 6,
+     "word": "SPINACH",
+     "row": 4,
+     "col": 0,
+     "len": 7,
+     "theme": false,
+     "clue": "Green leafy vegetable"
+    },
+    {
+     "num": 7,
+     "word": "GALE",
+     "row": 4,
+     "col": 4,
+     "len": 4,
+     "theme": false,
+     "clue": "Strong wind"
+    },
+    {
+     "num": 8,
+     "word": "BEETLE",
+     "row": 4,
+     "col": 6,
+     "len": 6,
+     "theme": true,
+     "clue": "Small insect with a hard shell"
+    },
+    {
+     "num": 10,
+     "word": "FAN",
+     "row": 6,
+     "col": 8,
+     "len": 3,
+     "theme": false,
+     "clue": "Supporter of a team"
+    },
+    {
+     "num": 11,
+     "word": "WHEAT",
+     "row": 6,
+     "col": 10,
+     "len": 5,
+     "theme": false,
+     "clue": "Grain used to make bread"
+    }
+   ]
+  },
+  {
+   "day": 21,
+   "title": "School Days",
+   "stars": 3,
+   "grid": [
+    "KIWI#MOP###",
+    "##E#M##A#S#",
+    "##EXERCISE#",
+    "W#K#C##R#A#",
+    "A###H#B#EGG",
+    "R#PLANET#U#",
+    "D#U#N#D##L#",
+    "R#P#I#R##L#",
+    "O#I#CLOTH#B",
+    "BALL##O###E",
+    "E#####MOOSE"
+   ],
+   "across": [
+    {
+     "num": 1,
+     "word": "KIWI",
+     "row": 0,
+     "col": 0,
+     "len": 4,
+     "theme": false,
+     "clue": "Brown fuzzy fruit, green inside"
+    },
+    {
+     "num": 3,
+     "word": "MOP",
+     "row": 0,
+     "col": 5,
+     "len": 3,
+     "theme": false,
+     "clue": "It has a long handle"
+    },
+    {
+     "num": 7,
+     "word": "EXERCISE",
+     "row": 2,
+     "col": 2,
+     "len": 8,
+     "theme": false,
+     "clue": "Move your body to stay fit"
+    },
+    {
+     "num": 10,
+     "word": "EGG",
+     "row": 4,
+     "col": 8,
+     "len": 3,
+     "theme": false,
+     "clue": "It comes from a hen"
+    },
+    {
+     "num": 11,
+     "word": "PLANET",
+     "row": 5,
+     "col": 2,
+     "len": 6,
+     "theme": false,
+     "clue": "It orbits the sun"
+    },
+    {
+     "num": 12,
+     "word": "CLOTH",
+     "row": 8,
+     "col": 4,
+     "len": 5,
+     "theme": false,
+     "clue": "Fabric"
+    },
+    {
+     "num": 14,
+     "word": "BALL",
+     "row": 9,
+     "col": 0,
+     "len": 4,
+     "theme": false,
+     "clue": "Round thing you kick or throw"
+    },
+    {
+     "num": 15,
+     "word": "MOOSE",
+     "row": 10,
+     "col": 6,
+     "len": 5,
+     "theme": false,
+     "clue": "Big animal with wide antlers"
+    }
+   ],
+   "down": [
+    {
+     "num": 2,
+     "word": "WEEK",
+     "row": 0,
+     "col": 2,
+     "len": 4,
+     "theme": false,
+     "clue": "Seven days"
+    },
+    {
+     "num": 4,
+     "word": "PAIR",
+     "row": 0,
+     "col": 7,
+     "len": 4,
+     "theme": false,
+     "clue": "Two of a kind"
+    },
+    {
+     "num": 5,
+     "word": "MECHANIC",
+     "row": 1,
+     "col": 4,
+     "len": 8,
+     "theme": false,
+     "clue": "One who fixes cars"
+    },
+    {
+     "num": 6,
+     "word": "SEAGULL",
+     "row": 1,
+     "col": 9,
+     "len": 7,
+     "theme": false,
+     "clue": "Bird that cries at the seaside"
+    },
+    {
+     "num": 8,
+     "word": "WARDROBE",
+     "row": 3,
+     "col": 0,
+     "len": 8,
+     "theme": false,
+     "clue": "Big cupboard for clothes"
+    },
+    {
+     "num": 9,
+     "word": "BEDROOM",
+     "row": 4,
+     "col": 6,
+     "len": 7,
+     "theme": false,
+     "clue": "Room where you sleep"
+    },
+    {
+     "num": 11,
+     "word": "PUPIL",
+     "row": 5,
+     "col": 2,
+     "len": 5,
+     "theme": true,
+     "clue": "Schoolchild"
+    },
+    {
+     "num": 13,
+     "word": "BEE",
+     "row": 8,
+     "col": 10,
+     "len": 3,
+     "theme": false,
+     "clue": "Insect that makes honey"
+    }
+   ]
+  },
+  {
+   "day": 22,
+   "title": "At Work",
+   "stars": 3,
+   "grid": [
+    "S##LEOPARD#",
+    "KIWI##I###B",
+    "Y##F##G###E",
+    "#CHEEK#WAVE",
+    "D##B##C##A#",
+    "R#COLLAR#C#",
+    "U##A##S##A#",
+    "MIST#SHIRT#",
+    "M###F#I##I#",
+    "E##NOTEBOOK",
+    "R###X#R##N#"
+   ],
+   "across": [
+    {
+     "num": 2,
+     "word": "LEOPARD",
+     "row": 0,
+     "col": 3,
+     "len": 7,
+     "theme": false,
+     "clue": "Spotted big cat"
+    },
+    {
+     "num": 4,
+     "word": "KIWI",
+     "row": 1,
+     "col": 0,
+     "len": 4,
+     "theme": false,
+     "clue": "It comes from New Zealand"
+    },
+    {
+     "num": 6,
+     "word": "CHEEK",
+     "row": 3,
+     "col": 1,
+     "len": 5,
+     "theme": false,
+     "clue": "Side of the face"
+    },
+    {
+     "num": 7,
+     "word": "WAVE",
+     "row": 3,
+     "col": 7,
+     "len": 4,
+     "theme": false,
+     "clue": "It breaks on the shore"
+    },
+    {
+     "num": 11,
+     "word": "COLLAR",
+     "row": 5,
+     "col": 2,
+     "len": 6,
+     "theme": false,
+     "clue": "Band round a dog's neck"
+    },
+    {
+     "num": 12,
+     "word": "MIST",
+     "row": 7,
+     "col": 0,
+     "len": 4,
+     "theme": false,
+     "clue": "Light fog"
+    },
+    {
+     "num": 13,
+     "word": "SHIRT",
+     "row": 7,
+     "col": 5,
+     "len": 5,
+     "theme": false,
+     "clue": "Wear it on top"
+    },
+    {
+     "num": 15,
+     "word": "NOTEBOOK",
+     "row": 9,
+     "col": 3,
+     "len": 8,
+     "theme": false,
+     "clue": "Write notes in it"
+    }
+   ],
+   "down": [
+    {
+     "num": 1,
+     "word": "SKY",
+     "row": 0,
+     "col": 0,
+     "len": 3,
+     "theme": false,
+     "clue": "Birds fly in it"
+    },
+    {
+     "num": 2,
+     "word": "LIFEBOAT",
+     "row": 0,
+     "col": 3,
+     "len": 8,
+     "theme": false,
+     "clue": "Boat that rescues people"
+    },
+    {
+     "num": 3,
+     "word": "PIG",
+     "row": 0,
+     "col": 6,
+     "len": 3,
+     "theme": false,
+     "clue": "It rolls in mud"
+    },
+    {
+     "num": 5,
+     "word": "BEE",
+     "row": 1,
+     "col": 10,
+     "len": 3,
+     "theme": false,
+     "clue": "It buzzes and stings"
+    },
+    {
+     "num": 8,
+     "word": "VACATION",
+     "row": 3,
+     "col": 9,
+     "len": 8,
+     "theme": false,
+     "clue": "American word for holiday"
+    },
+    {
+     "num": 9,
+     "word": "DRUMMER",
+     "row": 4,
+     "col": 0,
+     "len": 7,
+     "theme": false,
+     "clue": "One who plays the drums"
+    },
+    {
+     "num": 10,
+     "word": "CASHIER",
+     "row": 4,
+     "col": 6,
+     "len": 7,
+     "theme": true,
+     "clue": "One who takes money in a shop"
+    },
+    {
+     "num": 14,
+     "word": "FOX",
+     "row": 8,
+     "col": 4,
+     "len": 3,
+     "theme": false,
+     "clue": "Clever orange animal"
+    }
+   ]
+  },
+  {
+   "day": 23,
+   "title": "Out in Space",
+   "stars": 3,
+   "grid": [
+    "BAT#MORNING",
+    "##I#O#O####",
+    "#FERN#W###C",
+    "G###T#BAGEL",
+    "A#E#H#O###E",
+    "R#COLLAR##V",
+    "D#L#Y#T#P#E",
+    "E#I####HAIR",
+    "NAPKIN##N##",
+    "E#S#####D##",
+    "REEF#KARATE"
+   ],
+   "across": [
+    {
+     "num": 1,
+     "word": "BAT",
+     "row": 0,
+     "col": 0,
+     "len": 3,
+     "theme": false,
+     "clue": "It hangs upside down"
+    },
+    {
+     "num": 3,
+     "word": "MORNING",
+     "row": 0,
+     "col": 4,
+     "len": 7,
+     "theme": false,
+     "clue": "Early part of the day"
+    },
+    {
+     "num": 5,
+     "word": "FERN",
+     "row": 2,
+     "col": 1,
+     "len": 4,
+     "theme": false,
+     "clue": "Feathery green plant"
+    },
+    {
+     "num": 8,
+     "word": "BAGEL",
+     "row": 3,
+     "col": 6,
+     "len": 5,
+     "theme": false,
+     "clue": "Ring-shaped bread roll"
+    },
+    {
+     "num": 10,
+     "word": "COLLAR",
+     "row": 5,
+     "col": 2,
+     "len": 6,
+     "theme": false,
+     "clue": "Shirt part round the neck"
+    },
+    {
+     "num": 12,
+     "word": "HAIR",
+     "row": 7,
+     "col": 7,
+     "len": 4,
+     "theme": false,
+     "clue": "It grows on your head"
+    },
+    {
+     "num": 13,
+     "word": "NAPKIN",
+     "row": 8,
+     "col": 0,
+     "len": 6,
+     "theme": false,
+     "clue": "Wipe your mouth with it"
+    },
+    {
+     "num": 14,
+     "word": "REEF",
+     "row": 10,
+     "col": 0,
+     "len": 4,
+     "theme": false,
+     "clue": "Fish hide in it"
+    },
+    {
+     "num": 15,
+     "word": "KARATE",
+     "row": 10,
+     "col": 5,
+     "len": 6,
+     "theme": false,
+     "clue": "Martial art with kicks"
+    }
+   ],
+   "down": [
+    {
+     "num": 2,
+     "word": "TIE",
+     "row": 0,
+     "col": 2,
+     "len": 3,
+     "theme": false,
+     "clue": "Equal score"
+    },
+    {
+     "num": 3,
+     "word": "MONTHLY",
+     "row": 0,
+     "col": 4,
+     "len": 7,
+     "theme": false,
+     "clue": "Every month"
+    },
+    {
+     "num": 4,
+     "word": "ROWBOAT",
+     "row": 0,
+     "col": 6,
+     "len": 7,
+     "theme": false,
+     "clue": "Small boat with oars"
+    },
+    {
+     "num": 6,
+     "word": "CLEVER",
+     "row": 2,
+     "col": 10,
+     "len": 6,
+     "theme": false,
+     "clue": "Smart and quick-thinking"
+    },
+    {
+     "num": 7,
+     "word": "GARDENER",
+     "row": 3,
+     "col": 0,
+     "len": 8,
+     "theme": false,
+     "clue": "One who tends gardens"
+    },
+    {
+     "num": 9,
+     "word": "ECLIPSE",
+     "row": 4,
+     "col": 2,
+     "len": 7,
+     "theme": true,
+     "clue": "Sun or moon hidden"
+    },
+    {
+     "num": 11,
+     "word": "PANDA",
+     "row": 6,
+     "col": 8,
+     "len": 5,
+     "theme": false,
+     "clue": "Black-and-white bear from China"
+    }
+   ]
+  },
+  {
+   "day": 24,
+   "title": "Weather Watch",
+   "stars": 3,
+   "grid": [
+    "##P#T###POP",
+    "#BARREL#E##",
+    "##I#E##CAVE",
+    "SINGER#H##L",
+    "E##A#A#I##E",
+    "A#CRUISE##P",
+    "H##L#N#F##H",
+    "O##I#B##J#A",
+    "R##C#O##U#N",
+    "S####WALNUT",
+    "EAGLE###E##"
+   ],
+   "across": [
+    {
+     "num": 3,
+     "word": "POP",
+     "row": 0,
+     "col": 8,
+     "len": 3,
+     "theme": false,
+     "clue": "It tops the charts"
+    },
+    {
+     "num": 4,
+     "word": "BARREL",
+     "row": 1,
+     "col": 1,
+     "len": 6,
+     "theme": false,
+     "clue": "Round wooden container"
+    },
+    {
+     "num": 5,
+     "word": "CAVE",
+     "row": 2,
+     "col": 7,
+     "len": 4,
+     "theme": false,
+     "clue": "Hollow in a rock"
+    },
+    {
+     "num": 7,
+     "word": "SINGER",
+     "row": 3,
+     "col": 0,
+     "len": 6,
+     "theme": false,
+     "clue": "One who sings"
+    },
+    {
+     "num": 10,
+     "word": "CRUISE",
+     "row": 5,
+     "col": 2,
+     "len": 6,
+     "theme": false,
+     "clue": "Sail in comfort"
+    },
+    {
+     "num": 12,
+     "word": "WALNUT",
+     "row": 9,
+     "col": 5,
+     "len": 6,
+     "theme": false,
+     "clue": "Hard-shelled nut"
+    },
+    {
+     "num": 13,
+     "word": "EAGLE",
+     "row": 10,
+     "col": 0,
+     "len": 5,
+     "theme": false,
+     "clue": "Bird of prey with sharp eyes"
+    }
+   ],
+   "down": [
+    {
+     "num": 1,
+     "word": "PAIN",
+     "row": 0,
+     "col": 2,
+     "len": 4,
+     "theme": false,
+     "clue": "Hurt feeling"
+    },
+    {
+     "num": 2,
+     "word": "TREE",
+     "row": 0,
+     "col": 4,
+     "len": 4,
+     "theme": false,
+     "clue": "It has leaves and branches"
+    },
+    {
+     "num": 3,
+     "word": "PEA",
+     "row": 0,
+     "col": 8,
+     "len": 3,
+     "theme": false,
+     "clue": "It grows in a pod"
+    },
+    {
+     "num": 5,
+     "word": "CHIEF",
+     "row": 2,
+     "col": 7,
+     "len": 5,
+     "theme": false,
+     "clue": "The boss"
+    },
+    {
+     "num": 6,
+     "word": "ELEPHANT",
+     "row": 2,
+     "col": 10,
+     "len": 8,
+     "theme": false,
+     "clue": "Animal with a trunk"
+    },
+    {
+     "num": 7,
+     "word": "SEAHORSE",
+     "row": 3,
+     "col": 0,
+     "len": 8,
+     "theme": false,
+     "clue": "Tiny sea animal with a curled tail"
+    },
+    {
+     "num": 8,
+     "word": "GARLIC",
+     "row": 3,
+     "col": 3,
+     "len": 6,
+     "theme": false,
+     "clue": "Strong-smelling bulb in cooking"
+    },
+    {
+     "num": 9,
+     "word": "RAINBOW",
+     "row": 3,
+     "col": 5,
+     "len": 7,
+     "theme": true,
+     "clue": "Colours in the sky after rain"
+    },
+    {
+     "num": 11,
+     "word": "JUNE",
+     "row": 7,
+     "col": 8,
+     "len": 4,
+     "theme": false,
+     "clue": "Sixth month"
+    }
+   ]
+  },
+  {
+   "day": 25,
+   "title": "Animal Friends",
+   "stars": 3,
+   "grid": [
+    "#####S#####",
+    "PEN#STOMACH",
+    "Y####A###A#",
+    "J##S#ROBIN#",
+    "A##P###U#V#",
+    "M#DANCER#A#",
+    "A##R#H#D#S#",
+    "SOUR#OVEN#H",
+    "#A#O#I#N##A",
+    "STEW#C####R",
+    "#S##KETCHUP"
+   ],
+   "across": [
+    {
+     "num": 2,
+     "word": "PEN",
+     "row": 1,
+     "col": 0,
+     "len": 3,
+     "theme": false,
+     "clue": "It has ink"
+    },
+    {
+     "num": 3,
+     "word": "STOMACH",
+     "row": 1,
+     "col": 4,
+     "len": 7,
+     "theme": false,
+     "clue": "Food goes there"
+    },
+    {
+     "num": 6,
+     "word": "ROBIN",
+     "row": 3,
+     "col": 5,
+     "len": 5,
+     "theme": false,
+     "clue": "Bird with a red breast"
+    },
+    {
+     "num": 8,
+     "word": "DANCER",
+     "row": 5,
+     "col": 2,
+     "len": 6,
+     "theme": false,
+     "clue": "One who dances"
+    },
+    {
+     "num": 10,
+     "word": "SOUR",
+     "row": 7,
+     "col": 0,
+     "len": 4,
+     "theme": false,
+     "clue": "Sharp tasting, like lemon"
+    },
+    {
+     "num": 12,
+     "word": "OVEN",
+     "row": 7,
+     "col": 5,
+     "len": 4,
+     "theme": false,
+     "clue": "Bake food in it"
+    },
+    {
+     "num": 14,
+     "word": "STEW",
+     "row": 9,
+     "col": 0,
+     "len": 4,
+     "theme": false,
+     "clue": "Slow-cooked dish in a pot"
+    },
+    {
+     "num": 15,
+     "word": "KETCHUP",
+     "row": 10,
+     "col": 4,
+     "len": 7,
+     "theme": false,
+     "clue": "Red sauce for fries"
+    }
+   ],
+   "down": [
+    {
+     "num": 1,
+     "word": "STAR",
+     "row": 0,
+     "col": 5,
+     "len": 4,
+     "theme": false,
+     "clue": "It twinkles at night"
+    },
+    {
+     "num": 2,
+     "word": "PYJAMAS",
+     "row": 1,
+     "col": 0,
+     "len": 7,
+     "theme": false,
+     "clue": "Sleep in them"
+    },
+    {
+     "num": 4,
+     "word": "CANVAS",
+     "row": 1,
+     "col": 9,
+     "len": 6,
+     "theme": false,
+     "clue": "Cloth for painting on"
+    },
+    {
+     "num": 5,
+     "word": "SPARROW",
+     "row": 3,
+     "col": 3,
+     "len": 7,
+     "theme": true,
+     "clue": "Small brown bird"
+    },
+    {
+     "num": 7,
+     "word": "BURDEN",
+     "row": 3,
+     "col": 7,
+     "len": 6,
+     "theme": false,
+     "clue": "Heavy load to carry"
+    },
+    {
+     "num": 9,
+     "word": "CHOICE",
+     "row": 5,
+     "col": 5,
+     "len": 6,
+     "theme": false,
+     "clue": "Pick one of several"
+    },
+    {
+     "num": 11,
+     "word": "OATS",
+     "row": 7,
+     "col": 1,
+     "len": 4,
+     "theme": false,
+     "clue": "Horses eat them too"
+    },
+    {
+     "num": 13,
+     "word": "HARP",
+     "row": 7,
+     "col": 10,
+     "len": 4,
+     "theme": false,
+     "clue": "Instrument with many strings"
+    }
+   ]
+  },
+  {
+   "day": 26,
+   "title": "Good to Eat",
+   "stars": 3,
+   "grid": [
+    "#NOW#CABLE#",
+    "#E#A####O##",
+    "#T#LUNCHBOX",
+    "N##L####S##",
+    "E#####F#TOE",
+    "C#ACHIEVE##",
+    "K##A##N#R##",
+    "L#ARM#C##F#",
+    "A##V#PIGEON",
+    "CAMEL#N##O#",
+    "E#####GOAT#"
+   ],
+   "across": [
+    {
+     "num": 1,
+     "word": "NOW",
+     "row": 0,
+     "col": 1,
+     "len": 3,
+     "theme": false,
+     "clue": "At this moment"
+    },
+    {
+     "num": 3,
+     "word": "CABLE",
+     "row": 0,
+     "col": 5,
+     "len": 5,
+     "theme": false,
+     "clue": "Thick wire"
+    },
+    {
+     "num": 5,
+     "word": "LUNCHBOX",
+     "row": 2,
+     "col": 3,
+     "len": 8,
+     "theme": false,
+     "clue": "Carry lunch in it"
+    },
+    {
+     "num": 8,
+     "word": "TOE",
+     "row": 4,
+     "col": 8,
+     "len": 3,
+     "theme": false,
+     "clue": "Wiggle it"
+    },
+    {
+     "num": 9,
+     "word": "ACHIEVE",
+     "row": 5,
+     "col": 2,
+     "len": 7,
+     "theme": false,
+     "clue": "Reach a goal"
+    },
+    {
+     "num": 11,
+     "word": "ARM",
+     "row": 7,
+     "col": 2,
+     "len": 3,
+     "theme": false,
+     "clue": "Wave it"
+    },
+    {
+     "num": 13,
+     "word": "PIGEON",
+     "row": 8,
+     "col": 5,
+     "len": 6,
+     "theme": false,
+     "clue": "Grey city bird"
+    },
+    {
+     "num": 14,
+     "word": "CAMEL",
+     "row": 9,
+     "col": 0,
+     "len": 5,
+     "theme": false,
+     "clue": "Desert animal with humps"
+    },
+    {
+     "num": 15,
+     "word": "GOAT",
+     "row": 10,
+     "col": 6,
+     "len": 4,
+     "theme": false,
+     "clue": "Farm animal with horns"
+    }
+   ],
+   "down": [
+    {
+     "num": 1,
+     "word": "NET",
+     "row": 0,
+     "col": 1,
+     "len": 3,
+     "theme": false,
+     "clue": "Catch fish with it"
+    },
+    {
+     "num": 2,
+     "word": "WALL",
+     "row": 0,
+     "col": 3,
+     "len": 4,
+     "theme": false,
+     "clue": "It holds up the roof"
+    },
+    {
+     "num": 4,
+     "word": "LOBSTER",
+     "row": 0,
+     "col": 8,
+     "len": 7,
+     "theme": false,
+     "clue": "Big sea animal with claws"
+    },
+    {
+     "num": 6,
+     "word": "NECKLACE",
+     "row": 3,
+     "col": 0,
+     "len": 8,
+     "theme": false,
+     "clue": "Wear it round your neck"
+    },
+    {
+     "num": 7,
+     "word": "FENCING",
+     "row": 4,
+     "col": 6,
+     "len": 7,
+     "theme": false,
+     "clue": "Sport with swords"
+    },
+    {
+     "num": 10,
+     "word": "CARVE",
+     "row": 5,
+     "col": 3,
+     "len": 5,
+     "theme": true,
+     "clue": "Cut meat into slices"
+    },
+    {
+     "num": 12,
+     "word": "FOOT",
+     "row": 7,
+     "col": 9,
+     "len": 4,
+     "theme": false,
+     "clue": "It has toes"
+    }
+   ]
+  },
+  {
+   "day": 27,
+   "title": "At Home",
+   "stars": 3,
+   "grid": [
+    "###P####FAN",
+    "##TORNADO#O",
+    "#C#R#E##X#W",
+    "#OCTOPUS#B#",
+    "#W###T##ART",
+    "##CASUAL#A#",
+    "B#O##N###C#",
+    "L#T#RECIPE#",
+    "U#T######L#",
+    "E#O##BITTER",
+    "SAND#####T#"
+   ],
+   "across": [
+    {
+     "num": 2,
+     "word": "FAN",
+     "row": 0,
+     "col": 8,
+     "len": 3,
+     "theme": false,
+     "clue": "It waves a flag"
+    },
+    {
+     "num": 4,
+     "word": "TORNADO",
+     "row": 1,
+     "col": 2,
+     "len": 7,
+     "theme": false,
+     "clue": "Spinning funnel of wind"
+    },
+    {
+     "num": 7,
+     "word": "OCTOPUS",
+     "row": 3,
+     "col": 1,
+     "len": 7,
+     "theme": false,
+     "clue": "Sea animal with eight arms"
+    },
+    {
+     "num": 9,
+     "word": "ART",
+     "row": 4,
+     "col": 8,
+     "len": 3,
+     "theme": false,
+     "clue": "Paint in it"
+    },
+    {
+     "num": 10,
+     "word": "CASUAL",
+     "row": 5,
+     "col": 2,
+     "len": 6,
+     "theme": false,
+     "clue": "Not formal"
+    },
+    {
+     "num": 12,
+     "word": "RECIPE",
+     "row": 7,
+     "col": 4,
+     "len": 6,
+     "theme": false,
+     "clue": "Cooking instructions"
+    },
+    {
+     "num": 13,
+     "word": "BITTER",
+     "row": 9,
+     "col": 5,
+     "len": 6,
+     "theme": false,
+     "clue": "Sharp taste of dark chocolate"
+    },
+    {
+     "num": 14,
+     "word": "SAND",
+     "row": 10,
+     "col": 0,
+     "len": 4,
+     "theme": false,
+     "clue": "Tiny grains on a beach"
+    }
+   ],
+   "down": [
+    {
+     "num": 1,
+     "word": "PORT",
+     "row": 0,
+     "col": 3,
+     "len": 4,
+     "theme": false,
+     "clue": "Place where ships load"
+    },
+    {
+     "num": 2,
+     "word": "FOX",
+     "row": 0,
+     "col": 8,
+     "len": 3,
+     "theme": false,
+     "clue": "It has a bushy tail"
+    },
+    {
+     "num": 3,
+     "word": "NOW",
+     "row": 0,
+     "col": 10,
+     "len": 3,
+     "theme": false,
+     "clue": "Not later"
+    },
+    {
+     "num": 5,
+     "word": "NEPTUNE",
+     "row": 1,
+     "col": 5,
+     "len": 7,
+     "theme": false,
+     "clue": "Blue planet, far from the sun"
+    },
+    {
+     "num": 6,
+     "word": "COW",
+     "row": 2,
+     "col": 1,
+     "len": 3,
+     "theme": false,
+     "clue": "It gives milk"
+    },
+    {
+     "num": 8,
+     "word": "BRACELET",
+     "row": 3,
+     "col": 9,
+     "len": 8,
+     "theme": false,
+     "clue": "Wear it on your wrist"
+    },
+    {
+     "num": 10,
+     "word": "COTTON",
+     "row": 5,
+     "col": 2,
+     "len": 6,
+     "theme": true,
+     "clue": "Soft plant fibre for cloth"
+    },
+    {
+     "num": 11,
+     "word": "BLUES",
+     "row": 6,
+     "col": 0,
+     "len": 5,
+     "theme": false,
+     "clue": "Sad-sounding music"
+    }
+   ]
+  },
+  {
+   "day": 28,
+   "title": "On the Road",
+   "stars": 3,
+   "grid": [
+    "######BADGE",
+    "B####B##O#N",
+    "R#FIREMAN#G",
+    "O#O##D##U#I",
+    "C#O#V#C#TEN",
+    "C#TROPHY##E",
+    "O#B#Y#A#W#E",
+    "LLAMA#STAIR",
+    "I#L#G#E#T##",
+    "#SLEEP##E##",
+    "######CORN#"
+   ],
+   "across": [
+    {
+     "num": 1,
+     "word": "BADGE",
+     "row": 0,
+     "col": 6,
+     "len": 5,
+     "theme": false,
+     "clue": "Pin that shows who you are"
+    },
+    {
+     "num": 6,
+     "word": "FIREMAN",
+     "row": 2,
+     "col": 2,
+     "len": 7,
+     "theme": false,
+     "clue": "One who fights fires"
+    },
+    {
+     "num": 9,
+     "word": "TEN",
+     "row": 4,
+     "col": 8,
+     "len": 3,
+     "theme": false,
+     "clue": "It is two fives"
+    },
+    {
+     "num": 10,
+     "word": "TROPHY",
+     "row": 5,
+     "col": 2,
+     "len": 6,
+     "theme": false,
+     "clue": "Prize for winning"
+    },
+    {
+     "num": 12,
+     "word": "LLAMA",
+     "row": 7,
+     "col": 0,
+     "len": 5,
+     "theme": false,
+     "clue": "South American animal with a long neck"
+    },
+    {
+     "num": 13,
+     "word": "STAIR",
+     "row": 7,
+     "col": 6,
+     "len": 5,
+     "theme": false,
+     "clue": "Step up to the next floor"
+    },
+    {
+     "num": 14,
+     "word": "SLEEP",
+     "row": 9,
+     "col": 1,
+     "len": 5,
+     "theme": false,
+     "clue": "Rest at night"
+    },
+    {
+     "num": 15,
+     "word": "CORN",
+     "row": 10,
+     "col": 6,
+     "len": 4,
+     "theme": false,
+     "clue": "Yellow vegetable on a cob"
+    }
+   ],
+   "down": [
+    {
+     "num": 2,
+     "word": "DONUT",
+     "row": 0,
+     "col": 8,
+     "len": 5,
+     "theme": false,
+     "clue": "Sweet fried ring with a hole"
+    },
+    {
+     "num": 3,
+     "word": "ENGINEER",
+     "row": 0,
+     "col": 10,
+     "len": 8,
+     "theme": false,
+     "clue": "One who designs machines"
+    },
+    {
+     "num": 4,
+     "word": "BROCCOLI",
+     "row": 1,
+     "col": 0,
+     "len": 8,
+     "theme": false,
+     "clue": "Green vegetable like a small tree"
+    },
+    {
+     "num": 5,
+     "word": "BED",
+     "row": 1,
+     "col": 5,
+     "len": 3,
+     "theme": false,
+     "clue": "It has a mattress"
+    },
+    {
+     "num": 6,
+     "word": "FOOTBALL",
+     "row": 2,
+     "col": 2,
+     "len": 8,
+     "theme": false,
+     "clue": "Game played with a round ball"
+    },
+    {
+     "num": 7,
+     "word": "VOYAGE",
+     "row": 4,
+     "col": 4,
+     "len": 6,
+     "theme": true,
+     "clue": "Long sea journey"
+    },
+    {
+     "num": 8,
+     "word": "CHASE",
+     "row": 4,
+     "col": 6,
+     "len": 5,
+     "theme": false,
+     "clue": "Run after"
+    },
+    {
+     "num": 11,
+     "word": "WATER",
+     "row": 6,
+     "col": 8,
+     "len": 5,
+     "theme": false,
+     "clue": "Drink it when you are thirsty"
+    }
+   ]
+  },
+  {
+   "day": 29,
+   "title": "Game On",
+   "stars": 3,
+   "grid": [
+    "##S#S#HOUSE",
+    "#DONKEY####",
+    "##N#I#MATCH",
+    "BAG#N#N####",
+    "A##C#C#C##N",
+    "C#FOGHORN#O",
+    "K##P#I#I##O",
+    "P##P#C#COLD",
+    "A##E#K#K##L",
+    "CHARGE#E##E",
+    "K####NOTE##"
+   ],
+   "across": [
+    {
+     "num": 3,
+     "word": "HOUSE",
+     "row": 0,
+     "col": 6,
+     "len": 5,
+     "theme": false,
+     "clue": "Place where you live"
+    },
+    {
+     "num": 4,
+     "word": "DONKEY",
+     "row": 1,
+     "col": 1,
+     "len": 6,
+     "theme": false,
+     "clue": "Animal that carries loads"
+    },
+    {
+     "num": 5,
+     "word": "MATCH",
+     "row": 2,
+     "col": 6,
+     "len": 5,
+     "theme": false,
+     "clue": "Strike it to make a flame"
+    },
+    {
+     "num": 6,
+     "word": "BAG",
+     "row": 3,
+     "col": 0,
+     "len": 3,
+     "theme": false,
+     "clue": "It has straps"
+    },
+    {
+     "num": 11,
+     "word": "FOGHORN",
+     "row": 5,
+     "col": 2,
+     "len": 7,
+     "theme": false,
+     "clue": "Deep booming sound"
+    },
+    {
+     "num": 12,
+     "word": "COLD",
+     "row": 7,
+     "col": 7,
+     "len": 4,
+     "theme": false,
+     "clue": "Illness with a runny nose"
+    },
+    {
+     "num": 13,
+     "word": "CHARGE",
+     "row": 9,
+     "col": 0,
+     "len": 6,
+     "theme": false,
+     "clue": "Ask a price for"
+    },
+    {
+     "num": 14,
+     "word": "NOTE",
+     "row": 10,
+     "col": 5,
+     "len": 4,
+     "theme": false,
+     "clue": "Single sound in music"
+    }
+   ],
+   "down": [
+    {
+     "num": 1,
+     "word": "SONG",
+     "row": 0,
+     "col": 2,
+     "len": 4,
+     "theme": false,
+     "clue": "Words set to music"
+    },
+    {
+     "num": 2,
+     "word": "SKIN",
+     "row": 0,
+     "col": 4,
+     "len": 4,
+     "theme": false,
+     "clue": "It covers your body"
+    },
+    {
+     "num": 3,
+     "word": "HYMN",
+     "row": 0,
+     "col": 6,
+     "len": 4,
+     "theme": false,
+     "clue": "Religious song"
+    },
+    {
+     "num": 6,
+     "word": "BACKPACK",
+     "row": 3,
+     "col": 0,
+     "len": 8,
+     "theme": false,
+     "clue": "Carry it on your back"
+    },
+    {
+     "num": 7,
+     "word": "COPPER",
+     "row": 4,
+     "col": 3,
+     "len": 6,
+     "theme": false,
+     "clue": "Reddish metal for wires"
+    },
+    {
+     "num": 8,
+     "word": "CHICKEN",
+     "row": 4,
+     "col": 5,
+     "len": 7,
+     "theme": false,
+     "clue": "Farm bird that lays eggs"
+    },
+    {
+     "num": 9,
+     "word": "CRICKET",
+     "row": 4,
+     "col": 7,
+     "len": 7,
+     "theme": true,
+     "clue": "Bat-and-ball game"
+    },
+    {
+     "num": 10,
+     "word": "NOODLE",
+     "row": 4,
+     "col": 10,
+     "len": 6,
+     "theme": false,
+     "clue": "Long thin pasta"
+    }
+   ]
+  },
+  {
+   "day": 30,
+   "title": "Music Time",
+   "stars": 3,
+   "grid": [
+    "B##ABILITY#",
+    "U###O######",
+    "SKIING#####",
+    "#I##E#ROPE#",
+    "#T#B#S##A##",
+    "#CHAMPION#W",
+    "#H#T#E##C#A",
+    "#E#TEA#HALF",
+    "KNEE#K##K#F",
+    "###R#E#SEAL",
+    "PLAYER####E"
+   ],
+   "across": [
+    {
+     "num": 2,
+     "word": "ABILITY",
+     "row": 0,
+     "col": 3,
+     "len": 7,
+     "theme": false,
+     "clue": "Skill or talent"
+    },
+    {
+     "num": 4,
+     "word": "SKIING",
+     "row": 2,
+     "col": 0,
+     "len": 6,
+     "theme": false,
+     "clue": "Sport on snow"
+    },
+    {
+     "num": 6,
+     "word": "ROPE",
+     "row": 3,
+     "col": 6,
+     "len": 4,
+     "theme": false,
+     "clue": "It is made of twisted fibres"
+    },
+    {
+     "num": 10,
+     "word": "CHAMPION",
+     "row": 5,
+     "col": 1,
+     "len": 8,
+     "theme": false,
+     "clue": "It holds the title"
+    },
+    {
+     "num": 12,
+     "word": "TEA",
+     "row": 7,
+     "col": 3,
+     "len": 3,
+     "theme": false,
+     "clue": "It comes in a cup"
+    },
+    {
+     "num": 13,
+     "word": "HALF",
+     "row": 7,
+     "col": 7,
+     "len": 4,
+     "theme": false,
+     "clue": "One of two equal parts"
+    },
+    {
+     "num": 14,
+     "word": "KNEE",
+     "row": 8,
+     "col": 0,
+     "len": 4,
+     "theme": false,
+     "clue": "Joint in the middle of your leg"
+    },
+    {
+     "num": 15,
+     "word": "SEAL",
+     "row": 9,
+     "col": 7,
+     "len": 4,
+     "theme": false,
+     "clue": "It barks and claps"
+    },
+    {
+     "num": 16,
+     "word": "PLAYER",
+     "row": 10,
+     "col": 0,
+     "len": 6,
+     "theme": false,
+     "clue": "One who plays a game"
+    }
+   ],
+   "down": [
+    {
+     "num": 1,
+     "word": "BUS",
+     "row": 0,
+     "col": 0,
+     "len": 3,
+     "theme": false,
+     "clue": "It carries many people"
+    },
+    {
+     "num": 3,
+     "word": "BONE",
+     "row": 0,
+     "col": 4,
+     "len": 4,
+     "theme": false,
+     "clue": "Hard part inside your body"
+    },
+    {
+     "num": 5,
+     "word": "KITCHEN",
+     "row": 2,
+     "col": 1,
+     "len": 7,
+     "theme": false,
+     "clue": "Room where you cook"
+    },
+    {
+     "num": 7,
+     "word": "PANCAKE",
+     "row": 3,
+     "col": 8,
+     "len": 7,
+     "theme": false,
+     "clue": "Flat cake fried in a pan"
+    },
+    {
+     "num": 8,
+     "word": "BATTERY",
+     "row": 4,
+     "col": 3,
+     "len": 7,
+     "theme": false,
+     "clue": "Power for a torch"
+    },
+    {
+     "num": 9,
+     "word": "SPEAKER",
+     "row": 4,
+     "col": 5,
+     "len": 7,
+     "theme": true,
+     "clue": "It makes sound loud"
+    },
+    {
+     "num": 11,
+     "word": "WAFFLE",
+     "row": 5,
+     "col": 10,
+     "len": 6,
+     "theme": false,
+     "clue": "Crisp cake with square holes"
+    }
+   ]
+  }
+ ],
+ "cryptograms": [
+  {
+   "day": 1,
+   "cipher": "VBQTRBSW, VBQTRBSW.",
+   "mapping": {
+    "A": "N",
+    "B": "C",
+    "C": "I",
+    "D": "U",
+    "E": "Y",
+    "F": "S",
+    "G": "X",
+    "H": "A",
+    "I": "B",
+    "J": "D",
+    "K": "F",
+    "L": "R",
+    "M": "Q",
+    "N": "M",
+    "O": "G",
+    "P": "T",
+    "Q": "P",
+    "R": "K",
+    "S": "V",
+    "T": "Z",
+    "U": "H",
+    "V": "L",
+    "W": "E",
+    "X": "O",
+    "Y": "W",
+    "Z": "J"
+   },
+   "starters": [
+    {
+     "plain": "I",
+     "cipher": "B"
+    },
+    {
+     "plain": "S",
+     "cipher": "V"
+    },
+    {
+     "plain": "L",
+     "cipher": "R"
+    }
+   ],
+   "hints": {
+    "hint1": {
+     "I": "B"
+    },
+    "hint2": {
+     "I": "B",
+     "S": "V",
+     "L": "R"
+    },
+    "hint3": "Henry David Thoreau"
+   },
+   "quote": "Simplify, simplify.",
+   "author": "Henry David Thoreau",
+   "work": "Walden",
+   "year": 1854,
+   "difficulty": "Easy"
+  },
+  {
+   "day": 2,
+   "cipher": "OY'FY EUU HEV LYFY.",
+   "mapping": {
+    "A": "E",
+    "B": "R",
+    "C": "Z",
+    "D": "V",
+    "E": "Y",
+    "F": "X",
+    "G": "Q",
+    "H": "L",
+    "I": "S",
+    "J": "C",
+    "K": "P",
+    "L": "U",
+    "M": "H",
+    "N": "G",
+    "O": "B",
+    "P": "W",
+    "Q": "I",
+    "R": "F",
+    "S": "D",
+    "T": "K",
+    "U": "T",
+    "V": "N",
+    "W": "O",
+    "X": "A",
+    "Y": "M",
+    "Z": "J"
+   },
+   "starters": [
+    {
+     "plain": "E",
+     "cipher": "Y"
+    },
+    {
+     "plain": "A",
+     "cipher": "E"
+    },
+    {
+     "plain": "R",
+     "cipher": "F"
+    }
+   ],
+   "hints": {
+    "hint1": {
+     "E": "Y"
+    },
+    "hint2": {
+     "E": "Y",
+     "A": "E",
+     "R": "F"
+    },
+    "hint3": "Lewis Carroll"
+   },
+   "quote": "We're all mad here.",
+   "author": "Lewis Carroll",
+   "work": "Alice's Adventures in Wonderland",
+   "year": 1865,
+   "difficulty": "Easy"
+  },
+  {
+   "day": 3,
+   "cipher": "HEP IQOGG FG, OCOZB EAO!",
+   "mapping": {
+    "A": "V",
+    "B": "I",
+    "C": "T",
+    "D": "P",
+    "E": "O",
+    "F": "S",
+    "G": "H",
+    "H": "U",
+    "I": "X",
+    "J": "D",
+    "K": "R",
+    "L": "Q",
+    "M": "Y",
+    "N": "A",
+    "O": "E",
+    "P": "J",
+    "Q": "N",
+    "R": "Z",
+    "S": "G",
+    "T": "W",
+    "U": "F",
+    "V": "C",
+    "W": "L",
+    "X": "M",
+    "Y": "B",
+    "Z": "K"
+   },
+   "starters": [
+    {
+     "plain": "E",
+     "cipher": "O"
+    },
+    {
+     "plain": "S",
+     "cipher": "G"
+    },
+    {
+     "plain": "O",
+     "cipher": "E"
+    }
+   ],
+   "hints": {
+    "hint1": {
+     "E": "O"
+    },
+    "hint2": {
+     "E": "O",
+     "S": "G",
+     "O": "E"
+    },
+    "hint3": "Charles Dickens"
+   },
+   "quote": "God bless us, every one!",
+   "author": "Charles Dickens",
+   "work": "A Christmas Carol",
+   "year": 1843,
+   "difficulty": "Easy"
+  },
+  {
+   "day": 4,
+   "cipher": "EUDIY OP EDRPI DYX OP VDTO.",
+   "mapping": {
+    "A": "D",
+    "B": "R",
+    "C": "S",
+    "D": "X",
+    "E": "U",
+    "F": "A",
+    "G": "W",
+    "H": "M",
+    "I": "T",
+    "J": "N",
+    "K": "H",
+    "L": "E",
+    "M": "K",
+    "N": "Y",
+    "O": "P",
+    "P": "B",
+    "Q": "C",
+    "R": "I",
+    "S": "J",
+    "T": "O",
+    "U": "F",
+    "V": "Q",
+    "W": "V",
+    "X": "Z",
+    "Y": "G",
+    "Z": "L"
+   },
+   "starters": [
+    {
+     "plain": "A",
+     "cipher": "D"
+    },
+    {
+     "plain": "T",
+     "cipher": "O"
+    },
+    {
+     "plain": "O",
+     "cipher": "P"
+    }
+   ],
+   "hints": {
+    "hint1": {
+     "A": "D"
+    },
+    "hint2": {
+     "A": "D",
+     "T": "O",
+     "O": "P"
+    },
+    "hint3": "Henry Wadsworth Longfellow"
+   },
+   "quote": "Learn to labor and to wait.",
+   "author": "Henry Wadsworth Longfellow",
+   "work": "A Psalm of Life",
+   "year": 1838,
+   "difficulty": "Easy"
+  },
+  {
+   "day": 5,
+   "cipher": "DJVS JU ASTD! DJVS JU STAQSUC!",
+   "mapping": {
+    "A": "T",
+    "B": "Y",
+    "C": "Z",
+    "D": "E",
+    "E": "S",
+    "F": "V",
+    "G": "F",
+    "H": "O",
+    "I": "J",
+    "J": "W",
+    "K": "I",
+    "L": "D",
+    "M": "H",
+    "N": "Q",
+    "O": "R",
+    "P": "N",
+    "Q": "L",
+    "R": "A",
+    "S": "U",
+    "T": "C",
+    "U": "G",
+    "V": "P",
+    "W": "K",
+    "X": "M",
+    "Y": "B",
+    "Z": "X"
+   },
+   "starters": [
+    {
+     "plain": "E",
+     "cipher": "S"
+    },
+    {
+     "plain": "I",
+     "cipher": "J"
+    },
+    {
+     "plain": "S",
+     "cipher": "U"
+    }
+   ],
+   "hints": {
+    "hint1": {
+     "E": "S"
+    },
+    "hint2": {
+     "E": "S",
+     "I": "J",
+     "S": "U"
+    },
+    "hint3": "Henry Wadsworth Longfellow"
+   },
+   "quote": "Life is real! Life is earnest!",
+   "author": "Henry Wadsworth Longfellow",
+   "work": "A Psalm of Life",
+   "year": 1838,
+   "difficulty": "Easy"
+  },
+  {
+   "day": 6,
+   "cipher": "OUBOCMJ XLUMEX JAC GMBCXJ VCBMSX.",
+   "mapping": {
+    "A": "I",
+    "B": "N",
+    "C": "O",
+    "D": "P",
+    "E": "C",
+    "F": "G",
+    "G": "V",
+    "H": "A",
+    "I": "M",
+    "J": "R",
+    "K": "T",
+    "L": "E",
+    "M": "F",
+    "N": "B",
+    "O": "U",
+    "P": "L",
+    "Q": "H",
+    "R": "K",
+    "S": "X",
+    "T": "J",
+    "U": "S",
+    "V": "D",
+    "W": "Q",
+    "X": "Y",
+    "Y": "Z",
+    "Z": "W"
+   },
+   "starters": [
+    {
+     "plain": "E",
+     "cipher": "C"
+    },
+    {
+     "plain": "I",
+     "cipher": "M"
+    },
+    {
+     "plain": "S",
+     "cipher": "X"
+    }
+   ],
+   "hints": {
+    "hint1": {
+     "E": "C"
+    },
+    "hint2": {
+     "E": "C",
+     "I": "M",
+     "S": "X"
+    },
+    "hint3": "Louisa May Alcott"
+   },
+   "quote": "Conceit spoils the finest genius.",
+   "author": "Louisa May Alcott",
+   "work": "Little Women",
+   "year": 1868,
+   "difficulty": "Easy"
+  },
+  {
+   "day": 7,
+   "cipher": "REEI SZBJZC XTHZ REEI BZDRUKENYC.",
+   "mapping": {
+    "A": "T",
+    "B": "K",
+    "C": "J",
+    "D": "I",
+    "E": "Z",
+    "F": "S",
+    "G": "R",
+    "H": "U",
+    "I": "D",
+    "J": "A",
+    "K": "H",
+    "L": "F",
+    "M": "X",
+    "N": "B",
+    "O": "E",
+    "P": "W",
+    "Q": "O",
+    "R": "Y",
+    "S": "C",
+    "T": "G",
+    "U": "N",
+    "V": "P",
+    "W": "Q",
+    "X": "M",
+    "Y": "L",
+    "Z": "V"
+   },
+   "starters": [
+    {
+     "plain": "O",
+     "cipher": "E"
+    },
+    {
+     "plain": "E",
+     "cipher": "Z"
+    },
+    {
+     "plain": "G",
+     "cipher": "R"
+    }
+   ],
+   "hints": {
+    "hint1": {
+     "O": "E"
+    },
+    "hint2": {
+     "O": "E",
+     "E": "Z",
+     "G": "R"
+    },
+    "hint3": "Robert Frost"
+   },
+   "quote": "Good fences make good neighbours.",
+   "author": "Robert Frost",
+   "work": "Mending Wall",
+   "year": 1914,
+   "difficulty": "Easy"
+  },
+  {
+   "day": 8,
+   "cipher": "WRTA JA SRNADYF, ZD WRTA JA GAXYO!",
+   "mapping": {
+    "A": "X",
+    "B": "N",
+    "C": "I",
+    "D": "G",
+    "E": "A",
+    "F": "M",
+    "G": "W",
+    "H": "O",
+    "I": "R",
+    "J": "H",
+    "K": "B",
+    "L": "S",
+    "M": "J",
+    "N": "U",
+    "O": "Z",
+    "P": "E",
+    "Q": "L",
+    "R": "D",
+    "S": "C",
+    "T": "Y",
+    "U": "K",
+    "V": "T",
+    "W": "Q",
+    "X": "P",
+    "Y": "F",
+    "Z": "V"
+   },
+   "starters": [
+    {
+     "plain": "E",
+     "cipher": "A"
+    },
+    {
+     "plain": "I",
+     "cipher": "R"
+    },
+    {
+     "plain": "T",
+     "cipher": "Y"
+    }
+   ],
+   "hints": {
+    "hint1": {
+     "E": "A"
+    },
+    "hint2": {
+     "E": "A",
+     "I": "R",
+     "T": "Y"
+    },
+    "hint3": "Patrick Henry"
+   },
+   "quote": "Give me liberty, or give me death!",
+   "author": "Patrick Henry",
+   "work": "Speech to the Virginia Convention",
+   "year": 1775,
+   "difficulty": "Easy"
+  },
+  {
+   "day": 9,
+   "cipher": "YLZS, RBWJ ILLYF JBDFD PLZJWYF UD!",
+   "mapping": {
+    "A": "W",
+    "B": "U",
+    "C": "O",
+    "D": "S",
+    "E": "D",
+    "F": "I",
+    "G": "M",
+    "H": "B",
+    "I": "X",
+    "J": "H",
+    "K": "V",
+    "L": "Y",
+    "M": "P",
+    "N": "K",
+    "O": "L",
+    "P": "G",
+    "Q": "T",
+    "R": "Z",
+    "S": "F",
+    "T": "J",
+    "U": "C",
+    "V": "E",
+    "W": "R",
+    "X": "A",
+    "Y": "Q",
+    "Z": "N"
+   },
+   "starters": [
+    {
+     "plain": "O",
+     "cipher": "L"
+    },
+    {
+     "plain": "E",
+     "cipher": "D"
+    },
+    {
+     "plain": "T",
+     "cipher": "J"
+    }
+   ],
+   "hints": {
+    "hint1": {
+     "O": "L"
+    },
+    "hint2": {
+     "O": "L",
+     "E": "D",
+     "T": "J"
+    },
+    "hint3": "William Shakespeare"
+   },
+   "quote": "Lord, what fools these mortals be!",
+   "author": "William Shakespeare",
+   "work": "A Midsummer Night's Dream",
+   "year": 1595,
+   "difficulty": "Easy"
+  },
+  {
+   "day": 10,
+   "cipher": "EDGG OCKD QU YDBBDH BXPK EDGG UPQO.",
+   "mapping": {
+    "A": "P",
+    "B": "Y",
+    "C": "L",
+    "D": "O",
+    "E": "D",
+    "F": "S",
+    "G": "V",
+    "H": "X",
+    "I": "Q",
+    "J": "Z",
+    "K": "J",
+    "L": "G",
+    "M": "I",
+    "N": "K",
+    "O": "C",
+    "P": "M",
+    "Q": "W",
+    "R": "H",
+    "S": "U",
+    "T": "B",
+    "U": "A",
+    "V": "N",
+    "W": "E",
+    "X": "F",
+    "Y": "R",
+    "Z": "T"
+   },
+   "starters": [
+    {
+     "plain": "E",
+     "cipher": "D"
+    },
+    {
+     "plain": "L",
+     "cipher": "G"
+    },
+    {
+     "plain": "T",
+     "cipher": "B"
+    }
+   ],
+   "hints": {
+    "hint1": {
+     "E": "D"
+    },
+    "hint2": {
+     "E": "D",
+     "L": "G",
+     "T": "B"
+    },
+    "hint3": "Benjamin Franklin"
+   },
+   "quote": "Well done is better than well said.",
+   "author": "Benjamin Franklin",
+   "work": "Poor Richard's Almanack",
+   "year": 1737,
+   "difficulty": "Easy"
+  },
+  {
+   "day": 11,
+   "cipher": "PTV XVOP NMW RYP JO MCNMWO PTARYDT.",
+   "mapping": {
+    "A": "M",
+    "B": "X",
+    "C": "G",
+    "D": "Q",
+    "E": "V",
+    "F": "B",
+    "G": "D",
+    "H": "T",
+    "I": "J",
+    "J": "L",
+    "K": "E",
+    "L": "C",
+    "M": "K",
+    "N": "Z",
+    "O": "R",
+    "P": "H",
+    "Q": "F",
+    "R": "A",
+    "S": "O",
+    "T": "P",
+    "U": "Y",
+    "V": "U",
+    "W": "N",
+    "X": "S",
+    "Y": "W",
+    "Z": "I"
+   },
+   "starters": [
+    {
+     "plain": "T",
+     "cipher": "P"
+    }
+   ],
+   "hints": {
+    "hint1": {
+     "T": "P"
+    },
+    "hint2": {
+     "T": "P",
+     "A": "M",
+     "S": "O"
+    },
+    "hint3": "Robert Frost"
+   },
+   "quote": "The best way out is always through.",
+   "author": "Robert Frost",
+   "work": "A Servant to Servants",
+   "year": 1914,
+   "difficulty": "Easy"
+  },
+  {
+   "day": 12,
+   "cipher": "RQLE LGA TAX EP GPVOD LXN TPYXELBXD?",
+   "mapping": {
+    "A": "L",
+    "B": "F",
+    "C": "V",
+    "D": "N",
+    "E": "A",
+    "F": "W",
+    "G": "J",
+    "H": "Q",
+    "I": "B",
+    "J": "K",
+    "K": "O",
+    "L": "C",
+    "M": "T",
+    "N": "X",
+    "O": "P",
+    "P": "H",
+    "Q": "Z",
+    "R": "G",
+    "S": "D",
+    "T": "E",
+    "U": "Y",
+    "V": "I",
+    "W": "R",
+    "X": "M",
+    "Y": "U",
+    "Z": "S"
+   },
+   "starters": [
+    {
+     "plain": "A",
+     "cipher": "L"
+    }
+   ],
+   "hints": {
+    "hint1": {
+     "A": "L"
+    },
+    "hint2": {
+     "A": "L",
+     "N": "X",
+     "T": "E"
+    },
+    "hint3": "Jane Austen"
+   },
+   "quote": "What are men to rocks and mountains?",
+   "author": "Jane Austen",
+   "work": "Pride and Prejudice",
+   "year": 1813,
+   "difficulty": "Easy"
+  },
+  {
+   "day": 13,
+   "cipher": "HLB OT UGI BOHUIS LA LES KOTRLHUIHU.",
+   "mapping": {
+    "A": "D",
+    "B": "Y",
+    "C": "R",
+    "D": "K",
+    "E": "I",
+    "F": "A",
+    "G": "N",
+    "H": "G",
+    "I": "O",
+    "J": "Q",
+    "K": "C",
+    "L": "J",
+    "M": "Z",
+    "N": "H",
+    "O": "L",
+    "P": "M",
+    "Q": "F",
+    "R": "S",
+    "S": "T",
+    "T": "U",
+    "U": "E",
+    "V": "X",
+    "W": "B",
+    "X": "W",
+    "Y": "P",
+    "Z": "V"
+   },
+   "starters": [
+    {
+     "plain": "T",
+     "cipher": "U"
+    }
+   ],
+   "hints": {
+    "hint1": {
+     "T": "U"
+    },
+    "hint2": {
+     "T": "U",
+     "O": "L",
+     "N": "H"
+    },
+    "hint3": "William Shakespeare"
+   },
+   "quote": "Now is the winter of our discontent.",
+   "author": "William Shakespeare",
+   "work": "Richard III",
+   "year": 1594,
+   "difficulty": "Easy"
+  },
+  {
+   "day": 14,
+   "cipher": "E FVZVC ADVWW. ES EW P WNIBHEFA NPQES.",
+   "mapping": {
+    "A": "P",
+    "B": "Q",
+    "C": "B",
+    "D": "X",
+    "E": "V",
+    "F": "L",
+    "G": "A",
+    "H": "N",
+    "I": "E",
+    "J": "T",
+    "K": "H",
+    "L": "O",
+    "M": "G",
+    "N": "F",
+    "O": "I",
+    "P": "J",
+    "Q": "U",
+    "R": "C",
+    "S": "W",
+    "T": "S",
+    "U": "D",
+    "V": "Z",
+    "W": "Y",
+    "X": "R",
+    "Y": "K",
+    "Z": "M"
+   },
+   "starters": [
+    {
+     "plain": "I",
+     "cipher": "E"
+    }
+   ],
+   "hints": {
+    "hint1": {
+     "I": "E"
+    },
+    "hint2": {
+     "I": "E",
+     "S": "W",
+     "E": "V"
+    },
+    "hint3": "Arthur Conan Doyle"
+   },
+   "quote": "I never guess. It is a shocking habit.",
+   "author": "Arthur Conan Doyle",
+   "work": "The Sign of Four",
+   "year": 1890,
+   "difficulty": "Easy"
+  },
+  {
+   "day": 15,
+   "cipher": "WOKMK CH Q WCSK CT WOK QVVQCMH IV XKT.",
+   "mapping": {
+    "A": "Q",
+    "B": "R",
+    "C": "J",
+    "D": "S",
+    "E": "K",
+    "F": "V",
+    "G": "B",
+    "H": "O",
+    "I": "C",
+    "J": "N",
+    "K": "L",
+    "L": "Y",
+    "M": "X",
+    "N": "T",
+    "O": "I",
+    "P": "U",
+    "Q": "F",
+    "R": "M",
+    "S": "H",
+    "T": "W",
+    "U": "P",
+    "V": "A",
+    "W": "D",
+    "X": "Z",
+    "Y": "E",
+    "Z": "G"
+   },
+   "starters": [
+    {
+     "plain": "E",
+     "cipher": "K"
+    }
+   ],
+   "hints": {
+    "hint1": {
+     "E": "K"
+    },
+    "hint2": {
+     "E": "K",
+     "I": "C",
+     "T": "W"
+    },
+    "hint3": "William Shakespeare"
+   },
+   "quote": "There is a tide in the affairs of men.",
+   "author": "William Shakespeare",
+   "work": "Julius Caesar",
+   "year": 1599,
+   "difficulty": "Easy"
+  },
+  {
+   "day": 16,
+   "cipher": "LI YNIODB RLI'D BYO INSJODB KNXU NZ ANT.",
+   "mapping": {
+    "A": "L",
+    "B": "S",
+    "C": "Q",
+    "D": "T",
+    "E": "O",
+    "F": "Z",
+    "G": "A",
+    "H": "Y",
+    "I": "H",
+    "J": "V",
+    "K": "U",
+    "L": "J",
+    "M": "R",
+    "N": "I",
+    "O": "N",
+    "P": "E",
+    "Q": "P",
+    "R": "X",
+    "S": "D",
+    "T": "B",
+    "U": "F",
+    "V": "C",
+    "W": "K",
+    "X": "G",
+    "Y": "M",
+    "Z": "W"
+   },
+   "starters": [
+    {
+     "plain": "O",
+     "cipher": "N"
+    }
+   ],
+   "hints": {
+    "hint1": {
+     "O": "N"
+    },
+    "hint2": {
+     "O": "N",
+     "N": "I",
+     "E": "O"
+    },
+    "hint3": "Alexander Pope"
+   },
+   "quote": "An honest man's the noblest work of God.",
+   "author": "Alexander Pope",
+   "work": "An Essay on Man",
+   "year": 1734,
+   "difficulty": "Medium"
+  },
+  {
+   "day": 17,
+   "cipher": "I QVUJC, I QVUJC, KD EMANZVK TVU I QVUJC!",
+   "mapping": {
+    "A": "I",
+    "B": "L",
+    "C": "G",
+    "D": "Z",
+    "E": "C",
+    "F": "T",
+    "G": "N",
+    "H": "Q",
+    "I": "M",
+    "J": "H",
+    "K": "E",
+    "L": "B",
+    "M": "K",
+    "N": "A",
+    "O": "V",
+    "P": "O",
+    "Q": "Y",
+    "R": "U",
+    "S": "J",
+    "T": "F",
+    "U": "R",
+    "V": "X",
+    "W": "S",
+    "X": "W",
+    "Y": "D",
+    "Z": "P"
+   },
+   "starters": [
+    {
+     "plain": "O",
+     "cipher": "V"
+    }
+   ],
+   "hints": {
+    "hint1": {
+     "O": "V"
+    },
+    "hint2": {
+     "O": "V",
+     "R": "U",
+     "E": "C"
+    },
+    "hint3": "William Shakespeare"
+   },
+   "quote": "A horse, a horse, my kingdom for a horse!",
+   "author": "William Shakespeare",
+   "work": "Richard III",
+   "year": 1594,
+   "difficulty": "Medium"
+  },
+  {
+   "day": 18,
+   "cipher": "SDB KCAF AJSD QVJSBPS SJJ GYID, GBSDWXRP.",
+   "mapping": {
+    "A": "C",
+    "B": "T",
+    "C": "I",
+    "D": "A",
+    "E": "B",
+    "F": "Z",
+    "G": "O",
+    "H": "D",
+    "I": "W",
+    "J": "M",
+    "K": "R",
+    "L": "K",
+    "M": "G",
+    "N": "X",
+    "O": "J",
+    "P": "Q",
+    "Q": "L",
+    "R": "V",
+    "S": "P",
+    "T": "S",
+    "U": "Y",
+    "V": "U",
+    "W": "E",
+    "X": "N",
+    "Y": "F",
+    "Z": "H"
+   },
+   "starters": [
+    {
+     "plain": "T",
+     "cipher": "S"
+    }
+   ],
+   "hints": {
+    "hint1": {
+     "T": "S"
+    },
+    "hint2": {
+     "T": "S",
+     "O": "J",
+     "H": "D"
+    },
+    "hint3": "William Shakespeare"
+   },
+   "quote": "The lady doth protest too much, methinks.",
+   "author": "William Shakespeare",
+   "work": "Hamlet",
+   "year": 1603,
+   "difficulty": "Medium"
+  },
+  {
+   "day": 19,
+   "cipher": "KXB DTCF MG QS GXBIXBCF; M GXVDD YTK HVYK.",
+   "mapping": {
+    "A": "V",
+    "B": "U",
+    "C": "L",
+    "D": "F",
+    "E": "B",
+    "F": "J",
+    "G": "N",
+    "H": "X",
+    "I": "M",
+    "J": "W",
+    "K": "E",
+    "L": "D",
+    "M": "Q",
+    "N": "Y",
+    "O": "T",
+    "P": "I",
+    "Q": "P",
+    "R": "C",
+    "S": "G",
+    "T": "K",
+    "U": "A",
+    "V": "Z",
+    "W": "H",
+    "X": "R",
+    "Y": "S",
+    "Z": "O"
+   },
+   "starters": [
+    {
+     "plain": "H",
+     "cipher": "X"
+    }
+   ],
+   "hints": {
+    "hint1": {
+     "H": "X"
+    },
+    "hint2": {
+     "H": "X",
+     "E": "B",
+     "T": "K"
+    },
+    "hint3": "King James Bible"
+   },
+   "quote": "The Lord is my shepherd; I shall not want.",
+   "author": "King James Bible",
+   "work": "Psalm 23:1",
+   "year": 1611,
+   "difficulty": "Medium"
+  },
+  {
+   "day": 20,
+   "cipher": "UATV OELA OERCLMZ, KJLCFBL ATO NTW OT CXIA.",
+   "mapping": {
+    "A": "I",
+    "B": "Y",
+    "C": "X",
+    "D": "W",
+    "E": "L",
+    "F": "Z",
+    "G": "N",
+    "H": "E",
+    "I": "Q",
+    "J": "S",
+    "K": "U",
+    "L": "M",
+    "M": "B",
+    "N": "A",
+    "O": "T",
+    "P": "K",
+    "Q": "P",
+    "R": "J",
+    "S": "C",
+    "T": "O",
+    "U": "F",
+    "V": "H",
+    "W": "V",
+    "X": "D",
+    "Y": "R",
+    "Z": "G"
+   },
+   "starters": [
+    {
+     "plain": "E",
+     "cipher": "L"
+    }
+   ],
+   "hints": {
+    "hint1": {
+     "E": "L"
+    },
+    "hint2": {
+     "E": "L",
+     "T": "O",
+     "O": "T"
+    },
+    "hint3": "Alexander Pope"
+   },
+   "quote": "Know then thyself, presume not God to scan.",
+   "author": "Alexander Pope",
+   "work": "An Essay on Man",
+   "year": 1734,
+   "difficulty": "Medium"
+  },
+  {
+   "day": 21,
+   "cipher": "H LKQO WPILHWD IP GOXUKEO OVXOSI JA DOWHTM.",
+   "mapping": {
+    "A": "K",
+    "B": "Z",
+    "C": "X",
+    "D": "G",
+    "E": "O",
+    "F": "Y",
+    "G": "D",
+    "H": "L",
+    "I": "H",
+    "J": "F",
+    "K": "C",
+    "L": "U",
+    "M": "J",
+    "N": "W",
+    "O": "P",
+    "P": "S",
+    "Q": "B",
+    "R": "E",
+    "S": "M",
+    "T": "I",
+    "U": "T",
+    "V": "Q",
+    "W": "N",
+    "X": "V",
+    "Y": "A",
+    "Z": "R"
+   },
+   "starters": [],
+   "hints": {
+    "hint1": {
+     "E": "O"
+    },
+    "hint2": {
+     "E": "O",
+     "T": "I",
+     "I": "H"
+    },
+    "hint3": "Oscar Wilde"
+   },
+   "quote": "I have nothing to declare except my genius.",
+   "author": "Oscar Wilde",
+   "work": "At New York customs",
+   "year": 1882,
+   "difficulty": "Medium"
+  },
+  {
+   "day": 22,
+   "cipher": "B VDAFY RZLZRYR BUBZKFE ZEFYHN QBKKDE FEBKR.",
+   "mapping": {
+    "A": "B",
+    "B": "X",
+    "C": "Q",
+    "D": "R",
+    "E": "Y",
+    "F": "N",
+    "G": "U",
+    "H": "V",
+    "I": "Z",
+    "J": "W",
+    "K": "O",
+    "L": "H",
+    "M": "S",
+    "N": "K",
+    "O": "D",
+    "P": "J",
+    "Q": "G",
+    "R": "T",
+    "S": "F",
+    "T": "E",
+    "U": "A",
+    "V": "L",
+    "W": "C",
+    "X": "I",
+    "Y": "M",
+    "Z": "P"
+   },
+   "starters": [],
+   "hints": {
+    "hint1": {
+     "A": "B"
+    },
+    "hint2": {
+     "A": "B",
+     "T": "E",
+     "I": "Z"
+    },
+    "hint3": "Abraham Lincoln"
+   },
+   "quote": "A house divided against itself cannot stand.",
+   "author": "Abraham Lincoln",
+   "work": "Speech at Springfield",
+   "year": 1858,
+   "difficulty": "Medium"
+  },
+  {
+   "day": 23,
+   "cipher": "FH VKHQI VB FQJTVH TP LVGJM F JVH VB JMIVGN.",
+   "mapping": {
+    "A": "F",
+    "B": "R",
+    "C": "Q",
+    "D": "U",
+    "E": "I",
+    "F": "B",
+    "G": "C",
+    "H": "M",
+    "I": "T",
+    "J": "O",
+    "K": "Z",
+    "L": "X",
+    "M": "D",
+    "N": "H",
+    "O": "V",
+    "P": "E",
+    "Q": "W",
+    "R": "G",
+    "S": "P",
+    "T": "J",
+    "U": "K",
+    "V": "A",
+    "W": "L",
+    "X": "S",
+    "Y": "N",
+    "Z": "Y"
+   },
+   "starters": [],
+   "hints": {
+    "hint1": {
+     "O": "V"
+    },
+    "hint2": {
+     "O": "V",
+     "T": "J",
+     "N": "H"
+    },
+    "hint3": "Ralph Waldo Emerson"
+   },
+   "quote": "An ounce of action is worth a ton of theory.",
+   "author": "Ralph Waldo Emerson",
+   "work": "Essays",
+   "year": 1841,
+   "difficulty": "Medium"
+  },
+  {
+   "day": 24,
+   "cipher": "RNVUPKFOS FR GNPPUO FO PKU RPTPU NQ ZUOVTGC.",
+   "mapping": {
+    "A": "T",
+    "B": "H",
+    "C": "Y",
+    "D": "Z",
+    "E": "U",
+    "F": "Q",
+    "G": "S",
+    "H": "K",
+    "I": "F",
+    "J": "E",
+    "K": "C",
+    "L": "J",
+    "M": "V",
+    "N": "O",
+    "O": "N",
+    "P": "L",
+    "Q": "B",
+    "R": "G",
+    "S": "R",
+    "T": "P",
+    "U": "I",
+    "V": "X",
+    "W": "D",
+    "X": "W",
+    "Y": "M",
+    "Z": "A"
+   },
+   "starters": [],
+   "hints": {
+    "hint1": {
+     "T": "P"
+    },
+    "hint2": {
+     "T": "P",
+     "E": "U",
+     "N": "O"
+    },
+    "hint3": "William Shakespeare"
+   },
+   "quote": "Something is rotten in the state of Denmark.",
+   "author": "William Shakespeare",
+   "work": "Hamlet",
+   "year": 1603,
+   "difficulty": "Medium"
+  },
+  {
+   "day": 25,
+   "cipher": "V UVIW LHHC XMQHEL GHQCX MFSM OWSE XHOWMFVEL.",
+   "mapping": {
+    "A": "S",
+    "B": "T",
+    "C": "N",
+    "D": "C",
+    "E": "W",
+    "F": "A",
+    "G": "L",
+    "H": "F",
+    "I": "V",
+    "J": "D",
+    "K": "I",
+    "L": "U",
+    "M": "O",
+    "N": "E",
+    "O": "H",
+    "P": "Z",
+    "Q": "K",
+    "R": "Q",
+    "S": "X",
+    "T": "M",
+    "U": "P",
+    "V": "Y",
+    "W": "G",
+    "X": "J",
+    "Y": "R",
+    "Z": "B"
+   },
+   "starters": [],
+   "hints": {
+    "hint1": {
+     "O": "H"
+    },
+    "hint2": {
+     "O": "H",
+     "T": "M",
+     "E": "W"
+    },
+    "hint3": "Louisa May Alcott"
+   },
+   "quote": "I like good strong words that mean something.",
+   "author": "Louisa May Alcott",
+   "work": "Little Women",
+   "year": 1868,
+   "difficulty": "Medium"
+  },
+  {
+   "day": 26,
+   "cipher": "FLGP AZSLEO GDFZCU QDQO, FLGP EPZCLGV HDC ZSS.",
+   "mapping": {
+    "A": "Z",
+    "B": "I",
+    "C": "E",
+    "D": "U",
+    "E": "O",
+    "F": "H",
+    "G": "J",
+    "H": "P",
+    "I": "L",
+    "J": "N",
+    "K": "T",
+    "L": "S",
+    "M": "A",
+    "N": "Q",
+    "O": "D",
+    "P": "B",
+    "Q": "X",
+    "R": "C",
+    "S": "K",
+    "T": "G",
+    "U": "M",
+    "V": "Y",
+    "W": "F",
+    "X": "W",
+    "Y": "V",
+    "Z": "R"
+   },
+   "starters": [],
+   "hints": {
+    "hint1": {
+     "T": "G"
+    },
+    "hint2": {
+     "T": "G",
+     "A": "Z",
+     "I": "L"
+    },
+    "hint3": "Abraham Lincoln"
+   },
+   "quote": "With malice toward none, with charity for all.",
+   "author": "Abraham Lincoln",
+   "work": "Second Inaugural Address",
+   "year": 1865,
+   "difficulty": "Medium"
+  },
+  {
+   "day": 27,
+   "cipher": "XWPPCSX TSH ORWSHCSX, BW JTV BTOPW LZM RLBWMO.",
+   "mapping": {
+    "A": "T",
+    "B": "Q",
+    "C": "A",
+    "D": "H",
+    "E": "W",
+    "F": "E",
+    "G": "X",
+    "H": "G",
+    "I": "C",
+    "J": "K",
+    "K": "U",
+    "L": "J",
+    "M": "I",
+    "N": "S",
+    "O": "L",
+    "P": "R",
+    "Q": "Y",
+    "R": "M",
+    "S": "O",
+    "T": "P",
+    "U": "Z",
+    "V": "D",
+    "W": "B",
+    "X": "N",
+    "Y": "V",
+    "Z": "F"
+   },
+   "starters": [],
+   "hints": {
+    "hint1": {
+     "E": "W"
+    },
+    "hint2": {
+     "E": "W",
+     "N": "S",
+     "T": "P"
+    },
+    "hint3": "William Wordsworth"
+   },
+   "quote": "Getting and spending, we lay waste our powers.",
+   "author": "William Wordsworth",
+   "work": "Sonnet",
+   "year": 1807,
+   "difficulty": "Medium"
+  },
+  {
+   "day": 28,
+   "cipher": "EJ EF CNINY JWW RXJN JW UEIN GQ WGY QYNLGAESNF.",
+   "mapping": {
+    "A": "X",
+    "B": "D",
+    "C": "S",
+    "D": "A",
+    "E": "N",
+    "F": "P",
+    "G": "U",
+    "H": "V",
+    "I": "E",
+    "J": "L",
+    "K": "B",
+    "L": "R",
+    "M": "T",
+    "N": "C",
+    "O": "W",
+    "P": "Q",
+    "Q": "M",
+    "R": "Y",
+    "S": "F",
+    "T": "J",
+    "U": "G",
+    "V": "I",
+    "W": "Z",
+    "X": "O",
+    "Y": "K",
+    "Z": "H"
+   },
+   "starters": [],
+   "hints": {
+    "hint1": {
+     "E": "N"
+    },
+    "hint2": {
+     "E": "N",
+     "T": "J",
+     "O": "W"
+    },
+    "hint3": "Henry David Thoreau"
+   },
+   "quote": "It is never too late to give up our prejudices.",
+   "author": "Henry David Thoreau",
+   "work": "Walden",
+   "year": 1854,
+   "difficulty": "Medium"
+  },
+  {
+   "day": 29,
+   "cipher": "ZHNSUIV, HLXFUV, KLWUQHCXSU, GSUI XS CLWH SFHV.",
+   "mapping": {
+    "A": "F",
+    "B": "D",
+    "C": "K",
+    "D": "I",
+    "E": "S",
+    "F": "Z",
+    "G": "Y",
+    "H": "M",
+    "I": "N",
+    "J": "P",
+    "K": "J",
+    "L": "G",
+    "M": "X",
+    "N": "U",
+    "O": "L",
+    "P": "T",
+    "Q": "A",
+    "R": "H",
+    "S": "V",
+    "T": "Q",
+    "U": "W",
+    "V": "B",
+    "W": "O",
+    "X": "R",
+    "Y": "C",
+    "Z": "E"
+   },
+   "starters": [],
+   "hints": {
+    "hint1": {
+     "E": "S"
+    },
+    "hint2": {
+     "E": "S",
+     "N": "U",
+     "R": "H"
+    },
+    "hint3": "William Shakespeare"
+   },
+   "quote": "Friends, Romans, countrymen, lend me your ears.",
+   "author": "William Shakespeare",
+   "work": "Julius Caesar",
+   "year": 1599,
+   "difficulty": "Medium"
+  },
+  {
+   "day": 30,
+   "cipher": "ERPN SEXN KROE OVN LXNZPV, MNZX GXWNRMU, ERPN SEXN.",
+   "mapping": {
+    "A": "Z",
+    "B": "L",
+    "C": "P",
+    "D": "M",
+    "E": "N",
+    "F": "G",
+    "G": "D",
+    "H": "V",
+    "I": "W",
+    "J": "B",
+    "K": "I",
+    "L": "F",
+    "M": "S",
+    "N": "R",
+    "O": "E",
+    "P": "Q",
+    "Q": "Y",
+    "R": "X",
+    "S": "U",
+    "T": "O",
+    "U": "K",
+    "V": "A",
+    "W": "C",
+    "X": "T",
+    "Y": "J",
+    "Z": "H"
+   },
+   "starters": [],
+   "hints": {
+    "hint1": {
+     "E": "N"
+    },
+    "hint2": {
+     "E": "N",
+     "O": "E",
+     "R": "X"
+    },
+    "hint3": "William Shakespeare"
+   },
+   "quote": "Once more unto the breach, dear friends, once more.",
+   "author": "William Shakespeare",
+   "work": "Henry V",
+   "year": 1599,
+   "difficulty": "Medium"
+  }
+ ]
+}

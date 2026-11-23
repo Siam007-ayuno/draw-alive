@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>1950s Nostalgia Word Search — Phone Helper</title>
+<style>
+  body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+         max-width: 640px; margin: 0 auto; padding: 20px;
+         background: #FBF3E2; color: #222; font-size: 20px; line-height: 1.5; }
+  h1 { color: #1F5F6B; font-size: 30px; text-align: center; }
+  h2 { color: #1F5F6B; font-size: 24px; margin-top: 28px; }
+  .sub { text-align: center; color: #555; }
+  .grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
+  a.btn { display: block; background: #1F5F6B; color: #fff; text-align: center;
+          text-decoration: none; padding: 14px 6px; border-radius: 10px;
+          font-size: 20px; font-weight: bold; }
+  a.btn:active { background: #D94F5C; }
+  .note { background: #fff; border: 2px solid #B8860B; border-radius: 10px;
+          padding: 14px; margin-top: 28px; font-size: 18px; }
+  .foot { text-align: center; color: #555; font-size: 17px; margin-top: 28px; }
+</style>
+</head>
+<body>
+<h1>1950s Nostalgia Word Search</h1>
+<p class="sub">Phone helper for the book by MD. Saif Siam</p>
+<p>Tap your puzzle number. Then tap the word you cannot find — you will
+see <b>only that word</b> highlighted, never the whole answer. Tap the
+speaker to hear a word read aloud.</p>
+<div id="themes"></div>
+<div class="note">The book is complete on paper alone — this page is a bonus
+helper. It needs internet. No app, no account, nothing to install.</div>
+<p class="foot">Large Print 1950s Nostalgia Word Search for Seniors &middot; 100 puzzles</p>
+<script>
+fetch("data/puzzles.json").then(r => r.json()).then(data => {
+  const wrap = document.getElementById("themes");
+  const themes = [...new Set(data.puzzles.map(p => p.theme))];
+  themes.forEach(theme => {
+    const h = document.createElement("h2");
+    h.textContent = theme;
+    wrap.appendChild(h);
+    const g = document.createElement("div");
+    g.className = "grid";
+    data.puzzles.filter(p => p.theme === theme).forEach(p => {
+      const a = document.createElement("a");
+      a.className = "btn";
+      a.href = "puzzle.html?p=" + p.num;
+      a.textContent = "Puzzle " + p.num;
+      g.appendChild(a);
+    });
+    wrap.appendChild(g);
+  });
+}).catch(() => {
+  document.getElementById("themes").textContent =
+    "Could not load the puzzle list. Check your internet connection and try again.";
+});
+</script>
+</body>
+</html>
