@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Minimal-Pair Trainer | Speak Real English</title><style>
+body { font-family: Georgia, 'Times New Roman', serif; max-width: 600px;
+  margin: 0 auto; padding: 16px; color: #1F3A5F; background: #F4FAF9; }
+h1 { font-size: 24px; color: #0A5E5D; }
+h2 { font-size: 19px; color: #0A5E5D; margin-top: 28px; }
+p, li { font-size: 16px; line-height: 1.55; color: #4A5568; }
+button { font-size: 16px; padding: 10px 16px; margin: 4px 6px 4px 0;
+  border: 0; border-radius: 8px; background: #0E7C7B; color: #fff; cursor: pointer; }
+button.orange { background: #E8821E; }
+button.grey { background: #8A94A6; }
+button:disabled { opacity: .5; }
+audio { width: 100%; margin: 8px 0; }
+.box { background: #fff; border: 1px solid #E8ECF1; border-radius: 10px;
+  padding: 14px; margin: 12px 0; }
+.dlg b { color: #1F3A5F; }
+.word b { color: #1F3A5F; }
+.small { font-size: 13px; color: #8A94A6; }
+input[type=text] { font-size: 17px; padding: 10px; width: 100%;
+  box-sizing: border-box; border: 1px solid #8A94A6; border-radius: 8px; }
+.result { font-size: 17px; font-weight: bold; margin-top: 10px; }
+.ok { color: #0A5E5D; } .bad { color: #B3261E; }
+a { color: #0E7C7B; }
+</style></head><body>
+<h1>Minimal-pair trainer</h1>
+<p>Two words that sound almost the same. Tap <b>Hear it</b>, listen carefully,
+then tap the word you heard. Score: <b id="score">0 / 0</b>.</p>
+<div class="box">
+<p id="prompt">Tap “Hear it” to start.</p>
+<button class="orange" onclick="hear()">▶ Hear it</button><br>
+<button id="c0" onclick="choose(0)" disabled>?</button>
+<button id="c1" onclick="choose(1)" disabled>?</button>
+<p class="result" id="fb"></p>
+<button class="grey" onclick="next()">Next pair →</button>
+</div>
+<p class="small">The words are spoken by your phone or computer's own voice
+(browser speech). The pairs: ship/sheep, full/fool, live/leave, bit/beat and
+20 more from the book.</p>
+<p><a href="../esl-home/">← All units</a></p>
+<script>
+const PAIRS = [["ship", "sheep"], ["full", "fool"], ["live", "leave"], ["bit", "beat"], ["sit", "seat"], ["pull", "pool"], ["pen", "pan"], ["bet", "bat"], ["cut", "cat"], ["lock", "luck"], ["thin", "tin"], ["three", "tree"], ["rice", "rise"], ["bad", "bed"], ["cup", "cap"], ["not", "note"], ["fill", "feel"], ["hill", "heel"], ["hat", "hot"], ["man", "men"], ["pin", "pen"], ["rich", "reach"], ["leave", "leaf"], ["park", "pork"]];
+let cur = 0, target = 0, n = 0, ok = 0;
+function say(w) { const u = new SpeechSynthesisUtterance(w);
+  u.lang = 'en-GB'; u.rate = 0.85; speechSynthesis.cancel(); speechSynthesis.speak(u); }
+function next() {
+  cur = Math.floor(Math.random() * PAIRS.length);
+  target = Math.floor(Math.random() * 2);
+  document.getElementById('c0').textContent = PAIRS[cur][0];
+  document.getElementById('c1').textContent = PAIRS[cur][1];
+  document.getElementById('c0').disabled = false;
+  document.getElementById('c1').disabled = false;
+  document.getElementById('fb').textContent = '';
+  document.getElementById('prompt').textContent = 'Listen… which word was it?';
+  hear();
+}
+function hear() { say(PAIRS[cur][target]); }
+function choose(i) {
+  n++;
+  const fb = document.getElementById('fb');
+  if (i === target) { ok++; fb.textContent = 'Correct! It was “' + PAIRS[cur][target] + '”.'; fb.className = 'result ok'; }
+  else { fb.textContent = 'Not quite — it was “' + PAIRS[cur][target] + '”, not “' + PAIRS[cur][i] + '”. Listen again.'; fb.className = 'result bad'; }
+  document.getElementById('score').textContent = ok + ' / ' + n;
+  document.getElementById('c0').disabled = true;
+  document.getElementById('c1').disabled = true;
+}
+next();
+</script></body></html>

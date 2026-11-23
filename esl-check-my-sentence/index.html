@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Check My Sentence | Speak Real English</title><style>
+body { font-family: Georgia, 'Times New Roman', serif; max-width: 600px;
+  margin: 0 auto; padding: 16px; color: #1F3A5F; background: #F4FAF9; }
+h1 { font-size: 24px; color: #0A5E5D; }
+h2 { font-size: 19px; color: #0A5E5D; margin-top: 28px; }
+p, li { font-size: 16px; line-height: 1.55; color: #4A5568; }
+button { font-size: 16px; padding: 10px 16px; margin: 4px 6px 4px 0;
+  border: 0; border-radius: 8px; background: #0E7C7B; color: #fff; cursor: pointer; }
+button.orange { background: #E8821E; }
+button.grey { background: #8A94A6; }
+button:disabled { opacity: .5; }
+audio { width: 100%; margin: 8px 0; }
+.box { background: #fff; border: 1px solid #E8ECF1; border-radius: 10px;
+  padding: 14px; margin: 12px 0; }
+.dlg b { color: #1F3A5F; }
+.word b { color: #1F3A5F; }
+.small { font-size: 13px; color: #8A94A6; }
+input[type=text] { font-size: 17px; padding: 10px; width: 100%;
+  box-sizing: border-box; border: 1px solid #8A94A6; border-radius: 8px; }
+.result { font-size: 17px; font-weight: bold; margin-top: 10px; }
+.ok { color: #0A5E5D; } .bad { color: #B3261E; }
+a { color: #0E7C7B; }
+</style></head><body>
+<h1>Check my sentence</h1>
+<p>Type a sentence from an exercise in the book. You get instant right / wrong
+and the correct form. No teacher, no internet beyond this page.</p>
+<div class="box">
+<input type="text" id="inp" placeholder="Type your sentence here…" autocomplete="off">
+<br><br><button class="orange" onclick="check()">Check it</button>
+<p class="result" id="fb"></p>
+<p id="hint"></p>
+</div>
+<p class="small">Try one from Unit 1: “I take the bus to work.” or “She is a teacher.”</p>
+<p><a href="../esl-home/">← All units</a></p>
+<script>
+let SENTENCES = [];
+fetch('sentences.json').then(r => r.json()).then(d => { SENTENCES = d.sentences; });
+function norm(s) { return s.toLowerCase().replace(/[^a-z0-9' ]/g, '').replace(/\s+/g, ' ').trim(); }
+function check() {
+  const typed = norm(document.getElementById('inp').value);
+  const fb = document.getElementById('fb'), hint = document.getElementById('hint');
+  if (!typed) { fb.textContent = 'Type a sentence first.'; fb.className = 'result'; return; }
+  if (SENTENCES.map(norm).includes(typed)) {
+    fb.textContent = 'Correct! Well done.'; fb.className = 'result ok'; hint.textContent = '';
+    return;
+  }
+  const tw = new Set(typed.split(' '));
+  let best = null, bestScore = 0;
+  for (const s of SENTENCES) {
+    const sw = new Set(norm(s).split(' '));
+    let inter = 0; tw.forEach(w => { if (sw.has(w)) inter++; });
+    const score = inter / Math.max(tw.size, sw.size);
+    if (score > bestScore) { bestScore = score; best = s; }
+  }
+  fb.textContent = 'Not quite.'; fb.className = 'result bad';
+  hint.textContent = bestScore > 0.4
+    ? 'Did you mean: “' + best + '”?'
+    : 'I do not know that sentence. Try one from the book, exactly as it is written.';
+}
+document.getElementById('inp').addEventListener('keydown', e => { if (e.key === 'Enter') check(); });
+</script></body></html>
