@@ -1,0 +1,99 @@
+{
+ "n": 72,
+ "theme": "The World of Books",
+ "bank": [
+  "ART",
+  "PEN",
+  "WAR",
+  "EPIC",
+  "PROSE",
+  "STANZA",
+  "SYMBOL",
+  "BINDING",
+  "MANUSCRIPT",
+  "BIBLIOPHILE",
+  "IMAGINATION",
+  "STORYTELLER",
+  "ILLUSTRATION"
+ ],
+ "placed": [
+  {
+   "word": "ILLUSTRATION",
+   "row": 6,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "BIBLIOPHILE",
+   "row": 2,
+   "col": 9,
+   "dir": "D"
+  },
+  {
+   "word": "STORYTELLER",
+   "row": 11,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "IMAGINATION",
+   "row": 3,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "MANUSCRIPT",
+   "row": 8,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "BINDING",
+   "row": 1,
+   "col": 11,
+   "dir": "D"
+  },
+  {
+   "word": "STANZA",
+   "row": 1,
+   "col": 7,
+   "dir": "D"
+  },
+  {
+   "word": "SYMBOL",
+   "row": 1,
+   "col": 2,
+   "dir": "D"
+  },
+  {
+   "word": "PROSE",
+   "row": 1,
+   "col": 4,
+   "dir": "A"
+  },
+  {
+   "word": "EPIC",
+   "row": 4,
+   "col": 0,
+   "dir": "D"
+  },
+  {
+   "word": "PEN",
+   "row": 10,
+   "col": 7,
+   "dir": "D"
+  },
+  {
+   "word": "ART",
+   "row": 10,
+   "col": 4,
+   "dir": "D"
+  },
+  {
+   "word": "WAR",
+   "row": 9,
+   "col": 11,
+   "dir": "D"
+  }
+ ]
+}

@@ -1,0 +1,92 @@
+{
+ "n": 75,
+ "theme": "Classic Books & Characters",
+ "bank": [
+  "EMMA",
+  "JANE",
+  "PRIDE",
+  "RAVEN",
+  "BERTHA",
+  "CANDIDE",
+  "ROBINSON",
+  "PREJUDICE",
+  "PERSUASION",
+  "PROMETHEUS",
+  "SENSIBILITY",
+  "FRANKENSTEIN"
+ ],
+ "placed": [
+  {
+   "word": "FRANKENSTEIN",
+   "row": 6,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "SENSIBILITY",
+   "row": 0,
+   "col": 10,
+   "dir": "D"
+  },
+  {
+   "word": "PERSUASION",
+   "row": 1,
+   "col": 2,
+   "dir": "D"
+  },
+  {
+   "word": "PROMETHEUS",
+   "row": 3,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "PREJUDICE",
+   "row": 8,
+   "col": 4,
+   "dir": "A"
+  },
+  {
+   "word": "ROBINSON",
+   "row": 0,
+   "col": 5,
+   "dir": "A"
+  },
+  {
+   "word": "CANDIDE",
+   "row": 10,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "BERTHA",
+   "row": 7,
+   "col": 12,
+   "dir": "D"
+  },
+  {
+   "word": "RAVEN",
+   "row": 0,
+   "col": 5,
+   "dir": "D"
+  },
+  {
+   "word": "PRIDE",
+   "row": 8,
+   "col": 4,
+   "dir": "D"
+  },
+  {
+   "word": "JANE",
+   "row": 12,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "EMMA",
+   "row": 12,
+   "col": 9,
+   "dir": "A"
+  }
+ ]
+}

@@ -1,0 +1,92 @@
+{
+ "n": 46,
+ "theme": "Shakespeare & the Stage",
+ "bank": [
+  "HERO",
+  "ACTOR",
+  "OPERA",
+  "HEROINE",
+  "OTHELLO",
+  "THEATRE",
+  "DIALOGUE",
+  "EPILOGUE",
+  "LIMERICK",
+  "PROLOGUE",
+  "MONOLOGUE",
+  "SOLILOQUY"
+ ],
+ "placed": [
+  {
+   "word": "SOLILOQUY",
+   "row": 6,
+   "col": 2,
+   "dir": "A"
+  },
+  {
+   "word": "MONOLOGUE",
+   "row": 3,
+   "col": 3,
+   "dir": "D"
+  },
+  {
+   "word": "PROLOGUE",
+   "row": 0,
+   "col": 9,
+   "dir": "D"
+  },
+  {
+   "word": "DIALOGUE",
+   "row": 5,
+   "col": 5,
+   "dir": "D"
+  },
+  {
+   "word": "LIMERICK",
+   "row": 1,
+   "col": 5,
+   "dir": "A"
+  },
+  {
+   "word": "EPILOGUE",
+   "row": 12,
+   "col": 5,
+   "dir": "A"
+  },
+  {
+   "word": "HEROINE",
+   "row": 3,
+   "col": 7,
+   "dir": "D"
+  },
+  {
+   "word": "OTHELLO",
+   "row": 3,
+   "col": 5,
+   "dir": "A"
+  },
+  {
+   "word": "THEATRE",
+   "row": 6,
+   "col": 12,
+   "dir": "D"
+  },
+  {
+   "word": "ACTOR",
+   "row": 0,
+   "col": 11,
+   "dir": "D"
+  },
+  {
+   "word": "OPERA",
+   "row": 9,
+   "col": 5,
+   "dir": "A"
+  },
+  {
+   "word": "HERO",
+   "row": 8,
+   "col": 0,
+   "dir": "A"
+  }
+ ]
+}

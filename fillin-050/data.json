@@ -1,0 +1,99 @@
+{
+ "n": 50,
+ "theme": "Shakespeare & the Stage",
+ "bank": [
+  "PLAY",
+  "HAIKU",
+  "OPERA",
+  "OCTAVE",
+  "CURTAIN",
+  "TEMPEST",
+  "THEATRE",
+  "TRAGEDY",
+  "LIMERICK",
+  "PROLOGUE",
+  "QUATRAIN",
+  "MONOLOGUE",
+  "SOLILOQUY"
+ ],
+ "placed": [
+  {
+   "word": "SOLILOQUY",
+   "row": 6,
+   "col": 2,
+   "dir": "A"
+  },
+  {
+   "word": "MONOLOGUE",
+   "row": 1,
+   "col": 7,
+   "dir": "D"
+  },
+  {
+   "word": "PROLOGUE",
+   "row": 3,
+   "col": 4,
+   "dir": "D"
+  },
+  {
+   "word": "LIMERICK",
+   "row": 1,
+   "col": 5,
+   "dir": "A"
+  },
+  {
+   "word": "QUATRAIN",
+   "row": 5,
+   "col": 9,
+   "dir": "D"
+  },
+  {
+   "word": "TRAGEDY",
+   "row": 10,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "TEMPEST",
+   "row": 1,
+   "col": 2,
+   "dir": "D"
+  },
+  {
+   "word": "CURTAIN",
+   "row": 12,
+   "col": 3,
+   "dir": "A"
+  },
+  {
+   "word": "THEATRE",
+   "row": 6,
+   "col": 0,
+   "dir": "D"
+  },
+  {
+   "word": "OCTAVE",
+   "row": 0,
+   "col": 11,
+   "dir": "D"
+  },
+  {
+   "word": "OPERA",
+   "row": 4,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "HAIKU",
+   "row": 10,
+   "col": 8,
+   "dir": "A"
+  },
+  {
+   "word": "PLAY",
+   "row": 3,
+   "col": 9,
+   "dir": "A"
+  }
+ ]
+}

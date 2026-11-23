@@ -1,0 +1,92 @@
+{
+ "n": 49,
+ "theme": "Famous Authors",
+ "bank": [
+  "POE",
+  "BYRON",
+  "HOMER",
+  "WELLS",
+  "DICKENS",
+  "BROWNING",
+  "TENNYSON",
+  "STEVENSON",
+  "CHESTERTON",
+  "LONGFELLOW",
+  "WORDSWORTH",
+  "SHAKESPEARE"
+ ],
+ "placed": [
+  {
+   "word": "SHAKESPEARE",
+   "row": 6,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "WORDSWORTH",
+   "row": 2,
+   "col": 1,
+   "dir": "D"
+  },
+  {
+   "word": "LONGFELLOW",
+   "row": 3,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "CHESTERTON",
+   "row": 1,
+   "col": 5,
+   "dir": "D"
+  },
+  {
+   "word": "STEVENSON",
+   "row": 4,
+   "col": 11,
+   "dir": "D"
+  },
+  {
+   "word": "TENNYSON",
+   "row": 5,
+   "col": 8,
+   "dir": "D"
+  },
+  {
+   "word": "BROWNING",
+   "row": 12,
+   "col": 2,
+   "dir": "A"
+  },
+  {
+   "word": "DICKENS",
+   "row": 1,
+   "col": 3,
+   "dir": "A"
+  },
+  {
+   "word": "HOMER",
+   "row": 8,
+   "col": 3,
+   "dir": "D"
+  },
+  {
+   "word": "WELLS",
+   "row": 0,
+   "col": 7,
+   "dir": "D"
+  },
+  {
+   "word": "BYRON",
+   "row": 9,
+   "col": 7,
+   "dir": "A"
+  },
+  {
+   "word": "POE",
+   "row": 11,
+   "col": 10,
+   "dir": "A"
+  }
+ ]
+}

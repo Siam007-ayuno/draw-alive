@@ -1,0 +1,106 @@
+{
+ "n": 76,
+ "theme": "The World of Books",
+ "bank": [
+  "AGE",
+  "ART",
+  "ERA",
+  "MAN",
+  "ODE",
+  "EPIC",
+  "FABLE",
+  "BOOKSELLER",
+  "MANUSCRIPT",
+  "BIBLIOPHILE",
+  "IMAGINATION",
+  "MASTERPIECE",
+  "STORYTELLER",
+  "ILLUSTRATION"
+ ],
+ "placed": [
+  {
+   "word": "ILLUSTRATION",
+   "row": 6,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "MASTERPIECE",
+   "row": 1,
+   "col": 6,
+   "dir": "D"
+  },
+  {
+   "word": "STORYTELLER",
+   "row": 1,
+   "col": 8,
+   "dir": "D"
+  },
+  {
+   "word": "BIBLIOPHILE",
+   "row": 1,
+   "col": 10,
+   "dir": "D"
+  },
+  {
+   "word": "IMAGINATION",
+   "row": 2,
+   "col": 0,
+   "dir": "D"
+  },
+  {
+   "word": "MANUSCRIPT",
+   "row": 2,
+   "col": 4,
+   "dir": "D"
+  },
+  {
+   "word": "BOOKSELLER",
+   "row": 0,
+   "col": 2,
+   "dir": "D"
+  },
+  {
+   "word": "FABLE",
+   "row": 0,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "EPIC",
+   "row": 10,
+   "col": 3,
+   "dir": "A"
+  },
+  {
+   "word": "ODE",
+   "row": 11,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "ART",
+   "row": 2,
+   "col": 6,
+   "dir": "A"
+  },
+  {
+   "word": "ERA",
+   "row": 11,
+   "col": 10,
+   "dir": "A"
+  },
+  {
+   "word": "AGE",
+   "row": 8,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "MAN",
+   "row": 10,
+   "col": 12,
+   "dir": "D"
+  }
+ ]
+}

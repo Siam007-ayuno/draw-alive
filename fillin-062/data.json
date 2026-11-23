@@ -1,0 +1,106 @@
+{
+ "n": 62,
+ "theme": "Shakespeare & the Stage",
+ "bank": [
+  "PLAY",
+  "HAIKU",
+  "CHORUS",
+  "COUPLET",
+  "CURTAIN",
+  "HEROINE",
+  "TEMPEST",
+  "THEATRE",
+  "TRAGEDY",
+  "VILLAIN",
+  "EPILOGUE",
+  "QUATRAIN",
+  "MONOLOGUE",
+  "SOLILOQUY"
+ ],
+ "placed": [
+  {
+   "word": "SOLILOQUY",
+   "row": 6,
+   "col": 2,
+   "dir": "A"
+  },
+  {
+   "word": "MONOLOGUE",
+   "row": 2,
+   "col": 4,
+   "dir": "D"
+  },
+  {
+   "word": "EPILOGUE",
+   "row": 2,
+   "col": 7,
+   "dir": "D"
+  },
+  {
+   "word": "QUATRAIN",
+   "row": 5,
+   "col": 9,
+   "dir": "D"
+  },
+  {
+   "word": "HEROINE",
+   "row": 2,
+   "col": 6,
+   "dir": "A"
+  },
+  {
+   "word": "VILLAIN",
+   "row": 12,
+   "col": 3,
+   "dir": "A"
+  },
+  {
+   "word": "THEATRE",
+   "row": 0,
+   "col": 12,
+   "dir": "D"
+  },
+  {
+   "word": "TEMPEST",
+   "row": 0,
+   "col": 6,
+   "dir": "A"
+  },
+  {
+   "word": "TRAGEDY",
+   "row": 10,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "CURTAIN",
+   "row": 8,
+   "col": 6,
+   "dir": "A"
+  },
+  {
+   "word": "COUPLET",
+   "row": 4,
+   "col": 0,
+   "dir": "D"
+  },
+  {
+   "word": "CHORUS",
+   "row": 1,
+   "col": 2,
+   "dir": "D"
+  },
+  {
+   "word": "HAIKU",
+   "row": 10,
+   "col": 8,
+   "dir": "A"
+  },
+  {
+   "word": "PLAY",
+   "row": 8,
+   "col": 2,
+   "dir": "D"
+  }
+ ]
+}

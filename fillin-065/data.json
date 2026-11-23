@@ -1,0 +1,99 @@
+{
+ "n": 65,
+ "theme": "Famous Authors",
+ "bank": [
+  "POE",
+  "DANTE",
+  "KEATS",
+  "SCOTT",
+  "SWIFT",
+  "VERNE",
+  "DICKENS",
+  "TENNYSON",
+  "STEVENSON",
+  "CHESTERTON",
+  "LONGFELLOW",
+  "WORDSWORTH",
+  "SHAKESPEARE"
+ ],
+ "placed": [
+  {
+   "word": "SHAKESPEARE",
+   "row": 6,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "LONGFELLOW",
+   "row": 1,
+   "col": 11,
+   "dir": "D"
+  },
+  {
+   "word": "WORDSWORTH",
+   "row": 2,
+   "col": 1,
+   "dir": "D"
+  },
+  {
+   "word": "CHESTERTON",
+   "row": 1,
+   "col": 5,
+   "dir": "D"
+  },
+  {
+   "word": "STEVENSON",
+   "row": 10,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "TENNYSON",
+   "row": 3,
+   "col": 4,
+   "dir": "A"
+  },
+  {
+   "word": "DICKENS",
+   "row": 1,
+   "col": 3,
+   "dir": "A"
+  },
+  {
+   "word": "VERNE",
+   "row": 0,
+   "col": 7,
+   "dir": "D"
+  },
+  {
+   "word": "DANTE",
+   "row": 5,
+   "col": 9,
+   "dir": "D"
+  },
+  {
+   "word": "KEATS",
+   "row": 4,
+   "col": 3,
+   "dir": "D"
+  },
+  {
+   "word": "SCOTT",
+   "row": 8,
+   "col": 7,
+   "dir": "D"
+  },
+  {
+   "word": "SWIFT",
+   "row": 12,
+   "col": 3,
+   "dir": "A"
+  },
+  {
+   "word": "POE",
+   "row": 3,
+   "col": 0,
+   "dir": "A"
+  }
+ ]
+}

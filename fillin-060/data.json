@@ -1,0 +1,106 @@
+{
+ "n": 60,
+ "theme": "The World of Books",
+ "bank": [
+  "AGE",
+  "BOY",
+  "ERA",
+  "INK",
+  "LAW",
+  "FABLE",
+  "VERSE",
+  "BOOKSELLER",
+  "TYPESETTER",
+  "BIBLIOPHILE",
+  "INSPIRATION",
+  "MASTERPIECE",
+  "STORYTELLER",
+  "ILLUSTRATION"
+ ],
+ "placed": [
+  {
+   "word": "ILLUSTRATION",
+   "row": 6,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "INSPIRATION",
+   "row": 2,
+   "col": 0,
+   "dir": "D"
+  },
+  {
+   "word": "BIBLIOPHILE",
+   "row": 1,
+   "col": 10,
+   "dir": "D"
+  },
+  {
+   "word": "MASTERPIECE",
+   "row": 1,
+   "col": 6,
+   "dir": "D"
+  },
+  {
+   "word": "STORYTELLER",
+   "row": 1,
+   "col": 8,
+   "dir": "D"
+  },
+  {
+   "word": "BOOKSELLER",
+   "row": 0,
+   "col": 2,
+   "dir": "D"
+  },
+  {
+   "word": "TYPESETTER",
+   "row": 2,
+   "col": 4,
+   "dir": "D"
+  },
+  {
+   "word": "FABLE",
+   "row": 0,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "VERSE",
+   "row": 11,
+   "col": 2,
+   "dir": "A"
+  },
+  {
+   "word": "INK",
+   "row": 9,
+   "col": 10,
+   "dir": "A"
+  },
+  {
+   "word": "LAW",
+   "row": 4,
+   "col": 10,
+   "dir": "A"
+  },
+  {
+   "word": "BOY",
+   "row": 1,
+   "col": 10,
+   "dir": "A"
+  },
+  {
+   "word": "ERA",
+   "row": 11,
+   "col": 10,
+   "dir": "A"
+  },
+  {
+   "word": "AGE",
+   "row": 8,
+   "col": 0,
+   "dir": "A"
+  }
+ ]
+}

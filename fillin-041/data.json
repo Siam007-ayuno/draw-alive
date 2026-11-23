@@ -1,0 +1,92 @@
+{
+ "n": 41,
+ "theme": "Famous Authors",
+ "bank": [
+  "POE",
+  "HUGO",
+  "KEATS",
+  "GOETHE",
+  "DICKENS",
+  "WHITMAN",
+  "MELVILLE",
+  "HAWTHORNE",
+  "CHESTERTON",
+  "LONGFELLOW",
+  "WORDSWORTH",
+  "SHAKESPEARE"
+ ],
+ "placed": [
+  {
+   "word": "SHAKESPEARE",
+   "row": 6,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "CHESTERTON",
+   "row": 3,
+   "col": 6,
+   "dir": "D"
+  },
+  {
+   "word": "WORDSWORTH",
+   "row": 11,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "LONGFELLOW",
+   "row": 1,
+   "col": 11,
+   "dir": "D"
+  },
+  {
+   "word": "HAWTHORNE",
+   "row": 9,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "MELVILLE",
+   "row": 1,
+   "col": 5,
+   "dir": "A"
+  },
+  {
+   "word": "WHITMAN",
+   "row": 1,
+   "col": 3,
+   "dir": "D"
+  },
+  {
+   "word": "DICKENS",
+   "row": 0,
+   "col": 1,
+   "dir": "D"
+  },
+  {
+   "word": "GOETHE",
+   "row": 4,
+   "col": 8,
+   "dir": "D"
+  },
+  {
+   "word": "KEATS",
+   "row": 4,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "HUGO",
+   "row": 4,
+   "col": 6,
+   "dir": "A"
+  },
+  {
+   "word": "POE",
+   "row": 9,
+   "col": 10,
+   "dir": "A"
+  }
+ ]
+}

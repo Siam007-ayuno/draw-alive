@@ -1,0 +1,106 @@
+{
+ "n": 80,
+ "theme": "The World of Books",
+ "bank": [
+  "AGE",
+  "INK",
+  "LAW",
+  "ODE",
+  "SON",
+  "EPIC",
+  "FABLE",
+  "BOOKSELLER",
+  "MANUSCRIPT",
+  "BIBLIOPHILE",
+  "INSPIRATION",
+  "MASTERPIECE",
+  "STORYTELLER",
+  "ILLUSTRATION"
+ ],
+ "placed": [
+  {
+   "word": "ILLUSTRATION",
+   "row": 6,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "BIBLIOPHILE",
+   "row": 1,
+   "col": 10,
+   "dir": "D"
+  },
+  {
+   "word": "MASTERPIECE",
+   "row": 1,
+   "col": 6,
+   "dir": "D"
+  },
+  {
+   "word": "INSPIRATION",
+   "row": 2,
+   "col": 0,
+   "dir": "D"
+  },
+  {
+   "word": "STORYTELLER",
+   "row": 1,
+   "col": 8,
+   "dir": "D"
+  },
+  {
+   "word": "MANUSCRIPT",
+   "row": 2,
+   "col": 4,
+   "dir": "D"
+  },
+  {
+   "word": "BOOKSELLER",
+   "row": 0,
+   "col": 2,
+   "dir": "D"
+  },
+  {
+   "word": "FABLE",
+   "row": 0,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "EPIC",
+   "row": 10,
+   "col": 3,
+   "dir": "A"
+  },
+  {
+   "word": "SON",
+   "row": 4,
+   "col": 2,
+   "dir": "A"
+  },
+  {
+   "word": "INK",
+   "row": 2,
+   "col": 10,
+   "dir": "A"
+  },
+  {
+   "word": "AGE",
+   "row": 8,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "ODE",
+   "row": 11,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "LAW",
+   "row": 10,
+   "col": 10,
+   "dir": "A"
+  }
+ ]
+}

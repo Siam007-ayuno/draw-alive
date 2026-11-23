@@ -1,0 +1,99 @@
+{
+ "n": 56,
+ "theme": "The World of Books",
+ "bank": [
+  "INK",
+  "WAR",
+  "EPIC",
+  "IRONY",
+  "VERSE",
+  "STANZA",
+  "BINDING",
+  "MANUSCRIPT",
+  "BIBLIOPHILE",
+  "IMAGINATION",
+  "INSPIRATION",
+  "STORYTELLER",
+  "ILLUSTRATION"
+ ],
+ "placed": [
+  {
+   "word": "ILLUSTRATION",
+   "row": 6,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "BIBLIOPHILE",
+   "row": 2,
+   "col": 9,
+   "dir": "D"
+  },
+  {
+   "word": "STORYTELLER",
+   "row": 12,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "INSPIRATION",
+   "row": 3,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "IMAGINATION",
+   "row": 10,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "MANUSCRIPT",
+   "row": 8,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "BINDING",
+   "row": 1,
+   "col": 11,
+   "dir": "D"
+  },
+  {
+   "word": "STANZA",
+   "row": 1,
+   "col": 7,
+   "dir": "D"
+  },
+  {
+   "word": "VERSE",
+   "row": 1,
+   "col": 4,
+   "dir": "A"
+  },
+  {
+   "word": "IRONY",
+   "row": 0,
+   "col": 2,
+   "dir": "D"
+  },
+  {
+   "word": "EPIC",
+   "row": 1,
+   "col": 5,
+   "dir": "D"
+  },
+  {
+   "word": "WAR",
+   "row": 1,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "INK",
+   "row": 9,
+   "col": 11,
+   "dir": "D"
+  }
+ ]
+}

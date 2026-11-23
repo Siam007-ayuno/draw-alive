@@ -1,0 +1,92 @@
+{
+ "n": 69,
+ "theme": "Famous Authors",
+ "bank": [
+  "POE",
+  "HUGO",
+  "DEFOE",
+  "HOMER",
+  "VERNE",
+  "MELVILLE",
+  "COLERIDGE",
+  "HAWTHORNE",
+  "CHESTERTON",
+  "LONGFELLOW",
+  "WORDSWORTH",
+  "SHAKESPEARE"
+ ],
+ "placed": [
+  {
+   "word": "SHAKESPEARE",
+   "row": 6,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "WORDSWORTH",
+   "row": 2,
+   "col": 1,
+   "dir": "D"
+  },
+  {
+   "word": "LONGFELLOW",
+   "row": 1,
+   "col": 11,
+   "dir": "D"
+  },
+  {
+   "word": "CHESTERTON",
+   "row": 9,
+   "col": 3,
+   "dir": "A"
+  },
+  {
+   "word": "COLERIDGE",
+   "row": 3,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "HAWTHORNE",
+   "row": 11,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "MELVILLE",
+   "row": 1,
+   "col": 5,
+   "dir": "A"
+  },
+  {
+   "word": "HOMER",
+   "row": 0,
+   "col": 3,
+   "dir": "D"
+  },
+  {
+   "word": "VERNE",
+   "row": 8,
+   "col": 8,
+   "dir": "D"
+  },
+  {
+   "word": "DEFOE",
+   "row": 5,
+   "col": 5,
+   "dir": "D"
+  },
+  {
+   "word": "HUGO",
+   "row": 4,
+   "col": 9,
+   "dir": "A"
+  },
+  {
+   "word": "POE",
+   "row": 8,
+   "col": 0,
+   "dir": "A"
+  }
+ ]
+}

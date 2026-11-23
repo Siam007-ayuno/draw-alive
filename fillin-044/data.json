@@ -1,0 +1,106 @@
+{
+ "n": 44,
+ "theme": "The World of Books",
+ "bank": [
+  "AGE",
+  "GOD",
+  "PEN",
+  "DIARY",
+  "NOVEL",
+  "POETRY",
+  "GLOSSARY",
+  "SENTENCE",
+  "PARAGRAPH",
+  "BIBLIOPHILE",
+  "INSPIRATION",
+  "MASTERPIECE",
+  "STORYTELLER",
+  "ILLUSTRATION"
+ ],
+ "placed": [
+  {
+   "word": "ILLUSTRATION",
+   "row": 6,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "INSPIRATION",
+   "row": 2,
+   "col": 9,
+   "dir": "D"
+  },
+  {
+   "word": "BIBLIOPHILE",
+   "row": 2,
+   "col": 0,
+   "dir": "D"
+  },
+  {
+   "word": "STORYTELLER",
+   "row": 1,
+   "col": 5,
+   "dir": "D"
+  },
+  {
+   "word": "MASTERPIECE",
+   "row": 2,
+   "col": 2,
+   "dir": "A"
+  },
+  {
+   "word": "PARAGRAPH",
+   "row": 0,
+   "col": 7,
+   "dir": "D"
+  },
+  {
+   "word": "GLOSSARY",
+   "row": 5,
+   "col": 2,
+   "dir": "D"
+  },
+  {
+   "word": "SENTENCE",
+   "row": 4,
+   "col": 11,
+   "dir": "D"
+  },
+  {
+   "word": "POETRY",
+   "row": 0,
+   "col": 7,
+   "dir": "A"
+  },
+  {
+   "word": "NOVEL",
+   "row": 11,
+   "col": 8,
+   "dir": "A"
+  },
+  {
+   "word": "DIARY",
+   "row": 0,
+   "col": 3,
+   "dir": "D"
+  },
+  {
+   "word": "PEN",
+   "row": 10,
+   "col": 4,
+   "dir": "A"
+  },
+  {
+   "word": "GOD",
+   "row": 0,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "AGE",
+   "row": 8,
+   "col": 9,
+   "dir": "A"
+  }
+ ]
+}

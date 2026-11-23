@@ -1,0 +1,92 @@
+{
+ "n": 53,
+ "theme": "Famous Authors",
+ "bank": [
+  "POE",
+  "TWAIN",
+  "WELLS",
+  "ALCOTT",
+  "BRONTE",
+  "MARLOWE",
+  "TENNYSON",
+  "STEVENSON",
+  "CHESTERTON",
+  "LONGFELLOW",
+  "WORDSWORTH",
+  "SHAKESPEARE"
+ ],
+ "placed": [
+  {
+   "word": "SHAKESPEARE",
+   "row": 6,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "WORDSWORTH",
+   "row": 2,
+   "col": 1,
+   "dir": "D"
+  },
+  {
+   "word": "CHESTERTON",
+   "row": 0,
+   "col": 10,
+   "dir": "D"
+  },
+  {
+   "word": "LONGFELLOW",
+   "row": 1,
+   "col": 8,
+   "dir": "D"
+  },
+  {
+   "word": "STEVENSON",
+   "row": 2,
+   "col": 5,
+   "dir": "D"
+  },
+  {
+   "word": "TENNYSON",
+   "row": 3,
+   "col": 5,
+   "dir": "A"
+  },
+  {
+   "word": "MARLOWE",
+   "row": 5,
+   "col": 3,
+   "dir": "D"
+  },
+  {
+   "word": "ALCOTT",
+   "row": 8,
+   "col": 7,
+   "dir": "A"
+  },
+  {
+   "word": "BRONTE",
+   "row": 0,
+   "col": 12,
+   "dir": "D"
+  },
+  {
+   "word": "WELLS",
+   "row": 2,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "TWAIN",
+   "row": 8,
+   "col": 12,
+   "dir": "D"
+  },
+  {
+   "word": "POE",
+   "row": 0,
+   "col": 2,
+   "dir": "D"
+  }
+ ]
+}

@@ -1,0 +1,92 @@
+{
+ "n": 42,
+ "theme": "Shakespeare & the Stage",
+ "bank": [
+  "PLAY",
+  "ACTOR",
+  "ELEGY",
+  "OPERA",
+  "STAGE",
+  "VILLAIN",
+  "DIALOGUE",
+  "EPILOGUE",
+  "PROLOGUE",
+  "QUATRAIN",
+  "MONOLOGUE",
+  "SOLILOQUY"
+ ],
+ "placed": [
+  {
+   "word": "MONOLOGUE",
+   "row": 6,
+   "col": 2,
+   "dir": "A"
+  },
+  {
+   "word": "SOLILOQUY",
+   "row": 2,
+   "col": 6,
+   "dir": "D"
+  },
+  {
+   "word": "PROLOGUE",
+   "row": 3,
+   "col": 2,
+   "dir": "A"
+  },
+  {
+   "word": "EPILOGUE",
+   "row": 9,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "DIALOGUE",
+   "row": 2,
+   "col": 0,
+   "dir": "D"
+  },
+  {
+   "word": "QUATRAIN",
+   "row": 5,
+   "col": 9,
+   "dir": "D"
+  },
+  {
+   "word": "VILLAIN",
+   "row": 12,
+   "col": 3,
+   "dir": "A"
+  },
+  {
+   "word": "STAGE",
+   "row": 8,
+   "col": 8,
+   "dir": "A"
+  },
+  {
+   "word": "ELEGY",
+   "row": 8,
+   "col": 12,
+   "dir": "D"
+  },
+  {
+   "word": "OPERA",
+   "row": 0,
+   "col": 3,
+   "dir": "D"
+  },
+  {
+   "word": "ACTOR",
+   "row": 0,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "PLAY",
+   "row": 9,
+   "col": 1,
+   "dir": "D"
+  }
+ ]
+}

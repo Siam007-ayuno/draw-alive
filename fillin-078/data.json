@@ -1,0 +1,99 @@
+{
+ "n": 78,
+ "theme": "Shakespeare & the Stage",
+ "bank": [
+  "PLAY",
+  "ACTOR",
+  "ASIDE",
+  "HAIKU",
+  "STAGE",
+  "COUPLET",
+  "HEROINE",
+  "DIALOGUE",
+  "EPILOGUE",
+  "PROLOGUE",
+  "QUATRAIN",
+  "MONOLOGUE",
+  "SOLILOQUY"
+ ],
+ "placed": [
+  {
+   "word": "MONOLOGUE",
+   "row": 6,
+   "col": 2,
+   "dir": "A"
+  },
+  {
+   "word": "SOLILOQUY",
+   "row": 2,
+   "col": 6,
+   "dir": "D"
+  },
+  {
+   "word": "DIALOGUE",
+   "row": 3,
+   "col": 2,
+   "dir": "A"
+  },
+  {
+   "word": "EPILOGUE",
+   "row": 9,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "PROLOGUE",
+   "row": 2,
+   "col": 0,
+   "dir": "D"
+  },
+  {
+   "word": "QUATRAIN",
+   "row": 5,
+   "col": 9,
+   "dir": "D"
+  },
+  {
+   "word": "COUPLET",
+   "row": 5,
+   "col": 3,
+   "dir": "D"
+  },
+  {
+   "word": "HEROINE",
+   "row": 12,
+   "col": 4,
+   "dir": "A"
+  },
+  {
+   "word": "HAIKU",
+   "row": 10,
+   "col": 8,
+   "dir": "A"
+  },
+  {
+   "word": "ASIDE",
+   "row": 0,
+   "col": 2,
+   "dir": "D"
+  },
+  {
+   "word": "ACTOR",
+   "row": 0,
+   "col": 2,
+   "dir": "A"
+  },
+  {
+   "word": "STAGE",
+   "row": 8,
+   "col": 8,
+   "dir": "A"
+  },
+  {
+   "word": "PLAY",
+   "row": 9,
+   "col": 1,
+   "dir": "D"
+  }
+ ]
+}

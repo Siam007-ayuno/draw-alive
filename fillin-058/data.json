@@ -1,0 +1,92 @@
+{
+ "n": 58,
+ "theme": "Shakespeare & the Stage",
+ "bank": [
+  "PLAY",
+  "ACTOR",
+  "ASIDE",
+  "HAIKU",
+  "STAGE",
+  "MACBETH",
+  "VILLAIN",
+  "DIALOGUE",
+  "EPILOGUE",
+  "QUATRAIN",
+  "MONOLOGUE",
+  "SOLILOQUY"
+ ],
+ "placed": [
+  {
+   "word": "MONOLOGUE",
+   "row": 6,
+   "col": 2,
+   "dir": "A"
+  },
+  {
+   "word": "SOLILOQUY",
+   "row": 1,
+   "col": 3,
+   "dir": "D"
+  },
+  {
+   "word": "DIALOGUE",
+   "row": 3,
+   "col": 6,
+   "dir": "D"
+  },
+  {
+   "word": "EPILOGUE",
+   "row": 0,
+   "col": 9,
+   "dir": "D"
+  },
+  {
+   "word": "QUATRAIN",
+   "row": 9,
+   "col": 5,
+   "dir": "A"
+  },
+  {
+   "word": "VILLAIN",
+   "row": 3,
+   "col": 12,
+   "dir": "D"
+  },
+  {
+   "word": "MACBETH",
+   "row": 0,
+   "col": 5,
+   "dir": "A"
+  },
+  {
+   "word": "ASIDE",
+   "row": 2,
+   "col": 7,
+   "dir": "A"
+  },
+  {
+   "word": "ACTOR",
+   "row": 2,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "HAIKU",
+   "row": 8,
+   "col": 10,
+   "dir": "D"
+  },
+  {
+   "word": "STAGE",
+   "row": 8,
+   "col": 8,
+   "dir": "D"
+  },
+  {
+   "word": "PLAY",
+   "row": 9,
+   "col": 0,
+   "dir": "A"
+  }
+ ]
+}

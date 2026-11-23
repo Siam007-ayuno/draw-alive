@@ -1,0 +1,99 @@
+{
+ "n": 64,
+ "theme": "The World of Books",
+ "bank": [
+  "AGE",
+  "DAY",
+  "SEA",
+  "SAGA",
+  "PAPER",
+  "WRITER",
+  "GRAMMAR",
+  "MANUSCRIPT",
+  "BIBLIOPHILE",
+  "IMAGINATION",
+  "INSPIRATION",
+  "MASTERPIECE",
+  "ILLUSTRATION"
+ ],
+ "placed": [
+  {
+   "word": "ILLUSTRATION",
+   "row": 6,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "MASTERPIECE",
+   "row": 1,
+   "col": 6,
+   "dir": "D"
+  },
+  {
+   "word": "BIBLIOPHILE",
+   "row": 2,
+   "col": 9,
+   "dir": "D"
+  },
+  {
+   "word": "IMAGINATION",
+   "row": 1,
+   "col": 11,
+   "dir": "D"
+  },
+  {
+   "word": "INSPIRATION",
+   "row": 2,
+   "col": 0,
+   "dir": "D"
+  },
+  {
+   "word": "MANUSCRIPT",
+   "row": 3,
+   "col": 3,
+   "dir": "D"
+  },
+  {
+   "word": "GRAMMAR",
+   "row": 1,
+   "col": 2,
+   "dir": "A"
+  },
+  {
+   "word": "WRITER",
+   "row": 9,
+   "col": 2,
+   "dir": "A"
+  },
+  {
+   "word": "PAPER",
+   "row": 11,
+   "col": 3,
+   "dir": "A"
+  },
+  {
+   "word": "SAGA",
+   "row": 4,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "SEA",
+   "row": 12,
+   "col": 8,
+   "dir": "A"
+  },
+  {
+   "word": "AGE",
+   "row": 0,
+   "col": 2,
+   "dir": "D"
+  },
+  {
+   "word": "DAY",
+   "row": 0,
+   "col": 4,
+   "dir": "D"
+  }
+ ]
+}

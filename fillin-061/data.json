@@ -1,0 +1,92 @@
+{
+ "n": 61,
+ "theme": "Famous Authors",
+ "bank": [
+  "POE",
+  "HUGO",
+  "HOMER",
+  "WILDE",
+  "SPENSER",
+  "THOREAU",
+  "COLERIDGE",
+  "STEVENSON",
+  "CHESTERTON",
+  "LONGFELLOW",
+  "WORDSWORTH",
+  "SHAKESPEARE"
+ ],
+ "placed": [
+  {
+   "word": "SHAKESPEARE",
+   "row": 6,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "CHESTERTON",
+   "row": 1,
+   "col": 8,
+   "dir": "D"
+  },
+  {
+   "word": "WORDSWORTH",
+   "row": 2,
+   "col": 1,
+   "dir": "D"
+  },
+  {
+   "word": "LONGFELLOW",
+   "row": 1,
+   "col": 11,
+   "dir": "D"
+  },
+  {
+   "word": "COLERIDGE",
+   "row": 3,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "STEVENSON",
+   "row": 10,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "SPENSER",
+   "row": 6,
+   "col": 6,
+   "dir": "D"
+  },
+  {
+   "word": "THOREAU",
+   "row": 12,
+   "col": 3,
+   "dir": "A"
+  },
+  {
+   "word": "HOMER",
+   "row": 8,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "WILDE",
+   "row": 2,
+   "col": 5,
+   "dir": "D"
+  },
+  {
+   "word": "HUGO",
+   "row": 2,
+   "col": 8,
+   "dir": "A"
+  },
+  {
+   "word": "POE",
+   "row": 1,
+   "col": 3,
+   "dir": "D"
+  }
+ ]
+}

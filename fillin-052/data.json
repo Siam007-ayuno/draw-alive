@@ -1,0 +1,106 @@
+{
+ "n": 52,
+ "theme": "The World of Books",
+ "bank": [
+  "GOD",
+  "MAN",
+  "SON",
+  "EPIC",
+  "FABLE",
+  "PROSE",
+  "THEME",
+  "BOOKSELLER",
+  "MANUSCRIPT",
+  "BIBLIOPHILE",
+  "IMAGINATION",
+  "INSPIRATION",
+  "STORYTELLER",
+  "ILLUSTRATION"
+ ],
+ "placed": [
+  {
+   "word": "ILLUSTRATION",
+   "row": 6,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "STORYTELLER",
+   "row": 1,
+   "col": 8,
+   "dir": "D"
+  },
+  {
+   "word": "BIBLIOPHILE",
+   "row": 2,
+   "col": 0,
+   "dir": "D"
+  },
+  {
+   "word": "INSPIRATION",
+   "row": 1,
+   "col": 6,
+   "dir": "D"
+  },
+  {
+   "word": "IMAGINATION",
+   "row": 1,
+   "col": 11,
+   "dir": "D"
+  },
+  {
+   "word": "BOOKSELLER",
+   "row": 0,
+   "col": 2,
+   "dir": "D"
+  },
+  {
+   "word": "MANUSCRIPT",
+   "row": 2,
+   "col": 4,
+   "dir": "D"
+  },
+  {
+   "word": "THEME",
+   "row": 2,
+   "col": 8,
+   "dir": "A"
+  },
+  {
+   "word": "FABLE",
+   "row": 0,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "PROSE",
+   "row": 10,
+   "col": 4,
+   "dir": "A"
+  },
+  {
+   "word": "EPIC",
+   "row": 12,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "MAN",
+   "row": 2,
+   "col": 4,
+   "dir": "A"
+  },
+  {
+   "word": "GOD",
+   "row": 10,
+   "col": 10,
+   "dir": "A"
+  },
+  {
+   "word": "SON",
+   "row": 4,
+   "col": 2,
+   "dir": "A"
+  }
+ ]
+}

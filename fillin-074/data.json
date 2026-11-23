@@ -1,0 +1,99 @@
+{
+ "n": 74,
+ "theme": "Shakespeare & the Stage",
+ "bank": [
+  "HERO",
+  "ACTOR",
+  "HAIKU",
+  "COUPLET",
+  "OTHELLO",
+  "THEATRE",
+  "TRAGEDY",
+  "DIALOGUE",
+  "EPILOGUE",
+  "LIMERICK",
+  "PROLOGUE",
+  "MONOLOGUE",
+  "SOLILOQUY"
+ ],
+ "placed": [
+  {
+   "word": "SOLILOQUY",
+   "row": 6,
+   "col": 2,
+   "dir": "A"
+  },
+  {
+   "word": "MONOLOGUE",
+   "row": 1,
+   "col": 7,
+   "dir": "D"
+  },
+  {
+   "word": "DIALOGUE",
+   "row": 9,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "PROLOGUE",
+   "row": 4,
+   "col": 5,
+   "dir": "A"
+  },
+  {
+   "word": "LIMERICK",
+   "row": 1,
+   "col": 12,
+   "dir": "D"
+  },
+  {
+   "word": "EPILOGUE",
+   "row": 0,
+   "col": 9,
+   "dir": "D"
+  },
+  {
+   "word": "COUPLET",
+   "row": 5,
+   "col": 3,
+   "dir": "D"
+  },
+  {
+   "word": "THEATRE",
+   "row": 11,
+   "col": 3,
+   "dir": "A"
+  },
+  {
+   "word": "TRAGEDY",
+   "row": 4,
+   "col": 0,
+   "dir": "D"
+  },
+  {
+   "word": "OTHELLO",
+   "row": 2,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "ACTOR",
+   "row": 0,
+   "col": 2,
+   "dir": "D"
+  },
+  {
+   "word": "HAIKU",
+   "row": 0,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "HERO",
+   "row": 0,
+   "col": 8,
+   "dir": "A"
+  }
+ ]
+}

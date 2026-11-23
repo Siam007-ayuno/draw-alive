@@ -1,0 +1,92 @@
+{
+ "n": 51,
+ "theme": "Classic Books & Characters",
+ "bank": [
+  "EMMA",
+  "BERTHA",
+  "EARNEST",
+  "MONSTER",
+  "PILGRIM",
+  "PREJUDICE",
+  "CANTERBURY",
+  "HEATHCLIFF",
+  "PERSUASION",
+  "PROMETHEUS",
+  "SENSIBILITY",
+  "FRANKENSTEIN"
+ ],
+ "placed": [
+  {
+   "word": "FRANKENSTEIN",
+   "row": 6,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "SENSIBILITY",
+   "row": 0,
+   "col": 10,
+   "dir": "D"
+  },
+  {
+   "word": "HEATHCLIFF",
+   "row": 4,
+   "col": 3,
+   "dir": "A"
+  },
+  {
+   "word": "PERSUASION",
+   "row": 2,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "CANTERBURY",
+   "row": 10,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "PROMETHEUS",
+   "row": 0,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "PREJUDICE",
+   "row": 8,
+   "col": 4,
+   "dir": "A"
+  },
+  {
+   "word": "EARNEST",
+   "row": 6,
+   "col": 5,
+   "dir": "D"
+  },
+  {
+   "word": "PILGRIM",
+   "row": 2,
+   "col": 1,
+   "dir": "D"
+  },
+  {
+   "word": "MONSTER",
+   "row": 12,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "BERTHA",
+   "row": 7,
+   "col": 12,
+   "dir": "D"
+  },
+  {
+   "word": "EMMA",
+   "row": 12,
+   "col": 9,
+   "dir": "A"
+  }
+ ]
+}

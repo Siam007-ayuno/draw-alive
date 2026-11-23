@@ -1,0 +1,106 @@
+{
+ "n": 68,
+ "theme": "The World of Books",
+ "bank": [
+  "BOY",
+  "MAN",
+  "PEN",
+  "SEA",
+  "SKY",
+  "SON",
+  "PROSE",
+  "MEMOIR",
+  "TYPESETTER",
+  "BIBLIOPHILE",
+  "INSPIRATION",
+  "MASTERPIECE",
+  "STORYTELLER",
+  "ILLUSTRATION"
+ ],
+ "placed": [
+  {
+   "word": "ILLUSTRATION",
+   "row": 6,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "MASTERPIECE",
+   "row": 1,
+   "col": 6,
+   "dir": "D"
+  },
+  {
+   "word": "STORYTELLER",
+   "row": 11,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "INSPIRATION",
+   "row": 2,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "BIBLIOPHILE",
+   "row": 8,
+   "col": 2,
+   "dir": "A"
+  },
+  {
+   "word": "TYPESETTER",
+   "row": 4,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "MEMOIR",
+   "row": 7,
+   "col": 12,
+   "dir": "D"
+  },
+  {
+   "word": "PROSE",
+   "row": 8,
+   "col": 0,
+   "dir": "D"
+  },
+  {
+   "word": "BOY",
+   "row": 10,
+   "col": 2,
+   "dir": "D"
+  },
+  {
+   "word": "MAN",
+   "row": 0,
+   "col": 1,
+   "dir": "D"
+  },
+  {
+   "word": "SEA",
+   "row": 10,
+   "col": 9,
+   "dir": "D"
+  },
+  {
+   "word": "SON",
+   "row": 0,
+   "col": 10,
+   "dir": "D"
+  },
+  {
+   "word": "PEN",
+   "row": 4,
+   "col": 11,
+   "dir": "D"
+  },
+  {
+   "word": "SKY",
+   "row": 0,
+   "col": 10,
+   "dir": "A"
+  }
+ ]
+}

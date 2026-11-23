@@ -1,0 +1,92 @@
+{
+ "n": 55,
+ "theme": "Classic Books & Characters",
+ "bank": [
+  "EMMA",
+  "JANE",
+  "ILIAD",
+  "PRIDE",
+  "JEKYLL",
+  "PARADISE",
+  "TREASURE",
+  "WUTHERING",
+  "IMPORTANCE",
+  "PROMETHEUS",
+  "SENSIBILITY",
+  "FRANKENSTEIN"
+ ],
+ "placed": [
+  {
+   "word": "FRANKENSTEIN",
+   "row": 6,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "SENSIBILITY",
+   "row": 2,
+   "col": 10,
+   "dir": "D"
+  },
+  {
+   "word": "IMPORTANCE",
+   "row": 3,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "PROMETHEUS",
+   "row": 2,
+   "col": 5,
+   "dir": "D"
+  },
+  {
+   "word": "WUTHERING",
+   "row": 10,
+   "col": 4,
+   "dir": "A"
+  },
+  {
+   "word": "PARADISE",
+   "row": 0,
+   "col": 7,
+   "dir": "D"
+  },
+  {
+   "word": "TREASURE",
+   "row": 5,
+   "col": 1,
+   "dir": "D"
+  },
+  {
+   "word": "JEKYLL",
+   "row": 12,
+   "col": 7,
+   "dir": "A"
+  },
+  {
+   "word": "PRIDE",
+   "row": 0,
+   "col": 7,
+   "dir": "A"
+  },
+  {
+   "word": "ILIAD",
+   "row": 8,
+   "col": 8,
+   "dir": "A"
+  },
+  {
+   "word": "JANE",
+   "row": 8,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "EMMA",
+   "row": 12,
+   "col": 1,
+   "dir": "A"
+  }
+ ]
+}

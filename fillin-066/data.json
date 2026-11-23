@@ -1,0 +1,92 @@
+{
+ "n": 66,
+ "theme": "Shakespeare & the Stage",
+ "bank": [
+  "HERO",
+  "PLAY",
+  "ELEGY",
+  "HAIKU",
+  "OPERA",
+  "STAGE",
+  "CURTAIN",
+  "TEMPEST",
+  "EPILOGUE",
+  "QUATRAIN",
+  "MONOLOGUE",
+  "SOLILOQUY"
+ ],
+ "placed": [
+  {
+   "word": "SOLILOQUY",
+   "row": 6,
+   "col": 2,
+   "dir": "A"
+  },
+  {
+   "word": "MONOLOGUE",
+   "row": 2,
+   "col": 4,
+   "dir": "D"
+  },
+  {
+   "word": "EPILOGUE",
+   "row": 3,
+   "col": 6,
+   "dir": "D"
+  },
+  {
+   "word": "QUATRAIN",
+   "row": 5,
+   "col": 9,
+   "dir": "D"
+  },
+  {
+   "word": "CURTAIN",
+   "row": 12,
+   "col": 3,
+   "dir": "A"
+  },
+  {
+   "word": "TEMPEST",
+   "row": 1,
+   "col": 2,
+   "dir": "D"
+  },
+  {
+   "word": "STAGE",
+   "row": 8,
+   "col": 8,
+   "dir": "A"
+  },
+  {
+   "word": "ELEGY",
+   "row": 3,
+   "col": 6,
+   "dir": "A"
+  },
+  {
+   "word": "OPERA",
+   "row": 6,
+   "col": 12,
+   "dir": "D"
+  },
+  {
+   "word": "HAIKU",
+   "row": 9,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "PLAY",
+   "row": 0,
+   "col": 10,
+   "dir": "D"
+  },
+  {
+   "word": "HERO",
+   "row": 9,
+   "col": 0,
+   "dir": "D"
+  }
+ ]
+}

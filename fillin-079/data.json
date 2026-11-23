@@ -1,0 +1,106 @@
+{
+ "n": 79,
+ "theme": "Classic Books & Characters",
+ "bank": [
+  "EMMA",
+  "GRAY",
+  "HYDE",
+  "JANE",
+  "MOBY",
+  "CRUSOE",
+  "SCROOGE",
+  "PROGRESS",
+  "PREJUDICE",
+  "WUTHERING",
+  "CANTERBURY",
+  "PROMETHEUS",
+  "SENSIBILITY",
+  "FRANKENSTEIN"
+ ],
+ "placed": [
+  {
+   "word": "FRANKENSTEIN",
+   "row": 6,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "SENSIBILITY",
+   "row": 2,
+   "col": 10,
+   "dir": "D"
+  },
+  {
+   "word": "PROMETHEUS",
+   "row": 1,
+   "col": 8,
+   "dir": "D"
+  },
+  {
+   "word": "CANTERBURY",
+   "row": 1,
+   "col": 1,
+   "dir": "D"
+  },
+  {
+   "word": "PREJUDICE",
+   "row": 4,
+   "col": 5,
+   "dir": "D"
+  },
+  {
+   "word": "WUTHERING",
+   "row": 8,
+   "col": 4,
+   "dir": "A"
+  },
+  {
+   "word": "PROGRESS",
+   "row": 12,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "SCROOGE",
+   "row": 1,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "CRUSOE",
+   "row": 2,
+   "col": 7,
+   "dir": "A"
+  },
+  {
+   "word": "HYDE",
+   "row": 10,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "EMMA",
+   "row": 2,
+   "col": 12,
+   "dir": "D"
+  },
+  {
+   "word": "GRAY",
+   "row": 8,
+   "col": 12,
+   "dir": "D"
+  },
+  {
+   "word": "JANE",
+   "row": 4,
+   "col": 3,
+   "dir": "D"
+  },
+  {
+   "word": "MOBY",
+   "row": 0,
+   "col": 4,
+   "dir": "D"
+  }
+ ]
+}
