@@ -1,0 +1,92 @@
+{
+ "n": 35,
+ "theme": "Classic Books & Characters",
+ "bank": [
+  "JANE",
+  "PRIDE",
+  "BERTHA",
+  "CANDIDE",
+  "PILGRIM",
+  "PROGRESS",
+  "ROCHESTER",
+  "IMPORTANCE",
+  "PERSUASION",
+  "PROMETHEUS",
+  "SENSIBILITY",
+  "FRANKENSTEIN"
+ ],
+ "placed": [
+  {
+   "word": "FRANKENSTEIN",
+   "row": 6,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "SENSIBILITY",
+   "row": 0,
+   "col": 10,
+   "dir": "D"
+  },
+  {
+   "word": "PERSUASION",
+   "row": 3,
+   "col": 7,
+   "dir": "D"
+  },
+  {
+   "word": "IMPORTANCE",
+   "row": 12,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "PROMETHEUS",
+   "row": 0,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "ROCHESTER",
+   "row": 4,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "PROGRESS",
+   "row": 2,
+   "col": 1,
+   "dir": "D"
+  },
+  {
+   "word": "PILGRIM",
+   "row": 10,
+   "col": 2,
+   "dir": "A"
+  },
+  {
+   "word": "CANDIDE",
+   "row": 8,
+   "col": 6,
+   "dir": "A"
+  },
+  {
+   "word": "BERTHA",
+   "row": 7,
+   "col": 12,
+   "dir": "D"
+  },
+  {
+   "word": "PRIDE",
+   "row": 2,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "JANE",
+   "row": 2,
+   "col": 8,
+   "dir": "A"
+  }
+ ]
+}

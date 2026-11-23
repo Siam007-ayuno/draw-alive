@@ -1,0 +1,92 @@
+{
+ "n": 11,
+ "theme": "Classic Books & Characters",
+ "bank": [
+  "RAVEN",
+  "MARLEY",
+  "CANDIDE",
+  "ISHMAEL",
+  "ODYSSEY",
+  "SCROOGE",
+  "CANTERBURY",
+  "IMPORTANCE",
+  "PERSUASION",
+  "PROMETHEUS",
+  "SENSIBILITY",
+  "FRANKENSTEIN"
+ ],
+ "placed": [
+  {
+   "word": "FRANKENSTEIN",
+   "row": 6,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "SENSIBILITY",
+   "row": 0,
+   "col": 10,
+   "dir": "D"
+  },
+  {
+   "word": "PERSUASION",
+   "row": 4,
+   "col": 3,
+   "dir": "A"
+  },
+  {
+   "word": "CANTERBURY",
+   "row": 3,
+   "col": 8,
+   "dir": "D"
+  },
+  {
+   "word": "IMPORTANCE",
+   "row": 2,
+   "col": 1,
+   "dir": "D"
+  },
+  {
+   "word": "PROMETHEUS",
+   "row": 0,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "SCROOGE",
+   "row": 10,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "CANDIDE",
+   "row": 8,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "ISHMAEL",
+   "row": 2,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "ODYSSEY",
+   "row": 12,
+   "col": 6,
+   "dir": "A"
+  },
+  {
+   "word": "MARLEY",
+   "row": 7,
+   "col": 12,
+   "dir": "D"
+  },
+  {
+   "word": "RAVEN",
+   "row": 0,
+   "col": 12,
+   "dir": "D"
+  }
+ ]
+}

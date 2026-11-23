@@ -1,0 +1,99 @@
+{
+ "n": 23,
+ "theme": "Classic Books & Characters",
+ "bank": [
+  "AHAB",
+  "EMMA",
+  "HYDE",
+  "FAUST",
+  "PRIDE",
+  "RAVEN",
+  "DORIAN",
+  "PREJUDICE",
+  "ROCHESTER",
+  "PERSUASION",
+  "PROMETHEUS",
+  "SENSIBILITY",
+  "FRANKENSTEIN"
+ ],
+ "placed": [
+  {
+   "word": "FRANKENSTEIN",
+   "row": 6,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "SENSIBILITY",
+   "row": 0,
+   "col": 10,
+   "dir": "D"
+  },
+  {
+   "word": "PERSUASION",
+   "row": 1,
+   "col": 2,
+   "dir": "D"
+  },
+  {
+   "word": "PROMETHEUS",
+   "row": 3,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "PREJUDICE",
+   "row": 1,
+   "col": 2,
+   "dir": "A"
+  },
+  {
+   "word": "ROCHESTER",
+   "row": 9,
+   "col": 4,
+   "dir": "A"
+  },
+  {
+   "word": "DORIAN",
+   "row": 7,
+   "col": 12,
+   "dir": "D"
+  },
+  {
+   "word": "RAVEN",
+   "row": 12,
+   "col": 8,
+   "dir": "A"
+  },
+  {
+   "word": "FAUST",
+   "row": 6,
+   "col": 0,
+   "dir": "D"
+  },
+  {
+   "word": "PRIDE",
+   "row": 8,
+   "col": 4,
+   "dir": "D"
+  },
+  {
+   "word": "HYDE",
+   "row": 12,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "EMMA",
+   "row": 1,
+   "col": 4,
+   "dir": "D"
+  },
+  {
+   "word": "AHAB",
+   "row": 8,
+   "col": 7,
+   "dir": "D"
+  }
+ ]
+}

@@ -1,0 +1,106 @@
+{
+ "n": 28,
+ "theme": "The World of Books",
+ "bank": [
+  "ART",
+  "INK",
+  "MAN",
+  "PEN",
+  "FABLE",
+  "VERSE",
+  "STANZA",
+  "BOOKSELLER",
+  "TYPESETTER",
+  "BIBLIOPHILE",
+  "IMAGINATION",
+  "INSPIRATION",
+  "MASTERPIECE",
+  "ILLUSTRATION"
+ ],
+ "placed": [
+  {
+   "word": "ILLUSTRATION",
+   "row": 6,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "BIBLIOPHILE",
+   "row": 2,
+   "col": 0,
+   "dir": "D"
+  },
+  {
+   "word": "MASTERPIECE",
+   "row": 1,
+   "col": 6,
+   "dir": "D"
+  },
+  {
+   "word": "INSPIRATION",
+   "row": 2,
+   "col": 9,
+   "dir": "D"
+  },
+  {
+   "word": "IMAGINATION",
+   "row": 1,
+   "col": 11,
+   "dir": "D"
+  },
+  {
+   "word": "TYPESETTER",
+   "row": 2,
+   "col": 4,
+   "dir": "D"
+  },
+  {
+   "word": "BOOKSELLER",
+   "row": 0,
+   "col": 2,
+   "dir": "D"
+  },
+  {
+   "word": "STANZA",
+   "row": 3,
+   "col": 6,
+   "dir": "A"
+  },
+  {
+   "word": "VERSE",
+   "row": 11,
+   "col": 2,
+   "dir": "A"
+  },
+  {
+   "word": "FABLE",
+   "row": 0,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "PEN",
+   "row": 12,
+   "col": 7,
+   "dir": "A"
+  },
+  {
+   "word": "ART",
+   "row": 8,
+   "col": 9,
+   "dir": "A"
+  },
+  {
+   "word": "INK",
+   "row": 3,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "MAN",
+   "row": 1,
+   "col": 6,
+   "dir": "A"
+  }
+ ]
+}

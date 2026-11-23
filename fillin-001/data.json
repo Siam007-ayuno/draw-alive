@@ -1,0 +1,99 @@
+{
+ "n": 1,
+ "theme": "Famous Authors",
+ "bank": [
+  "POE",
+  "DANTE",
+  "KEATS",
+  "SCOTT",
+  "ALCOTT",
+  "IRVING",
+  "THOREAU",
+  "HAWTHORNE",
+  "STEVENSON",
+  "CHESTERTON",
+  "LONGFELLOW",
+  "WORDSWORTH",
+  "SHAKESPEARE"
+ ],
+ "placed": [
+  {
+   "word": "SHAKESPEARE",
+   "row": 6,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "WORDSWORTH",
+   "row": 2,
+   "col": 6,
+   "dir": "D"
+  },
+  {
+   "word": "LONGFELLOW",
+   "row": 1,
+   "col": 8,
+   "dir": "D"
+  },
+  {
+   "word": "CHESTERTON",
+   "row": 9,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "HAWTHORNE",
+   "row": 3,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "STEVENSON",
+   "row": 4,
+   "col": 11,
+   "dir": "D"
+  },
+  {
+   "word": "THOREAU",
+   "row": 5,
+   "col": 2,
+   "dir": "D"
+  },
+  {
+   "word": "ALCOTT",
+   "row": 1,
+   "col": 7,
+   "dir": "A"
+  },
+  {
+   "word": "IRVING",
+   "row": 12,
+   "col": 7,
+   "dir": "A"
+  },
+  {
+   "word": "SCOTT",
+   "row": 8,
+   "col": 0,
+   "dir": "D"
+  },
+  {
+   "word": "DANTE",
+   "row": 0,
+   "col": 4,
+   "dir": "D"
+  },
+  {
+   "word": "KEATS",
+   "row": 6,
+   "col": 4,
+   "dir": "D"
+  },
+  {
+   "word": "POE",
+   "row": 0,
+   "col": 10,
+   "dir": "D"
+  }
+ ]
+}

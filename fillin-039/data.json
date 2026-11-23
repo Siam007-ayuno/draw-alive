@@ -1,0 +1,92 @@
+{
+ "n": 39,
+ "theme": "Classic Books & Characters",
+ "bank": [
+  "GRAY",
+  "JANE",
+  "FAUST",
+  "ILIAD",
+  "PRIDE",
+  "ODYSSEY",
+  "PREJUDICE",
+  "HEATHCLIFF",
+  "IMPORTANCE",
+  "PERSUASION",
+  "SENSIBILITY",
+  "FRANKENSTEIN"
+ ],
+ "placed": [
+  {
+   "word": "FRANKENSTEIN",
+   "row": 6,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "SENSIBILITY",
+   "row": 2,
+   "col": 10,
+   "dir": "D"
+  },
+  {
+   "word": "HEATHCLIFF",
+   "row": 3,
+   "col": 8,
+   "dir": "D"
+  },
+  {
+   "word": "PERSUASION",
+   "row": 1,
+   "col": 2,
+   "dir": "D"
+  },
+  {
+   "word": "IMPORTANCE",
+   "row": 1,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "PREJUDICE",
+   "row": 4,
+   "col": 5,
+   "dir": "D"
+  },
+  {
+   "word": "ODYSSEY",
+   "row": 12,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "ILIAD",
+   "row": 10,
+   "col": 8,
+   "dir": "A"
+  },
+  {
+   "word": "FAUST",
+   "row": 6,
+   "col": 0,
+   "dir": "D"
+  },
+  {
+   "word": "PRIDE",
+   "row": 7,
+   "col": 12,
+   "dir": "D"
+  },
+  {
+   "word": "JANE",
+   "row": 0,
+   "col": 6,
+   "dir": "D"
+  },
+  {
+   "word": "GRAY",
+   "row": 3,
+   "col": 1,
+   "dir": "A"
+  }
+ ]
+}

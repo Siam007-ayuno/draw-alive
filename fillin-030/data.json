@@ -1,0 +1,92 @@
+{
+ "n": 30,
+ "theme": "Shakespeare & the Stage",
+ "bank": [
+  "ELEGY",
+  "COMEDY",
+  "SONNET",
+  "CURTAIN",
+  "OTHELLO",
+  "TEMPEST",
+  "DIALOGUE",
+  "LIMERICK",
+  "PROLOGUE",
+  "QUATRAIN",
+  "MONOLOGUE",
+  "SOLILOQUY"
+ ],
+ "placed": [
+  {
+   "word": "MONOLOGUE",
+   "row": 6,
+   "col": 2,
+   "dir": "A"
+  },
+  {
+   "word": "SOLILOQUY",
+   "row": 1,
+   "col": 7,
+   "dir": "D"
+  },
+  {
+   "word": "DIALOGUE",
+   "row": 3,
+   "col": 4,
+   "dir": "A"
+  },
+  {
+   "word": "PROLOGUE",
+   "row": 4,
+   "col": 3,
+   "dir": "D"
+  },
+  {
+   "word": "QUATRAIN",
+   "row": 5,
+   "col": 9,
+   "dir": "D"
+  },
+  {
+   "word": "LIMERICK",
+   "row": 11,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "OTHELLO",
+   "row": 6,
+   "col": 0,
+   "dir": "D"
+  },
+  {
+   "word": "CURTAIN",
+   "row": 8,
+   "col": 6,
+   "dir": "A"
+  },
+  {
+   "word": "TEMPEST",
+   "row": 1,
+   "col": 2,
+   "dir": "A"
+  },
+  {
+   "word": "COMEDY",
+   "row": 0,
+   "col": 11,
+   "dir": "D"
+  },
+  {
+   "word": "SONNET",
+   "row": 6,
+   "col": 12,
+   "dir": "D"
+  },
+  {
+   "word": "ELEGY",
+   "row": 9,
+   "col": 0,
+   "dir": "A"
+  }
+ ]
+}

@@ -1,0 +1,92 @@
+{
+ "n": 20,
+ "theme": "The World of Books",
+ "bank": [
+  "AGE",
+  "DIARY",
+  "FABLE",
+  "POETRY",
+  "LIBRARY",
+  "ADVENTURE",
+  "BOOKSELLER",
+  "BIBLIOPHILE",
+  "IMAGINATION",
+  "INSPIRATION",
+  "STORYTELLER",
+  "ILLUSTRATION"
+ ],
+ "placed": [
+  {
+   "word": "ILLUSTRATION",
+   "row": 6,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "STORYTELLER",
+   "row": 1,
+   "col": 5,
+   "dir": "D"
+  },
+  {
+   "word": "BIBLIOPHILE",
+   "row": 2,
+   "col": 9,
+   "dir": "D"
+  },
+  {
+   "word": "IMAGINATION",
+   "row": 0,
+   "col": 7,
+   "dir": "D"
+  },
+  {
+   "word": "INSPIRATION",
+   "row": 2,
+   "col": 0,
+   "dir": "D"
+  },
+  {
+   "word": "BOOKSELLER",
+   "row": 0,
+   "col": 2,
+   "dir": "D"
+  },
+  {
+   "word": "ADVENTURE",
+   "row": 2,
+   "col": 11,
+   "dir": "D"
+  },
+  {
+   "word": "LIBRARY",
+   "row": 0,
+   "col": 6,
+   "dir": "A"
+  },
+  {
+   "word": "POETRY",
+   "row": 12,
+   "col": 7,
+   "dir": "A"
+  },
+  {
+   "word": "FABLE",
+   "row": 0,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "DIARY",
+   "row": 11,
+   "col": 2,
+   "dir": "A"
+  },
+  {
+   "word": "AGE",
+   "row": 8,
+   "col": 0,
+   "dir": "A"
+  }
+ ]
+}

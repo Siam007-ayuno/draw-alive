@@ -1,0 +1,106 @@
+{
+ "n": 4,
+ "theme": "The World of Books",
+ "bank": [
+  "AGE",
+  "LAW",
+  "ODE",
+  "PEN",
+  "POEM",
+  "QUILL",
+  "SYLLABLE",
+  "PARAGRAPH",
+  "PARCHMENT",
+  "QUOTATION",
+  "BIBLIOPHILE",
+  "IMAGINATION",
+  "MASTERPIECE",
+  "ILLUSTRATION"
+ ],
+ "placed": [
+  {
+   "word": "ILLUSTRATION",
+   "row": 6,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "IMAGINATION",
+   "row": 2,
+   "col": 9,
+   "dir": "D"
+  },
+  {
+   "word": "MASTERPIECE",
+   "row": 2,
+   "col": 2,
+   "dir": "A"
+  },
+  {
+   "word": "BIBLIOPHILE",
+   "row": 10,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "QUOTATION",
+   "row": 0,
+   "col": 0,
+   "dir": "D"
+  },
+  {
+   "word": "PARCHMENT",
+   "row": 12,
+   "col": 2,
+   "dir": "A"
+  },
+  {
+   "word": "PARAGRAPH",
+   "row": 4,
+   "col": 3,
+   "dir": "A"
+  },
+  {
+   "word": "SYLLABLE",
+   "row": 8,
+   "col": 5,
+   "dir": "A"
+  },
+  {
+   "word": "QUILL",
+   "row": 0,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "POEM",
+   "row": 0,
+   "col": 12,
+   "dir": "D"
+  },
+  {
+   "word": "ODE",
+   "row": 0,
+   "col": 10,
+   "dir": "D"
+  },
+  {
+   "word": "AGE",
+   "row": 0,
+   "col": 6,
+   "dir": "D"
+  },
+  {
+   "word": "PEN",
+   "row": 7,
+   "col": 12,
+   "dir": "D"
+  },
+  {
+   "word": "LAW",
+   "row": 6,
+   "col": 2,
+   "dir": "D"
+  }
+ ]
+}

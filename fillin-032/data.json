@@ -1,0 +1,106 @@
+{
+ "n": 32,
+ "theme": "The World of Books",
+ "bank": [
+  "ART",
+  "INK",
+  "PEN",
+  "IRONY",
+  "PROSE",
+  "CLASSIC",
+  "EDITION",
+  "PUBLISHER",
+  "BOOKSELLER",
+  "BIBLIOPHILE",
+  "IMAGINATION",
+  "INSPIRATION",
+  "MASTERPIECE",
+  "ILLUSTRATION"
+ ],
+ "placed": [
+  {
+   "word": "ILLUSTRATION",
+   "row": 6,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "BIBLIOPHILE",
+   "row": 2,
+   "col": 0,
+   "dir": "D"
+  },
+  {
+   "word": "INSPIRATION",
+   "row": 0,
+   "col": 7,
+   "dir": "D"
+  },
+  {
+   "word": "IMAGINATION",
+   "row": 10,
+   "col": 2,
+   "dir": "A"
+  },
+  {
+   "word": "MASTERPIECE",
+   "row": 0,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "BOOKSELLER",
+   "row": 2,
+   "col": 3,
+   "dir": "A"
+  },
+  {
+   "word": "PUBLISHER",
+   "row": 8,
+   "col": 3,
+   "dir": "A"
+  },
+  {
+   "word": "CLASSIC",
+   "row": 4,
+   "col": 2,
+   "dir": "A"
+  },
+  {
+   "word": "EDITION",
+   "row": 12,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "IRONY",
+   "row": 1,
+   "col": 12,
+   "dir": "D"
+  },
+  {
+   "word": "PROSE",
+   "row": 4,
+   "col": 10,
+   "dir": "D"
+  },
+  {
+   "word": "INK",
+   "row": 10,
+   "col": 10,
+   "dir": "D"
+  },
+  {
+   "word": "ART",
+   "row": 10,
+   "col": 8,
+   "dir": "D"
+  },
+  {
+   "word": "PEN",
+   "row": 4,
+   "col": 10,
+   "dir": "A"
+  }
+ ]
+}

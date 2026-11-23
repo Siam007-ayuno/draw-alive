@@ -1,0 +1,92 @@
+{
+ "n": 33,
+ "theme": "Famous Authors",
+ "bank": [
+  "POE",
+  "DEFOE",
+  "HOMER",
+  "KEATS",
+  "GOETHE",
+  "CARROLL",
+  "SPENSER",
+  "HAWTHORNE",
+  "CHESTERTON",
+  "LONGFELLOW",
+  "WORDSWORTH",
+  "SHAKESPEARE"
+ ],
+ "placed": [
+  {
+   "word": "SHAKESPEARE",
+   "row": 6,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "CHESTERTON",
+   "row": 1,
+   "col": 5,
+   "dir": "D"
+  },
+  {
+   "word": "WORDSWORTH",
+   "row": 2,
+   "col": 1,
+   "dir": "D"
+  },
+  {
+   "word": "LONGFELLOW",
+   "row": 10,
+   "col": 3,
+   "dir": "A"
+  },
+  {
+   "word": "HAWTHORNE",
+   "row": 0,
+   "col": 10,
+   "dir": "D"
+  },
+  {
+   "word": "SPENSER",
+   "row": 1,
+   "col": 8,
+   "dir": "D"
+  },
+  {
+   "word": "CARROLL",
+   "row": 5,
+   "col": 3,
+   "dir": "D"
+  },
+  {
+   "word": "GOETHE",
+   "row": 3,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "DEFOE",
+   "row": 8,
+   "col": 7,
+   "dir": "D"
+  },
+  {
+   "word": "KEATS",
+   "row": 3,
+   "col": 7,
+   "dir": "A"
+  },
+  {
+   "word": "HOMER",
+   "row": 12,
+   "col": 4,
+   "dir": "A"
+  },
+  {
+   "word": "POE",
+   "row": 9,
+   "col": 11,
+   "dir": "D"
+  }
+ ]
+}

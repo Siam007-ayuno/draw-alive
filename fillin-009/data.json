@@ -1,0 +1,92 @@
+{
+ "n": 9,
+ "theme": "Famous Authors",
+ "bank": [
+  "BYRON",
+  "KEATS",
+  "SCOTT",
+  "TWAIN",
+  "JONSON",
+  "CHAUCER",
+  "MARLOWE",
+  "STEVENSON",
+  "CHESTERTON",
+  "LONGFELLOW",
+  "WORDSWORTH",
+  "SHAKESPEARE"
+ ],
+ "placed": [
+  {
+   "word": "SHAKESPEARE",
+   "row": 6,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "WORDSWORTH",
+   "row": 2,
+   "col": 1,
+   "dir": "D"
+  },
+  {
+   "word": "LONGFELLOW",
+   "row": 1,
+   "col": 5,
+   "dir": "D"
+  },
+  {
+   "word": "CHESTERTON",
+   "row": 0,
+   "col": 10,
+   "dir": "D"
+  },
+  {
+   "word": "STEVENSON",
+   "row": 2,
+   "col": 8,
+   "dir": "D"
+  },
+  {
+   "word": "MARLOWE",
+   "row": 5,
+   "col": 3,
+   "dir": "D"
+  },
+  {
+   "word": "CHAUCER",
+   "row": 0,
+   "col": 6,
+   "dir": "A"
+  },
+  {
+   "word": "JONSON",
+   "row": 3,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "SCOTT",
+   "row": 8,
+   "col": 8,
+   "dir": "A"
+  },
+  {
+   "word": "TWAIN",
+   "row": 8,
+   "col": 12,
+   "dir": "D"
+  },
+  {
+   "word": "BYRON",
+   "row": 12,
+   "col": 8,
+   "dir": "A"
+  },
+  {
+   "word": "KEATS",
+   "row": 4,
+   "col": 7,
+   "dir": "A"
+  }
+ ]
+}

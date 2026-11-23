@@ -1,0 +1,92 @@
+{
+ "n": 7,
+ "theme": "Classic Books & Characters",
+ "bank": [
+  "EMMA",
+  "HYDE",
+  "JANE",
+  "PRIDE",
+  "CRUSOE",
+  "ODYSSEY",
+  "CANTERBURY",
+  "IMPORTANCE",
+  "PERSUASION",
+  "PROMETHEUS",
+  "SENSIBILITY",
+  "FRANKENSTEIN"
+ ],
+ "placed": [
+  {
+   "word": "FRANKENSTEIN",
+   "row": 6,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "SENSIBILITY",
+   "row": 0,
+   "col": 10,
+   "dir": "D"
+  },
+  {
+   "word": "IMPORTANCE",
+   "row": 2,
+   "col": 3,
+   "dir": "A"
+  },
+  {
+   "word": "PROMETHEUS",
+   "row": 2,
+   "col": 5,
+   "dir": "D"
+  },
+  {
+   "word": "PERSUASION",
+   "row": 0,
+   "col": 7,
+   "dir": "D"
+  },
+  {
+   "word": "CANTERBURY",
+   "row": 1,
+   "col": 1,
+   "dir": "D"
+  },
+  {
+   "word": "ODYSSEY",
+   "row": 11,
+   "col": 2,
+   "dir": "A"
+  },
+  {
+   "word": "CRUSOE",
+   "row": 9,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "PRIDE",
+   "row": 0,
+   "col": 3,
+   "dir": "D"
+  },
+  {
+   "word": "HYDE",
+   "row": 10,
+   "col": 9,
+   "dir": "A"
+  },
+  {
+   "word": "JANE",
+   "row": 7,
+   "col": 12,
+   "dir": "D"
+  },
+  {
+   "word": "EMMA",
+   "row": 2,
+   "col": 12,
+   "dir": "D"
+  }
+ ]
+}

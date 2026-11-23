@@ -1,0 +1,92 @@
+{
+ "n": 26,
+ "theme": "Shakespeare & the Stage",
+ "bank": [
+  "HERO",
+  "ASIDE",
+  "ELEGY",
+  "OPERA",
+  "STAGE",
+  "CHORUS",
+  "COMEDY",
+  "DIALOGUE",
+  "EPILOGUE",
+  "PROLOGUE",
+  "MONOLOGUE",
+  "SOLILOQUY"
+ ],
+ "placed": [
+  {
+   "word": "MONOLOGUE",
+   "row": 6,
+   "col": 2,
+   "dir": "A"
+  },
+  {
+   "word": "SOLILOQUY",
+   "row": 1,
+   "col": 5,
+   "dir": "D"
+  },
+  {
+   "word": "DIALOGUE",
+   "row": 0,
+   "col": 9,
+   "dir": "D"
+  },
+  {
+   "word": "PROLOGUE",
+   "row": 2,
+   "col": 3,
+   "dir": "D"
+  },
+  {
+   "word": "EPILOGUE",
+   "row": 2,
+   "col": 7,
+   "dir": "D"
+  },
+  {
+   "word": "COMEDY",
+   "row": 9,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "CHORUS",
+   "row": 7,
+   "col": 1,
+   "dir": "D"
+  },
+  {
+   "word": "ASIDE",
+   "row": 0,
+   "col": 6,
+   "dir": "A"
+  },
+  {
+   "word": "STAGE",
+   "row": 12,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "OPERA",
+   "row": 2,
+   "col": 5,
+   "dir": "A"
+  },
+  {
+   "word": "ELEGY",
+   "row": 9,
+   "col": 7,
+   "dir": "A"
+  },
+  {
+   "word": "HERO",
+   "row": 4,
+   "col": 0,
+   "dir": "A"
+  }
+ ]
+}

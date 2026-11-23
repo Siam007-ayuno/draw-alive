@@ -1,0 +1,92 @@
+{
+ "n": 12,
+ "theme": "The World of Books",
+ "bank": [
+  "INK",
+  "MAN",
+  "SAGA",
+  "LETTER",
+  "SYLLABLE",
+  "ADVENTURE",
+  "LITERATURE",
+  "MANUSCRIPT",
+  "IMAGINATION",
+  "INSPIRATION",
+  "MASTERPIECE",
+  "ILLUSTRATION"
+ ],
+ "placed": [
+  {
+   "word": "ILLUSTRATION",
+   "row": 6,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "IMAGINATION",
+   "row": 2,
+   "col": 0,
+   "dir": "D"
+  },
+  {
+   "word": "MASTERPIECE",
+   "row": 1,
+   "col": 6,
+   "dir": "D"
+  },
+  {
+   "word": "INSPIRATION",
+   "row": 2,
+   "col": 9,
+   "dir": "D"
+  },
+  {
+   "word": "MANUSCRIPT",
+   "row": 2,
+   "col": 4,
+   "dir": "D"
+  },
+  {
+   "word": "LITERATURE",
+   "row": 9,
+   "col": 3,
+   "dir": "A"
+  },
+  {
+   "word": "ADVENTURE",
+   "row": 2,
+   "col": 11,
+   "dir": "D"
+  },
+  {
+   "word": "SYLLABLE",
+   "row": 0,
+   "col": 2,
+   "dir": "D"
+  },
+  {
+   "word": "LETTER",
+   "row": 11,
+   "col": 2,
+   "dir": "A"
+  },
+  {
+   "word": "SAGA",
+   "row": 0,
+   "col": 2,
+   "dir": "A"
+  },
+  {
+   "word": "INK",
+   "row": 12,
+   "col": 8,
+   "dir": "A"
+  },
+  {
+   "word": "MAN",
+   "row": 1,
+   "col": 6,
+   "dir": "A"
+  }
+ ]
+}

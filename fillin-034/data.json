@@ -1,0 +1,99 @@
+{
+ "n": 34,
+ "theme": "Shakespeare & the Stage",
+ "bank": [
+  "ASIDE",
+  "HAIKU",
+  "OPERA",
+  "SESTET",
+  "SONNET",
+  "HEROINE",
+  "TRAGEDY",
+  "DIALOGUE",
+  "EPILOGUE",
+  "LIMERICK",
+  "PROLOGUE",
+  "MONOLOGUE",
+  "SOLILOQUY"
+ ],
+ "placed": [
+  {
+   "word": "SOLILOQUY",
+   "row": 6,
+   "col": 2,
+   "dir": "A"
+  },
+  {
+   "word": "MONOLOGUE",
+   "row": 1,
+   "col": 3,
+   "dir": "D"
+  },
+  {
+   "word": "DIALOGUE",
+   "row": 5,
+   "col": 5,
+   "dir": "D"
+  },
+  {
+   "word": "EPILOGUE",
+   "row": 12,
+   "col": 5,
+   "dir": "A"
+  },
+  {
+   "word": "PROLOGUE",
+   "row": 5,
+   "col": 12,
+   "dir": "D"
+  },
+  {
+   "word": "LIMERICK",
+   "row": 1,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "TRAGEDY",
+   "row": 0,
+   "col": 10,
+   "dir": "D"
+  },
+  {
+   "word": "HEROINE",
+   "row": 3,
+   "col": 7,
+   "dir": "D"
+  },
+  {
+   "word": "SONNET",
+   "row": 3,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "SESTET",
+   "row": 4,
+   "col": 6,
+   "dir": "A"
+  },
+  {
+   "word": "HAIKU",
+   "row": 11,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "OPERA",
+   "row": 9,
+   "col": 5,
+   "dir": "A"
+  },
+  {
+   "word": "ASIDE",
+   "row": 2,
+   "col": 0,
+   "dir": "D"
+  }
+ ]
+}

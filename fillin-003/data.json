@@ -1,0 +1,92 @@
+{
+ "n": 3,
+ "theme": "Classic Books & Characters",
+ "bank": [
+  "HYDE",
+  "ILIAD",
+  "PRIDE",
+  "RAVEN",
+  "AENEID",
+  "CANDIDE",
+  "PROGRESS",
+  "PREJUDICE",
+  "PERSUASION",
+  "PROMETHEUS",
+  "SENSIBILITY",
+  "FRANKENSTEIN"
+ ],
+ "placed": [
+  {
+   "word": "FRANKENSTEIN",
+   "row": 6,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "SENSIBILITY",
+   "row": 0,
+   "col": 10,
+   "dir": "D"
+  },
+  {
+   "word": "PROMETHEUS",
+   "row": 3,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "PERSUASION",
+   "row": 1,
+   "col": 2,
+   "dir": "D"
+  },
+  {
+   "word": "PREJUDICE",
+   "row": 8,
+   "col": 4,
+   "dir": "A"
+  },
+  {
+   "word": "PROGRESS",
+   "row": 0,
+   "col": 3,
+   "dir": "A"
+  },
+  {
+   "word": "CANDIDE",
+   "row": 10,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "AENEID",
+   "row": 7,
+   "col": 12,
+   "dir": "D"
+  },
+  {
+   "word": "PRIDE",
+   "row": 8,
+   "col": 4,
+   "dir": "D"
+  },
+  {
+   "word": "ILIAD",
+   "row": 12,
+   "col": 8,
+   "dir": "A"
+  },
+  {
+   "word": "RAVEN",
+   "row": 12,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "HYDE",
+   "row": 10,
+   "col": 9,
+   "dir": "A"
+  }
+ ]
+}

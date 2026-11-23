@@ -1,0 +1,99 @@
+{
+ "n": 16,
+ "theme": "The World of Books",
+ "bank": [
+  "AGE",
+  "ODE",
+  "FABLE",
+  "NOVEL",
+  "POETRY",
+  "BINDING",
+  "ADVENTURE",
+  "BOOKSELLER",
+  "BIBLIOPHILE",
+  "IMAGINATION",
+  "INSPIRATION",
+  "STORYTELLER",
+  "ILLUSTRATION"
+ ],
+ "placed": [
+  {
+   "word": "ILLUSTRATION",
+   "row": 6,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "STORYTELLER",
+   "row": 1,
+   "col": 5,
+   "dir": "D"
+  },
+  {
+   "word": "BIBLIOPHILE",
+   "row": 2,
+   "col": 9,
+   "dir": "D"
+  },
+  {
+   "word": "INSPIRATION",
+   "row": 0,
+   "col": 7,
+   "dir": "D"
+  },
+  {
+   "word": "IMAGINATION",
+   "row": 2,
+   "col": 0,
+   "dir": "D"
+  },
+  {
+   "word": "BOOKSELLER",
+   "row": 0,
+   "col": 2,
+   "dir": "D"
+  },
+  {
+   "word": "ADVENTURE",
+   "row": 2,
+   "col": 11,
+   "dir": "D"
+  },
+  {
+   "word": "BINDING",
+   "row": 0,
+   "col": 6,
+   "dir": "A"
+  },
+  {
+   "word": "POETRY",
+   "row": 12,
+   "col": 7,
+   "dir": "A"
+  },
+  {
+   "word": "FABLE",
+   "row": 0,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "NOVEL",
+   "row": 12,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "ODE",
+   "row": 10,
+   "col": 3,
+   "dir": "A"
+  },
+  {
+   "word": "AGE",
+   "row": 8,
+   "col": 0,
+   "dir": "A"
+  }
+ ]
+}

@@ -1,0 +1,92 @@
+{
+ "n": 13,
+ "theme": "Famous Authors",
+ "bank": [
+  "POE",
+  "KEATS",
+  "SCOTT",
+  "WILDE",
+  "AUSTEN",
+  "SPENSER",
+  "MELVILLE",
+  "COLERIDGE",
+  "HAWTHORNE",
+  "CHESTERTON",
+  "LONGFELLOW",
+  "SHAKESPEARE"
+ ],
+ "placed": [
+  {
+   "word": "SHAKESPEARE",
+   "row": 6,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "CHESTERTON",
+   "row": 3,
+   "col": 1,
+   "dir": "D"
+  },
+  {
+   "word": "LONGFELLOW",
+   "row": 11,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "HAWTHORNE",
+   "row": 4,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "COLERIDGE",
+   "row": 3,
+   "col": 11,
+   "dir": "D"
+  },
+  {
+   "word": "MELVILLE",
+   "row": 8,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "SPENSER",
+   "row": 1,
+   "col": 8,
+   "dir": "D"
+  },
+  {
+   "word": "AUSTEN",
+   "row": 1,
+   "col": 6,
+   "dir": "A"
+  },
+  {
+   "word": "WILDE",
+   "row": 9,
+   "col": 8,
+   "dir": "A"
+  },
+  {
+   "word": "SCOTT",
+   "row": 0,
+   "col": 4,
+   "dir": "D"
+  },
+  {
+   "word": "KEATS",
+   "row": 0,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "POE",
+   "row": 2,
+   "col": 3,
+   "dir": "A"
+  }
+ ]
+}

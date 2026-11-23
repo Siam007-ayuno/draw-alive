@@ -1,0 +1,106 @@
+{
+ "n": 36,
+ "theme": "The World of Books",
+ "bank": [
+  "AGE",
+  "BOY",
+  "GOD",
+  "INK",
+  "LAW",
+  "ODE",
+  "FABLE",
+  "THEME",
+  "QUOTATION",
+  "BIBLIOPHILE",
+  "IMAGINATION",
+  "INSPIRATION",
+  "STORYTELLER",
+  "ILLUSTRATION"
+ ],
+ "placed": [
+  {
+   "word": "ILLUSTRATION",
+   "row": 6,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "INSPIRATION",
+   "row": 1,
+   "col": 6,
+   "dir": "D"
+  },
+  {
+   "word": "BIBLIOPHILE",
+   "row": 4,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "STORYTELLER",
+   "row": 8,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "IMAGINATION",
+   "row": 11,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "QUOTATION",
+   "row": 1,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "FABLE",
+   "row": 0,
+   "col": 10,
+   "dir": "D"
+  },
+  {
+   "word": "THEME",
+   "row": 8,
+   "col": 2,
+   "dir": "D"
+  },
+  {
+   "word": "INK",
+   "row": 0,
+   "col": 8,
+   "dir": "D"
+  },
+  {
+   "word": "BOY",
+   "row": 0,
+   "col": 2,
+   "dir": "D"
+  },
+  {
+   "word": "LAW",
+   "row": 0,
+   "col": 4,
+   "dir": "D"
+  },
+  {
+   "word": "AGE",
+   "row": 10,
+   "col": 4,
+   "dir": "D"
+  },
+  {
+   "word": "ODE",
+   "row": 6,
+   "col": 10,
+   "dir": "D"
+  },
+  {
+   "word": "GOD",
+   "row": 10,
+   "col": 10,
+   "dir": "D"
+  }
+ ]
+}

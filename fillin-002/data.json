@@ -1,0 +1,92 @@
+{
+ "n": 2,
+ "theme": "Shakespeare & the Stage",
+ "bank": [
+  "HERO",
+  "HAIKU",
+  "STAGE",
+  "SONNET",
+  "OTHELLO",
+  "VILLAIN",
+  "DIALOGUE",
+  "LIMERICK",
+  "PROLOGUE",
+  "QUATRAIN",
+  "MONOLOGUE",
+  "SOLILOQUY"
+ ],
+ "placed": [
+  {
+   "word": "MONOLOGUE",
+   "row": 6,
+   "col": 2,
+   "dir": "A"
+  },
+  {
+   "word": "SOLILOQUY",
+   "row": 1,
+   "col": 7,
+   "dir": "D"
+  },
+  {
+   "word": "PROLOGUE",
+   "row": 4,
+   "col": 3,
+   "dir": "D"
+  },
+  {
+   "word": "QUATRAIN",
+   "row": 5,
+   "col": 9,
+   "dir": "D"
+  },
+  {
+   "word": "DIALOGUE",
+   "row": 2,
+   "col": 5,
+   "dir": "D"
+  },
+  {
+   "word": "LIMERICK",
+   "row": 11,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "OTHELLO",
+   "row": 6,
+   "col": 0,
+   "dir": "D"
+  },
+  {
+   "word": "VILLAIN",
+   "row": 3,
+   "col": 4,
+   "dir": "A"
+  },
+  {
+   "word": "SONNET",
+   "row": 1,
+   "col": 7,
+   "dir": "A"
+  },
+  {
+   "word": "STAGE",
+   "row": 0,
+   "col": 12,
+   "dir": "D"
+  },
+  {
+   "word": "HAIKU",
+   "row": 10,
+   "col": 8,
+   "dir": "A"
+  },
+  {
+   "word": "HERO",
+   "row": 8,
+   "col": 0,
+   "dir": "A"
+  }
+ ]
+}

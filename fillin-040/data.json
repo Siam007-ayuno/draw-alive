@@ -1,0 +1,106 @@
+{
+ "n": 40,
+ "theme": "The World of Books",
+ "bank": [
+  "SEA",
+  "EPIC",
+  "MUSE",
+  "MYTH",
+  "DIARY",
+  "NOVEL",
+  "PAPER",
+  "CHAPTER",
+  "PREFACE",
+  "ADVENTURE",
+  "IMAGINATION",
+  "INSPIRATION",
+  "MASTERPIECE",
+  "ILLUSTRATION"
+ ],
+ "placed": [
+  {
+   "word": "ILLUSTRATION",
+   "row": 6,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "IMAGINATION",
+   "row": 2,
+   "col": 0,
+   "dir": "D"
+  },
+  {
+   "word": "MASTERPIECE",
+   "row": 3,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "INSPIRATION",
+   "row": 10,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "ADVENTURE",
+   "row": 8,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "CHAPTER",
+   "row": 0,
+   "col": 6,
+   "dir": "D"
+  },
+  {
+   "word": "PREFACE",
+   "row": 0,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "PAPER",
+   "row": 0,
+   "col": 10,
+   "dir": "D"
+  },
+  {
+   "word": "DIARY",
+   "row": 1,
+   "col": 8,
+   "dir": "A"
+  },
+  {
+   "word": "NOVEL",
+   "row": 12,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "MYTH",
+   "row": 0,
+   "col": 12,
+   "dir": "D"
+  },
+  {
+   "word": "EPIC",
+   "row": 8,
+   "col": 8,
+   "dir": "D"
+  },
+  {
+   "word": "MUSE",
+   "row": 5,
+   "col": 3,
+   "dir": "D"
+  },
+  {
+   "word": "SEA",
+   "row": 2,
+   "col": 4,
+   "dir": "D"
+  }
+ ]
+}

@@ -1,0 +1,99 @@
+{
+ "n": 38,
+ "theme": "Shakespeare & the Stage",
+ "bank": [
+  "PLAY",
+  "ACTOR",
+  "ELEGY",
+  "OPERA",
+  "CURTAIN",
+  "HEROINE",
+  "MACBETH",
+  "REFRAIN",
+  "THEATRE",
+  "EPILOGUE",
+  "QUATRAIN",
+  "MONOLOGUE",
+  "SOLILOQUY"
+ ],
+ "placed": [
+  {
+   "word": "MONOLOGUE",
+   "row": 6,
+   "col": 2,
+   "dir": "A"
+  },
+  {
+   "word": "SOLILOQUY",
+   "row": 4,
+   "col": 6,
+   "dir": "D"
+  },
+  {
+   "word": "EPILOGUE",
+   "row": 8,
+   "col": 3,
+   "dir": "A"
+  },
+  {
+   "word": "QUATRAIN",
+   "row": 11,
+   "col": 5,
+   "dir": "A"
+  },
+  {
+   "word": "REFRAIN",
+   "row": 0,
+   "col": 4,
+   "dir": "D"
+  },
+  {
+   "word": "CURTAIN",
+   "row": 0,
+   "col": 2,
+   "dir": "A"
+  },
+  {
+   "word": "THEATRE",
+   "row": 0,
+   "col": 10,
+   "dir": "D"
+  },
+  {
+   "word": "HEROINE",
+   "row": 6,
+   "col": 12,
+   "dir": "D"
+  },
+  {
+   "word": "MACBETH",
+   "row": 2,
+   "col": 6,
+   "dir": "A"
+  },
+  {
+   "word": "ELEGY",
+   "row": 8,
+   "col": 3,
+   "dir": "D"
+  },
+  {
+   "word": "OPERA",
+   "row": 3,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "ACTOR",
+   "row": 4,
+   "col": 8,
+   "dir": "A"
+  },
+  {
+   "word": "PLAY",
+   "row": 12,
+   "col": 0,
+   "dir": "A"
+  }
+ ]
+}

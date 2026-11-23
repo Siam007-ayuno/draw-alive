@@ -1,0 +1,92 @@
+{
+ "n": 25,
+ "theme": "Famous Authors",
+ "bank": [
+  "DOYLE",
+  "HOMER",
+  "KEATS",
+  "SCOTT",
+  "VERNE",
+  "ALCOTT",
+  "THOREAU",
+  "HAWTHORNE",
+  "CHESTERTON",
+  "LONGFELLOW",
+  "WORDSWORTH",
+  "SHAKESPEARE"
+ ],
+ "placed": [
+  {
+   "word": "SHAKESPEARE",
+   "row": 6,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "WORDSWORTH",
+   "row": 2,
+   "col": 6,
+   "dir": "D"
+  },
+  {
+   "word": "CHESTERTON",
+   "row": 9,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "LONGFELLOW",
+   "row": 1,
+   "col": 11,
+   "dir": "D"
+  },
+  {
+   "word": "HAWTHORNE",
+   "row": 3,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "THOREAU",
+   "row": 5,
+   "col": 2,
+   "dir": "D"
+  },
+  {
+   "word": "ALCOTT",
+   "row": 7,
+   "col": 0,
+   "dir": "D"
+  },
+  {
+   "word": "DOYLE",
+   "row": 8,
+   "col": 8,
+   "dir": "D"
+  },
+  {
+   "word": "VERNE",
+   "row": 12,
+   "col": 7,
+   "dir": "A"
+  },
+  {
+   "word": "HOMER",
+   "row": 0,
+   "col": 9,
+   "dir": "D"
+  },
+  {
+   "word": "SCOTT",
+   "row": 0,
+   "col": 4,
+   "dir": "D"
+  },
+  {
+   "word": "KEATS",
+   "row": 6,
+   "col": 4,
+   "dir": "D"
+  }
+ ]
+}

@@ -1,0 +1,106 @@
+{
+ "n": 6,
+ "theme": "Shakespeare & the Stage",
+ "bank": [
+  "PLAY",
+  "DRAMA",
+  "OPERA",
+  "STAGE",
+  "COUPLET",
+  "CURTAIN",
+  "OTHELLO",
+  "REFRAIN",
+  "THEATRE",
+  "DIALOGUE",
+  "LIMERICK",
+  "QUATRAIN",
+  "MONOLOGUE",
+  "SOLILOQUY"
+ ],
+ "placed": [
+  {
+   "word": "SOLILOQUY",
+   "row": 6,
+   "col": 2,
+   "dir": "A"
+  },
+  {
+   "word": "MONOLOGUE",
+   "row": 3,
+   "col": 3,
+   "dir": "D"
+  },
+  {
+   "word": "QUATRAIN",
+   "row": 5,
+   "col": 9,
+   "dir": "D"
+  },
+  {
+   "word": "DIALOGUE",
+   "row": 2,
+   "col": 7,
+   "dir": "D"
+  },
+  {
+   "word": "LIMERICK",
+   "row": 1,
+   "col": 5,
+   "dir": "D"
+  },
+  {
+   "word": "REFRAIN",
+   "row": 9,
+   "col": 6,
+   "dir": "A"
+  },
+  {
+   "word": "THEATRE",
+   "row": 11,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "OTHELLO",
+   "row": 1,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "CURTAIN",
+   "row": 3,
+   "col": 12,
+   "dir": "D"
+  },
+  {
+   "word": "COUPLET",
+   "row": 0,
+   "col": 0,
+   "dir": "D"
+  },
+  {
+   "word": "STAGE",
+   "row": 9,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "OPERA",
+   "row": 4,
+   "col": 3,
+   "dir": "A"
+  },
+  {
+   "word": "DRAMA",
+   "row": 2,
+   "col": 7,
+   "dir": "A"
+  },
+  {
+   "word": "PLAY",
+   "row": 0,
+   "col": 9,
+   "dir": "D"
+  }
+ ]
+}

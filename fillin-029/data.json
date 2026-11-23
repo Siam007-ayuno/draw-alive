@@ -1,0 +1,99 @@
+{
+ "n": 29,
+ "theme": "Famous Authors",
+ "bank": [
+  "POE",
+  "HUGO",
+  "DOYLE",
+  "HOMER",
+  "WILDE",
+  "CARROLL",
+  "SPENSER",
+  "COLERIDGE",
+  "STEVENSON",
+  "CHESTERTON",
+  "LONGFELLOW",
+  "WORDSWORTH",
+  "SHAKESPEARE"
+ ],
+ "placed": [
+  {
+   "word": "SHAKESPEARE",
+   "row": 6,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "WORDSWORTH",
+   "row": 2,
+   "col": 1,
+   "dir": "D"
+  },
+  {
+   "word": "LONGFELLOW",
+   "row": 1,
+   "col": 11,
+   "dir": "D"
+  },
+  {
+   "word": "CHESTERTON",
+   "row": 1,
+   "col": 8,
+   "dir": "D"
+  },
+  {
+   "word": "COLERIDGE",
+   "row": 3,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "STEVENSON",
+   "row": 10,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "SPENSER",
+   "row": 6,
+   "col": 6,
+   "dir": "D"
+  },
+  {
+   "word": "CARROLL",
+   "row": 12,
+   "col": 4,
+   "dir": "A"
+  },
+  {
+   "word": "WILDE",
+   "row": 0,
+   "col": 6,
+   "dir": "D"
+  },
+  {
+   "word": "DOYLE",
+   "row": 8,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "HOMER",
+   "row": 0,
+   "col": 3,
+   "dir": "D"
+  },
+  {
+   "word": "HUGO",
+   "row": 2,
+   "col": 8,
+   "dir": "A"
+  },
+  {
+   "word": "POE",
+   "row": 1,
+   "col": 2,
+   "dir": "A"
+  }
+ ]
+}

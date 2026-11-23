@@ -1,0 +1,92 @@
+{
+ "n": 37,
+ "theme": "Famous Authors",
+ "bank": [
+  "POE",
+  "HUGO",
+  "GOETHE",
+  "IRVING",
+  "CHAUCER",
+  "EMERSON",
+  "WHITMAN",
+  "COLERIDGE",
+  "CHESTERTON",
+  "LONGFELLOW",
+  "WORDSWORTH",
+  "SHAKESPEARE"
+ ],
+ "placed": [
+  {
+   "word": "SHAKESPEARE",
+   "row": 6,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "WORDSWORTH",
+   "row": 2,
+   "col": 1,
+   "dir": "D"
+  },
+  {
+   "word": "CHESTERTON",
+   "row": 0,
+   "col": 10,
+   "dir": "D"
+  },
+  {
+   "word": "LONGFELLOW",
+   "row": 1,
+   "col": 5,
+   "dir": "D"
+  },
+  {
+   "word": "COLERIDGE",
+   "row": 3,
+   "col": 8,
+   "dir": "D"
+  },
+  {
+   "word": "EMERSON",
+   "row": 11,
+   "col": 6,
+   "dir": "A"
+  },
+  {
+   "word": "WHITMAN",
+   "row": 1,
+   "col": 3,
+   "dir": "D"
+  },
+  {
+   "word": "CHAUCER",
+   "row": 0,
+   "col": 6,
+   "dir": "A"
+  },
+  {
+   "word": "GOETHE",
+   "row": 4,
+   "col": 7,
+   "dir": "A"
+  },
+  {
+   "word": "IRVING",
+   "row": 7,
+   "col": 12,
+   "dir": "D"
+  },
+  {
+   "word": "HUGO",
+   "row": 11,
+   "col": 1,
+   "dir": "A"
+  },
+  {
+   "word": "POE",
+   "row": 9,
+   "col": 4,
+   "dir": "A"
+  }
+ ]
+}

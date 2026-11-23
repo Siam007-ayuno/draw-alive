@@ -1,0 +1,99 @@
+{
+ "n": 27,
+ "theme": "Classic Books & Characters",
+ "bank": [
+  "GRAY",
+  "JANE",
+  "PRIDE",
+  "RAVEN",
+  "DORIAN",
+  "JEKYLL",
+  "MARLEY",
+  "BEOWULF",
+  "IMPORTANCE",
+  "PERSUASION",
+  "PROMETHEUS",
+  "SENSIBILITY",
+  "FRANKENSTEIN"
+ ],
+ "placed": [
+  {
+   "word": "FRANKENSTEIN",
+   "row": 6,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "SENSIBILITY",
+   "row": 0,
+   "col": 10,
+   "dir": "D"
+  },
+  {
+   "word": "IMPORTANCE",
+   "row": 1,
+   "col": 8,
+   "dir": "D"
+  },
+  {
+   "word": "PROMETHEUS",
+   "row": 2,
+   "col": 5,
+   "dir": "D"
+  },
+  {
+   "word": "PERSUASION",
+   "row": 1,
+   "col": 2,
+   "dir": "D"
+  },
+  {
+   "word": "BEOWULF",
+   "row": 0,
+   "col": 0,
+   "dir": "D"
+  },
+  {
+   "word": "JEKYLL",
+   "row": 10,
+   "col": 7,
+   "dir": "A"
+  },
+  {
+   "word": "MARLEY",
+   "row": 7,
+   "col": 12,
+   "dir": "D"
+  },
+  {
+   "word": "DORIAN",
+   "row": 4,
+   "col": 7,
+   "dir": "A"
+  },
+  {
+   "word": "PRIDE",
+   "row": 1,
+   "col": 6,
+   "dir": "A"
+  },
+  {
+   "word": "RAVEN",
+   "row": 0,
+   "col": 12,
+   "dir": "D"
+  },
+  {
+   "word": "GRAY",
+   "row": 12,
+   "col": 9,
+   "dir": "A"
+  },
+  {
+   "word": "JANE",
+   "row": 10,
+   "col": 0,
+   "dir": "A"
+  }
+ ]
+}

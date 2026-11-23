@@ -1,0 +1,92 @@
+{
+ "n": 19,
+ "theme": "Classic Books & Characters",
+ "bank": [
+  "EMMA",
+  "GRAY",
+  "HYDE",
+  "FAUST",
+  "CANDIDE",
+  "ISHMAEL",
+  "PREJUDICE",
+  "CANTERBURY",
+  "HEATHCLIFF",
+  "PROMETHEUS",
+  "SENSIBILITY",
+  "FRANKENSTEIN"
+ ],
+ "placed": [
+  {
+   "word": "FRANKENSTEIN",
+   "row": 6,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "SENSIBILITY",
+   "row": 0,
+   "col": 10,
+   "dir": "D"
+  },
+  {
+   "word": "HEATHCLIFF",
+   "row": 3,
+   "col": 8,
+   "dir": "D"
+  },
+  {
+   "word": "PROMETHEUS",
+   "row": 1,
+   "col": 3,
+   "dir": "A"
+  },
+  {
+   "word": "CANTERBURY",
+   "row": 1,
+   "col": 1,
+   "dir": "D"
+  },
+  {
+   "word": "PREJUDICE",
+   "row": 4,
+   "col": 5,
+   "dir": "D"
+  },
+  {
+   "word": "ISHMAEL",
+   "row": 12,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "CANDIDE",
+   "row": 4,
+   "col": 3,
+   "dir": "D"
+  },
+  {
+   "word": "FAUST",
+   "row": 12,
+   "col": 8,
+   "dir": "A"
+  },
+  {
+   "word": "GRAY",
+   "row": 0,
+   "col": 4,
+   "dir": "D"
+  },
+  {
+   "word": "HYDE",
+   "row": 10,
+   "col": 0,
+   "dir": "A"
+  },
+  {
+   "word": "EMMA",
+   "row": 0,
+   "col": 6,
+   "dir": "D"
+  }
+ ]
+}
