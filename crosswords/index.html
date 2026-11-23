@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crossword Hints — 100 Large Print Crosswords</title>
+<style>
+  body { font-family: Georgia, 'Times New Roman', serif; max-width: 560px;
+    margin: 0 auto; padding: 16px; color: #1F3A5F; background: #FFF6E0; }
+  h1 { font-size: 24px; }
+  p { font-size: 16px; line-height: 1.5; color: #4A5568; }
+  .list a { display: block; font-size: 17px; padding: 10px 8px;
+    border-bottom: 1px solid #E8ECF1; color: #1F3A5F; text-decoration: none; }
+  .list a:hover { background: #fff; }
+</style>
+</head>
+<body>
+<h1>Crossword Hints</h1>
+<p>From the book <b>100 Large Print Crosswords — Medium, General Knowledge</b>.
+Pick your puzzle. Each page offers, in order: one letter, a check of one
+answer you typed, and — only after a second tap — the full answer.
+The book is complete on paper alone; this is only a helper.</p>
+<div class="list" id="list"></div>
+<script>
+fetch('data/puzzles.json').then(r => r.json()).then(data => {
+  const box = document.getElementById('list');
+  for (const p of data.puzzles) {
+    const a = document.createElement('a');
+    a.href = 'puzzle.html?p=' + p.number;
+    a.textContent = 'Puzzle ' + p.number + ' — ' + p.title + ' ' +
+      '*'.repeat(p.stars) + '  (book page ' + p.page + ')';
+    box.appendChild(a);
+  }
+});
+</script>
+</body>
+</html>
