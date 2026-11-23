@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cryptogram 11 — Hint Ladder | Classic Cryptograms &amp; Word Fill-Ins</title>
+<style>
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:#F4F0FF;color:#1a1a2e;text-align:center}
+main{max-width:620px;margin:0 auto;padding:24px 16px 40px}
+h1{color:#3b2a6b;font-size:24px}
+.cipher{font-family:monospace;font-size:22px;font-weight:700;letter-spacing:2px;line-height:2.1;background:#fff;border:2px solid #d8d0f0;border-radius:12px;padding:18px 10px;margin:18px 0}
+.cipher .w{display:inline-block;margin:0 6px;white-space:nowrap}
+.cipher .ch{display:inline-block;text-align:center;min-width:18px}
+.cipher .ch small{display:block;font-size:13px;color:#0e6b6b;min-height:16px}
+button{display:block;width:100%;margin:10px 0;padding:14px;font-size:17px;font-weight:700;border-radius:12px;border:2px solid #3b2a6b;background:#3b2a6b;color:#fff;cursor:pointer}
+button.secondary{background:#fff;color:#3b2a6b}
+button:disabled{opacity:.45;cursor:default}
+#key{font-size:15px;line-height:1.9;background:#fff;border-radius:12px;padding:10px;margin-top:14px}
+#answer{display:none;background:#fff;border:2px solid #0e6b6b;border-radius:12px;padding:16px;margin-top:16px;font-size:18px}
+#author{display:none;margin-top:14px;font-size:16px;color:#3b2a6b;font-weight:700}
+p.note{font-size:14px;color:#555}
+</style>
+</head>
+<body>
+<main>
+<h1>Cryptogram 11 — Hint Ladder</h1>
+<p class="note">From <b>Classic Cryptograms &amp; Word Fill-Ins</b>. Take one hint at a time — you decide how much help you take. The full answer is never shown first.</p>
+<div class="cipher" id="cipher"></div>
+<div id="key">No letters revealed yet.</div>
+<button id="btnLetter">Reveal one letter</button>
+<button id="btnAuthor" class="secondary">Reveal the author</button>
+<button id="btnQuote" class="secondary">Reveal the full quote</button>
+<button id="btnHear" class="secondary">Hear the quote read aloud</button>
+<div id="author"></div>
+<div id="answer"></div>
+<p class="note">This page works from the book alone — no account, no app, no payment. The book is complete on paper; this is only a helping hand.</p>
+<p><a href="../cryptograms/">← All companion pages</a></p>
+</main>
+<script>
+let D=null, revealed=new Set();
+const FREQ="ETAOINSHRDLUCMFWYPVBGKQJXZ";
+fetch("data.json").then(r=>r.json()).then(d=>{D=d;render();});
+function render(){
+  const box=document.getElementById("cipher"); box.innerHTML="";
+  D.cipher.split(" ").forEach(w=>{
+    const s=document.createElement("span"); s.className="w";
+    [...w].forEach(ch=>{
+      const c=document.createElement("span"); c.className="ch";
+      const sm=document.createElement("small");
+      const plain=/[A-Z]/.test(ch) ? D.inv[ch] : null;
+      if(plain && revealed.has(plain)) sm.textContent=plain;
+      c.appendChild(sm); c.appendChild(document.createTextNode(ch)); s.appendChild(c);
+    });
+    box.appendChild(s);
+  });
+  const keys=[...revealed].map(p=>D.mapping[p]+" = "+p);
+  document.getElementById("key").textContent = keys.length ? "Revealed: "+keys.join("   ") : "No letters revealed yet.";
+}
+document.getElementById("btnLetter").onclick=()=>{
+  const order=[...FREQ].filter(p=>D.quote.toUpperCase().includes(p) && !revealed.has(p));
+  if(!order.length){document.getElementById("btnLetter").disabled=true;return;}
+  revealed.add(order[0]); render();
+  if(![...FREQ].some(p=>D.quote.toUpperCase().includes(p) && !revealed.has(p)))
+    document.getElementById("btnLetter").disabled=true;
+};
+document.getElementById("btnAuthor").onclick=()=>{
+  const a=document.getElementById("author");
+  a.style.display="block"; a.textContent="The author is "+D.author+" — "+D.bio;
+  document.getElementById("btnAuthor").disabled=true;
+};
+document.getElementById("btnQuote").onclick=()=>{
+  const a=document.getElementById("answer");
+  a.style.display="block"; a.textContent="“"+D.quote+"” — "+D.author+", "+D.work+" ("+D.year+")";
+  document.getElementById("btnQuote").disabled=true;
+};
+document.getElementById("btnHear").onclick=()=>{
+  if("speechSynthesis" in window){ speechSynthesis.cancel(); speechSynthesis.speak(new SpeechSynthesisUtterance(D.quote)); }
+  else alert("Your device cannot read aloud — the quote is on the answer page of the book.");
+};
+</script>
+</body>
+</html>
