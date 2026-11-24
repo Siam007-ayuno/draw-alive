@@ -42,19 +42,7 @@ then tap the word you heard. Score: <b id="score">0 / 0</b>.</p>
 <script>
 const PAIRS = [["ship", "sheep"], ["full", "fool"], ["live", "leave"], ["bit", "beat"], ["sit", "seat"], ["pull", "pool"], ["pen", "pan"], ["bet", "bat"], ["cut", "cat"], ["lock", "luck"], ["thin", "tin"], ["three", "tree"], ["rice", "rise"], ["bad", "bed"], ["cup", "cap"], ["not", "note"], ["fill", "feel"], ["hill", "heel"], ["hat", "hot"], ["man", "men"], ["pin", "pen"], ["rich", "reach"], ["leave", "leaf"], ["park", "pork"]];
 let cur = 0, target = 0, n = 0, ok = 0;
-function say(w) { const u = new SpeechSynthesisUtterance(w);
-  u.lang = 'en-GB'; u.rate = 0.85; speechSynthesis.cancel(); speechSynthesis.speak(u); }
-function next() {
-  cur = Math.floor(Math.random() * PAIRS.length);
-  target = Math.floor(Math.random() * 2);
-  document.getElementById('c0').textContent = PAIRS[cur][0];
-  document.getElementById('c1').textContent = PAIRS[cur][1];
-  document.getElementById('c0').disabled = false;
-  document.getElementById('c1').disabled = false;
-  document.getElementById('fb').textContent = '';
-  document.getElementById('prompt').textContent = 'Listen… which word was it?';
-  hear();
-}
+function say(w) { __speak(w, "en-GB"); }
 function hear() { say(PAIRS[cur][target]); }
 function choose(i) {
   n++;
@@ -66,4 +54,56 @@ function choose(i) {
   document.getElementById('c1').disabled = true;
 }
 next();
-</script></body></html>
+</script><p id="__speakWarn" style="display:none;color:#D94F5C;text-align:center;font-size:17px">No voice heard? Turn your media volume up and tap again.</p>
+<script>
+// Voice fix (2026-11-24): on Android Chrome the voice list starts empty and
+// the first speak() is silently dropped; cancel() can also swallow the next
+// speak(). Prime the voices on load, pick an English voice, and wait briefly
+// after cancel before speaking.
+var __pickedVoice = null;
+function __pickVoice() {
+  try {
+    var vs = (window.speechSynthesis) ? speechSynthesis.getVoices() : [];
+    __pickedVoice = vs.find(function (v) { return v.lang && v.lang.toLowerCase().indexOf("en") === 0; }) || vs[0] || null;
+  } catch (e) { __pickedVoice = null; }
+}
+function __speak(text, lang) {
+  if (!("speechSynthesis" in window)) { alert("Your phone cannot read aloud."); return; }
+  var wasBusy = speechSynthesis.speaking || speechSynthesis.pending;
+  speechSynthesis.cancel();
+  var say = function () {
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = lang || "en-US"; u.rate = 0.85;
+    if (__pickedVoice) u.voice = __pickedVoice;
+    speechSynthesis.speak(u);
+    setTimeout(function () {
+      if (!speechSynthesis.speaking && !speechSynthesis.pending) {
+        var m = document.getElementById("__speakWarn");
+        if (m) m.style.display = "block";
+      }
+    }, 800);
+  };
+  if (wasBusy) { setTimeout(say, 150); } else { say(); }
+}
+function __speakAll(words, lang) {
+  if (!("speechSynthesis" in window)) { alert("Your phone cannot read aloud."); return; }
+  speechSynthesis.cancel();
+  var i = 0;
+  var next = function () {
+    if (i >= words.length) return;
+    var u = new SpeechSynthesisUtterance(words[i]);
+    i++;
+    u.lang = lang || "en-US"; u.rate = 0.85;
+    if (__pickedVoice) u.voice = __pickedVoice;
+    u.onend = function () { setTimeout(next, 120); };
+    speechSynthesis.speak(u);
+  };
+  setTimeout(next, 120);
+}
+if ("speechSynthesis" in window) {
+  __pickVoice();
+  speechSynthesis.addEventListener("voiceschanged", __pickVoice);
+  speechSynthesis.getVoices();
+}
+</script>
+</body></html>

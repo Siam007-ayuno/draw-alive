@@ -79,10 +79,7 @@ above, and hear the difference. Try again until it sounds close.</p>
 <a href="../esl-check-my-sentence/">Check my sentence</a></p>
 <script>
 function play(f) { const a = document.getElementById('player'); a.src = f; a.play(); }
-function speakWord(w) {
-  const u = new SpeechSynthesisUtterance(w); u.lang = 'en-GB'; u.rate = 0.85;
-  speechSynthesis.cancel(); speechSynthesis.speak(u);
-}
+function speakWord(w) { __speak(w, "en-GB"); }
 
 let rec = null, chunks = [];
 async function startRec(btn) {
@@ -107,4 +104,56 @@ async function startRec(btn) {
   }
 }
 
-</script></body></html>
+</script><p id="__speakWarn" style="display:none;color:#D94F5C;text-align:center;font-size:17px">No voice heard? Turn your media volume up and tap again.</p>
+<script>
+// Voice fix (2026-11-24): on Android Chrome the voice list starts empty and
+// the first speak() is silently dropped; cancel() can also swallow the next
+// speak(). Prime the voices on load, pick an English voice, and wait briefly
+// after cancel before speaking.
+var __pickedVoice = null;
+function __pickVoice() {
+  try {
+    var vs = (window.speechSynthesis) ? speechSynthesis.getVoices() : [];
+    __pickedVoice = vs.find(function (v) { return v.lang && v.lang.toLowerCase().indexOf("en") === 0; }) || vs[0] || null;
+  } catch (e) { __pickedVoice = null; }
+}
+function __speak(text, lang) {
+  if (!("speechSynthesis" in window)) { alert("Your phone cannot read aloud."); return; }
+  var wasBusy = speechSynthesis.speaking || speechSynthesis.pending;
+  speechSynthesis.cancel();
+  var say = function () {
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = lang || "en-US"; u.rate = 0.85;
+    if (__pickedVoice) u.voice = __pickedVoice;
+    speechSynthesis.speak(u);
+    setTimeout(function () {
+      if (!speechSynthesis.speaking && !speechSynthesis.pending) {
+        var m = document.getElementById("__speakWarn");
+        if (m) m.style.display = "block";
+      }
+    }, 800);
+  };
+  if (wasBusy) { setTimeout(say, 150); } else { say(); }
+}
+function __speakAll(words, lang) {
+  if (!("speechSynthesis" in window)) { alert("Your phone cannot read aloud."); return; }
+  speechSynthesis.cancel();
+  var i = 0;
+  var next = function () {
+    if (i >= words.length) return;
+    var u = new SpeechSynthesisUtterance(words[i]);
+    i++;
+    u.lang = lang || "en-US"; u.rate = 0.85;
+    if (__pickedVoice) u.voice = __pickedVoice;
+    u.onend = function () { setTimeout(next, 120); };
+    speechSynthesis.speak(u);
+  };
+  setTimeout(next, 120);
+}
+if ("speechSynthesis" in window) {
+  __pickVoice();
+  speechSynthesis.addEventListener("voiceschanged", __pickVoice);
+  speechSynthesis.getVoices();
+}
+</script>
+</body></html>

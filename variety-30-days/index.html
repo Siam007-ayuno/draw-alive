@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>30 Days of Puzzles — Phone Helper</title>
 <style>
+  * { box-sizing: border-box; }
   body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
          max-width: 640px; margin: 0 auto; padding: 20px;
          background: #FBF3E2; color: #222; font-size: 20px; line-height: 1.5; }
@@ -61,13 +62,7 @@ var day = parseInt(params.get("d") || "0", 10);
 var type = params.get("t") || "";
 
 function esc(s) { return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;"); }
-function speak(text) {
-  if (!("speechSynthesis" in window)) { alert("Your phone cannot read aloud."); return; }
-  speechSynthesis.cancel();
-  var u = new SpeechSynthesisUtterance(text);
-  u.rate = 0.85;
-  speechSynthesis.speak(u);
-}
+function speak(text) { __speak(text, "en-US"); }
 function go(d, t) {
   var q = d ? ("?d=" + d + (t ? "&t=" + t : "")) : "";
   history.pushState(null, "", location.pathname + q);
@@ -378,6 +373,58 @@ window.addEventListener("popstate", function () {
   type = params.get("t") || "";
   render();
 });
+</script>
+<p id="__speakWarn" style="display:none;color:#D94F5C;text-align:center;font-size:17px">No voice heard? Turn your media volume up and tap again.</p>
+<script>
+// Voice fix (2026-11-24): on Android Chrome the voice list starts empty and
+// the first speak() is silently dropped; cancel() can also swallow the next
+// speak(). Prime the voices on load, pick an English voice, and wait briefly
+// after cancel before speaking.
+var __pickedVoice = null;
+function __pickVoice() {
+  try {
+    var vs = (window.speechSynthesis) ? speechSynthesis.getVoices() : [];
+    __pickedVoice = vs.find(function (v) { return v.lang && v.lang.toLowerCase().indexOf("en") === 0; }) || vs[0] || null;
+  } catch (e) { __pickedVoice = null; }
+}
+function __speak(text, lang) {
+  if (!("speechSynthesis" in window)) { alert("Your phone cannot read aloud."); return; }
+  var wasBusy = speechSynthesis.speaking || speechSynthesis.pending;
+  speechSynthesis.cancel();
+  var say = function () {
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = lang || "en-US"; u.rate = 0.85;
+    if (__pickedVoice) u.voice = __pickedVoice;
+    speechSynthesis.speak(u);
+    setTimeout(function () {
+      if (!speechSynthesis.speaking && !speechSynthesis.pending) {
+        var m = document.getElementById("__speakWarn");
+        if (m) m.style.display = "block";
+      }
+    }, 800);
+  };
+  if (wasBusy) { setTimeout(say, 150); } else { say(); }
+}
+function __speakAll(words, lang) {
+  if (!("speechSynthesis" in window)) { alert("Your phone cannot read aloud."); return; }
+  speechSynthesis.cancel();
+  var i = 0;
+  var next = function () {
+    if (i >= words.length) return;
+    var u = new SpeechSynthesisUtterance(words[i]);
+    i++;
+    u.lang = lang || "en-US"; u.rate = 0.85;
+    if (__pickedVoice) u.voice = __pickedVoice;
+    u.onend = function () { setTimeout(next, 120); };
+    speechSynthesis.speak(u);
+  };
+  setTimeout(next, 120);
+}
+if ("speechSynthesis" in window) {
+  __pickVoice();
+  speechSynthesis.addEventListener("voiceschanged", __pickVoice);
+  speechSynthesis.getVoices();
+}
 </script>
 </body>
 </html>
