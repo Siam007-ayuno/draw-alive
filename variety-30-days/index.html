@@ -70,7 +70,10 @@ function go(d, t) {
   render();
 }
 function link(d, t, label) {
-  return '<a class="btn" href="?d=' + d + "&t=" + t + '">' + esc(label) + "</a>";
+  // label already carries its own HTML (<br> + <span>) and its data parts
+  // are escaped by the caller, so do NOT escape the whole label here —
+  // escaping it shows the raw <br><span> code on the buttons.
+  return '<a class="btn" href="?d=' + d + "&t=" + t + '">' + label + "</a>";
 }
 
 function render() {
