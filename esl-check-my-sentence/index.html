@@ -2,6 +2,7 @@
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Check My Sentence | Speak Real English</title><style>
+* { box-sizing: border-box; }
 body { font-family: Georgia, 'Times New Roman', serif; max-width: 600px;
   margin: 0 auto; padding: 16px; color: #1F3A5F; background: #F4FAF9; }
 h1 { font-size: 24px; color: #0A5E5D; }
@@ -22,31 +23,80 @@ input[type=text] { font-size: 17px; padding: 10px; width: 100%;
   box-sizing: border-box; border: 1px solid #8A94A6; border-radius: 8px; }
 .result { font-size: 17px; font-weight: bold; margin-top: 10px; }
 .ok { color: #0A5E5D; } .bad { color: #B3261E; }
+.corrected { font-size: 19px; font-weight: bold; color: #0A5E5D; margin-top: 8px; }
+.why { font-size: 16px; color: #1F3A5F; margin-top: 6px; }
 a { color: #0E7C7B; }
 </style></head><body>
 <h1>Check my sentence</h1>
-<p>Type a sentence from an exercise in the book. You get instant right / wrong
-and the correct form. No teacher, no internet beyond this page.</p>
+<p>Type any sentence. The AI teacher judges it: right or wrong, the correct
+form, and why — in simple words. Book sentences are checked instantly, with
+no waiting.</p>
 <div class="box">
 <input type="text" id="inp" placeholder="Type your sentence here…" autocomplete="off">
-<br><br><button class="orange" onclick="check()">Check it</button>
+<br><br><button class="orange" id="checkBtn" onclick="check()">Check it</button>
 <p class="result" id="fb"></p>
+<p class="corrected" id="corr"></p>
+<p class="why" id="why"></p>
 <p id="hint"></p>
+<button class="grey" id="hearBtn" style="display:none" onclick="hearCorrected()">&#128266; Hear the correct sentence</button>
 </div>
 <p class="small">Try one from Unit 1: “I take the bus to work.” or “She is a teacher.”</p>
+<p class="small">Your sentence is sent to a free AI service to check it. It needs internet.</p>
 <p><a href="../esl-home/">← All units</a></p>
 <script>
 let SENTENCES = [];
 fetch('sentences.json').then(r => r.json()).then(d => { SENTENCES = d.sentences; });
 function norm(s) { return s.toLowerCase().replace(/[^a-z0-9' ]/g, '').replace(/\s+/g, ' ').trim(); }
-function check() {
-  const typed = norm(document.getElementById('inp').value);
-  const fb = document.getElementById('fb'), hint = document.getElementById('hint');
-  if (!typed) { fb.textContent = 'Type a sentence first.'; fb.className = 'result'; return; }
-  if (SENTENCES.map(norm).includes(typed)) {
-    fb.textContent = 'Correct! Well done.'; fb.className = 'result ok'; hint.textContent = '';
-    return;
+
+// Voice helper (same fix as the other pages): prime the phone's voices on
+// load so the first tap is not silently dropped.
+var __pickedVoice = null;
+function __pickVoice() {
+  try {
+    var vs = (window.speechSynthesis) ? speechSynthesis.getVoices() : [];
+    __pickedVoice = vs.find(function (v) { return v.lang && v.lang.toLowerCase().indexOf("en") === 0; }) || vs[0] || null;
+  } catch (e) { __pickedVoice = null; }
+}
+if ("speechSynthesis" in window) {
+  __pickVoice();
+  speechSynthesis.addEventListener("voiceschanged", __pickVoice);
+  speechSynthesis.getVoices();
+}
+function __speak(text, lang) {
+  if (!("speechSynthesis" in window)) { alert("Your phone cannot read aloud."); return; }
+  var wasBusy = speechSynthesis.speaking || speechSynthesis.pending;
+  speechSynthesis.cancel();
+  var say = function () {
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = lang || "en-GB"; u.rate = 0.85;
+    if (__pickedVoice) u.voice = __pickedVoice;
+    speechSynthesis.speak(u);
+  };
+  if (wasBusy) { setTimeout(say, 150); } else { say(); }
+}
+
+let lastCorrected = '';
+function hearCorrected() { if (lastCorrected) __speak(lastCorrected, "en-GB"); }
+
+function showResult(verdict, corrected, why) {
+  const fb = document.getElementById('fb'), corr = document.getElementById('corr'),
+        whyEl = document.getElementById('why'), hear = document.getElementById('hearBtn');
+  lastCorrected = corrected || '';
+  if (verdict === 'correct') {
+    fb.textContent = 'Correct! Well done.'; fb.className = 'result ok';
+    corr.textContent = ''; whyEl.textContent = why || ''; hear.style.display = 'none';
+  } else if (verdict === 'small mistake') {
+    fb.textContent = 'Almost right — one small mistake.'; fb.className = 'result bad';
+    corr.textContent = 'Correct: ' + corrected; whyEl.textContent = why || '';
+    hear.style.display = '';
+  } else {
+    fb.textContent = 'Not quite — here is the correct form.'; fb.className = 'result bad';
+    corr.textContent = 'Correct: ' + corrected; whyEl.textContent = why || '';
+    hear.style.display = '';
   }
+}
+
+function closestMatch(typed) {
   const tw = new Set(typed.split(' '));
   let best = null, bestScore = 0;
   for (const s of SENTENCES) {
@@ -55,7 +105,57 @@ function check() {
     const score = inter / Math.max(tw.size, sw.size);
     if (score > bestScore) { bestScore = score; best = s; }
   }
-  fb.textContent = 'Not quite.'; fb.className = 'result bad';
+  return { best, bestScore };
+}
+
+async function judgeWithAI(sentence) {
+  const prompt = 'You are a kind English teacher for adult beginners (A2 level). '
+    + 'Judge this sentence: "' + sentence.replace(/"/g, "'") + '" '
+    + 'Reply with ONLY this JSON, no other words: '
+    + '{"verdict": "correct" or "small mistake" or "wrong", '
+    + '"corrected": "the corrected sentence", '
+    + '"why": "one very simple sentence explaining the mistake, using easy words"}';
+  const ctrl = new AbortController();
+  const timer = setTimeout(() => ctrl.abort(), 15000);
+  try {
+    const res = await fetch('https://text.pollinations.ai/' + encodeURIComponent(prompt),
+      { signal: ctrl.signal, headers: { 'Accept': 'application/json' } });
+    clearTimeout(timer);
+    if (!res.ok) return null;
+    let txt = (await res.text()).trim();
+    txt = txt.replace(/^```(?:json)?/i, '').replace(/```$/i, '').trim();
+    const start = txt.indexOf('{'), end = txt.lastIndexOf('}');
+    if (start < 0 || end < 0) return null;
+    const j = JSON.parse(txt.slice(start, end + 1));
+    if (!j.verdict || !j.corrected) return null;
+    return j;
+  } catch (e) {
+    clearTimeout(timer);
+    return null;
+  }
+}
+
+async function check() {
+  const raw = document.getElementById('inp').value.trim();
+  const fb = document.getElementById('fb'), hint = document.getElementById('hint'),
+        corr = document.getElementById('corr'), whyEl = document.getElementById('why'),
+        hear = document.getElementById('hearBtn'), btn = document.getElementById('checkBtn');
+  corr.textContent = ''; whyEl.textContent = ''; hint.textContent = ''; hear.style.display = 'none';
+  if (!raw) { fb.textContent = 'Type a sentence first.'; fb.className = 'result'; return; }
+  const typed = norm(raw);
+  // Fast path: a sentence from the book is judged instantly, offline.
+  if (SENTENCES.map(norm).includes(typed)) {
+    fb.textContent = 'Correct! Well done.'; fb.className = 'result ok';
+    return;
+  }
+  btn.disabled = true;
+  fb.textContent = 'AI is checking…'; fb.className = 'result';
+  const j = await judgeWithAI(raw);
+  btn.disabled = false;
+  if (j) { showResult(j.verdict, j.corrected, j.why); return; }
+  // AI is offline: fall back to the closest sentence from the book.
+  const { best, bestScore } = closestMatch(typed);
+  fb.textContent = 'Not quite. (The AI check is offline right now.)'; fb.className = 'result bad';
   hint.textContent = bestScore > 0.4
     ? 'Did you mean: “' + best + '”?'
     : 'I do not know that sentence. Try one from the book, exactly as it is written.';
