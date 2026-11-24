@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Cryptogram 39 — Hint Ladder | Classic Cryptograms &amp; Word Fill-Ins</title>
 <style>
+  * { box-sizing: border-box; }
 body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:#F4F0FF;color:#1a1a2e;text-align:center}
 main{max-width:620px;margin:0 auto;padding:24px 16px 40px}
 h1{color:#3b2a6b;font-size:24px}
@@ -74,9 +75,61 @@ document.getElementById("btnQuote").onclick=()=>{
   document.getElementById("btnQuote").disabled=true;
 };
 document.getElementById("btnHear").onclick=()=>{
-  if("speechSynthesis" in window){ speechSynthesis.cancel(); speechSynthesis.speak(new SpeechSynthesisUtterance(D.quote)); }
+  __speak(D.quote, "en-US");
   else alert("Your device cannot read aloud — the quote is on the answer page of the book.");
 };
+</script>
+<p id="__speakWarn" style="display:none;color:#D94F5C;text-align:center;font-size:17px">No voice heard? Turn your media volume up and tap again.</p>
+<script>
+// Voice fix (2026-11-24): on Android Chrome the voice list starts empty and
+// the first speak() is silently dropped; cancel() can also swallow the next
+// speak(). Prime the voices on load, pick an English voice, and wait briefly
+// after cancel before speaking.
+var __pickedVoice = null;
+function __pickVoice() {
+  try {
+    var vs = (window.speechSynthesis) ? speechSynthesis.getVoices() : [];
+    __pickedVoice = vs.find(function (v) { return v.lang && v.lang.toLowerCase().indexOf("en") === 0; }) || vs[0] || null;
+  } catch (e) { __pickedVoice = null; }
+}
+function __speak(text, lang) {
+  if (!("speechSynthesis" in window)) { alert("Your phone cannot read aloud."); return; }
+  var wasBusy = speechSynthesis.speaking || speechSynthesis.pending;
+  speechSynthesis.cancel();
+  var say = function () {
+    var u = new SpeechSynthesisUtterance(text);
+    u.lang = lang || "en-US"; u.rate = 0.85;
+    if (__pickedVoice) u.voice = __pickedVoice;
+    speechSynthesis.speak(u);
+    setTimeout(function () {
+      if (!speechSynthesis.speaking && !speechSynthesis.pending) {
+        var m = document.getElementById("__speakWarn");
+        if (m) m.style.display = "block";
+      }
+    }, 800);
+  };
+  if (wasBusy) { setTimeout(say, 150); } else { say(); }
+}
+function __speakAll(words, lang) {
+  if (!("speechSynthesis" in window)) { alert("Your phone cannot read aloud."); return; }
+  speechSynthesis.cancel();
+  var i = 0;
+  var next = function () {
+    if (i >= words.length) return;
+    var u = new SpeechSynthesisUtterance(words[i]);
+    i++;
+    u.lang = lang || "en-US"; u.rate = 0.85;
+    if (__pickedVoice) u.voice = __pickedVoice;
+    u.onend = function () { setTimeout(next, 120); };
+    speechSynthesis.speak(u);
+  };
+  setTimeout(next, 120);
+}
+if ("speechSynthesis" in window) {
+  __pickVoice();
+  speechSynthesis.addEventListener("voiceschanged", __pickVoice);
+  speechSynthesis.getVoices();
+}
 </script>
 </body>
 </html>
